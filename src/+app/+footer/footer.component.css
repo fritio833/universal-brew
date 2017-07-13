@@ -1,0 +1,47 @@
+.footer {
+    background-color: #333 !important;
+    color:#fff;
+    min-height:10rem;
+}
+
+.footer a {
+    color:#fff;
+    font-weight:1rem;
+    padding: 0 0.5rem;
+
+}
+
+.footer-top {
+   padding:2rem;
+}
+
+.footer-links {
+    padding-top:1rem;
+}
+
+.footer-links a {
+    padding-top:1rem;
+    font-size: 15px !important;
+    display:inline-block;
+}
+
+.copyright {
+    background-color: #222 !important;
+    vertical-align: middle !important;
+}
+
+.copyright h5 {
+    padding:1rem;
+}
+
+.footer hr {
+     border-top: 1px solid #222;
+}
+
+.footer .social {
+    padding:2rem;
+}
+
+.footer h5 {
+    font-size: 14px !important;
+}

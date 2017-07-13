@@ -1,5 +1,6 @@
 var util = require('util');
 var {Router} = require('express');
+var request = require('request');
 
 // Our API for demos only
 import {fakeDataBase} from './db';
@@ -7,6 +8,9 @@ import {fakeDemoRedisCache} from './cache';
 
 // you would use cookies/token etc
 var USER_ID = 'f9d98cf1-1b96-464e-8755-bcc2a5c09077'; // hardcoded as an example
+
+var breweryDBAPI = '3c7ec73417afb44ae7a4450482f99d70';
+var breweryDBURL = 'https://api.brewerydb.com/v2/';
 
 // Our API for demos only
 export function serverApi(req, res) {
@@ -37,7 +41,7 @@ var TODOS = [
   { id: 3, value: 'include production environment',  created_at: new Date(), completed: false }
 ];
 
-export function createTodoApi() {
+export function createBreweryDbApi() {
 
   var router = Router()
 
@@ -45,10 +49,23 @@ export function createTodoApi() {
     .get(function(req, res) {
       console.log('GET');
       // 70ms latency
-      setTimeout(function() {
-        res.json(TODOS);
-      }, 0);
 
+      request(breweryDBURL
+        +'search/?key='+ breweryDBAPI
+        +'&q=Bud&withBreweries=Y&type=beer', function (error, response, body) {
+
+        console.log('error',error);
+        console.log('response',response);
+        console.log('body',body);
+
+        if (response === undefined) {
+          var dbResp = {data:[]};
+          res.json(dbResp);          
+        } else {
+          res.json(JSON.parse(response.body));          
+        }
+      }); 
+      
     })
     .post(function(req, res) {
       console.log('POST', util.inspect(req.body, {colors: true}));
@@ -60,6 +77,19 @@ export function createTodoApi() {
           completed: todo.completed,
           id: COUNT++
         });
+
+        request(breweryDBURL
+          +'search/?key='+ breweryDBAPI
+          +'&q='+req.query.q+'&withBreweries=Y&type=beer', function (error, response, body) {
+
+          /*  
+          if(response.statusCode === 200)
+            res.status(200).send(response.body);
+          else
+            res.status(404).send('Brewery API down');
+          */  
+          
+        });        
         return res.json(todo);
       }
 

@@ -1,8 +1,167 @@
-blockquote {
-  border-left:5px #158126 solid;
-  background:#fff;
-  padding:20px 20px 20px 40px;
+.app-features ul {
+  padding-top: 5rem;
+  
 }
-blockquote::before {
-  left: 1em;
+
+.app-features li {
+  font-size:1rem;
+  padding-bottom:0.5rem;
 }
+
+.fa-green {
+  color: green;
+}
+
+.sub-header {
+  font-family: "Raleway", Helvetica, Arial, sans-serif !important;
+  margin-top:20px;
+}
+
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+
+.apple-btn img{
+  padding-bottom:10px !important;
+  margin-bottom:10px !important;
+}
+
+.card {
+  width: 24rem;
+  background-color:#ddd;
+}
+
+
+.about-panel {
+  margin-top:4rem;
+  /*background-color:#fff;*/
+}
+
+.about-panel i {
+  padding-left:0.75rem;
+}
+
+#ticket-btn {
+  padding-top:1rem;
+}
+
+.paralax-window {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column; 
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;   
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  flex: 1;
+  display: flex;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  
+}
+
+.image {
+  background-attachment: fixed; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/assets/events/emeraldcoastbeerfest.png");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 500;
+  opacity: 0.5;
+}
+
+.stuff {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  max-width: 70%;
+  justify-content: center;
+  text-align: center;
+  z-index: 1000;
+  color: #fff;
+  margin: 0 auto;
+  font-weight:bold;
+  font-size: 3rem;
+  position: relative;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.stuff .btn {
+  width:12rem;
+  text-align:center;
+  text-shadow:none;
+}
+
+.banner {
+  width:inherit;
+  background-image: url("/assets/beers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height:420px !important;      
+}
+
+.banner h2 {
+  position: absolute;
+  top:300px;
+  left:0;
+  right:0;
+  margin: 0 auto;
+  color:#ffffff;
+  font-family: 'Raleway',sans-serif !important;  
+}
+
+#custom-search-input {
+  position: relative;
+  top:100px;
+}
+
+.banner h3 {
+  position: absolute;
+  top:420px;
+  right:20px;
+  font-size:16px;
+  color:#fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.fest {
+  background-color:#fff;
+  border: 1px solid rgba(0,0,0,.25);
+  padding:2rem;
+}
+
+.fest h3 {
+  padding-bottom:1rem;
+}
+
+.fa-ul {
+  padding-left:1.5rem;
+}
+
+.fa-ul i {
+  padding-top:0.25rem;
+}
+

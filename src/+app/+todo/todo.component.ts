@@ -38,8 +38,8 @@ export class TodoComponent {
     this.model
       .get('/api/todos')
       .subscribe(data => {
-        console.log(data);
-        this.todos = data;
+        this.todos = data.data;
+        console.log(this.todos);
     });
   }
 

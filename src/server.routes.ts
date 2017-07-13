@@ -14,4 +14,8 @@ export const routes: string[] = [
   'home',
   'todo',
   'lazy',
+  'faq',
+  'getapp',
+  'privacy',
+  'terms'
 ];

@@ -1,6 +1,129 @@
+<!--
 <div class="home">
   Home component
   <strong>Async data call return value:</strong>
   <pre>{{ data | json }}</pre>
   <blockquote>{{ data.data }}</blockquote>
+</div>
+-->
+
+<div class="banner">
+
+  <!--
+  <div id="alert-msg" *ngIf="msg.length" class="container">
+    <ngb-alert>
+      <strong>Sorry!</strong> {{msg}}
+    </ngb-alert>
+  </div>
+   -->
+   <!--
+  <app-search id="custom-search-input"></app-search>
+  -->
+  <h2 class="text-center">Find Beers, Breweries, and Bars Around the World.<i class="fa fa-globe"></i> </h2>
+  <h3>Available for Apple &amp; Android Aug. 24th</h3>
+</div>
+<h2 class="page-header text-center">Featured Event</h2>
+<div class="container fest">
+    <div class="row">
+      <div class="col-sm-12 col-md-6  text-center">
+        <img src="/assets/events/beerfest.png" />
+      </div>
+      <div class="col-sm-12 col-md-6 ">
+        <h3>2017 Emerald Coast Beer Festival</h3>
+        <p>
+          Location: 130 E Government St, Pensacola, FL 32502
+        </p>
+        <p>Time: 5:30pm to 8:30pm Friday September 8, 2017</p>
+        <p>Ticket Price: To Be Announced</p>
+        <p>Website: <a href="http://emeraldcoastbeerfest.com" target="_blank">http://emeraldcoastbeerfest.com</a></p>
+        <p>Beer list will be available on our App 2 weeks before the event.</p>
+      </div>
+    </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-4 about-panel">
+      <h4 class="card-title">Easy to Use<i class="fa fa-thumbs-o-up"></i></h4>
+      <p class="card-text">
+        You can quickly find a beer,
+        brewery, or bar within seconds.  An App that is fast, clear, and informative is our mission.
+        Also, you can save a beer and locations to make the check-in process easier. 
+      </p>
+    </div>
+    <div class="col-sm-12 col-md-4 about-panel">
+      <h4 class="card-title">Crowdsourced<i class="fa fa-bullhorn"></i></h4>
+      <p class="card-text">
+        Ever had a great brew at a new brewery or bar and wanted the world to know?  Everytime you use our app 
+        and check-in, the Brew Search community will be able to locate their favorite brews thanks to you!
+      </p>
+    </div>
+    <div class="col-sm-12 col-md-4 about-panel">
+      <h4 class="card-title">Social Friendly<i class="fa fa-users"></i></h4>
+      <p class="card-text">
+        When you check-in, you have the option to post your experience on your wall. Notify all your
+        friends what they are missing out when they see you having a great time and invite them over.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-4 about-panel">
+      <h4 class="card-title">Beer Game<i class="fa fa-gamepad"></i></h4>
+      <p class="card-text">
+        When you check-in a beer at a location, you get points.  You get more points either by 
+        taking a picture, sharing on social media, leaving a rating, or leaving a comment.  Points are
+        reset every 30 days. Check out the leaderboard on our App and see if you come up on top.
+      </p>
+    </div>
+    <div class="col-sm-12 col-md-4 about-panel">
+      <h4 class="card-title">Achievements<i class="fa fa-trophy"></i></h4>
+      <p class="card-text">
+        Earn achievements by number of check-ins, drinking beer styles, and checkin-in at events.
+        We'll continue to add more badges in the future so you'll never run out badges to unlock.
+      </p>
+    </div>
+    <div class="col-sm-12 col-md-4 about-panel">
+      <h4 class="card-title">Beer Festivals<i class="fa fa-beer"></i></h4>
+      <p class="card-text">
+        Keep track of beer festivals happening in your area with our App. Login to our App and
+        see all the beers served at the event, breweries attending, and use our interactive map ( Feature applies
+        to only fesivals we got on board). You can plan ahead before the event, research beers that fit your profile, 
+        and a check list of beers you enjoyed at the festival so you can enjoy it later on.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid app-features">
+  <h2 class="page-header text-center">App Features</h2>
+   <h5 class="text-center">Planned Launch Date Aug 24th, 2017</h5>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+      <img src="assets/events/handphone2.png" />
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <ul class="fa-ul">
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Track breweries you visited.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Search beers by style, ABV, and by brewery.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Geolocation enabled. Find bars, breweries, and gas stations near you.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Brewery and bar map search.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Beer ratings and detailed description.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Brewery ratings and beers they have available.</li> 
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Save places visted and beers you like.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Locate beers locally submitted by our community.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Photos of bars and breweries.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>See all the popular beers and locations in your area.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Location and beer reviews.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Search other cities for breweries and bars. Great trip companion!</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Get notified when a friend check-ins at a location so you can meet up.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Made a beer game of earning achievements and points.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Find beer festivals.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Fast and intuitive. Super fast check-ins.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Social media enabled.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Beer suggestions.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Submit photos of places you visited.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Search over 500,000+ locations.</li>
+        <li><i class="fa-li fa fa-check-square fa-green"></i>Search over 80,000 beers and 20,000+ breweries.</li>        
+      </ul>
+    </div>  
+  </div>
 </div>
