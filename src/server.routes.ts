@@ -17,5 +17,7 @@ export const routes: string[] = [
   'faq',
   'getapp',
   'privacy',
-  'terms'
+  'terms',
+  'contact',
+  'beers'
 ];

@@ -8,9 +8,11 @@ import { GetappModule } from './+getapp/getapp.module';
 import { FaqModule } from './+faq/faq.module';
 import { PrivacyModule } from './+privacy/privacy.module';
 import { TermsModule } from './+terms/terms.module';
+import { ContactModule } from './+contact/contact.module';
+import { BeerResultsModule } from './+beer-results/beer-results.module';
 
-import { HeaderComponent } from './+header/header.component';
-import { FooterComponent} from './+footer/footer.component';
+//import { HeaderComponent } from './+header/header.component';
+//import { FooterComponent} from './+footer/footer.component';
 
 import { SharedModule } from './shared/shared.module';
 
@@ -21,9 +23,7 @@ import { AppComponent, XLargeDirective } from './app.component';
 @NgModule({
   declarations: [ 
     AppComponent, 
-    XLargeDirective,
-    HeaderComponent,
-    FooterComponent 
+    XLargeDirective
   ],
   imports: [
     SharedModule,
@@ -34,30 +34,12 @@ import { AppComponent, XLargeDirective } from './app.component';
     GetappModule,
     FaqModule,
     PrivacyModule,
-    TermsModule
+    TermsModule,
+    ContactModule,
+    BeerResultsModule
   ]
 })
-/*
-@NgModule({
-  declarations: [ 
-    AppComponent, 
-    XLargeDirective,
-    HeaderComponent,
-    FooterComponent 
-  ],
-  imports: [
-    SharedModule,
-    HomeModule,
-    AboutModule,
-    TodoModule,
-    AppRoutingModule,
-    GetappModule,
-    FaqModule,
-    PrivacyModule,
-    TermsModule
-  ]
-})
-*/
+
 export class AppModule {
 }
 

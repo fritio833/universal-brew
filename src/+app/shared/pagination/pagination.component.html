@@ -1,0 +1,9 @@
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-end">
+    <li class="page-item" (click)="onPrev()" *ngIf="page != 1"><a class="page-link">Previous</a></li>
+    <li class="page-item" [class.active]="page===pageNum" *ngFor="let pageNum of getPages()" (click)="onPage(pageNum)">
+      <a class="page-link">{{pageNum}}</a>
+    </li>
+    <li class="page-item" *ngIf="!lastPage()" (click)="onNext()"><a class="page-link">Next</a></li>
+  </ul>
+</nav>

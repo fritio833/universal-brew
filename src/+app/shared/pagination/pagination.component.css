@@ -1,0 +1,18 @@
+.pagination{
+    margin:0px;
+}
+
+.active>a {
+  background-color:#C81B02;
+  border-color:#C81B02;
+}
+
+.pagination>li>a {
+    color:#666;
+    cursor: pointer;
+}
+
+
+.pagination>.active>a {
+    color:#fff;
+}

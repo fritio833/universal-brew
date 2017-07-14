@@ -43,7 +43,34 @@ var TODOS = [
 
 export function createBreweryDbApi() {
 
-  var router = Router()
+  var router = Router();
+
+  router.route('/beers_by_name')
+    .get(function(req, res) {
+      console.log('GET BEERS',req.query.name);
+      //console.log('req',req);
+      //console.log('res',res);
+
+      //res.jsonp({"q":"YOLO"}); 
+      request(breweryDBURL
+        +'search/?key='+ breweryDBAPI
+        +'&q='+req.query.name
+        +'&withBreweries=Y&type=beer', function (error, response, body) {
+
+        /*
+        console.log('error',error);
+        console.log('response',response);
+        console.log('body',body);
+        */
+        if (response === undefined) {
+          var dbResp = {data:[],error:true,msg:"Brewery API Down"};
+          res.json(dbResp);          
+        } else {
+          res.json(JSON.parse(response.body));          
+        }
+      });       
+
+    });
 
   router.route('/todos')
     .get(function(req, res) {

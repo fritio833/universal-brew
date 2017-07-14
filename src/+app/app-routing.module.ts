@@ -9,8 +9,8 @@ export function getLazyModule() {
 @NgModule({
   imports: [
     RouterModule.forChild([
-      { path: '', redirectTo: '/home', pathMatch: 'full' },
-      { path: 'lazy', loadChildren: getLazyModule }
+      { path: '', redirectTo: '/home', pathMatch: 'full' }
+      //{ path: 'lazy', loadChildren: getLazyModule }/
     ])
   ],
 })

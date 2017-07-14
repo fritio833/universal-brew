@@ -4,6 +4,13 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ApiService } from './api.service';
 import { ModelService } from './model/model.service';
+import { GoogleService } from './google.service';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { SearchComponent } from './search/search.component';
+//import { PaginationComponent } from './pagination/pagination.component';
+
+import { PaginationComponent } from './pagination/pagination.component';
 
 const MODULES = [
   // Do NOT include UniversalModule, HttpModule, or JsonpModule here
@@ -19,11 +26,16 @@ const PIPES = [
 
 const COMPONENTS = [
   // put shared components here
+  FooterComponent,
+  HeaderComponent,
+  SearchComponent,
+  PaginationComponent
 ];
 
 const PROVIDERS = [
   ModelService,
-  ApiService
+  ApiService,
+  GoogleService
 ]
 
 @NgModule({
