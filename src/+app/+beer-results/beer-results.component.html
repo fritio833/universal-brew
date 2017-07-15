@@ -25,7 +25,9 @@
   </div>  
   <div class="row" *ngFor="let beer of beers">
     <div class="col-md-4 beer-img text-center">
-      <img *ngIf="beer.labels!=null" [src]="beer.labels.medium" />
+      <a *ngIf="beer.breweries" class="beer-header" [routerLink]="['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]">
+        <img *ngIf="beer.labels!=null" [src]="beer.labels.medium" />
+      </a>
     </div>
     <div class="col-md-8">
       <a *ngIf="beer.breweries" class="beer-header" [routerLink]="['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]">{{beer.name}}</a>

@@ -149,3 +149,13 @@ a {
 a:hover {
     color:#eea236;
 }
+
+.btn-facebook {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: #3b5998;
+}
+
+.btn {
+    cursor: pointer;
+}

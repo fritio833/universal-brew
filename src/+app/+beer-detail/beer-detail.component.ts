@@ -19,6 +19,7 @@ export class BeerDetailComponent  {
   beer = [];
   randomBeers = [];
   subscription:Subscription;
+  pageURL:string;
 
   constructor(public model: ModelService,              
               public router:Router,
@@ -28,6 +29,7 @@ export class BeerDetailComponent  {
 
     this.route.params.subscribe(params=>{
       this.getBeer(params['id']);
+      this.pageURL = this.common.getAbsoluteUrl(this.router);
     });
 
   }
@@ -79,7 +81,7 @@ export class BeerDetailComponent  {
     metaTags.push({name:'og:type', content:"website"});
     metaTags.push({name:'og:title', content:pageTitle});
     metaTags.push({name:'og:description', content:pageDescription});
-    metaTags.push({name:'og:url', content:this.common.getAbsoluteUrl(this.router)});
+    metaTags.push({name:'og:url', content:this.pageURL});
 
     if ("labels" in this.beer) {
       metaTags.push({name:'og:image', content:this.beer['labels'].medium});

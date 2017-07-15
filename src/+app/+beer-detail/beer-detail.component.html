@@ -2,8 +2,11 @@
 
 <div id="beer-detail" class="container" *ngIf="beer">
   <div class="row">
-    <div class="col-md-5 beer-img text-center">  
-      <img id="beer-logo" *ngIf="beer.labels!=null" [src]="beer.labels.medium" />
+    <div class="col-md-5 beer-img text-center">
+      <div> 
+        <img id="beer-logo" *ngIf="beer.labels!=null" [src]="beer.labels.medium" />
+      </div>
+      <app-facebook [url]="pageURL"></app-facebook>
     </div>
     <div class="col-md-7">
       <h2>{{beer.name}}</h2>

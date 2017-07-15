@@ -12,7 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { ReadMoreComponent } from './read-more/read-more.component';
 import { PaginationComponent } from './pagination/pagination.component';
-
+import { FacebookComponent } from './facebook/facebook.component';
 
 const MODULES = [
   // Do NOT include UniversalModule, HttpModule, or JsonpModule here
@@ -32,7 +32,8 @@ const COMPONENTS = [
   HeaderComponent,
   SearchComponent,
   PaginationComponent,
-  ReadMoreComponent
+  ReadMoreComponent,
+  FacebookComponent
 ];
 
 const PROVIDERS = [
