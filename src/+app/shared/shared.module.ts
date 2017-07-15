@@ -2,15 +2,17 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { ApiService } from './api.service';
 import { ModelService } from './model/model.service';
 import { GoogleService } from './google.service';
+import { CommonService } from './common.service';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
-//import { PaginationComponent } from './pagination/pagination.component';
-
+import { ReadMoreComponent } from './read-more/read-more.component';
 import { PaginationComponent } from './pagination/pagination.component';
+
 
 const MODULES = [
   // Do NOT include UniversalModule, HttpModule, or JsonpModule here
@@ -29,13 +31,15 @@ const COMPONENTS = [
   FooterComponent,
   HeaderComponent,
   SearchComponent,
-  PaginationComponent
+  PaginationComponent,
+  ReadMoreComponent
 ];
 
 const PROVIDERS = [
   ModelService,
   ApiService,
-  GoogleService
+  GoogleService,
+  CommonService
 ]
 
 @NgModule({

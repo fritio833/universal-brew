@@ -1,8 +1,12 @@
 import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
 import { Subscription } from "rxjs/Rx";
 import { ActivatedRoute, Params, Router } from '@angular/router';
+import { isBrowser } from 'angular2-universal';
 
 import { ModelService } from '../shared/model/model.service';
+import { CommonService } from '../shared/common.service';
+
+declare var $:any;
 
 @Component({
   changeDetection: ChangeDetectionStrategy.Default,
@@ -21,32 +25,36 @@ export class BeerResultsComponent {
   pageSize:number = 50;
   totalResults:number = 0;  
 
-  constructor(public model: ModelService,public router:Router,private route:ActivatedRoute) {
+  constructor(public model: ModelService,
+              public router:Router,
+              public common:CommonService,
+              private route:ActivatedRoute) {
 
     // we need the data synchronously for the client to set the server response
     // we create another method so we have more control for testing
     
     this.subscription = this.route.queryParams.subscribe((queryParam:any)=>{
       this.qBeer = queryParam['q'];
-      this.universalInit(queryParam['q']);
-      /*
+      
+      
       if (queryParam['p'] == null)
         this.currentPage = 1;
       else
         this.currentPage = queryParam['p'];
 
-      console.log('page',this.currentPage);
-      */
-      //this.doBeerSearch();
+      this.getBeers(this.qBeer,this.currentPage);
+      
     });    
   }
 
   onNext() {
     console.log('next');
     this.currentPage++;
+    
     this.router.navigate(['beers'],{
       queryParams:{q:encodeURI(this.qBeer),p:this.currentPage}
-    });    
+    });
+        
   }
 
   onPrev() {
@@ -59,17 +67,25 @@ export class BeerResultsComponent {
 
   goToPage(page) {
     console.log(page);
+    this.currentPage = page;
+
     this.router.navigate(['beers'],{
-      queryParams:{q:encodeURI(this.qBeer),p:page}
+      queryParams:{q:encodeURI(this.qBeer),p:this.currentPage}
     });    
   }  
 
-  universalInit(beerName) {
-    this.model.get('/api/beers_by_name/?name='+beerName).subscribe(data => {
-      //this.data = data;
-      console.log('get beers',data);
+  getBeers(beerName,page?) {
+      var _page = '';
+
+      if (page != undefined) {
+        _page = '&p='+page; 
+      } 
+
+    this.model.get('/api/beers_by_name/?name='+beerName + _page).subscribe(data => {
+
       if (!data.error) {
         this.beers = data.data;
+        //console.log(this.beers);
         this.numPages = data.numberOfPages;
         this.totalResults = data.totalResults;        
       }

@@ -10,7 +10,6 @@
   </ngb-alert>
 </div>
 -->
-<h2>*{{numPages}}*</h2>
 <div id="beer-results" class="container" *ngIf="beers.length">
   <div *ngIf="numPages > 1" class="row container">
     <div class="col-md-12 text-right">
@@ -28,19 +27,20 @@
     <div class="col-md-4 beer-img text-center">
       <img *ngIf="beer.labels!=null" [src]="beer.labels.medium" />
     </div>
-    <div class="col-md-18">
-      <a class="beer-header">{{beer.name}}</a>
+    <div class="col-md-8">
+      <a *ngIf="beer.breweries" class="beer-header" [routerLink]="['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]">{{beer.name}}</a>
+      <a *ngIf="!beer.breweries" class="beer-header" [routerLink]="['/beer',common.paramSEOFriendly(beer.name),beer.id]">{{beer.name}}</a>
       <a *ngIf="beer.breweries">{{beer.breweries[0].name}}</a>
       <p class="beer-style" *ngIf="beer.style!=null">{{beer.style.shortName}}</p>
       <p *ngIf="beer.description">
-        <!--<read-more [text]="beer.description" [maxLength]="100"></read-more>-->
+        <read-more [text]="beer.description" [maxLength]="100"></read-more>
       </p>      
       <p *ngIf="beer.abv!=null">{{beer.abv}}% ABV</p>
     </div>
   </div>
   <div *ngIf="numPages > 1" class="row container">
     <div class="col-md-12 text-right">
-    <pagination
+    <pagination id="botton-pagination"
       (goPage)="goToPage($event)"
       (goNext)="onNext()"
       (goPrev)="onPrev()"

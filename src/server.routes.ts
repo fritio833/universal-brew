@@ -19,5 +19,6 @@ export const routes: string[] = [
   'privacy',
   'terms',
   'contact',
-  'beers'
+  'beers',
+  'beer'
 ];

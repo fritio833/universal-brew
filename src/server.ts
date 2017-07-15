@@ -75,6 +75,7 @@ process.on('uncaughtException', function (err) {
 
 function ngApp(req, res) {
 
+
   function onHandleError(parentZoneDelegate, currentZone, targetZone, error)  {
     console.warn('Error in SSR, serving for direct CSR');
     res.sendFile('index.html', {root: './src'});
@@ -95,6 +96,7 @@ function ngApp(req, res) {
 
 }
 
+
 /**
  * use universal for specific routes
  */
@@ -103,6 +105,7 @@ routes.forEach(route => {
   app.get(`/${route}`, ngApp);
   app.get(`/${route}/*`, ngApp);
 });
+
 
 app.get('*', function(req, res) {
   res.setHeader('Content-Type', 'application/json');

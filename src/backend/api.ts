@@ -45,23 +45,61 @@ export function createBreweryDbApi() {
 
   var router = Router();
 
+  router.route('/beer_detail/:beer_id')
+    .get(function(req, res) {
+      console.log('GET BEER',req.params);
+      
+      request(breweryDBURL
+        +'beer/' 
+        + req.params.beer_id
+        + '/?key=' + breweryDBAPI
+        + '&type=beer&withBreweries=Y&withSocialAccounts=Y&withIngredients=Y', function (error, response, body) {
+
+        if (response === undefined) {
+          var dbResp = {data:[],error:true,msg:"Brewery API Down"};
+          res.json(dbResp);          
+        } else {
+          res.json(JSON.parse(response.body));          
+        }
+      });  
+    });
+
+  router.route('/random_beer_by_style/:style_id')
+    .get(function(req, res) {
+      console.log('GET RAND BEER',req.params);
+      
+      request(breweryDBURL
+        +'beers/?key=' 
+           + breweryDBAPI
+           + '&styleId='
+           + req.params.style_id
+           +'&randomCount=10&availableId=1&order=random&withBreweries=Y', function (error, response, body) {
+
+        if (response === undefined) {
+          var dbResp = {data:[],error:true,msg:"Brewery API Down"};
+          res.json(dbResp);          
+        } else {
+          res.json(JSON.parse(response.body));          
+        }
+      });    
+    });    
+
   router.route('/beers_by_name')
     .get(function(req, res) {
       console.log('GET BEERS',req.query.name);
-      //console.log('req',req);
-      //console.log('res',res);
 
-      //res.jsonp({"q":"YOLO"}); 
+      var _page = ''
+
+      if (req.query.p !== undefined) {
+        _page = '&p='+req.query.p; 
+      } 
+
       request(breweryDBURL
         +'search/?key='+ breweryDBAPI
         +'&q='+req.query.name
+        + _page
         +'&withBreweries=Y&type=beer', function (error, response, body) {
 
-        /*
-        console.log('error',error);
-        console.log('response',response);
-        console.log('body',body);
-        */
         if (response === undefined) {
           var dbResp = {data:[],error:true,msg:"Brewery API Down"};
           res.json(dbResp);          

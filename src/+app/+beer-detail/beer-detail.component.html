@@ -1,0 +1,50 @@
+<app-search id="search-box"></app-search>
+
+<div id="beer-detail" class="container" *ngIf="beer">
+  <div class="row">
+    <div class="col-md-5 beer-img text-center">  
+      <img id="beer-logo" *ngIf="beer.labels!=null" [src]="beer.labels.medium" />
+    </div>
+    <div class="col-md-7">
+      <h2>{{beer.name}}</h2>
+      <p *ngIf="beer.breweries">
+        <img *ngIf="beer.breweries[0].images" [src]="beer.breweries[0].images.icon" />
+        <a id="brewery-title">{{beer.breweries[0].name}}</a>
+      </p>
+      <p *ngIf="beer.style"><b>Style:</b> {{beer.style.name}}</p>
+      <p *ngIf="beer.style"><b>Category:</b> {{beer.style.category.name}}</p>
+      <p *ngIf="beer.abv"><b>ABV:</b> {{beer.abv}}%</p>
+      <p *ngIf="beer.ibu"><b>IBU:</b> {{beer.ibu}} IBU</p>
+      <p *ngIf="beer.available">{{beer.available.description}}</p>
+      <p *ngIf="beer.isOrganic == 'Y'">Organic Beer</p>
+      <p *ngIf="beer.srm" [style.color]="beerSRM">
+        <i class="fa fa-beer fa-2x">Beer Color</i>
+      </p>
+    </div>
+  </div>
+  <div class="row" *ngIf="beer.description">
+    <div class="col-md-12">
+      <hr />
+      <div id="rand-beer" class="alert alert-warning">
+        <strong>If you like {{beer.name}}, you might want to try these beers.</strong>
+        <div>
+          <span class="rand-btn" *ngFor="let beer of randomBeers">
+            <a class="btn btn-warning btn-sm" role="button" *ngIf="beer.breweries" [routerLink]="['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]">
+              {{beer.nameDisplay}}
+            </a>
+            <a class="btn btn-warning btn-sm" role="button" *ngIf="!beer.breweries" [routerLink]="['/beer',common.paramSEOFriendly(beer.name),beer.id]">
+              {{beer.nameDisplay}}
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div class="row" *ngIf="beer.description">
+    <div class="col-md-12">
+      <hr />
+      <h4>Notes / Commercial Description</h4>
+      <p>{{beer.description}}</p>
+    </div>
+  </div>
+</div>

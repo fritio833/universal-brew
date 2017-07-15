@@ -10,9 +10,7 @@ import { PrivacyModule } from './+privacy/privacy.module';
 import { TermsModule } from './+terms/terms.module';
 import { ContactModule } from './+contact/contact.module';
 import { BeerResultsModule } from './+beer-results/beer-results.module';
-
-//import { HeaderComponent } from './+header/header.component';
-//import { FooterComponent} from './+footer/footer.component';
+import { BeerDetailModule } from './+beer-detail/beer-detail.module';
 
 import { SharedModule } from './shared/shared.module';
 
@@ -36,7 +34,8 @@ import { AppComponent, XLargeDirective } from './app.component';
     PrivacyModule,
     TermsModule,
     ContactModule,
-    BeerResultsModule
+    BeerResultsModule,
+    BeerDetailModule
   ]
 })
 

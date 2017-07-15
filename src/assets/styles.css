@@ -141,3 +141,11 @@ body {
 .footer h5 {
     font-size: 14px !important;
 }
+
+a {
+    color:#f0ad4e;
+}
+
+a:hover {
+    color:#eea236;
+}
