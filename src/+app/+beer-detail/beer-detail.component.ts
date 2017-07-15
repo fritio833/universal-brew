@@ -20,6 +20,7 @@ export class BeerDetailComponent  {
   randomBeers = [];
   subscription:Subscription;
   pageURL:string;
+  showLoader:boolean = true;
 
   constructor(public model: ModelService,              
               public router:Router,
@@ -28,6 +29,7 @@ export class BeerDetailComponent  {
               private route:ActivatedRoute) {
 
     this.route.params.subscribe(params=>{
+      this.showLoader = true;
       this.getBeer(params['id']);
       this.pageURL = this.common.getAbsoluteUrl(this.router);
     });
@@ -37,22 +39,32 @@ export class BeerDetailComponent  {
   setMeta() {
     let metaTags = [];
     let keywords = [];
-    let pageTitle = '';
+    let pageTitle = this.beer['name'];
     let pageDescription = '';
     
-    metaTags.push({name:'author', content:'Brew Search Team'});
-
-
+    metaTags.push({name:'author', content:this.common.getAuthor()});
     keywords.push(this.beer['name']);
+
+
+
+    if ("style" in this.beer) {
+      keywords.push(this.beer['name']+' '+this.beer['style'].shortName);
+      keywords.push(this.beer['name']+' '+this.beer['style'].name);
+      pageTitle +=  ' ' + this.beer['style'].shortName;
+    }
 
     if ("breweries" in this.beer) {
       keywords.push(this.beer['breweries'][0].name);
       keywords.push('beers in ' + this.beer['breweries'][0].name);
       keywords.push(this.beer['breweries'][0].name + ' beer list');
-      pageDescription = `View beer details, beer description, share with friends, and find beer locations for ${this.beer['name']} brewed by ${this.beer['breweries'][0].name} at Brew Search.`;      
+      pageTitle += ` | ${this.beer['breweries'][0].name}`;
+      pageDescription = `View ${this.beer['name']} details, ${this.beer['name']} description, share ${this.beer['name']} with friends, and find beer locations for ${this.beer['name']} brewed by ${this.beer['breweries'][0].name} at Brew Search.`;      
     } else {
-      pageDescription = `View beer details, beer description, share with friends, and find beer locations for ${this.beer['name']} at Brew Search`; 
+      pageDescription = `View ${this.beer['name']} details, ${this.beer['name']} description, share ${this.beer['name']} with friends, and find beer locations for ${this.beer['name']} at Brew Search`; 
     }
+
+    pageTitle += ' | ' + this.common.getAppName();
+    this.meta.setTitle(pageTitle);
 
     metaTags.push(
       {
@@ -61,23 +73,14 @@ export class BeerDetailComponent  {
       }
     );    
 
-    if ("style" in this.beer) {
-      keywords.push(this.beer['name']+' '+this.beer['style'].shortName);
-      keywords.push(this.beer['name']+' '+this.beer['style'].name);
-      pageTitle = this.beer['name'] + ' ' + this.beer['style'].shortName + ' | Brew Search';
-      this.meta.setTitle(pageTitle);
-    } else {
-      pageTitle = this.beer['name'] + ' | Brew Search';
-      this.meta.setTitle(pageTitle);
-    }
 
     metaTags.push({
       name:'keywords', content:keywords.join(", ")
     });
 
     // Facebook Tags
-    metaTags.push({name:'fb:app_id', content:'1034295406675441'});
-    metaTags.push({name:'og:site_name', content:"BrewSearcApp.com"});
+    metaTags.push({name:'fb:app_id', content:this.common.getFBAppId()});
+    metaTags.push({name:'og:site_name', content:this.common.getSiteName()});
     metaTags.push({name:'og:type', content:"website"});
     metaTags.push({name:'og:title', content:pageTitle});
     metaTags.push({name:'og:description', content:pageDescription});
@@ -97,11 +100,14 @@ export class BeerDetailComponent  {
       if (!beer.error) {
         this.beer = beer.data;
         this.setMeta();
-        console.log('beer',this.beer);
+        //console.log('beer',this.beer);
         if ("style" in this.beer) {
           this.model.get('/api/random_beer_by_style/'+this.beer['style'].id).subscribe(ranBeer => {
-             this.randomBeers = ranBeer.data; 
+             this.randomBeers = ranBeer.data;
+             this.showLoader = false; 
           });
+        } else {
+          this.showLoader = false;
         }
       }
     });    

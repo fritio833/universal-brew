@@ -13,6 +13,7 @@ import { SearchComponent } from './search/search.component';
 import { ReadMoreComponent } from './read-more/read-more.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { FacebookComponent } from './facebook/facebook.component';
+import { LoaderComponent } from './loader/loader.component';
 
 const MODULES = [
   // Do NOT include UniversalModule, HttpModule, or JsonpModule here
@@ -33,7 +34,8 @@ const COMPONENTS = [
   SearchComponent,
   PaginationComponent,
   ReadMoreComponent,
-  FacebookComponent
+  FacebookComponent,
+  LoaderComponent
 ];
 
 const PROVIDERS = [

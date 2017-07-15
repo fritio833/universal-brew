@@ -3,6 +3,11 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class CommonService {
 
+  FBAppId = '1034295406675441';
+  AppName = 'Brew Search';
+  AppAuthor = 'Brew Search Team';
+  WebSite = 'BrewSearchApp.com';
+
   constructor() { }
 
   showHalfStar(rating) {
@@ -11,6 +16,22 @@ export class CommonService {
       return true;
     else
       return false;
+  }
+
+  getSiteName() {
+    return this.WebSite;
+  }
+
+  getFBAppId() {
+    return this.FBAppId;
+  }
+
+  getAppName() {
+    return this.AppName;
+  }
+
+  getAuthor() {
+    return this.AppAuthor;
   }
 
   paramSEOFriendly(paramName) {
@@ -36,6 +57,18 @@ export class CommonService {
     var sec = a.getSeconds();
     var time =  month + '/'+date + '/' + year;
     return time;
+  }
+
+  defaultOGMetaTags() {
+    let metaTags = {
+      site_name:'BrewSearcApp.com',
+      type:'website',
+      title:'Find Beers, Bars, and Breweries!',
+      description:'A great description.',
+      url:'https://brewsearchapp.com',
+      image:'https://firebasestorage.googleapis.com/v0/b/bender-1487426215149.appspot.com/o/img%2FBrewSearchOG.jpg?alt=media&token=44ce4c8b-06f1-4e4b-ab30-80e10363b865'
+    };
+    return metaTags;
   }
 
   getBaseUrl() {

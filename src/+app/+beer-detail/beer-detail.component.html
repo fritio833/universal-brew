@@ -1,10 +1,15 @@
 <app-search id="search-box"></app-search>
 
-<div id="beer-detail" class="container" *ngIf="beer">
+<div class="text-center loader" *ngIf="showLoader">
+  <app-loader></app-loader>
+</div>
+
+<div id="beer-detail" class="container" *ngIf="beer && !showLoader">
   <div class="row">
     <div class="col-md-5 beer-img text-center">
       <div> 
         <img id="beer-logo" *ngIf="beer.labels!=null" [src]="beer.labels.medium" />
+        <img id="beer-logo" *ngIf="beer.labels==null" src="assets/images/no-beer.jpg" />
       </div>
       <app-facebook [url]="pageURL"></app-facebook>
     </div>

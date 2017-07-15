@@ -36,21 +36,21 @@ export class PaginationComponent {
 
   onPage(n: number): void {
     this.goPage.emit(n);
-    //document.body.scrollTop = 0;
-    $('html, body').animate({scrollTop:0}, 'slow');
+    document.body.scrollTop = 0;
+    //$('html, body').animate({scrollTop:0}, 'slow');
     
   }
 
   onPrev(): void {
     this.goPrev.emit(true);
-    //document.body.scrollTop = 0;
-    $('html, body').animate({scrollTop:0}, 'slow');
+    document.body.scrollTop = 0;
+    //$('html, body').animate({scrollTop:0}, 'slow');
   }
 
   onNext(next: boolean): void {
     this.goNext.emit(next);
-    //document.body.scrollTop = 0;
-    $('html, body').animate({scrollTop:0}, 'slow');
+    document.body.scrollTop = 0;
+    //$('html, body').animate({scrollTop:0}, 'slow');
   }
 
   totalPages(): number {

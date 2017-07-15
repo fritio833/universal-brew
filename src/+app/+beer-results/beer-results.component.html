@@ -1,16 +1,16 @@
 <app-search id="search-box"></app-search>
-<!--
-<div class="text-center loader" *ngIf="!showFeed">
+
+<div class="text-center loader" *ngIf="showLoader">
   <app-loader></app-loader>
 </div>
 
 <div id="alert-msg" *ngIf="msg!=null" class="container">
-  <ngb-alert>
+  <div class="alert alert-danger" role="alert">
     <strong>Sorry!</strong> {{msg}}
-  </ngb-alert>
+  </div>
 </div>
--->
-<div id="beer-results" class="container" *ngIf="beers.length">
+
+<div id="beer-results" class="container" *ngIf="beers.length && !showLoader">
   <div *ngIf="numPages > 1" class="row container">
     <div class="col-md-12 text-right">
     <pagination
@@ -27,6 +27,7 @@
     <div class="col-md-4 beer-img text-center">
       <a *ngIf="beer.breweries" class="beer-header" [routerLink]="['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]">
         <img *ngIf="beer.labels!=null" [src]="beer.labels.medium" />
+        <img *ngIf="beer.labels==null" src="assets/images/no-beer.jpg" />
       </a>
     </div>
     <div class="col-md-8">

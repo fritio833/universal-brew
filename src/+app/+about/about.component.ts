@@ -1,6 +1,8 @@
 import { Component, Inject, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
 import { Meta } from '../../angular2-meta';
 
+import { CommonService } from '../shared/common.service';
+
 @Component({
   changeDetection: ChangeDetectionStrategy.Default,
   encapsulation: ViewEncapsulation.Emulated,
@@ -8,12 +10,12 @@ import { Meta } from '../../angular2-meta';
   templateUrl: './about.component.html'
 })
 export class AboutComponent {
-  constructor(@Inject('req') req: any,meta:Meta) {
+  constructor(@Inject('req') req: any,meta:Meta, comm:CommonService) {
     // console.log('req',  req)
-    meta.setTitle('About Brew Search');
+    meta.setTitle('About Us | ' + comm.getAppName());
     meta.addTags([
       {
-        name:'author', content:'Ryan Fried'
+        name:'author', content:comm.getAuthor()
       },
       {
         name:'keywords', content:'About Us, About Brewery Search'
