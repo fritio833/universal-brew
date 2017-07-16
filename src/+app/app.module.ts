@@ -11,6 +11,8 @@ import { TermsModule } from './+terms/terms.module';
 import { ContactModule } from './+contact/contact.module';
 import { BeerResultsModule } from './+beer-results/beer-results.module';
 import { BeerDetailModule } from './+beer-detail/beer-detail.module';
+import { BreweryResultsModule } from './+brewery-results/brewery-results.module';
+import { BreweryDetailModule } from './+brewery-detail/brewery-detail.module';
 
 import { SharedModule } from './shared/shared.module';
 
@@ -35,7 +37,9 @@ import { AppComponent, XLargeDirective } from './app.component';
     TermsModule,
     ContactModule,
     BeerResultsModule,
-    BeerDetailModule
+    BeerDetailModule,
+    BreweryResultsModule,
+    BreweryDetailModule
   ]
 })
 

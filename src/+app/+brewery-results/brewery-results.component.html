@@ -1,0 +1,54 @@
+<app-search id="search-box"></app-search>
+
+<div class="text-center loader" *ngIf="showLoader">
+  <app-loader></app-loader>
+</div>
+
+<div id="alert-msg" *ngIf="msg!=null" class="container">
+  <div class="alert alert-danger" role="alert">
+    <strong>Sorry!</strong> {{msg}}
+  </div>
+</div>
+
+<div id="brewery-results" class="container" *ngIf="breweries.length && !showLoader">
+  <div *ngIf="numPages > 1" class="row container">
+    <div class="col-md-12 text-right">
+    <pagination
+      (goPage)="goToPage($event)"
+      (goNext)="onNext()"
+      (goPrev)="onPrev()"
+      [pagesToShow]="5"
+      [page]="currentPage"
+      [perPage]="pageSize"
+      [count]="totalResults"></pagination>
+    </div>
+  </div>  
+  <div class="row" *ngFor="let brewery of breweries">
+    <div class="col-md-4 brewery-img text-center">
+      <a [routerLink]="['/brewery',common.paramSEOFriendly(brewery.name),brewery.id]">    
+        <img *ngIf="brewery.images" [src]="brewery.images.squareMedium" />
+        <img *ngIf="!brewery.images" src="assets/images/no-beer.jpg" />
+      </a>
+    </div>
+    <div class="col-md-8">
+      <a *ngIf="!isLocationSearch" class="brewery-header" [routerLink]="['/brewery',common.paramSEOFriendly(brewery.name),brewery.id]">{{brewery.name}}</a>
+      <a *ngIf="isLocationSearch" class="brewery-header">{{brewery.name}}</a>
+      <h5 *ngIf="brewery.locations">
+        {{brewery.locations[0].locality}}, {{brewery.locations[0].region}}
+      </h5>
+      <p>{{brewery.type}}</p>
+    </div>
+  </div>
+  <div *ngIf="numPages > 1" class="row container">
+    <div class="col-md-12 text-right">
+    <pagination
+      (goPage)="goToPage($event)"
+      (goNext)="onNext()"
+      (goPrev)="onPrev()"
+      [pagesToShow]="5"
+      [page]="currentPage"
+      [perPage]="pageSize"
+      [count]="totalResults"></pagination>
+    </div>
+  </div>  
+</div>

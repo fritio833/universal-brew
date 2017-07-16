@@ -20,5 +20,7 @@ export const routes: string[] = [
   'terms',
   'contact',
   'beers',
-  'beer'
+  'beer',
+  'brewery',
+  'breweries'
 ];

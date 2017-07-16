@@ -1,0 +1,155 @@
+<app-search id="search-box"></app-search>
+
+<div class="text-center loader" *ngIf="showLoader">
+  <app-loader></app-loader>
+</div>
+
+<div id="brewery-detail" class="container" *ngIf="!showLoader">
+  <div class="row">
+    <div class="col-md-3 beer-img text-center">  
+      <img id="beer-logo" *ngIf="brewery.images!=null" [src]="brewery.images.squareMedium" />
+      <div id="social-media">
+        <a *ngIf="brewery.website" class="btn btn-warning" target="_blank" [href]="brewery.website" role="button">
+          <i class="fa fa-globe"></i> 
+          View Website
+        </a>
+        <!--
+        <a *ngIf="breweryBeers.length" [routerLink]="['/brewery-beers',common.paramCleanup(brewery.name),brewery.id]" class="btn btn-warning" role="button">
+          <i class="fa fa-beer"></i> 
+          Beer List
+        </a>
+        -->        
+        <div *ngFor="let social of brewery.socialAccounts">
+
+          <a *ngIf="social.socialMediaId == 1" class="btn btn-warning" target="_blank" [href]="social.link" role="button">
+            <i class="fa fa-facebook"></i> 
+            Facebook
+          </a>
+          <a *ngIf="social.socialMediaId == 2" class="btn btn-warning" target="_blank" [href]="social.link" role="button">
+            <i class="fa fa-twitter"></i> 
+            Twitter
+          </a>                              
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="text-center">
+        <h2>{{brewery.name}}</h2>
+        <!--
+        <div *ngIf="locationRating">
+          <star-rating-comp [starType]="'svg'"
+                            [readOnly]="true"
+                            [showHalfStars]="common.showHalfStar(locationRating)"
+                            [rating]="location.rating">             
+          </star-rating-comp>                
+        </div>
+        -->        
+      </div>
+      <div class="alert alert-warning beer-info">
+        <strong>Brewery Info</strong>
+        <div>
+          <span *ngIf="brewery.established"><i class="fa fa-caret-right"></i>Established {{brewery.established}}</span>
+          <span *ngIf="brewery.isOrganic=='Y'"><i class="fa fa-caret-right"></i>Organic Brewery</span>
+          <span *ngIf="brewery.isMassOwned=='Y'"><i class="fa fa-caret-right"></i>Mass Owned</span>
+          <span *ngIf="brewery.brandClassification"><i class="fa fa-caret-right"></i>{{brewery.brandClassification}} brewery</span>
+          <!--
+          <span *ngIf="breweryBeers.length">
+            <i class="fa fa-caret-right"></i>
+            <a  [routerLink]="['/brewery-beers',common.paramCleanup(brewery.name),brewery.id]">
+             {{breweryBeers.length}} Beers
+            </a>
+          </span>
+          -->
+          <span *ngIf="brewery.statusDisplay"><i class="fa fa-caret-right"></i>{{brewery.statusDisplay}} brewery</span>
+        </div>
+      </div>      
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <!--<th class="text-center">Open to Public</th>-->
+            <th>Location</th>
+            <th>&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>          
+          <tr *ngFor="let loc of brewery.locations">
+            <td>{{loc.locationTypeDisplay}}</td>
+            <!-- <td class="text-center">{{loc.openToPublic}}</td>-->
+            <td><a>{{loc.locality}}, {{loc.region}} {{loc.country.isoCode}}</a></td>
+            <td>
+              <a class="btn btn-warning" role="button">
+                View
+              </a>              
+            </td>
+          </tr>
+        </tbody>        
+      </table>
+      <!--
+      <div *ngIf="locationPhotos.length && !showPhotos">
+        <button (click)="showAllPhotos()" class="btn btn-warning btn-block btn-large" role="button">
+          <i class="fa fa-camera-retro"></i> 
+          View {{locationPhotos.length}} Photos
+        </button>
+      </div>
+      <div id="place-photos" class="row" *ngIf="showPhotos">
+        <div class="col-md-12 text-center">
+          <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>      
+        </div>
+      </div>
+      -->
+
+      <!--      
+      <div id="brewery-reviews" *ngIf="locationReviews.length" class="col-md-12">
+          <h4>{{brewery.nameShortDisplay}} Reviews</h4>
+          <div class="row" *ngFor="let review of locationReviews">
+            <hr />
+            <div class="col-md-1">
+              <img [src]="review.profile_photo_url" class="rounded-circle review-avatar" />
+            </div>
+            <div class="col-md-11">
+              <p *ngIf="review.rating">
+                <star-rating-comp [starType]="'icon'"
+                                  [showHalfStars]="true"
+                                  [readOnly]="true"
+                                  [rating]="review.rating">             
+                </star-rating-comp>
+              </p>
+              <p *ngIf="review.text">
+                <b>{{review.author_name}} said:</b>
+                {{review.text}}
+              </p>
+              <p class="text-right">
+               {{common.timeConverter(review.time)}}
+              </p>
+            </div>            
+          </div>
+      </div>
+      -->
+      <!--      
+      <div class="beer-list" *ngIf="breweryBeers.length">
+        <h4>{{brewery.nameShortDisplay}}'s Beer List</h4>
+        <div class="row alert alert-warning beer-row" *ngFor="let beer of breweryBeers">
+          <div class="col-md-2">
+            <a [routerLink]="['/beer',beer.id]">
+              <img *ngIf="beer.labels" [src]="beer.labels.icon" />
+            </a>
+          </div>
+          <div class="col-md-5 text-left">
+            <h4><a [routerLink]="['/beer',beer.id]">{{beer.nameDisplay}}</a></h4>
+            <p>{{beer.style.shortName}} <span *ngIf="beer.abv"> - {{beer.abv}}%</span></p>
+          </div>          
+        </div>
+      </div>
+      -->      
+      <!-- <h4>{{brewery.nameShortDisplay}}'s Beer List</h4> -->
+      <div *ngIf="brewery.description">        
+        <h4>Description</h4>
+        <hr />        
+        <p>
+          {{brewery.description}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

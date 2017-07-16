@@ -110,6 +110,51 @@ export function createBreweryDbApi() {
 
     });
 
+  router.route('/breweries_by_name')
+    .get(function(req, res) {
+      console.log('GET BREWERIES',req.query.name);
+
+      var _page = ''
+
+      if (req.query.p !== undefined) {
+        _page = '&p='+req.query.p; 
+      } 
+
+      request(breweryDBURL
+        +'search/?key='+ breweryDBAPI
+        +'&q=*'+req.query.name+'*'
+        + _page
+        +'&withLocations=Y&type=brewery', function (error, response, body) {
+
+        if (response === undefined) {
+          var dbResp = {data:[],error:true,msg:"Brewery API Down"};
+          res.json(dbResp);          
+        } else {
+          res.json(JSON.parse(response.body));          
+        }
+      });       
+
+    });
+
+  router.route('/brewery_detail/:brewery_id')
+    .get(function(req, res) {
+      console.log('GET Brewery',req.params);
+      
+      request(breweryDBURL 
+        +'brewery/' 
+        + req.params.brewery_id
+        + '/?key=' + breweryDBAPI
+        + '&withLocations=Y&withSocialAccounts=Y', function (error, response, body) {
+
+        if (response === undefined) {
+          var dbResp = {data:[],error:true,msg:"Brewery API Down"};
+          res.json(dbResp);          
+        } else {
+          res.json(JSON.parse(response.body));          
+        }
+      });  
+    });
+
   router.route('/todos')
     .get(function(req, res) {
       console.log('GET');
