@@ -10,14 +10,19 @@
       <img id="beer-logo" *ngIf="brewery.images" [src]="brewery.images.squareMedium" />
       <img id="beer-logo" *ngIf="!brewery.images" src="assets/images/no-beer.jpg" />
       <div id="social-media">
-        <a *ngIf="brewery.website" class="btn btn-warning" target="_blank" [href]="brewery.website" role="button">
-          <i class="fa fa-globe"></i> 
-          View Website
-        </a>
-        <a *ngIf="breweryBeers.length" class="btn btn-warning" role="button">
-          <i class="fa fa-beer"></i> 
-          Beer List
-        </a>       
+        <app-facebook [url]="pageURL"></app-facebook>
+        <div *ngIf="brewery.website">
+          <a class="btn btn-warning" target="_blank" [href]="brewery.website" role="button">
+            <i class="fa fa-globe"></i> 
+            View Website
+          </a>
+        </div>
+        <div *ngIf="breweryBeers">
+          <a class="btn btn-warning" role="button">
+            <i class="fa fa-beer"></i> 
+            Beer List
+          </a>
+        </div>       
         <div *ngFor="let social of brewery.socialAccounts">
 
           <a *ngIf="social.socialMediaId == 1" class="btn btn-warning" target="_blank" [href]="social.link" role="button">
@@ -43,7 +48,7 @@
           <span *ngIf="brewery.isOrganic=='Y'"><i class="fa fa-caret-right"></i>Organic Brewery</span>
           <span *ngIf="brewery.isMassOwned=='Y'"><i class="fa fa-caret-right"></i>Mass Owned</span>
           <span *ngIf="brewery.brandClassification"><i class="fa fa-caret-right"></i>{{brewery.brandClassification}} brewery</span>
-          <span *ngIf="breweryBeers.length">
+          <span *ngIf="breweryBeers">
             <i class="fa fa-caret-right"></i>
             <a>
              {{breweryBeers.length}} Beers
@@ -82,8 +87,17 @@
         </button>
       </div>
       -->
-      <div *ngIf="location.main_img">
-        <img [src]="location.main_img" width="100%" />
+      <div *ngIf="locationPhotos" class="text-center">
+        <div class="row">
+          <div class="col-md-7">
+            <img [src]="locationPrimaryPhoto" width="100%" />
+          </div>
+          <div class="col-md-5">
+            <span *ngFor="let thumb of locationPhotoThumbs" (click)="setPhoto(thumb.refId)">
+              <img class="brew-thumb" [src]="thumb.src" width="75" height="75px" />
+            </span>
+          </div>
+        </div>
       </div>
       <!--
       <div id="place-photos" class="row" *ngIf="showPhotos">
@@ -92,9 +106,7 @@
         </div>
       </div>
       -->
-
-      <!--      
-      <div id="brewery-reviews" *ngIf="locationReviews.length" class="col-md-12">
+      <div id="brewery-reviews" *ngIf="locationReviews" class="col-md-12">
           <h4>{{brewery.nameShortDisplay}} Reviews</h4>
           <div class="row" *ngFor="let review of locationReviews">
             <hr />
@@ -103,11 +115,7 @@
             </div>
             <div class="col-md-11">
               <p *ngIf="review.rating">
-                <star-rating-comp [starType]="'icon'"
-                                  [showHalfStars]="true"
-                                  [readOnly]="true"
-                                  [rating]="review.rating">             
-                </star-rating-comp>
+                <app-rating [rate]="review.rating"></app-rating>
               </p>
               <p *ngIf="review.text">
                 <b>{{review.author_name}} said:</b>
@@ -119,7 +127,6 @@
             </div>            
           </div>
       </div>
-      -->
       <!--      
       <div class="beer-list" *ngIf="breweryBeers.length">
         <h4>{{brewery.nameShortDisplay}}'s Beer List</h4>

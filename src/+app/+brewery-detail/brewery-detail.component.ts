@@ -28,8 +28,10 @@ export class BreweryDetailComponent  {
   brewery:any;
   locationPhotos = [];
   locationReviews = [];
+  locationPrimaryPhoto:string = null;
   locationRating:number = null;
-  location = {};  
+  location = {};
+  locationPhotoThumbs = [];
 
   constructor(public model: ModelService,              
               public router:Router,
@@ -50,7 +52,7 @@ export class BreweryDetailComponent  {
     let metaTags = [];
     let keywords = [];
     let pageTitle = this.brewery['name'];
-    let pageDescription = '';
+    let pageDescription = null;
     
     metaTags.push({name:'author', content:this.common.getAuthor()});
     keywords.push(this.brewery['name']);
@@ -83,6 +85,7 @@ export class BreweryDetailComponent  {
           content:this.brewery['description']
         }
       );
+      pageDescription = this.brewery['description'];
     }
 
 
@@ -95,11 +98,11 @@ export class BreweryDetailComponent  {
     metaTags.push({name:'og:site_name', content:this.common.getSiteName()});
     metaTags.push({name:'og:type', content:"website"});
     metaTags.push({name:'og:title', content:pageTitle});
-    metaTags.push({name:'og:description', content:pageDescription});
+    metaTags.push({name:'og:description', content:`Check out photos, beers list, and details of ${this.brewery['name']}. Brew Search helping people find beers, breweries, and bars around the world.`});
     metaTags.push({name:'og:url', content:this.pageURL});
 
-    if ("labels" in this.beer) {
-      metaTags.push({name:'og:image', content:this.beer['labels'].medium});
+    if ("images" in this.brewery) {
+      metaTags.push({name:'og:image', content:this.brewery.images.squareLarge});
     }
 
     this.meta.addTags(metaTags);
@@ -112,7 +115,7 @@ export class BreweryDetailComponent  {
       if (!pub.error) {
         this.brewery = pub.data;
         //console.log('brewery',this.brewery);
-        this.setMeta();
+        
 
         this.model.get('/api/brewery_beers/'+this.brewery.id).subscribe(beers=>{
           //console.log('beers',beers);
@@ -122,17 +125,46 @@ export class BreweryDetailComponent  {
             +encodeURIComponent(this.brewery.name)+'/'
             +this.brewery.locations[0].latitude+'/'
             +this.brewery.locations[0].longitude).subscribe(loc=>{
-            console.log('location',loc);
+            //console.log('location',loc);
             this.location = loc;
 
-            if ("photos" in this.location) {
-              this.locationPhotos = this.location['photos'];
-            }
+            this.model.get('/google/place_by_id/'+this.location['place_id']).subscribe(place=>{
+              console.log('place11',place);
+              this.location = place;
 
-            if ("rating" in this.location) {
-              this.locationRating = this.location['rating'];
-            }
+              if ("main_img" in this.location) {
+                this.locationPrimaryPhoto = this.location['main_img'];
+              }
 
+              if ("rating" in this.location) {
+                this.locationRating = this.location['rating'];
+              }
+
+              if ("photos" in this.location) {
+                this.locationPhotos = this.location['photos'];
+                //console.log('loc',this.locationPhotos);
+
+                for (var i=0; i < this.locationPhotos.length;i++) {
+                  this.locationPhotoThumbs.push({
+                    src: this.common.getGoogleImg(this.locationPhotos[i].photo_reference,100),
+                    refId:this.locationPhotos[i].photo_reference
+                  });
+                }
+              }
+
+              if ("reviews" in this.location) {
+                console.log('lawlz');
+                this.locationReviews = this.location['reviews'];
+              }
+              /*
+              this.model.get('/google/place_photo/'+this.locationPhotos[0].photo_reference).subscribe(ogPhoto=>{
+                console.log('ogPhoto',ogPhoto);
+              });
+              */
+
+              this.setMeta();
+
+            });
           });          
         });
         //console.log('beer',this.beer);
@@ -142,15 +174,7 @@ export class BreweryDetailComponent  {
       
   }
 
-  showAllPhotos() {
-
-    let observableBatch = [];
-    console.log('pics',this.locationPhotos);
-
-    this.model.get('/google/place_photo/'+this.locationPhotos[0].photo_reference).subscribe(wut=>{
-      console.log('wut',wut);
-    });
-
-  }  
-
+  setPhoto(picId) {
+    this.locationPrimaryPhoto = this.common.getGoogleImg(picId,500);
+  }
 }

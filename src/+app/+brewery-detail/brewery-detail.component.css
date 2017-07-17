@@ -47,3 +47,8 @@
 #brewery-reviews {
     padding-top:2rem;
 }
+
+.brew-thumb {
+    padding:5px;
+    cursor: pointer;
+}

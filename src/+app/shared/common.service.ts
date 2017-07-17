@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { environment } from '../../environments/environment';
 
 @Injectable()
 export class CommonService {
@@ -32,6 +33,18 @@ export class CommonService {
 
   getAuthor() {
     return this.AppAuthor;
+  }
+
+  getGoogleThumbs(photoId) {
+
+  }
+
+  getGoogleImg(photo_ref,width?) {
+    var _width = 500;
+    if (width==null)
+      _width = width;
+
+    return 'https://maps.googleapis.com/maps/api/place/photo?photoreference='+photo_ref+'&maxwidth='+_width+'&key='+environment.google.googlePlacesAPIKey;
   }
 
   paramSEOFriendly(paramName) {
