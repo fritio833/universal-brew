@@ -12,6 +12,8 @@ var USER_ID = 'f9d98cf1-1b96-464e-8755-bcc2a5c09077'; // hardcoded as an example
 var breweryDBAPI = '3c7ec73417afb44ae7a4450482f99d70';
 var breweryDBURL = 'https://api.brewerydb.com/v2/';
 
+
+
 // Our API for demos only
 export function serverApi(req, res) {
   let key = USER_ID + '/data.json';
@@ -108,6 +110,24 @@ export function createBreweryDbApi() {
         }
       });       
 
+    });
+
+  router.route('/brewery_beers/:brewery_id')
+    .get(function(req, res) {
+      console.log('GET BREWERY BEERS',req.params);
+
+      request(breweryDBURL
+        +'brewery/'
+        + req.params.brewery_id
+        +'/beers?key='+ breweryDBAPI, function (error, response, body) {
+
+        if (response === undefined) {
+          var dbResp = {data:[],error:true,msg:"Brewery API Down"};
+          res.json(dbResp);          
+        } else {
+          res.json(JSON.parse(response.body));          
+        }
+      });      
     });
 
   router.route('/breweries_by_name')
@@ -244,3 +264,4 @@ export function createBreweryDbApi() {
 
   return router;
 };
+

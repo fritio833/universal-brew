@@ -14,6 +14,7 @@ import { ReadMoreComponent } from './read-more/read-more.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { FacebookComponent } from './facebook/facebook.component';
 import { LoaderComponent } from './loader/loader.component';
+import { RatingComponent } from './rating/rating.component';
 
 const MODULES = [
   // Do NOT include UniversalModule, HttpModule, or JsonpModule here
@@ -35,7 +36,8 @@ const COMPONENTS = [
   PaginationComponent,
   ReadMoreComponent,
   FacebookComponent,
-  LoaderComponent
+  LoaderComponent,
+  RatingComponent
 ];
 
 const PROVIDERS = [

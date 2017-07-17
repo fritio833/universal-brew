@@ -1,0 +1,7 @@
+<div>
+    <span *ngFor="let star of rateList;  let i = index;">
+        <i *ngIf="star=='filled'" class="fa fa-star filled"></i>
+        <i *ngIf="star=='half'" class="fa fa-star-half-o filled"></i>
+        <i *ngIf="star=='empty'" class="fa fa-star-o filled"></i>
+    </span>
+</div>

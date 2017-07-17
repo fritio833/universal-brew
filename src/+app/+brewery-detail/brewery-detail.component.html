@@ -7,18 +7,17 @@
 <div id="brewery-detail" class="container" *ngIf="!showLoader">
   <div class="row">
     <div class="col-md-3 beer-img text-center">  
-      <img id="beer-logo" *ngIf="brewery.images!=null" [src]="brewery.images.squareMedium" />
+      <img id="beer-logo" *ngIf="brewery.images" [src]="brewery.images.squareMedium" />
+      <img id="beer-logo" *ngIf="!brewery.images" src="assets/images/no-beer.jpg" />
       <div id="social-media">
         <a *ngIf="brewery.website" class="btn btn-warning" target="_blank" [href]="brewery.website" role="button">
           <i class="fa fa-globe"></i> 
           View Website
         </a>
-        <!--
-        <a *ngIf="breweryBeers.length" [routerLink]="['/brewery-beers',common.paramCleanup(brewery.name),brewery.id]" class="btn btn-warning" role="button">
+        <a *ngIf="breweryBeers.length" class="btn btn-warning" role="button">
           <i class="fa fa-beer"></i> 
           Beer List
-        </a>
-        -->        
+        </a>       
         <div *ngFor="let social of brewery.socialAccounts">
 
           <a *ngIf="social.socialMediaId == 1" class="btn btn-warning" target="_blank" [href]="social.link" role="button">
@@ -35,15 +34,7 @@
     <div class="col-md-9">
       <div class="text-center">
         <h2>{{brewery.name}}</h2>
-        <!--
-        <div *ngIf="locationRating">
-          <star-rating-comp [starType]="'svg'"
-                            [readOnly]="true"
-                            [showHalfStars]="common.showHalfStar(locationRating)"
-                            [rating]="location.rating">             
-          </star-rating-comp>                
-        </div>
-        -->        
+        <app-rating *ngIf="location.rating" [rate]="location.rating"></app-rating>
       </div>
       <div class="alert alert-warning beer-info">
         <strong>Brewery Info</strong>
@@ -52,14 +43,12 @@
           <span *ngIf="brewery.isOrganic=='Y'"><i class="fa fa-caret-right"></i>Organic Brewery</span>
           <span *ngIf="brewery.isMassOwned=='Y'"><i class="fa fa-caret-right"></i>Mass Owned</span>
           <span *ngIf="brewery.brandClassification"><i class="fa fa-caret-right"></i>{{brewery.brandClassification}} brewery</span>
-          <!--
           <span *ngIf="breweryBeers.length">
             <i class="fa fa-caret-right"></i>
-            <a  [routerLink]="['/brewery-beers',common.paramCleanup(brewery.name),brewery.id]">
+            <a>
              {{breweryBeers.length}} Beers
             </a>
           </span>
-          -->
           <span *ngIf="brewery.statusDisplay"><i class="fa fa-caret-right"></i>{{brewery.statusDisplay}} brewery</span>
         </div>
       </div>      
@@ -92,6 +81,11 @@
           View {{locationPhotos.length}} Photos
         </button>
       </div>
+      -->
+      <div *ngIf="location.main_img">
+        <img [src]="location.main_img" width="100%" />
+      </div>
+      <!--
       <div id="place-photos" class="row" *ngIf="showPhotos">
         <div class="col-md-12 text-center">
           <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>      

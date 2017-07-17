@@ -46,6 +46,7 @@ export class HomeComponent {
 
     // Facebook Tags
     let defaultFB = this.common.defaultOGMetaTags();
+    /*
     metaTags.push({name:'fb:app_id', content:this.common.getFBAppId()});
     metaTags.push({name:'og:site_name', content:defaultFB.site_name});
     metaTags.push({name:'og:type', content:defaultFB.type});
@@ -53,7 +54,7 @@ export class HomeComponent {
     metaTags.push({name:'og:description', content:defaultFB.description});
     metaTags.push({name:'og:url', content:defaultFB.url});
     metaTags.push({name:'og:image', content:defaultFB.image});
-    
+    */
     this.meta.addTags(metaTags);
   }
 

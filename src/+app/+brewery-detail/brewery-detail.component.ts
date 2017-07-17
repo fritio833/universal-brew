@@ -1,10 +1,13 @@
 import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
 import { Subscription } from "rxjs/Rx";
 import { ActivatedRoute, Params, Router } from '@angular/router';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/forkJoin';
 
 import { ModelService } from '../shared/model/model.service';
 import { CommonService } from '../shared/common.service';
 import { Meta } from '../../angular2-meta';
+import { Http } from '@angular/http';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.Default,
@@ -17,16 +20,22 @@ export class BreweryDetailComponent  {
 
   data: any = {};
   beer = [];
-  randomBeers = [];
+  breweryBeers = [];
   subscription:Subscription;
   pageURL:string;
+  showPhotos = false;
   showLoader:boolean = true;
   brewery:any;
+  locationPhotos = [];
+  locationReviews = [];
+  locationRating:number = null;
+  location = {};  
 
   constructor(public model: ModelService,              
               public router:Router,
               public common:CommonService,
               public meta:Meta,
+              public _http:Http,
               private route:ActivatedRoute) {
 
     this.route.params.subscribe(params=>{
@@ -102,13 +111,46 @@ export class BreweryDetailComponent  {
     
       if (!pub.error) {
         this.brewery = pub.data;
-        console.log('brewery',this.brewery);
+        //console.log('brewery',this.brewery);
         this.setMeta();
+
+        this.model.get('/api/brewery_beers/'+this.brewery.id).subscribe(beers=>{
+          //console.log('beers',beers);
+          this.breweryBeers = beers.data;
+
+          this.model.get('/google/place_by_origin/'
+            +encodeURIComponent(this.brewery.name)+'/'
+            +this.brewery.locations[0].latitude+'/'
+            +this.brewery.locations[0].longitude).subscribe(loc=>{
+            console.log('location',loc);
+            this.location = loc;
+
+            if ("photos" in this.location) {
+              this.locationPhotos = this.location['photos'];
+            }
+
+            if ("rating" in this.location) {
+              this.locationRating = this.location['rating'];
+            }
+
+          });          
+        });
         //console.log('beer',this.beer);
       }
       this.showLoader = false;
     });    
       
   }
+
+  showAllPhotos() {
+
+    let observableBatch = [];
+    console.log('pics',this.locationPhotos);
+
+    this.model.get('/google/place_photo/'+this.locationPhotos[0].photo_reference).subscribe(wut=>{
+      console.log('wut',wut);
+    });
+
+  }  
 
 }
