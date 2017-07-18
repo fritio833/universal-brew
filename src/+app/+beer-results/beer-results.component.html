@@ -33,7 +33,7 @@
     <div class="col-md-8">
       <a *ngIf="beer.breweries" class="beer-header" [routerLink]="['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]">{{beer.name}}</a>
       <a *ngIf="!beer.breweries" class="beer-header" [routerLink]="['/beer',common.paramSEOFriendly(beer.name),beer.id]">{{beer.name}}</a>
-      <a *ngIf="beer.breweries">{{beer.breweries[0].name}}</a>
+      <a *ngIf="beer.breweries" [routerLink]="['/brewery',common.paramSEOFriendly(beer.breweries[0].name),beer.breweries[0].id]">{{beer.breweries[0].name}}</a>
       <p class="beer-style" *ngIf="beer.style!=null">{{beer.style.shortName}}</p>
       <p *ngIf="beer.description">
         <read-more [text]="beer.description" [maxLength]="100"></read-more>

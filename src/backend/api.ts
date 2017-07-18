@@ -222,6 +222,24 @@ export function createBreweryDbApi() {
       });  
     });
 
+  router.route('/brewery_beers/:brewery_id')
+    .get(function(req, res) {
+      console.log('GET Brewery Beers',req.params.brewery_id);
+      
+      request(breweryDBURL 
+        +'brewery/' 
+        + req.params.brewery_id
+        + '/beers?withBreweries=Y&key=' + breweryDBAPI, function (error, response, body) {
+
+        if (response === undefined) {
+          var dbResp = {data:[],error:true,msg:"Brewery API Down"};
+          res.json(dbResp);          
+        } else {
+          res.json(JSON.parse(response.body));          
+        }
+      });  
+    });
+
   router.route('/todos')
     .get(function(req, res) {
       console.log('GET');

@@ -48,6 +48,10 @@
     padding-top:2rem;
 }
 
+#brewery-description {
+    padding-top:2rem;
+}
+
 .brew-thumb {
     padding:5px;
     cursor: pointer;
@@ -56,4 +60,17 @@
 #beer-logo {
     margin-top:1rem;
     margin-bottom:1rem;
+}
+
+app-rating {
+    margin-bottom:1rem;
+}
+
+h2 {
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+h4>i {
+    margin-right:1rem;
 }

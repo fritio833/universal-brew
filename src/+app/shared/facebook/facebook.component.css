@@ -50,3 +50,15 @@
     width: 15rem;
 }
 
+
+.btn-facebook {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: #3b5998;
+}
+
+.btn-facebook:hover {
+    color: #fff;
+    background-color: #2a4887;
+    border-color: #2a4887;
+}

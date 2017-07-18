@@ -1,0 +1,61 @@
+<app-search id="search-box"></app-search>
+
+<div class="text-center loader" *ngIf="showLoader">
+  <app-loader></app-loader>
+</div>
+
+<div id="beer-detail" class="container" *ngIf="!showLoader">
+  <div class="row">
+    <div class="col-md-3 beer-img text-center">
+      <div>
+        <img id="beer-logo" *ngIf="brewery.images!=null" [src]="brewery.images.squareMedium" />
+      </div>
+      <app-facebook [url]="pageURL"></app-facebook>
+    </div>
+    <div class="col-md-6 beer-img text-left">
+      <h2>{{brewery.name}}</h2>
+      <h5 id="brewery-info">
+        <span *ngIf="breweryBeers.length"><i class="fa fa-caret-right"></i>{{breweryBeers.length}} Beers</span>
+        <span *ngIf="brewery.established"><i class="fa fa-caret-right"></i>Established {{brewery.established}}</span>
+      </h5>
+      <div>
+        <span>
+          <a class="social-btns" *ngIf="brewery.website" class="btn btn-warning" target="_blank" [href]="brewery.website" role="button">
+            <i class="fa fa-globe"></i> 
+            View Website
+          </a>
+        </span>      
+        <span class="social-btns" *ngFor="let social of brewery.socialAccounts">
+
+          <a *ngIf="social.socialMediaId == 1" class="btn btn-warning" target="_blank" [href]="social.link" role="button">
+            <i class="fa fa-facebook"></i> 
+            Facebook
+          </a>
+          <a *ngIf="social.socialMediaId == 2" class="btn btn-warning" target="_blank" [href]="social.link" role="button">
+            <i class="fa fa-twitter"></i> 
+            Twitter
+          </a>                                     
+        </span>
+      </div>
+      <div *ngFor="let beer of breweryBeers">
+        <beer-block [beer]="beer" [brewery]="brewery"></beer-block>
+      </div>
+      <div id="get-more" *ngIf="showMoreBeers" class="text-center">
+        <button class="btn btn-warning btn-block" (click)="getMoreBeers()">View More</button>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div id="brewery-locations" class="alert alert-warning">
+        <h4>Locations</h4>
+        <div *ngFor="let location of brewery.locations">
+          <p>
+            <a class="city" [routerLink]="['/b',common.paramSEOFriendly(brewery.name),location.id]">
+              {{location.locality}}, {{location.region}}
+            </a>
+          </p>
+          <p>{{location.locationTypeDisplay}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

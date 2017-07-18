@@ -1,0 +1,29 @@
+  <div id="brewery-beers" class="row beer-row">
+    <div class="col-md-2">
+      <a [routerLink]="['/beer',_beer.id]">
+        <img *ngIf="_beer.labels" [src]="_beer.labels.icon" />
+      </a>
+    </div>
+    <div class="col-md-10 text-left">
+      <h4><a [routerLink]="['/beer',common.paramSEOFriendly(_brewery.name+' '+_beer.name),_beer.id]">{{_beer.nameDisplay}}</a></h4>
+      <h5 *ngIf="_beer.style">{{_beer.style.shortName}}</h5>
+      <p *ngIf="_beer.description">
+        <read-more [text]="_beer.description" [maxLength]="100"></read-more>
+      </p>
+      <div>
+        <span *ngIf="_beer.abv">
+          <i class="fa fa-caret-right"></i>{{_beer.abv}}% ABV
+        </span>
+        <span *ngIf="!_beer.abv">
+          <i class="fa fa-caret-right"></i>N/A ABV
+        </span>            
+        <span *ngIf="_beer.ibu">
+          <i class="fa fa-caret-right"></i>{{_beer.ibu}} IBU
+        </span>
+        <span *ngIf="!_beer.ibu">
+          <i class="fa fa-caret-right"></i>N/A IBU
+        </span>            
+        <span><i class="fa fa-caret-right"></i>Added {{common.dateFriendly(_beer.createDate)}}</span>
+      </div>
+    </div>         
+  </div>

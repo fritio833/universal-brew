@@ -18,7 +18,7 @@
           </a>
         </div>
         <div *ngIf="breweryBeers">
-          <a class="btn btn-warning" role="button">
+          <a class="btn btn-warning" [routerLink]="['/beer-list',brewery.id,common.paramSEOFriendly(brewery.name),'beers']" role="button">
             <i class="fa fa-beer"></i> 
             Beer List
           </a>
@@ -50,7 +50,7 @@
           <span *ngIf="brewery.brandClassification"><i class="fa fa-caret-right"></i>{{brewery.brandClassification}} brewery</span>
           <span *ngIf="breweryBeers">
             <i class="fa fa-caret-right"></i>
-            <a>
+            <a [routerLink]="['/beer-list',brewery.id,common.paramSEOFriendly(brewery.name),'beers']">
              {{breweryBeers.length}} Beers
             </a>
           </span>
@@ -106,14 +106,21 @@
         </div>
       </div>
       -->
+      <div id="brewery-description" *ngIf="brewery.description">        
+        <h4><i class="fa fa-info-circle"></i>{{brewery.nameShortDisplay}} Description</h4>
+        <hr />        
+        <p>
+          <read-more [text]="brewery.description" [maxLength]="300"></read-more>
+        </p>
+      </div>      
       <div id="brewery-reviews" *ngIf="locationReviews" class="col-md-12">
-          <h4>{{brewery.nameShortDisplay}} Reviews</h4>
+          <h4><i class="fa fa-comments"></i>{{brewery.nameShortDisplay}} Reviews</h4>
           <div class="row alert alert-warning" *ngFor="let review of locationReviews">
             <hr />
-            <div class="col-md-1">
+            <div class="col-md-2 text-center">
               <img [src]="review.profile_photo_url" class="rounded-circle review-avatar" />
             </div>
-            <div class="col-md-11">
+            <div class="col-md-10">
               <p *ngIf="review.rating">
                 <app-rating [rate]="review.rating"></app-rating>
               </p>
@@ -144,13 +151,6 @@
       </div>
       -->      
       <!-- <h4>{{brewery.nameShortDisplay}}'s Beer List</h4> -->
-      <div *ngIf="brewery.description">        
-        <h4>{{brewery.nameShortDisplay}} Description</h4>
-        <hr />        
-        <p>
-          <read-more [text]="brewery.description" [maxLength]="200"></read-more>
-        </p>
-      </div>
     </div>
   </div>
 </div>

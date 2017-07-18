@@ -19,7 +19,7 @@
           </a>
         </div>
         <div *ngIf="breweryBeers">
-          <a class="btn btn-warning" role="button">
+          <a class="btn btn-warning" [routerLink]="['/beer-list',breweryPrimary.id,common.paramSEOFriendly(brewery.brewery.name),'beers']" role="button">
             <i class="fa fa-beer"></i> 
             Beer List
           </a>
@@ -45,6 +45,7 @@
     <div class="col-md-9">
       <div class="text-center">
         <h2>{{brewery.brewery.name}}</h2>
+        <h5 *ngIf="brewery.locationTypeDisplay">{{brewery.locationTypeDisplay}}</h5>
         <app-rating *ngIf="location.rating" [rate]="location.rating"></app-rating>
       </div>
       <div class="alert alert-warning beer-info">
@@ -53,7 +54,7 @@
           <span *ngIf="breweryPrimary.established != null"><i class="fa fa-caret-right"></i>Established {{breweryPrimary.established}}</span>
           <span *ngIf="breweryBeers.length">
             <i class="fa fa-caret-right"></i>
-            <a>
+            <a [routerLink]="['/beer-list',breweryPrimary.id,common.paramSEOFriendly(brewery.brewery.name),'beers']">
              {{breweryBeers.length}} Beers
             </a>
           </span>          
@@ -85,14 +86,28 @@
           </div>
         </div>
       </div>
+      <div *ngIf="brewery.hoursOfOperation">    
+        <h4><i class="fa fa-clock-o"></i>{{brewery.brewery.nameShortDisplay}} Hours of Operation</h4>
+        <hr />
+        <div class="alert alert-warning">
+            {{brewery.hoursOfOperation}}
+        </div>
+      </div>      
+      <div *ngIf="breweryPrimary.description">        
+        <h4><i class="fa fa-info-circle"></i>{{brewery.brewery.nameShortDisplay}} Description</h4>
+        <hr />        
+        <div>
+          <read-more [text]="breweryPrimary.description" [maxLength]="300"></read-more>
+        </div>
+      </div>      
       <div id="brewery-reviews" *ngIf="locationReviews" class="col-md-12">
-          <h4>{{brewery.brewery.nameShortDisplay}} Reviews</h4>
+          <h4><i class="fa fa-comments"></i>{{brewery.brewery.nameShortDisplay}} Reviews</h4>
           <hr />
           <div class="row alert alert-warning" *ngFor="let review of locationReviews">           
-            <div class="col-md-1">
+            <div class="col-md-2 text-center">
               <img [src]="review.profile_photo_url" class="rounded-circle review-avatar" />
             </div>
-            <div class="col-md-11">
+            <div class="col-md-10">
               <p *ngIf="review.rating">
                 <app-rating [rate]="review.rating"></app-rating>
               </p>
@@ -106,24 +121,10 @@
             </div>            
           </div>
       </div>
-      <div *ngIf="brewery.hoursOfOperation">    
-        <h4>{{brewery.brewery.nameShortDisplay}} Hours of Operation</h4>
-        <hr />
-        <div class="alert alert-warning">
-            {{brewery.hoursOfOperation}}
-        </div>
-      </div>      
-      <div *ngIf="breweryPrimary.description">        
-        <h4>{{brewery.brewery.nameShortDisplay}} Description</h4>
-        <hr />        
-        <div>
-          <read-more [text]="breweryPrimary.description" [maxLength]="200"></read-more>
-        </div>
-      </div>
       <div>        
-        <h4>Brewery Map</h4>
+        <h4><i class="fa fa-map"></i>Brewery Map</h4>
         <hr />
-        <div class="row">
+        <div class="row" id="map-area">
           <div class="text-center col-md-7">   
             <static-map [lat]="brewery.latitude" 
                         [lng]="brewery.longitude"
@@ -132,8 +133,9 @@
                         [zoom]="14">
             </static-map>
           </div>
-          <div id="static-map" class="text-center col-md-5">   
-            <h5>{{brewery.streetAddress}}</h5>
+          <div id="static-map" class="text-center col-md-5">
+            <h5>{{brewery.locationTypeDisplay}}</h5>  
+            <p><b>{{brewery.streetAddress}}</b></p>
             <p>{{brewery.locality}}, {{brewery.region}}</p>
             <a class="btn btn-warning" target="_blank" [href]="common.getToGoogleMapsUrl(brewery.latitude,brewery.longitude)" role="button">Get Directions</a>
           </div>
