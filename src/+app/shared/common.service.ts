@@ -39,6 +39,10 @@ export class CommonService {
 
   }
 
+  getToGoogleMapsUrl(lat,lng) {
+    return 'http://maps.google.com/?q='+lat+','+lng;    
+  }
+
   getGoogleImg(photo_ref,width?) {
     var _width = 500;
     if (width==null)

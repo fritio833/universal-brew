@@ -10,6 +10,9 @@
     border: 1px solid rgba(0,0,0,.25);
 }
 
+#static-map {
+    padding-top:2rem;
+}
 
 .beer-info span {
    padding-left:1.5rem;
@@ -53,7 +56,20 @@
     cursor: pointer;
 }
 
+h4 {
+    margin-top:2rem;
+}
+
+h2 {
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
 #beer-logo {
     margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+app-rating {
     margin-bottom:1rem;
 }

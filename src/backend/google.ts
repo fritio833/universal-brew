@@ -106,7 +106,35 @@ export function googlePlacesApi() {
             }).on('error', function(e) {
                 console.log("Got error: " + e.message);
             });
-        });        
+        });
+
+
+    router.route('/city_auto/:city_name')
+        .get(function(req, res) {
+
+            var url = googlePlacesURL + 'autocomplete/json?input='
+            + req.params.city_name + "&country=us" 
+            + '&types=(cities)&key='+googlePlacesAPIKey;
+            
+
+            https.get(url,function(response) {
+
+                var body ='';
+                response.on('data', function(chunk) {
+                body += chunk;
+                });
+
+                response.on('end', function() {
+                    var _places = JSON.parse(body);
+                    //console.log(places)
+                    res.json(_places);
+                });
+            }).on('error', function(e) {
+                console.log("Got error: " + e.message);
+            });
+
+        });
+
 
         function getGoogleImg(photo_ref) {
             

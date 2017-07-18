@@ -2,6 +2,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+//import { AgmCoreModule } from '@agm/core';
 
 import { ApiService } from './api.service';
 import { ModelService } from './model/model.service';
@@ -15,6 +16,7 @@ import { PaginationComponent } from './pagination/pagination.component';
 import { FacebookComponent } from './facebook/facebook.component';
 import { LoaderComponent } from './loader/loader.component';
 import { RatingComponent } from './rating/rating.component';
+import { StaticMapComponent } from './static-map/static-map.component';
 
 const MODULES = [
   // Do NOT include UniversalModule, HttpModule, or JsonpModule here
@@ -22,6 +24,11 @@ const MODULES = [
   RouterModule,
   FormsModule,
   ReactiveFormsModule
+  /*,
+  AgmCoreModule.forRoot({
+    apiKey: 'AIzaSyAKs0BGHgtV5I--IvIwsGkD3c_EFV0yXtY'
+  })
+  */   
 ];
 
 const PIPES = [
@@ -37,7 +44,8 @@ const COMPONENTS = [
   ReadMoreComponent,
   FacebookComponent,
   LoaderComponent,
-  RatingComponent
+  RatingComponent,
+  StaticMapComponent
 ];
 
 const PROVIDERS = [

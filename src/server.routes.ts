@@ -22,5 +22,6 @@ export const routes: string[] = [
   'beers',
   'beer',
   'brewery',
-  'breweries'
+  'breweries',
+  'b'
 ];

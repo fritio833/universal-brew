@@ -6,6 +6,7 @@ import { BreweryResultsComponent } from './brewery-results.component';
 @NgModule({
   imports: [
     RouterModule.forChild([
+      { path: 'breweries/:locationKey',component: BreweryResultsComponent},
       { path: 'breweries', component: BreweryResultsComponent }
     ])
   ]

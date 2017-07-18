@@ -19,6 +19,9 @@ declare var $:any;
 
 export class BreweryResultsComponent {
   qBrewery:string;
+  qLocation:string;
+  lat:number;
+  lng:number;
   data: any = {};
   subscription:Subscription;
   isLocationSearch:boolean = false;
@@ -42,18 +45,29 @@ export class BreweryResultsComponent {
     
     this.subscription = this.route.queryParams.subscribe((queryParam:any)=>{
       this.qBrewery = queryParam['q'];
-      
-      this.showLoader = true;
-      this.msg = null;
-      if (queryParam['p'] == null) {
-        this.currentPage = 1;
-        this.isLocationSearch = false;
-      } else
-        this.currentPage = queryParam['p'];
 
-      this.getBreweries(this.qBrewery,this.currentPage);
-      
-    });    
+      if (this.qBrewery!=null) {
+        this.showLoader = true;
+        this.msg = null;
+        if (queryParam['p'] == null) {
+          this.currentPage = 1;
+          this.isLocationSearch = false;
+        } else
+          this.currentPage = queryParam['p'];
+
+        this.getBreweriesByName(this.qBrewery,this.currentPage);
+      }
+    });
+
+    this.route.params.subscribe((params:any)=>{
+
+      var locationKey = params['locationKey'];
+
+      if (locationKey != null) {
+        this.isLocationSearch = true;
+        this.getBreweriesByLocation(params['locationKey']);
+      }
+    });  
   }
 
   setMeta() {
@@ -117,7 +131,47 @@ export class BreweryResultsComponent {
     });    
   }  
 
-  getBreweries(breweryName,page?) {
+  getBreweriesByLocation(location) {
+    let locKey = location.replace(/\-/g,", ");
+    this.qLocation = locKey;
+
+    this.model.get('/google/city_auto/'+locKey).subscribe(resp=>{
+      if (resp.predictions.length) {
+        this.model.get('/google/place_by_id/'+resp.predictions[0].place_id).subscribe(place=>{
+          //console.log('place',place);
+          this.lat = place.geometry.location.lat;
+          this.lng = place.geometry.location.lng;
+          //console.log('lat lng',this.lat+ ' - '+this.lng);
+          this.model.get('/api/brewery_by_location/'+this.lat+'/'+this.lng).subscribe(breweries=>{
+            console.log('api',breweries);
+            if (!breweries.totalResults) {
+              this.msg = "No breweries in "+this.qLocation+".";
+              this.breweries = [];
+            } else {
+              this.msg = null;
+              this.breweries = [];
+              //this.breweries = breweries.data;
+              for (var i = 0; i < breweries.data.length; i++) {
+                breweries.data[i].brewery.type = breweries.data[i].locationTypeDisplay;
+                breweries.data[i].brewery.locId = breweries.data[i].id;
+                breweries.data[i].brewery.locality = breweries.data[i].locality;
+                breweries.data[i].brewery.region = breweries.data[i].region;
+                this.breweries.push(breweries.data[i].brewery);
+              }
+              this.numPages = breweries.numberOfPages;
+              this.totalResults = breweries.totalResults;
+              this.showLoader = false;              
+              console.log('this.breweries',this.breweries);
+            }          
+          });
+        });
+      }
+    },error=>{
+      console.log(error);
+    });
+  }
+
+  getBreweriesByName(breweryName,page?) {
 
     var _page = '';
 

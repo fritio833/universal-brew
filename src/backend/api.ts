@@ -156,6 +156,53 @@ export function createBreweryDbApi() {
 
     });
 
+  router.route('/brewery_by_location/:lat/:lng')
+    .get(function(req, res) {
+      //console.log('lat',req.params.lat);
+      //console.log('lng',req.params.lng);
+
+      /*
+      var _page = ''
+
+      if (req.query.p !== undefined) {
+        _page = '&p='+req.query.p; 
+      }
+
+      */           
+      request(breweryDBURL
+          + 'search/geo/point?lat='
+          + req.params.lat
+          + '&lng='
+          + req.params.lng
+          + "&radius=25" 
+          + '&key='+breweryDBAPI, function (error, response, body) {
+
+        if (response === undefined) {
+          var dbResp = {data:[],error:true,msg:"Brewery API Down"};
+          res.json(dbResp);          
+        } else {
+          res.json(JSON.parse(response.body));          
+        }
+      });       
+    });
+
+  router.route('/brewery_location/:location_id')
+    .get(function(req, res) {
+      console.log('GET Brewery Loc',req.params.location_id);
+      
+      request(breweryDBURL 
+        +'location/' 
+        + req.params.location_id
+        + '/?key=' + breweryDBAPI, function (error, response, body) {
+        if (response === undefined) {
+          var dbResp = {data:[],error:true,msg:"Brewery API Down"};
+          res.json(dbResp);          
+        } else {
+          res.json(JSON.parse(response.body));          
+        }
+      });  
+    });
+
   router.route('/brewery_detail/:brewery_id')
     .get(function(req, res) {
       console.log('GET Brewery',req.params);

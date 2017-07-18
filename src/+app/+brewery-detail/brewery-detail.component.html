@@ -72,7 +72,7 @@
             <!-- <td class="text-center">{{loc.openToPublic}}</td>-->
             <td><a>{{loc.locality}}, {{loc.region}} {{loc.country.isoCode}}</a></td>
             <td>
-              <a class="btn btn-warning" role="button">
+              <a class="btn btn-warning" [routerLink]="['/b',common.paramSEOFriendly(brewery.name),loc.id]" role="button">
                 View
               </a>              
             </td>
@@ -108,7 +108,7 @@
       -->
       <div id="brewery-reviews" *ngIf="locationReviews" class="col-md-12">
           <h4>{{brewery.nameShortDisplay}} Reviews</h4>
-          <div class="row" *ngFor="let review of locationReviews">
+          <div class="row alert alert-warning" *ngFor="let review of locationReviews">
             <hr />
             <div class="col-md-1">
               <img [src]="review.profile_photo_url" class="rounded-circle review-avatar" />
@@ -145,10 +145,10 @@
       -->      
       <!-- <h4>{{brewery.nameShortDisplay}}'s Beer List</h4> -->
       <div *ngIf="brewery.description">        
-        <h4>Description</h4>
+        <h4>{{brewery.nameShortDisplay}} Description</h4>
         <hr />        
         <p>
-          {{brewery.description}}
+          <read-more [text]="brewery.description" [maxLength]="200"></read-more>
         </p>
       </div>
     </div>

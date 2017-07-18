@@ -37,6 +37,7 @@
     "Mark Pieszak <mpieszak84@gmail.com>"
   ],
   "dependencies": {
+    "@agm/core": "^1.0.0-beta.0",
     "@angular/common": "~2.1.2",
     "@angular/compiler": "~2.1.2",
     "@angular/compiler-cli": "~2.1.2",

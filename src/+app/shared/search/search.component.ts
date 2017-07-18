@@ -1,6 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy, ViewEncapsulation  } from '@angular/core';
 import { Router } from '@angular/router';
 import { GoogleService} from '../google.service';
+import { ModelService } from '../model/model.service';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.Default,
@@ -27,7 +28,7 @@ export class SearchComponent implements OnInit {
   public geoBar:any;
   public qName = "";
 
-  constructor(public router:Router,public geo:GoogleService) {}
+  constructor(public router:Router,public geo:GoogleService,public model:ModelService) {}
 
   ngOnInit() {
     //console.log('router',this.router);
@@ -68,13 +69,18 @@ export class SearchComponent implements OnInit {
       }
 
       if (this.breweryOption == 'city') {
+        this.router.navigate(['breweries/'+this.geoBrewery.terms[0].value+'-'+this.geoBrewery.terms[1].value]);        
+      }
+      
+      /*
+      if (this.breweryOption == 'city') {
         this.router.navigate(['breweries/'
                              +this.geoBrewery.terms[0].value
                              +'/'+this.geoBrewery.terms[1].value
                              +'/'+this.geoBrewery.place_id]);
         
       }
-
+      */
     }    
   }
 
@@ -152,8 +158,16 @@ export class SearchComponent implements OnInit {
   }
 
   getBrewerySearchInput(inputVal) {
-    //console.log('event',event);
+
     if (this.searchOption == "city" && inputVal.length > 2) {
+
+      this.model.get('/google/city_auto/'+inputVal).subscribe(resp=>{
+        console.log('resp',resp);
+        this.cityPredictions = resp.predictions;
+      },error=>{
+        console.log(error);
+      });
+      /*
       this.geo.cityAutoComplete(inputVal).subscribe(resp=>{
         
         this.cityPredictions = resp.predictions;
@@ -161,6 +175,7 @@ export class SearchComponent implements OnInit {
       },error=>{
         console.log('error',error);
       });
+      */
     }
   }
 

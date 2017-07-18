@@ -14,6 +14,7 @@ import { BeerResultsModule } from './+beer-results/beer-results.module';
 import { BeerDetailModule } from './+beer-detail/beer-detail.module';
 import { BreweryResultsModule } from './+brewery-results/brewery-results.module';
 import { BreweryDetailModule } from './+brewery-detail/brewery-detail.module';
+import { BreweryLocationModule } from './+brewery-location/brewery-location.module';
 
 import { SharedModule } from './shared/shared.module';
 
@@ -40,7 +41,8 @@ import { AppComponent, XLargeDirective } from './app.component';
     BeerResultsModule,
     BeerDetailModule,
     BreweryResultsModule,
-    BreweryDetailModule
+    BreweryDetailModule,
+    BreweryLocationModule
   ]
 })
 

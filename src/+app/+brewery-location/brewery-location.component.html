@@ -1,0 +1,144 @@
+
+<app-search id="search-box"></app-search>
+
+<div class="text-center loader" *ngIf="showLoader">
+  <app-loader></app-loader>
+</div>
+
+<div id="brewery-detail" class="container" *ngIf="!showLoader">
+  <div class="row">
+    <div class="col-md-3 beer-img text-center">  
+      <img id="beer-logo" *ngIf="brewery.brewery.images" [src]="brewery.brewery.images.squareMedium" />
+      <img id="beer-logo" *ngIf="!brewery.brewery.images" src="assets/images/no-beer.jpg" />
+      <div id="social-media">
+        <app-facebook [url]="pageURL"></app-facebook>
+        <div *ngIf="brewery.website">
+          <a class="btn btn-warning" target="_blank" [href]="brewery.website" role="button">
+            <i class="fa fa-globe"></i> 
+            View Website
+          </a>
+        </div>
+        <div *ngIf="breweryBeers">
+          <a class="btn btn-warning" role="button">
+            <i class="fa fa-beer"></i> 
+            Beer List
+          </a>
+        </div>       
+        <div *ngFor="let social of brewery.socialAccounts">
+          <a *ngIf="social.socialMediaId == 1" class="btn btn-warning" target="_blank" [href]="social.link" role="button">
+            <i class="fa fa-facebook"></i> 
+            Facebook
+          </a>
+          <a *ngIf="social.socialMediaId == 2" class="btn btn-warning" target="_blank" [href]="social.link" role="button">
+            <i class="fa fa-twitter"></i> 
+            Twitter
+          </a>                              
+        </div>
+        <div *ngIf="brewery.phone">
+          <a class="btn btn-warning" role="button">
+            <i class="fa fa-mobile"></i> 
+            {{brewery.phone}}
+          </a>          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="text-center">
+        <h2>{{brewery.brewery.name}}</h2>
+        <app-rating *ngIf="location.rating" [rate]="location.rating"></app-rating>
+      </div>
+      <div class="alert alert-warning beer-info">
+        <strong>Brewery Location Info</strong>
+        <div>
+          <span *ngIf="breweryPrimary.established != null"><i class="fa fa-caret-right"></i>Established {{breweryPrimary.established}}</span>
+          <span *ngIf="breweryBeers.length">
+            <i class="fa fa-caret-right"></i>
+            <a>
+             {{breweryBeers.length}} Beers
+            </a>
+          </span>          
+          <span *ngIf="breweryPrimary.isOrganic == 'Y'"><i class="fa fa-caret-right"></i>Organic Brewery</span>
+          <span *ngIf="breweryPrimary.isMassOwned == 'Y'"><i class="fa fa-caret-right"></i>Mass Owned</span>
+          <span *ngIf="breweryPrimary.brandClassification != null"><i class="fa fa-caret-right"></i>{{breweryPrimary.brandClassification}} brewery</span>
+          
+          <span *ngIf="brewery.inPlanning =='Y'"><i class="fa fa-caret-right"></i>Planning Phase</span>
+          <span *ngIf="brewery.isClosed == 'Y'"><i class="fa fa-caret-right"></i>Currently Closed</span>
+          <span *ngIf="brewery.isPrimary == 'Y'"><i class="fa fa-caret-right"></i>Primary Location</span>
+          <span *ngIf="brewery.openToPublic == 'Y'"><i class="fa fa-caret-right"></i>Open to Public</span>
+          <span *ngIf="brewery.locationTypeDisplay"><i class="fa fa-caret-right"></i>Type: {{brewery.locationTypeDisplay}}</span>
+          <span *ngIf="brewery.yearOpened"><i class="fa fa-caret-right"></i>Opened in {{brewery.yearOpened}}</span>
+          <span *ngIf="brewery.statusDisplay"><i class="fa fa-caret-right"></i>{{brewery.statusDisplay}} Brewery</span>  
+        </div>
+        <div>
+          <span><i class="fa fa-caret-right"></i>Location:{{brewery.locality}}, {{brewery.region}} {{brewery.countryIsoCode}}</span>
+        </div>         
+      </div>      
+      <div *ngIf="locationPhotos.length" class="text-center">
+        <div class="row">
+          <div class="col-md-7">
+            <img [src]="locationPrimaryPhoto" width="100%" />
+          </div>
+          <div class="col-md-5">
+            <span *ngFor="let thumb of locationPhotoThumbs" (click)="setPhoto(thumb.refId)">
+              <img class="brew-thumb" [src]="thumb.src" width="75" height="75px" />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="brewery-reviews" *ngIf="locationReviews" class="col-md-12">
+          <h4>{{brewery.brewery.nameShortDisplay}} Reviews</h4>
+          <hr />
+          <div class="row alert alert-warning" *ngFor="let review of locationReviews">           
+            <div class="col-md-1">
+              <img [src]="review.profile_photo_url" class="rounded-circle review-avatar" />
+            </div>
+            <div class="col-md-11">
+              <p *ngIf="review.rating">
+                <app-rating [rate]="review.rating"></app-rating>
+              </p>
+              <p *ngIf="review.text">
+                <b>{{review.author_name}} said:</b>
+                {{review.text}}
+              </p>
+              <p class="text-right">
+               {{common.timeConverter(review.time)}}
+              </p>
+            </div>            
+          </div>
+      </div>
+      <div *ngIf="brewery.hoursOfOperation">    
+        <h4>{{brewery.brewery.nameShortDisplay}} Hours of Operation</h4>
+        <hr />
+        <div class="alert alert-warning">
+            {{brewery.hoursOfOperation}}
+        </div>
+      </div>      
+      <div *ngIf="breweryPrimary.description">        
+        <h4>{{brewery.brewery.nameShortDisplay}} Description</h4>
+        <hr />        
+        <div>
+          <read-more [text]="breweryPrimary.description" [maxLength]="200"></read-more>
+        </div>
+      </div>
+      <div>        
+        <h4>Brewery Map</h4>
+        <hr />
+        <div class="row">
+          <div class="text-center col-md-7">   
+            <static-map [lat]="brewery.latitude" 
+                        [lng]="brewery.longitude"
+                        [width]="420"
+                        [height]="300"
+                        [zoom]="14">
+            </static-map>
+          </div>
+          <div id="static-map" class="text-center col-md-5">   
+            <h5>{{brewery.streetAddress}}</h5>
+            <p>{{brewery.locality}}, {{brewery.region}}</p>
+            <a class="btn btn-warning" target="_blank" [href]="common.getToGoogleMapsUrl(brewery.latitude,brewery.longitude)" role="button">Get Directions</a>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>
+</div>

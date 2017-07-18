@@ -32,10 +32,13 @@
     </div>
     <div class="col-md-8">
       <a *ngIf="!isLocationSearch" class="brewery-header" [routerLink]="['/brewery',common.paramSEOFriendly(brewery.name),brewery.id]">{{brewery.name}}</a>
-      <a *ngIf="isLocationSearch" class="brewery-header">{{brewery.name}}</a>
+      <a *ngIf="isLocationSearch" class="brewery-header" [routerLink]="['/b',common.paramSEOFriendly(brewery.name),brewery.locId]">{{brewery.name}}</a>
       <h5 *ngIf="brewery.locations">
         {{brewery.locations[0].locality}}, {{brewery.locations[0].region}}
       </h5>
+      <h5 *ngIf="isLocationSearch">
+        {{brewery.locality}}, {{brewery.region}}
+      </h5>      
       <p>{{brewery.type}}</p>
     </div>
   </div>
