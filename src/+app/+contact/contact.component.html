@@ -6,38 +6,47 @@
         If you have any questions, suggestions, want to advertise, report a bug, or have questions
         about our App, please let us know.
       </div>
+      <div class="alert alert-danger"  *ngIf="notifyEmailStatus" role="alert">
+        <h4><i class="fa fa-frown-o"></i> Uh-Oh!</h4>
+        <p>{{notifyEmailStatus}}</p>
+      </div>      
     </div>
     <div class="col-md-7">
-        <form action="#" method="#">
-            <div class="panel panel-info">
-              <div class="panel-heading" id="panel-heading">
-                  <h2 class="titre">Contact Us</h2>
-              </div>
-              <div class="panel-body">
-                  <form class="form" method="post">
-                      <div class="form-group has-info">
-                          <div class="input-group">
-                              <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                              <label for="name" class="sr-only"></label>
-                              <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" required/><br/>
-                          </div>
-                      </div>                          
-                      <div class="form-group has-info">
-                          <div class="input-group">
-                              <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
-                              <label for="email" class="sr-only"></label>
-                              <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required/><br/>
-                          </div>
-                      </div>
-                      <div class="form-group has-info">
-                          <textarea class="form-control" id="exampleTextarea" rows="6" placeholder="Message"></textarea>
-                      </div>
-                      <span id="clear"></span>
-                      <button type="submit" class="btn btn-warning btn-lg btn-block" >Submit</button><br/>
-                  </form>
-              </div>
+        <div *ngIf="formSubmitted" class="alert alert-success" role="alert">
+            <h4><i class="fa fa-hand-o-right"></i> Email Sent!</h4>
+            <p>Thanks for your input. We will contact you shortly.</p>
+        </div>
+        <div *ngIf="!formSubmitted" class="panel panel-info">
+            <div class="panel-heading" id="panel-heading">
+                <h2 class="titre">Contact Us</h2>
             </div>
-        </form>       
+            <div class="panel-body">
+                <form #f="ngForm" class="form" (ngSubmit)="sendEmail()">
+                    <div class="form-group has-info">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                            <label for="name" class="sr-only"></label>
+                            <input type="text" class="form-control" name="contactName" id="name"[(ngModel)]="data.contactName" placeholder="Enter Name" required/><br/>
+                        </div>
+                    </div>                          
+                    <div class="form-group has-info">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
+                            <label for="email" class="sr-only"></label>
+                            <input type="email" class="form-control" id="email" name="contactEmail" [(ngModel)]="data.contactEmail" placeholder="Enter Email" required/><br/>
+                        </div>
+                    </div>
+                    <div class="form-group has-info">
+                        <textarea class="form-control" id="exampleTextarea" rows="6" name="contactMessage" [(ngModel)]="data.contactMessage" placeholder="Message" required></textarea>
+                    </div>
+                    <span id="clear"></span>
+                    <button *ngIf="!showLoader" type="submit" class="btn btn-warning btn-lg btn-block" >Submit</button><br/>
+                    <div *ngIf="showLoader" class="text-center">
+                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                    </div>
+                </form>
+            </div>
+        </div>     
     </div>    
   </div>
 </div>

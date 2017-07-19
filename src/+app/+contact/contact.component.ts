@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
-
+import { Http, Headers } from '@angular/http';
 import { ModelService } from '../shared/model/model.service';
 import { Meta } from '../../angular2-meta';
 import { CommonService } from '../shared/common.service';
@@ -12,9 +12,50 @@ import { CommonService } from '../shared/common.service';
   templateUrl: './contact.component.html'
 })
 export class ContactComponent {
-  data: any = {};
-  constructor(public model: ModelService, public meta:Meta, public common:CommonService) {
+
+  data: any = {
+    contactEmail:'',
+    contactName:'',
+    contactMessage:''  
+  };
+
+  formSubmitted:boolean = false;
+  notifyEmailStatus:string = null;
+  showLoader:boolean = false;
+
+  constructor(public model: ModelService, public meta:Meta, public http:Http, public common:CommonService) {
     this.getMeta();
+  }
+
+  sendEmail() {
+      this.showLoader = true;
+      this.notifyEmailStatus = null;
+      const headers = new Headers({
+          'Content-Type' : 'application/json'
+      });
+
+      this.http.post("https://formspree.io/frito833@gmail.com", 
+          {
+              name: this.data.contactName,
+              _replyto: this.data.contactEmail,
+              message: this.data.contactMessage
+          },
+          {
+              'headers' : headers
+          }
+      ).subscribe(resp=>{
+        console.log('resp',resp);
+        if (resp.ok) {
+            this.formSubmitted = true;
+            this.notifyEmailStatus = null;
+        } else {
+          this.notifyEmailStatus = "Problems sending email.  Please try again.";
+        }
+        this.showLoader = false;
+      },error=>{
+        console.log(error);
+        this.showLoader = false;
+      });    
   }
 
   getMeta() {
