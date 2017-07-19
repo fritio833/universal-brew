@@ -18,7 +18,7 @@
             View Website
           </a>
         </div>
-        <div *ngIf="breweryBeers">
+        <div *ngIf="breweryBeers.length">
           <a class="btn btn-warning" [routerLink]="['/beer-list',breweryPrimary.id,common.paramSEOFriendly(brewery.brewery.name),'beers']" role="button">
             <i class="fa fa-beer"></i> 
             Beer List
@@ -73,7 +73,7 @@
         <div>
           <span><i class="fa fa-caret-right"></i>Location:{{brewery.locality}}, {{brewery.region}} {{brewery.countryIsoCode}}</span>
         </div>         
-      </div>      
+      </div>     
       <div *ngIf="locationPhotos.length" class="text-center">
         <div class="row">
           <div class="col-md-7">

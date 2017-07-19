@@ -67,10 +67,12 @@ app.use(cacheControl, express.static(path.join(ROOT, 'dist/client'), {index: fal
 //import { serverApi, createBreweryDbApi } from './backend/api';
 import { createBreweryDbApi } from './backend/api';
 import { googlePlacesApi } from './backend/google';
+import { firebaseApi } from './backend/firebase';
 // Our API for demos only
 //app.get('/data.json', serverApi);
 app.use('/api', createBreweryDbApi());
 app.use('/google', googlePlacesApi());
+app.use('/firebase', firebaseApi());
 
 process.on('uncaughtException', function (err) { 
   console.error('Catching uncaught errors to avoid process crash', err);

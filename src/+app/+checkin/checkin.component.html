@@ -1,0 +1,133 @@
+<div class="text-center loader" *ngIf="showLoader">
+  <app-loader></app-loader>
+</div>
+
+<div id="checkin-well" class="container card" *ngIf="!showLoader">
+  <div class="row">
+    <div id="user-area" class="col-md-12 text-center">
+      <div class="alert alert-success">
+        <i id="check-circle" class="fa fa-check-circle fa-4x"></i>
+        <span>
+            <img *ngIf="user.photo !=''" [src]="user.photo" class="rounded-circle avatar" />
+        </span>
+        <span id="card-header">
+            {{user.name}}
+        </span>
+        <span>
+          checked in {{common.timeDifference(checkin.dateCreated)}}
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+        <div class="info-label">
+            <h4 class="head-label"><i class="fa fa-beer"></i> Beer Info</h4>
+            <hr />
+        </div>
+        <div id="beer-info-area" class="alert alert-warning">
+            <div class="text-center">
+                <div>
+                    <a [routerLink]="['/beer',common.paramSEOFriendly(checkin.breweryName+' '+checkin.beerName),checkin.beerId]">
+                        <img id="check-img" *ngIf="checkin.beerIMG" [src]="checkin.beerIMG" />
+                    </a>
+                </div>
+            </div>
+            <div class="beer-info text-center">
+                <h4>
+                    <a class="norm" [routerLink]="['/beer',common.paramSEOFriendly(checkin.breweryName+' '+checkin.beerName),checkin.beerId]">
+                        {{checkin.beerDisplayName}}
+                    </a>
+                </h4>
+                <h5>{{checkin.beerStyleName}}</h5>
+                <div>
+                    <span *ngIf="checkin.beerABV"><i class="fa fa-caret-right"></i>{{checkin.beerABV}}% ABV </span>
+                    <span *ngIf="checkin.beerIBU"><i class="fa fa-caret-right"></i>{{checkin.beerIBU}} IBU</span>
+                </div>
+                <div>          
+                    <a class="btn btn-warning" [routerLink]="['/beer',common.paramSEOFriendly(checkin.breweryName+' '+checkin.beerName),checkin.beerId]" role="button">
+                        <i class="fa fa-beer"></i> 
+                        Beer Detail
+                    </a>
+                </div>                
+                <hr />
+                <div class="text-center">
+                    <h5>
+                        <a class="norm" [routerLink]="['/brewery',common.paramSEOFriendly(checkin.breweryName),checkin.breweryId]">
+                            Brewed by {{checkin.breweryName}}
+                        </a>
+                    </h5>
+                    <div *ngIf="checkin.breweryImages.icon">
+                        <a [routerLink]="['/brewery',common.paramSEOFriendly(checkin.breweryName),checkin.breweryId]">
+                            <img [src]="checkin.breweryImages.icon" />
+                        </a>
+                    </div>
+                    <div>
+                        <a class="btn btn-warning" [routerLink]="['/brewery',common.paramSEOFriendly(checkin.breweryName),checkin.breweryId]" role="button">
+                            View Brewery
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-label" *ngIf="checkin.img">
+          <h4 class="head-label"><i class="fa fa-camera"></i> Picture Taken</h4>
+          <hr />          
+          <div class="text-center">
+            <img [src]="checkin.img" />
+          </div>
+        </div>
+        <div *ngIf="checkin.comments || checkin.beerRating" class="info-label">
+          <h4 class="head-label"><i class="fa fa-comments"></i> Beer Comments &amp; Ratings</h4>
+          <hr />
+          <div class="text-center">
+            <div class="alert alert-warning">
+              <div *ngIf="checkin.comments">
+                <i class="fa fa-quote-left"></i>
+                  {{checkin.comments}}
+                <i class="fa fa-quote-right"></i>
+              </div>
+              <div *ngIf="checkin.beerRating">
+                <app-rating [rate]="checkin.beerRating"></app-rating>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div id="loc-area" class="info-label">
+          <h4 class="head-label"><i class="fa fa-map-pin"></i> Check-in Location</h4>
+          <hr />
+          <div class="text-center">
+            <h4>{{checkin.name}}</h4>
+            <h5 *ngIf="checkin.placeType">{{checkin.placeType}}</h5>
+            <div *ngIf="checkin.locationRating">
+                <app-rating [rate]="checkin.locationRating"></app-rating>
+            </div>            
+            <div>
+              <img [src]="checkin.photo" />
+            </div>
+          </div>
+          <h4 class="head-label"><i class="fa fa-map"></i> Location Map</h4>
+          <hr />
+          <div class="text-center">
+            {{checkin.address}} - {{checkin.city}}, {{checkin.state}} {{checkin.country}}
+          </div>
+          <div id="check-map" class="text-center">
+            <static-map [lat]="checkin.lat" 
+                        [lng]="checkin.lng"
+                        [width]="420"
+                        [height]="300"
+                        [zoom]="14">
+            </static-map>
+            <div id="get-directions">
+                <a class="btn btn-warning" target="_blank" [href]="common.getToGoogleMapsUrl(checkin.lat,checkin.lng)" role="button">
+                    Get Directions
+                </a>
+            </div>
+          </div>                  
+        </div>
+    </div>    
+  </div>
+</div>
+

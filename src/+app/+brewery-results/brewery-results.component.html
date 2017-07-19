@@ -22,7 +22,40 @@
       [perPage]="pageSize"
       [count]="totalResults"></pagination>
     </div>
-  </div>  
+  </div>
+  <div class="card-deck">
+    <div class="card" *ngFor="let brewery of breweries">
+      <div class="text-center">
+        <a *ngIf="!isLocationSearch" [routerLink]="['/brewery',common.paramSEOFriendly(brewery.name),brewery.id]">  
+          <img *ngIf="brewery.images" [src]="brewery.images.squareMedium" />
+          <img *ngIf="!brewery.images" src="assets/images/no-beer.jpg" />
+        </a>
+        <a *ngIf="isLocationSearch" [routerLink]="['/b',common.paramSEOFriendly(brewery.name),brewery.locId]">  
+          <img *ngIf="brewery.images" [src]="brewery.images.squareMedium" />
+          <img *ngIf="!brewery.images" src="assets/images/no-beer.jpg" />
+        </a>        
+      </div>
+      <div class="card-block">
+        <h4 class="card-title text-center">
+          <a *ngIf="!isLocationSearch" class="brewery-header" [routerLink]="['/brewery',common.paramSEOFriendly(brewery.name),brewery.id]">{{brewery.name}}</a>
+          <a *ngIf="isLocationSearch" class="brewery-header" [routerLink]="['/b',common.paramSEOFriendly(brewery.name),brewery.locId]">{{brewery.name}}</a>
+        </h4>
+        <p *ngIf="brewery.locations" class="card-text text-center">
+           {{brewery.locations[0].locality}}, {{brewery.locations[0].region}}
+        </p>
+        <p  *ngIf="isLocationSearch"class="card-text text-center">
+           {{brewery.locality}}, {{brewery.region}}
+        </p>           
+        <p class="card-text text-center">
+          {{brewery.type}}  
+        </p>
+      </div>
+      <div class="card-footer text-center">
+        <small class="text-muted">Added {{common.dateFriendly(brewery.createDate)}}</small>
+      </div>
+    </div>
+  </div>    
+  <!--
   <div class="row" *ngFor="let brewery of breweries">
     <div class="col-md-4 brewery-img text-center">
       <a [routerLink]="['/brewery',common.paramSEOFriendly(brewery.name),brewery.id]">    
@@ -42,6 +75,7 @@
       <p>{{brewery.type}}</p>
     </div>
   </div>
+  -->
   <div *ngIf="numPages > 1" class="row container">
     <div class="col-md-12 text-right">
     <pagination

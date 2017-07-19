@@ -1,0 +1,42 @@
+
+
+<div class="container">
+  <div class="card" *ngFor="let feed of feeds">
+    <div class="card-block">
+      <h6 class="card-title">
+        <img *ngIf="feed.userIMG !=''" [src]="feed.userIMG" class="rounded-circle avatar" />
+        {{feed.userName}} drinking {{feed.beerName}}  
+      </h6>
+      <h5 class="card-title text-center">
+        <i *ngIf="feed.name" class="fa fa-at"></i> {{feed.name}}
+      </h5>
+      <p class="text-center card-text" *ngIf="feed.beerLabelIcon">
+        <img [src]="feed.beerLabelIcon" class="img-rounded" />
+      </p>
+      <p *ngIf="feed.beerRating" class="card-text text-center">
+        {{feed.userName}} rated {{feed.beerName}} 
+        <app-rating [rate]="feed.beerRating"></app-rating>        
+      </p>
+      <p class="card-text alert alert-warning" *ngIf="feed.comments">
+          <b>{{feed.userName}} said:</b>
+          {{feed.comments}}
+      </p>
+      <p class="text-center card-text">
+        <a [routerLink]="['/checkin',feed.key]" class="btn btn-warning">View Detail</a>
+      </p>
+      <p class="text-center" *ngIf="feed.img !=''">
+        <i class="fa fa-camera"></i> Photo Taken 
+      </p>
+    </div>
+    <div class="card-footer text-muted text-center">
+      Checked-In {{common.timeDifference(feed.dateCreated)}}
+    </div>    
+  </div>
+  <div class="text-center" *ngIf="nextToken && !showLoader">
+    <button id="get-more-btn" class="btn btn-warning btn-block" (click)="getMoreFeeds()">Get More</button>
+  </div>
+</div>
+
+<div class="text-center loader" *ngIf="showLoader">
+  <app-loader></app-loader>
+</div>

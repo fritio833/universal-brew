@@ -1,0 +1,96 @@
+.loader {
+    height:50rem;
+}
+
+.container {
+    min-height:50rem;
+}
+
+#checkin-well {
+    margin-top:2rem;
+    padding-top:2rem;
+}
+
+.top-panel {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.25); 
+}
+
+#card-header {
+    padding-left:1rem;
+}
+
+#check-time {
+    width:100%;
+    text-align: right;
+}
+
+#check-img {
+    width:15rem;
+    padding-bottom:2rem;
+}
+
+.beer-info h4 {
+    padding-top:1rem;
+}
+
+.beer-info span {
+    padding-left:1.5rem;
+    display: inline-block;
+}
+
+.beer-info i {
+    padding-right:0.5rem;
+}
+
+.info-label h4 {
+  margin-top:2rem;
+  margin-bottom: 0px;
+}
+
+.info-label hr {
+  margin-top: 0px;
+}
+
+#comment-label {
+    margin-top:1rem;
+}
+
+.star {
+    font-size: 4rem !important;
+    color: #b0c4de;
+}
+.filled {
+    color: #1e90ff;
+}
+
+#check-circle {
+    position:absolute;
+    right:10px;
+    top:-20px;
+}
+
+#loc-area img {
+    margin-top:2rem;
+}
+
+#beer-info-area {
+    margin-left:1rem;
+    margin-right:1rem;
+}
+
+#beer-info-area a.norm {
+    color:#8a6d3b;
+}
+
+#check-map {
+    margin-bottom:2rem;
+}
+
+#get-directions {
+  padding:2rem;
+}
+
+.head-label {
+  color: #C81B02;
+}

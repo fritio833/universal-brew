@@ -88,6 +88,10 @@ export class CommonService {
     return metaTags;
   }
 
+  getDefaultNoImage() {
+    return 'https://firebasestorage.googleapis.com/v0/b/bender-1487426215149.appspot.com/o/img%2FBrewSearchOG.jpg?alt=media&token=44ce4c8b-06f1-4e4b-ab30-80e10363b865';
+  }
+
   getBaseUrl() {
     if (Zone.current.get("originUrl")) {
         return Zone.current.get('originUrl');

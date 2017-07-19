@@ -1,13 +1,16 @@
-  <div id="brewery-beers" class="row beer-row">
-    <div class="col-md-2">
+  <div id="brewery-beers" class="row beer-row alert alert-warning">
+    <div class="col-md-2 text-center">
       <a [routerLink]="['/beer',_beer.id]">
         <img *ngIf="_beer.labels" [src]="_beer.labels.icon" />
       </a>
     </div>
     <div class="col-md-10 text-left">
-      <h4><a [routerLink]="['/beer',common.paramSEOFriendly(_brewery.name+' '+_beer.name),_beer.id]">{{_beer.nameDisplay}}</a></h4>
-      <h5 *ngIf="_beer.style">{{_beer.style.shortName}}</h5>
-      <p *ngIf="_beer.description">
+      <h4 *ngIf="_brewery"><a [routerLink]="['/beer',common.paramSEOFriendly(_brewery.name+' '+_beer.name),_beer.id]">{{_beer.nameDisplay}}</a></h4>
+      <h4 *ngIf="!_brewery"><a [routerLink]="['/beer',common.paramSEOFriendly(_beer.breweries[0].name+' '+_beer.name),_beer.id]">{{_beer.nameDisplay}}</a></h4>
+      <h5 *ngIf="_showBreweryName && _brewery"><a [routerLink]="['/brewery',common.paramSEOFriendly(_brewery.name),_brewery.id]">{{_brewery.name}}</a></h5>
+      <h5 *ngIf="_showBreweryName && _beer.breweries"><a [routerLink]="['/brewery',common.paramSEOFriendly(_beer.breweries[0].name),_beer.breweries[0].id]">{{_beer.breweries[0].name}}</a></h5>
+      <h6 *ngIf="_beer.style">{{_beer.style.shortName}}</h6>
+      <p *ngIf="_beer.description && _showDescription">
         <read-more [text]="_beer.description" [maxLength]="100"></read-more>
       </p>
       <div>

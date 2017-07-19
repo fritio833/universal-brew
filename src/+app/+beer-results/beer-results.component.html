@@ -22,25 +22,37 @@
       [perPage]="pageSize"
       [count]="totalResults"></pagination>
     </div>
-  </div>  
-  <div class="row" *ngFor="let beer of beers">
-    <div class="col-md-4 beer-img text-center">
-      <a *ngIf="beer.breweries" class="beer-header" [routerLink]="['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]">
-        <img *ngIf="beer.labels!=null" [src]="beer.labels.medium" />
-        <img *ngIf="beer.labels==null" src="assets/images/no-beer.jpg" />
-      </a>
-    </div>
-    <div class="col-md-8">
-      <a *ngIf="beer.breweries" class="beer-header" [routerLink]="['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]">{{beer.name}}</a>
-      <a *ngIf="!beer.breweries" class="beer-header" [routerLink]="['/beer',common.paramSEOFriendly(beer.name),beer.id]">{{beer.name}}</a>
-      <a *ngIf="beer.breweries" [routerLink]="['/brewery',common.paramSEOFriendly(beer.breweries[0].name),beer.breweries[0].id]">{{beer.breweries[0].name}}</a>
-      <p class="beer-style" *ngIf="beer.style!=null">{{beer.style.shortName}}</p>
-      <p *ngIf="beer.description">
-        <read-more [text]="beer.description" [maxLength]="100"></read-more>
-      </p>      
-      <p *ngIf="beer.abv!=null">{{beer.abv}}% ABV</p>
-    </div>
   </div>
+  <div class="card-deck">
+    <div class="card" *ngFor="let beer of beers">
+      <div class="text-center">
+        <a *ngIf="beer.breweries" class="beer-header" [routerLink]="['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]">
+          <img class="card-img-top rounded" *ngIf="beer.labels!=null" [src]="beer.labels.medium" alt="Card image cap">
+          <img class="card-img-top rounded" *ngIf="beer.labels==null" src="assets/images/no-beer.jpg" />
+        </a>
+      </div>
+      <div class="card-block">
+        <h4 class="card-title text-center">
+          <a *ngIf="beer.breweries" [routerLink]="['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]">{{beer.name}}</a>
+          <a *ngIf="!beer.breweries" [routerLink]="['/beer',common.paramSEOFriendly(beer.name),beer.id]">
+            {{beer.name}}
+          </a>
+        </h4>
+        <p class="card-text text-center">
+          <a *ngIf="beer.breweries" [routerLink]="['/brewery',common.paramSEOFriendly(beer.breweries[0].name),beer.breweries[0].id]">{{beer.breweries[0].name}}</a>
+        </p>      
+        <p class="card-text text-center" *ngIf="beer.style!=null">
+          {{beer.style.shortName}}    
+        </p>
+        <p *ngIf="beer.abv!=null" class="card-text text-center">
+          <small class="text-muted">{{beer.abv}}% ABV</small>
+        </p>
+      </div>
+      <div class="card-footer text-center">
+        <small class="text-muted">Added {{common.dateFriendly(beer.createDate)}}</small>
+      </div>
+    </div>
+  </div>  
   <div *ngIf="numPages > 1" class="row container">
     <div class="col-md-12 text-right">
     <pagination id="botton-pagination"

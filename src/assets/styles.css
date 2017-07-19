@@ -69,26 +69,6 @@ body {
     border-color: #3b5998;    
 }
 
-.card {
-    border-radius: 2px;
-    position: relative;
-    margin-bottom: 1rem;
-    overflow: hidden;
-    margin-bottom: 1.5rem!important;
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #fff;
-    border: 1px solid rgba(0,0,0,.25);   
-}
-
 .page-header {
     padding-bottom: 9px;
     margin: 40px 0 20px;    
@@ -152,4 +132,13 @@ a:hover {
 
 .btn {
     cursor: pointer;
+}
+
+hr {
+    border-top: 1px solid rgba(0,0,0,.2) !important;
+}
+
+.avatar {
+    width:4rem;
+    height:4rem;
 }

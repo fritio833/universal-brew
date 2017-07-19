@@ -13,9 +13,13 @@ export class BeerBlockComponent implements OnInit {
 
     @Input() beer: any;
     @Input() brewery: any;
+    @Input() showBreweryName: boolean = true;
+    @Input() showDescription: boolean = true;
 
     _beer:any;
     _brewery:any;
+    _showBreweryName:boolean;
+    _showDescription:boolean;
 
     constructor(public common:CommonService) {
 
@@ -24,5 +28,7 @@ export class BeerBlockComponent implements OnInit {
     ngOnInit() {
         this._beer = this.beer;
         this._brewery = this.brewery;
+        this._showBreweryName = this.showBreweryName;
+        this._showDescription = this.showDescription;
     }
 }

@@ -11,10 +11,8 @@
 }
 
 .social-btns a {
-    float: left;
     display: inline-block;
     margin-right: 1rem;
-    margin-bottom: 2rem;
 }
 
 #brewery-info span {
@@ -47,24 +45,11 @@
     font-size:0.9rem;
 }
 
-#brewery-beers {
-    clear: left;
-}
-
-#brewery-beers span {
-  margin-right:1.5rem;
-}
-
-#brewery-beers i {
-  margin-right:0.5rem;
+#social-area {
+    display:inline-block;
 }
 
 #get-more {
     margin-bottom:2rem;
 }
-.beer-row {
-    border: 1px solid #CCC !important;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-bottom:1rem;
-}
+

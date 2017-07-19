@@ -18,7 +18,7 @@
         <span *ngIf="breweryBeers.length"><i class="fa fa-caret-right"></i>{{breweryBeers.length}} Beers</span>
         <span *ngIf="brewery.established"><i class="fa fa-caret-right"></i>Established {{brewery.established}}</span>
       </h5>
-      <div>
+      <div id="social-area">
         <span>
           <a class="social-btns" *ngIf="brewery.website" class="btn btn-warning" target="_blank" [href]="brewery.website" role="button">
             <i class="fa fa-globe"></i> 
@@ -26,7 +26,6 @@
           </a>
         </span>      
         <span class="social-btns" *ngFor="let social of brewery.socialAccounts">
-
           <a *ngIf="social.socialMediaId == 1" class="btn btn-warning" target="_blank" [href]="social.link" role="button">
             <i class="fa fa-facebook"></i> 
             Facebook
@@ -37,8 +36,9 @@
           </a>                                     
         </span>
       </div>
+      <hr />
       <div *ngFor="let beer of breweryBeers">
-        <beer-block [beer]="beer" [brewery]="brewery"></beer-block>
+        <beer-block [beer]="beer" [brewery]="brewery" [showBreweryName]="false"></beer-block>
       </div>
       <div id="get-more" *ngIf="showMoreBeers" class="text-center">
         <button class="btn btn-warning btn-block" (click)="getMoreBeers()">View More</button>

@@ -125,7 +125,10 @@ export class BreweryLocationComponent  {
         console.log('brewery',this.brewery);
 
         this.model.get('/api/brewery_beers/'+this.brewery.breweryId).subscribe(beers=>{
-          this.breweryBeers = beers.data;
+          //console.log('breweryBeers',beers);
+
+          if ("data" in beers)
+            this.breweryBeers = beers.data;
           
 
           this.model.get('/google/place_by_origin/'

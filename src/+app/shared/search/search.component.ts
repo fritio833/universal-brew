@@ -31,7 +31,7 @@ export class SearchComponent implements OnInit {
   constructor(public router:Router,public geo:GoogleService,public model:ModelService) {}
 
   ngOnInit() {
-    //console.log('router',this.router);
+     // TODO Capture query and store to search.service.ts
   }
 
   doBeerSearch() {
