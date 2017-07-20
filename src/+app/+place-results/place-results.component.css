@@ -1,0 +1,48 @@
+#search-box {
+  position: relative;
+  top:20px;
+}
+
+#brewery-results {
+    background-color:#fff;
+    margin-top:3rem;
+    margin-bottom:3rem;
+    border: 1px solid rgba(0,0,0,.25);
+}
+
+/*
+#brewery-results .row {
+  border-bottom: 1px solid rgba(0,0,0,.25);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+*/
+
+
+#get-more-btn{
+    margin-top:1rem;
+    margin-bottom:2rem;
+}
+
+.card {
+    margin-bottom:0.5rem;
+    margin-top:0.5rem;
+    min-width: 290px !important;
+}
+
+.place-img {
+    display: flex;
+    justify-content: center;
+    height: 220px; /* or other desired height */
+    overflow: hidden;    
+}
+
+
+.place-img img {
+  flex: none;
+  max-height: 220px;
+}
+
+h4.card-title {
+    font-size:1.25rem;
+}

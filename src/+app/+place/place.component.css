@@ -1,0 +1,70 @@
+#search-box {
+  position: relative;
+  top:20px;
+}
+
+#brewery-detail {
+    margin-top:3rem;
+    margin-bottom:3rem;
+    background-color:#fff;
+    border: 1px solid rgba(0,0,0,.25);
+}
+
+.beer-info span {
+   padding-left:1.5rem;
+   display: inline-block;
+}
+
+.beer-info i {
+    padding-right:0.5rem;
+}
+
+#place-img{
+    margin-top:2rem;
+    margin-bottom:1rem;
+    max-height:8rem;
+}
+
+.photo-btn {
+    margin:1rem;
+}
+
+.web-btn .btn {
+    margin-top:0.5rem;
+    width:15rem;
+}
+
+.review-avatar {
+    width:4rem !important;
+}
+
+.label-value {
+    font-size:15px !important;
+}
+
+.rating {
+    justify-content: left !important;
+}
+
+.review-head {
+    margin-top:2rem;
+}
+
+
+#bar-hours {
+    margin-top:1rem;
+}
+
+#place-photos img {
+  width:40rem;
+  vertical-align: top;
+}
+
+.place-thumb {
+    padding:5px;
+    cursor: pointer;
+}
+
+#review-area {
+    margin:1rem;
+}

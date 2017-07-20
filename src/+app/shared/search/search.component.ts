@@ -2,6 +2,7 @@ import { Component, OnInit, ChangeDetectionStrategy, ViewEncapsulation  } from '
 import { Router } from '@angular/router';
 import { GoogleService} from '../google.service';
 import { ModelService } from '../model/model.service';
+import { CommonService } from '../common.service';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.Default,
@@ -28,7 +29,10 @@ export class SearchComponent implements OnInit {
   public geoBar:any;
   public qName = "";
 
-  constructor(public router:Router,public geo:GoogleService,public model:ModelService) {}
+  constructor(public router:Router,
+              public geo:GoogleService,
+              public com:CommonService,
+              public model:ModelService) {}
 
   ngOnInit() {
      // TODO Capture query and store to search.service.ts
@@ -50,7 +54,7 @@ export class SearchComponent implements OnInit {
 
       if (this.barOption === 'city') {
         console.log('geo',this.geoBar);
-        this.router.navigate(['bars/'+this.geoBar.terms[0].value+'/'+this.geoBar.terms[1].value]);
+        this.router.navigate(['bars/'+this.com.paramSEOFriendly(this.geoBar.terms[0].value+' '+this.geoBar.terms[1].value)]);
       }
     }
   }
@@ -69,18 +73,8 @@ export class SearchComponent implements OnInit {
       }
 
       if (this.breweryOption == 'city') {
-        this.router.navigate(['breweries/'+this.geoBrewery.terms[0].value+'-'+this.geoBrewery.terms[1].value]);        
+        this.router.navigate(['breweries/'+this.com.paramSEOFriendly(this.geoBrewery.terms[0].value+' '+this.geoBrewery.terms[1].value)]);        
       }
-      
-      /*
-      if (this.breweryOption == 'city') {
-        this.router.navigate(['breweries/'
-                             +this.geoBrewery.terms[0].value
-                             +'/'+this.geoBrewery.terms[1].value
-                             +'/'+this.geoBrewery.place_id]);
-        
-      }
-      */
     }    
   }
 
@@ -113,6 +107,7 @@ export class SearchComponent implements OnInit {
 
     if (this.searchOption === "name") {
 
+      /*
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(resp=>{
 
@@ -140,21 +135,20 @@ export class SearchComponent implements OnInit {
         });
       
       }
+      */
     }
 
     if (this.searchOption === "city") {
       console.log('city serch');
       
-      this.geo.cityAutoComplete(inputVal).subscribe(resp=>{
-        
-        this.cityPredictions = resp.predictions;
+      this.model.get('/google/city_auto/'+inputVal).subscribe(resp=>{
         console.log('resp',resp);
+        this.cityPredictions = resp.predictions;
       },error=>{
-        console.log('error',error);
+        console.log(error);
       });
+      
     }    
-
-        
   }
 
   getBrewerySearchInput(inputVal) {

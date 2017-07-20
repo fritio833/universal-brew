@@ -45,17 +45,41 @@ export class CommonService {
 
   getGoogleImg(photo_ref,width?) {
     var _width = 500;
-    if (width==null)
+    if (width != null)
       _width = width;
 
     return 'https://maps.googleapis.com/maps/api/place/photo?photoreference='+photo_ref+'&maxwidth='+_width+'&key='+environment.google.googlePlacesAPIKey;
   }
 
   paramSEOFriendly(paramName) {
+    /*
     let param = paramName.replace(/[^a-zA-Z0-9\s]+/g,""); // Remove Special Characters
     param = param.replace(/\s+/g,"-"); // replace spaces with hyphen
     return param.toLowerCase();
+    */
+    return paramName.toLowerCase().replace(/[^a-z0-9À-ž]+/g, "-").replace(/^-+|-+$/g, "-").replace(/^-+|-+$/g, '');    
   }
+
+  revertSEOParam(param) {
+    let paramArray = param.split("-");
+    let state = '';
+    let city = '';
+    state = paramArray.pop();
+    city = paramArray.join("-");
+    city = city.replace(/\-/g," ");
+    return this.titleCase(city) + "," + state.toUpperCase();
+  }
+
+  titleCase(str) {
+    str = str.toLowerCase();
+    str = str.split(" ");
+    str = str.map(function(val){
+      val = val.charAt(0).toUpperCase() + val.slice(1);
+      return val;
+    });
+    str = str.join(" ");
+    return str;
+  }  
 
   dateFriendly(dateStr) {
     var dateTemp = dateStr.split(" ");

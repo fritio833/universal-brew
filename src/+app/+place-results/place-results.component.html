@@ -1,0 +1,52 @@
+<app-search id="search-box"></app-search>
+
+<div class="text-center loader" *ngIf="showLoader">
+  <app-loader></app-loader>
+</div>
+
+<!--
+<div id="brewery-results" class="container" *ngIf="!showLoader">
+  <div class="row" *ngFor="let location of locations">
+    <div class="col-md-12">
+      <h4>
+        <a [routerLink]="['/bar',location.place_id]">{{location.name}}</a>
+      </h4>
+      <div class="place-rating" align="left">
+        <app-rating *ngIf="location.rating" [rate]="location.rating"></app-rating>
+      </div>      
+      <h5>{{location.formatted_address}}</h5>
+    </div>
+  </div>
+</div>
+-->
+
+<div id="brewery-results" class="card-deck container" *ngIf="!showLoader">
+  <div *ngFor="let location of locations" class="card">
+    <div class="place-img">
+       <img [src]="location.thumb" />
+    </div>    
+    <div class="card-block text-center">
+      <!-- <img [src]="location.thumb" /> -->
+      <h4 class="card-title">
+         <a [routerLink]="['/bar',common.paramSEOFriendly(location.name),location.place_id]">{{location.name}}</a>
+      </h4>
+      <p *ngIf="location.rating" class="card-text">
+         <app-rating [rate]="location.rating"></app-rating>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="nextToken" class="container">
+  <div id="get-more-btn">
+    <div *ngIf="!getMoreLoader" class="text-center">
+      <button class="btn btn-warning btn-lg btn-block" (click)="getMoreLocations()">
+        <i class="fa fa-glass"></i>
+        Get More Bars
+      </button>
+    </div>
+    <div *ngIf="getMoreLoader" class="text-center">
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+    </div>
+  </div>
+</div>

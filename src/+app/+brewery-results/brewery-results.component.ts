@@ -33,6 +33,8 @@ export class BreweryResultsComponent {
   totalResults:number = 0;
   showLoader:boolean = true;
   msg:string;
+  city:string;
+  state:string;  
 
   constructor(public model: ModelService,
               public router:Router,
@@ -74,22 +76,39 @@ export class BreweryResultsComponent {
     let metaTags = [];
     let metaTagsWithFB = [];
     let keywords = [];
-    let pageTitle = `Beers matching ${this.qBrewery} | ${this.common.getAppName()}`;
+    let pageTitle = '';
     let pageDescription = '';
     
-    this.meta.setTitle(pageTitle);
     metaTags.push({name:'author', content:this.common.getAuthor()});
-    metaTags.push(
-      {
-        name:'description', 
-        content:`Use our custom search to find new craft beers using our web and mobile app. At Brew Search, you can share beers, breweries, and bars socially. Brews and craft beers that match '${this.qBrewery}'.`
-      }
-    );    
 
+    if (this.isLocationSearch && this.city!=null) {
+      pageTitle = `${this.city}, ${this.state} Breweries | ${this.common.getAppName()}`;
+      metaTags.push(
+        {
+          name:'description', 
+          content:`Find breweries, tasting rooms, micro breweries, and brew pubs in ${this.city}, ${this.state}. At Brew Search, you can share beers, breweries, and bars socially. Listed are breweries located in '${this.city}, ${this.state}'.`
+        }
+      );    
 
-    metaTags.push({
-      name:'keywords', content:`${this.qBrewery},brews, craft beers, best beers, local beers, import beers`
-    });
+      metaTags.push({
+        name:'keywords', content:`${this.city} breweries,breweries in ${this.city}, ${this.city} brew pubs, brewery in ${this.city}, ${this.city} microbrewery, ${this.state} breweries`
+      });
+
+    } else {
+      pageTitle = `Breweries matching ${this.qBrewery} | ${this.common.getAppName()}`;
+      metaTags.push(
+        {
+          name:'description', 
+          content:`Find breweries, tasting rooms, micro breweries, and brew pubs using our web or mobile app. At Brew Search, you can share beers, breweries, and bars socially. Listed are breweries that match '${this.qBrewery}'.`
+        }
+      );    
+
+      metaTags.push({
+        name:'keywords', content:`${this.qBrewery},${this.qBrewery} brewery, ${this.qBrewery} tasting room, breweries, microbrewery, brew pubs, `
+      });
+    }
+
+    this.meta.setTitle(pageTitle);
 
     // Facebook Tags
     let defaultFB = this.common.defaultOGMetaTags();
@@ -132,10 +151,20 @@ export class BreweryResultsComponent {
   }  
 
   getBreweriesByLocation(location) {
-    let locKey = location.replace(/\-/g,", ");
+
+
+    let locKey = this.common.revertSEOParam(location);
+    console.log('locKey',locKey);
+    let cityStateArray = locKey.split(","); 
     this.qLocation = locKey;
 
+    if (cityStateArray.length == 2) {
+      this.city = cityStateArray[0];
+      this.state = cityStateArray[1];
+    }
+
     this.model.get('/google/city_auto/'+locKey).subscribe(resp=>{
+
       if (resp.predictions.length) {
         this.model.get('/google/place_by_id/'+resp.predictions[0].place_id).subscribe(place=>{
           //console.log('place',place);
@@ -143,10 +172,12 @@ export class BreweryResultsComponent {
           this.lng = place.geometry.location.lng;
           //console.log('lat lng',this.lat+ ' - '+this.lng);
           this.model.get('/api/brewery_by_location/'+this.lat+'/'+this.lng).subscribe(breweries=>{
-            console.log('api',breweries);
+            //console.log('api',breweries);
             if (!breweries.totalResults) {
               this.msg = "No breweries in "+this.qLocation+".";
               this.breweries = [];
+              this.showLoader = false;
+              this.setMeta();
             } else {
               this.msg = null;
               this.breweries = [];
@@ -160,8 +191,9 @@ export class BreweryResultsComponent {
               }
               this.numPages = breweries.numberOfPages;
               this.totalResults = breweries.totalResults;
-              this.showLoader = false;              
-              console.log('this.breweries',this.breweries);
+              this.showLoader = false;
+              this.setMeta();              
+              //console.log('this.breweries',this.breweries);
             }          
           });
         });

@@ -18,6 +18,8 @@ import { BreweryLocationModule } from './+brewery-location/brewery-location.modu
 import { BreweryBeersModule } from './+brewery-beers/brewery-beers.module';
 import { FeedsModule } from './+feeds/feeds.module';
 import { CheckinModule } from './+checkin/checkin.module';
+import { PlaceResultsModule } from './+place-results/place-results.module';
+import { PlaceModule } from './+place/place.module';
 
 import { SharedModule } from './shared/shared.module';
 
@@ -48,7 +50,9 @@ import { AppComponent, XLargeDirective } from './app.component';
     BreweryLocationModule,
     BreweryBeersModule,
     FeedsModule,
-    CheckinModule
+    CheckinModule,
+    PlaceResultsModule,
+    PlaceModule
   ]
 })
 
