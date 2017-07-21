@@ -18,6 +18,7 @@ import { LoaderComponent } from './loader/loader.component';
 import { RatingComponent } from './rating/rating.component';
 import { StaticMapComponent } from './static-map/static-map.component';
 import { BeerBlockComponent } from './beer-block/beer-block.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const MODULES = [
   // Do NOT include UniversalModule, HttpModule, or JsonpModule here
@@ -42,7 +43,8 @@ const COMPONENTS = [
   LoaderComponent,
   RatingComponent,
   StaticMapComponent,
-  BeerBlockComponent
+  BeerBlockComponent,
+  GalleryComponent
 ];
 
 const PROVIDERS = [

@@ -143,24 +143,12 @@ export class BreweryDetailComponent  {
               if ("photos" in this.location) {
                 this.locationPhotos = this.location['photos'];
                 //console.log('loc',this.locationPhotos);
-
-                for (var i=0; i < this.locationPhotos.length;i++) {
-                  this.locationPhotoThumbs.push({
-                    src: this.common.getGoogleImg(this.locationPhotos[i].photo_reference,100),
-                    refId:this.locationPhotos[i].photo_reference
-                  });
-                }
               }
 
               if ("reviews" in this.location) {
                 console.log('lawlz');
                 this.locationReviews = this.location['reviews'];
               }
-              /*
-              this.model.get('/google/place_photo/'+this.locationPhotos[0].photo_reference).subscribe(ogPhoto=>{
-                console.log('ogPhoto',ogPhoto);
-              });
-              */
 
               this.setMeta();
 

@@ -184,6 +184,42 @@ export function googlePlacesApi() {
 
         });
 
+    router.route('/bar_auto/:bar_name/:lat/:lng')
+        .get(function(req, res) {
+
+            let loc = '';
+            let lat = req.params.lat;
+            let lng = req.params.lng;
+
+            if (lat != null && lng != null) {
+              loc = '&location='+lat+','+lng;
+            }            
+
+            var url = googlePlacesURL 
+            + 'textsearch/json?query='
+    	    + req.params.bar_name
+            + loc 
+            + '&type=bar&key='+googlePlacesAPIKey;
+            
+
+            https.get(url,function(response) {
+
+                var body ='';
+                response.on('data', function(chunk) {
+                body += chunk;
+                });
+
+                response.on('end', function() {
+                    var _places = JSON.parse(body);
+                    //console.log(places)
+                    res.json(_places);
+                });
+            }).on('error', function(e) {
+                console.log("Got error: " + e.message);
+            });
+
+        });        
+
 
         function getGoogleImg(photo_ref) {
             

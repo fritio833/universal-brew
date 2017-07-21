@@ -79,33 +79,9 @@
           </tr>
         </tbody>        
       </table>
-      <!--
-      <div *ngIf="locationPhotos.length && !showPhotos">
-        <button (click)="showAllPhotos()" class="btn btn-warning btn-block btn-large" role="button">
-          <i class="fa fa-camera-retro"></i> 
-          View {{locationPhotos.length}} Photos
-        </button>
-      </div>
-      -->
       <div *ngIf="locationPhotos" class="text-center">
-        <div class="row">
-          <div class="col-md-7">
-            <img [src]="locationPrimaryPhoto" width="100%" />
-          </div>
-          <div class="col-md-5">
-            <span *ngFor="let thumb of locationPhotoThumbs" (click)="setPhoto(thumb.refId)">
-              <img class="brew-thumb" [src]="thumb.src" width="75" height="75px" />
-            </span>
-          </div>
-        </div>
+        <gallery [photos]="locationPhotos"></gallery>
       </div>
-      <!--
-      <div id="place-photos" class="row" *ngIf="showPhotos">
-        <div class="col-md-12 text-center">
-          <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>      
-        </div>
-      </div>
-      -->
       <div id="brewery-description" *ngIf="brewery.description">        
         <h4><i class="fa fa-info-circle"></i>{{brewery.nameShortDisplay}} Description</h4>
         <hr />        

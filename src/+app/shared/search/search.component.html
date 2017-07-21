@@ -1,3 +1,4 @@
+<!--
 <div id="custom-search-input" class="container">
   <ul class="nav nav-tabs" role="tablist">
     <li class="nav-item active"><a data-toggle="tab" href="#beers" role="tab">Beers</a></li>
@@ -6,7 +7,7 @@
   </ul>
   <div class="tab-content">
 
-    <!-- Beer Tab Area -->
+
     <div class="tab-pane active" id="beers" role="tabpanel">
       <div class="input-group col-md-12">
           <input type="text" 
@@ -22,7 +23,7 @@
       </div>
     </div>
 
-    <!-- Brewery Tab Area -->
+
     <div class="tab-pane" id="brewery" role="tabpanel">
       <div class="input-group col-md-12">
           <input type="text" 
@@ -58,7 +59,7 @@
       </div>        
     </div>
 
-    <!-- Bar Tab Area -->
+
     <div class="tab-pane" id="bars" role="tabpanel">
       <div class="input-group col-md-12">
           <input type="text" 
@@ -94,5 +95,109 @@
         {{city.description}}
       </div>               
     </div>            
+  </div>
+</div>
+-->
+
+<div id="custom-search-input" class="container">
+  <div class="tabbable">
+    <ul class="nav nav-tabs #page-search-area-tabs" role="tablist">
+      <li class="nav-item active"><a data-toggle="tab" href="#beers" role="tab">Beers</a></li>
+      <li class="nav-item"><a data-toggle="tab" href="#brewery" role="tab">Brewery</a></li>
+      <li class="nav-item"><a data-toggle="tab" href="#bars" role="tab">Bars</a></li>
+    </ul>
+    <div class="tab-content">
+      <!-- Beer Tab Area -->
+      <div class="tab-pane active" id="beers" role="tabpanel">
+        <div class="input-group col-md-12">            
+            <input type="text" 
+                    class="search-query form-control"
+                    [(ngModel)]="qBeerSearch"
+                    required
+                    placeholder="Enter Beer Name" />
+            <span id="clear-button" class="input-group-btn">
+              <i class="fa fa-times-circle fa-2x"></i>
+            </span>                    
+            <span class="input-group-btn">
+                <button id="search-btn" class="btn btn-warning" type="button" (click)="doBeerSearch()">
+                  <i class="fa fa-search fa-2x"></i>
+                </button>
+            </span>
+        </div>
+      </div>
+
+      <!-- Brewery Tab Area -->
+      <div class="tab-pane" id="brewery" role="tabpanel">          
+        <div class="input-group col-md-12">
+            <span>
+                <a class="btn choose-search dropdown-toggle" href="#" type="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <strong>Search By:</strong>
+                  <div>
+                    {{setSearhLabel('brewery',breweryOption)}} <i class="fa fa-caret-down"></i>
+                  </div>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#" (click)="setSearchOptions('brewery','name')">Brewery Name</a>
+                  <a class="dropdown-item" href="#" (click)="setSearchOptions('brewery','city')">Brewery City</a>
+                </div>                  
+            </span>            
+            <input type="text" 
+                    class="search-query form-control"
+                    [(ngModel)]="qBrewerySearch" 
+                    required
+                    (ngModelChange)="getBrewerySearchInput($event)"
+                    [placeholder]="breweryPlaceHolder" />
+            <span id="clear-button" class="input-group-btn">
+              <i class="fa fa-times-circle fa-2x"></i>
+            </span>
+            <span>
+                <button id="search-btn" class="btn btn-warning" type="button" (click)="doBrewerySearch()">
+                  <i class="fa fa-search fa-2x"></i>
+                </button>
+            </span>              
+        </div>
+        <div class="autocomplete-area" *ngFor="let city of cityPredictions" (click)="setGeoData(city,'brewery')">
+          {{city.description}}
+        </div>              
+      </div>
+
+      <!-- Bar Tab Area -->
+      <div class="tab-pane" id="bars" role="tabpanel">
+        <div class="input-group col-md-12">
+            <span>
+                <a class="btn choose-search dropdown-toggle" href="#" type="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <strong>Search By:</strong>
+                  <div>
+                   {{setSearhLabel('bar',barOption)}} <i class="fa fa-caret-down"></i>
+                  </div>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#" (click)="setSearchOptions('bar','name')">Bar Name</a>
+                  <a class="dropdown-item" href="#" (click)="setSearchOptions('bar','city')">Bar City</a>
+                </div>                  
+            </span>            
+            <input type="text" 
+                    class="search-query form-control"
+                    [(ngModel)]="qBarSearch" 
+                    required
+                    (ngModelChange)="getBarSearchInput($event)"
+                    [placeholder]="barPlaceHolder" />
+            <span id="clear-button" class="input-group-btn">
+              <i class="fa fa-times-circle fa-2x"></i>
+            </span>                    
+            <span class="input-group-btn">
+                <button id="search-btn" class="btn btn-warning" type="button" (click)="doBarSearch()">
+                  <i class="fa fa-search fa-2x"></i>
+                </button>
+            </span>
+        </div>
+        <div class="autocomplete-area" *ngFor="let bar of barNamePredictions" (click)="setGeoData(bar,'bar-name')">
+          {{bar.name}}
+        </div>
+        <div class="autocomplete-area" *ngFor="let city of cityPredictions" (click)="setGeoData(city,'bar-city')">
+          {{city.description}}
+        </div>                      
+      </div>            
+    </div>
   </div>
 </div>

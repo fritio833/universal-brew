@@ -1,8 +1,15 @@
 import { Component, OnInit, ChangeDetectionStrategy, ViewEncapsulation  } from '@angular/core';
+import { isBrowser } from 'angular2-universal';
+import * as $ from 'jquery';
+
 import { Router } from '@angular/router';
 import { GoogleService} from '../google.service';
 import { ModelService } from '../model/model.service';
 import { CommonService } from '../common.service';
+
+
+//declare var $:any;
+
 
 @Component({
   changeDetection: ChangeDetectionStrategy.Default,
@@ -28,6 +35,7 @@ export class SearchComponent implements OnInit {
   public geoBrewery:any;
   public geoBar:any;
   public qName = "";
+  public tabActive:boolean;
 
   constructor(public router:Router,
               public geo:GoogleService,
@@ -35,7 +43,14 @@ export class SearchComponent implements OnInit {
               public model:ModelService) {}
 
   ngOnInit() {
+
      // TODO Capture query and store to search.service.ts
+    if (isBrowser) {
+      $(document).on('click', '.nav-item a', function (e) {
+          $(".nav").find(".active").removeClass("active");
+          $(this).parent().addClass('active');
+      });
+    }
   }
 
   doBeerSearch() {
@@ -45,13 +60,31 @@ export class SearchComponent implements OnInit {
     }
   }
 
+  setSearhLabel(placeType,option) {
+
+    if (option == 'city') {
+      return 'City, State';
+    }
+
+    if (placeType == 'brewery' && option =='name') {
+      return 'Brewery Name';
+    }
+
+    if (placeType == 'bar' && option =='name') {
+      return 'Bar Name';
+    }
+    return '';
+  }
+
   doBarSearch() {
     
     if (this.qBarSearch.length) {
 
-      if (this.barOption === 'name')
-        this.router.navigate(['bar/'+this.geoBar.place_id]);
 
+      if (this.barOption === 'name') {
+        this.router.navigate(['bar/'+this.com.paramSEOFriendly(this.geoBar.name),this.geoBar.place_id]);
+        console.log('geo name',this.geoBar);
+      }
       if (this.barOption === 'city') {
         console.log('geo',this.geoBar);
         this.router.navigate(['bars/'+this.com.paramSEOFriendly(this.geoBar.terms[0].value+' '+this.geoBar.terms[1].value)]);
@@ -107,25 +140,31 @@ export class SearchComponent implements OnInit {
 
     if (this.searchOption === "name") {
 
-      /*
       if (navigator.geolocation) {
+        //console.log('geo');
+        
         navigator.geolocation.getCurrentPosition(resp=>{
 
-        console.log('geo',resp);
-
-        this.geo.placesAutocomplete(inputVal,resp.coords.latitude,resp.coords.longitude).subscribe(resp=>{
+          console.log('geo',resp);
           
-          this.barNamePredictions = resp.results;
-          //console.log('resp lat lng',resp.results);
-        },error=>{
-          console.log('error',error);
-        });
+          this.model.get('/google/bar_auto/'+inputVal+'/'+resp.coords.latitude+'/'+resp.coords.longitude)
+            .subscribe(resp=>{
+            console.log('resp',resp);
+            this.barNamePredictions = resp.results;
+            //console.log('resp lat lng',resp.results);
+          },error=>{
+            console.log('error',error);
+          });
 
         },error=>{
           console.log(error);
         });
+        
       } else {
+
+        console.log('no geo');
       
+      /*
         this.geo.placesAutocomplete(inputVal).subscribe(resp=>{
           
           this.barNamePredictions = resp.results;
@@ -133,9 +172,8 @@ export class SearchComponent implements OnInit {
         },error=>{
           console.log('error',error);
         });
-      
+        */
       }
-      */
     }
 
     if (this.searchOption === "city") {

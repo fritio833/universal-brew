@@ -151,13 +151,6 @@ export class BreweryLocationComponent  {
 
               if ("photos" in this.location) {
                 this.locationPhotos = this.location['photos'];
-
-                for (var i=0; i < this.locationPhotos.length;i++) {
-                  this.locationPhotoThumbs.push({
-                    src: this.common.getGoogleImg(this.locationPhotos[i].photo_reference,100),
-                    refId:this.locationPhotos[i].photo_reference
-                  });
-                }
               }
 
               if ("reviews" in this.location) {

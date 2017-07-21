@@ -1,0 +1,21 @@
+  <div *ngIf="!hidePhotos">
+    <div *ngFor="let img of photosToLoad" class="text-center">
+        <img [src]="img" width="100%">
+    </div>
+    <!--
+    <div *ngIf="showPhotoLoader" class="text-center">
+        <i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>
+    </div>
+    -->        
+  </div>
+  <div class="photo-btn">
+    <button *ngIf="photosToLoad && locationPhotoThumbs.length != 0"  class="photo-btn" (click)="loadSinglePhoto()" class="btn btn-warning btn-block btn-large" role="button">
+      <i class="fa fa-camera-retro"></i> 
+      See Photos - {{locationPhotoThumbs.length}} Left
+    </button>
+    <button *ngIf="photosToLoad.length == photoCount"  class="photo-btn" (click)="toggleHidePhotos()" class="btn btn-warning btn-block btn-large" role="button">
+      <i class="fa fa-camera-retro"></i> 
+      <span *ngIf="!hidePhotos">Hide Photos</span>
+      <span *ngIf="hidePhotos">Show Photos</span>
+    </button>            
+  </div>

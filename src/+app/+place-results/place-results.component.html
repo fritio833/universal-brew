@@ -23,7 +23,9 @@
 <div id="brewery-results" class="card-deck container" *ngIf="!showLoader">
   <div *ngFor="let location of locations" class="card">
     <div class="place-img">
-       <img [src]="location.thumb" />
+       <a [routerLink]="['/bar',common.paramSEOFriendly(location.name),location.place_id]">
+         <img [src]="location.thumb" />
+       </a>
     </div>    
     <div class="card-block text-center">
       <!-- <img [src]="location.thumb" /> -->

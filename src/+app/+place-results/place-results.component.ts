@@ -25,6 +25,7 @@ export class PlaceResultsComponent {
   locations = [];
   nextToken:string;
   locationKey:string;
+  pageURL:string;
 
   city:string;
   state:string;
@@ -43,48 +44,34 @@ export class PlaceResultsComponent {
 
       if (this.locationKey != null) {
         this.getPlacesByLocation(params['locationKey']);
+        this.pageURL = this.common.getAbsoluteUrl(this.router);
       }
 
     });  
   }
 
-  /*
   setMeta() {
     let metaTags = [];
     let metaTagsWithFB = [];
     let keywords = [];
-    let pageTitle = `Beers matching ${this.qBrewery} | ${this.common.getAppName()}`;
-    let pageDescription = '';
+    let pageTitle = `Bars in ${this.city}, ${this.state} | ${this.common.getAppName()}`;
+    let pageDescription = `Find bars, clubs, pubs, and sports bars in ${this.city}, ${this.state}. At Brew Search, you can share beers, breweries, and bars socially. Listed are bars located in '${this.city}, ${this.state}'.`;
     
     this.meta.setTitle(pageTitle);
     metaTags.push({name:'author', content:this.common.getAuthor()});
 
-    if (this.isLocationSearch && this.city!=null) {
-      pageTitle = `${this.city}, ${this.state} Breweries | ${this.common.getAppName()}`;
-      metaTags.push(
-        {
-          name:'description', 
-          content:`Find breweries, tasting rooms, micro breweries, and brew pubs in ${this.city}, ${this.state}. At Brew Search, you can share beers, breweries, and bars socially. Listed are breweries located in '${this.city}, ${this.state}'.`
-        }
-      );    
+    metaTags.push(
+      {
+        name:'description', 
+        content:pageDescription
+      }
+    );    
 
-      metaTags.push({
-        name:'keywords', content:`${this.city} breweries,breweries in ${this.city}, ${this.city} brew pubs, brewery in ${this.city}, ${this.city} microbrewery, ${this.state} breweries`
-      });
+    metaTags.push({
+      name:'keywords', content:`${this.city} bars,bars in ${this.city}, ${this.city} sports bars, drinks in ${this.city}, places to drink in ${this.city}, ${this.state} bars`
+    });
 
-    } else {
-      pageTitle = `Breweries matching ${this.qBrewery} | ${this.common.getAppName()}`;
-      metaTags.push(
-        {
-          name:'description', 
-          content:`Find breweries, tasting rooms, micro breweries, and brew pubs using our web or mobile app. At Brew Search, you can share beers, breweries, and bars socially. Listed are breweries that match '${this.qBrewery}'.`
-        }
-      );    
-
-      metaTags.push({
-        name:'keywords', content:`${this.qBrewery},${this.qBrewery} brewery, ${this.qBrewery} tasting room, breweries, microbrewery, brew pubs, `
-      });
-    }
+    
 
 
     // Facebook Tags
@@ -92,14 +79,13 @@ export class PlaceResultsComponent {
     metaTags.push({name:'fb:app_id', content:this.common.getFBAppId()});
     metaTags.push({name:'og:site_name', content:defaultFB.site_name});
     metaTags.push({name:'og:type', content:defaultFB.type});
-    metaTags.push({name:'og:title', content:defaultFB.title});
-    metaTags.push({name:'og:description', content:defaultFB.description});
-    metaTags.push({name:'og:url', content:defaultFB.url});
+    metaTags.push({name:'og:title', content:pageTitle});
+    metaTags.push({name:'og:description', content:pageDescription});
+    metaTags.push({name:'og:url', content:this.pageURL });
     metaTags.push({name:'og:image', content:defaultFB.image});
     
     this.meta.addTags(metaTags);
   }  
-  */
 
   getMoreLocations() {
 
@@ -164,8 +150,9 @@ export class PlaceResultsComponent {
             this.locations = resp.results;
             this.nextToken = resp.next_page_token;
           }
-          console.log('wtf_next_token',this.nextToken);
+
           this.showLoader = false;
+          this.setMeta();
 
         },error=>{
           console.log(error);
