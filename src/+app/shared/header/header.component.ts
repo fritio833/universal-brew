@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { isBrowser } from 'angular2-universal';
 
+//import * as $ from 'jquery';
 
 @Component({
   selector: 'app-header',
@@ -9,20 +10,22 @@ import { isBrowser } from 'angular2-universal';
 })
 
 
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 
-  ngAfterViewInit(){
-    
-    /*
+  ngOnInit() {
+
+    /*  
     if (isBrowser) {
       $('.navbar-nav>a').on('click', function(){
-          $('.navbar-collapse').collapse('hide');
+          $('.navbar-collapse').collapse("hide");
       });
 
       $('.navbar-brand').on('click', function(){
-          $('.navbar-collapse').collapse('hide');
-      });
+          $('.navbar-collapse').collapse("hide");
+      });      
+
     }
     */
+    
   } 
 }

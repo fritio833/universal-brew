@@ -40,7 +40,7 @@ export class BreweryResultsComponent {
               public router:Router,
               public common:CommonService,
               public meta:Meta,
-              private route:ActivatedRoute) {
+              public route:ActivatedRoute) {
 
     // we need the data synchronously for the client to set the server response
     // we create another method so we have more control for testing
@@ -152,11 +152,15 @@ export class BreweryResultsComponent {
 
   getBreweriesByLocation(location) {
 
+    //let checkHasHyphenReg= new RegExp("-");
+    //let checkHasHyphen = checkHasHyphenReg.test(location);
+    //console.log('no hyphen',checkHasHyphen);
 
     let locKey = this.common.revertSEOParam(location);
-    console.log('locKey',locKey);
+    //console.log('locKey',locKey);
     let cityStateArray = locKey.split(","); 
     this.qLocation = locKey;
+    this.showLoader = true;
 
     if (cityStateArray.length == 2) {
       this.city = cityStateArray[0];
@@ -167,10 +171,10 @@ export class BreweryResultsComponent {
 
       if (resp.predictions.length) {
         this.model.get('/google/place_by_id/'+resp.predictions[0].place_id).subscribe(place=>{
-          //console.log('place',place);
+
           this.lat = place.geometry.location.lat;
           this.lng = place.geometry.location.lng;
-          //console.log('lat lng',this.lat+ ' - '+this.lng);
+
           this.model.get('/api/brewery_by_location/'+this.lat+'/'+this.lng).subscribe(breweries=>{
             //console.log('api',breweries);
             if (!breweries.totalResults) {

@@ -136,6 +136,16 @@ export class CommonService {
     }
   }
 
+  getBasePage(router) {
+    let bPage = router.url.replace(/\?/g,"/").split('/');
+    
+    if (bPage.length > 1)
+      return bPage[1]
+    else
+      return null;
+
+  }
+
   timeDifference(previous, short?) {
 
     

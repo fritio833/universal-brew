@@ -8,6 +8,8 @@ import { ApiService } from './api.service';
 import { ModelService } from './model/model.service';
 import { GoogleService } from './google.service';
 import { CommonService } from './common.service';
+import { SearchCacheService } from './search-cache.service';
+
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
@@ -19,6 +21,9 @@ import { RatingComponent } from './rating/rating.component';
 import { StaticMapComponent } from './static-map/static-map.component';
 import { BeerBlockComponent } from './beer-block/beer-block.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ActiveDirective } from './active.directive';
+import { ActiveTriggerDirective } from './active-trigger.directive';
+import { ActiveListenerDirective } from './active-listener.directive';
 
 const MODULES = [
   // Do NOT include UniversalModule, HttpModule, or JsonpModule here
@@ -44,14 +49,18 @@ const COMPONENTS = [
   RatingComponent,
   StaticMapComponent,
   BeerBlockComponent,
-  GalleryComponent
+  GalleryComponent,
+  ActiveDirective,
+  ActiveTriggerDirective,
+  ActiveListenerDirective
 ];
 
 const PROVIDERS = [
   ModelService,
   ApiService,
   GoogleService,
-  CommonService
+  CommonService,
+  SearchCacheService
 ]
 
 @NgModule({

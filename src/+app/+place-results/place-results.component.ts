@@ -125,9 +125,9 @@ export class PlaceResultsComponent {
   getPlacesByLocation(location) {
 
     let locKey = this.common.revertSEOParam(location);
-    console.log('locKey',locKey);
     let cityStateArray = locKey.split(","); 
     this.qLocation = locKey;
+    this.showLoader = true;
 
     if (cityStateArray.length == 2) {
       this.city = cityStateArray[0];
