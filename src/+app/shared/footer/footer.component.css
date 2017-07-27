@@ -7,7 +7,6 @@
 .footer a {
     color:#fff;
     font-weight:1rem;
-    padding: 0 0.5rem;
 
 }
 
@@ -16,13 +15,13 @@
 }
 
 .footer-links {
-    padding-top:1rem;
+    padding-bottom:1rem;
 }
 
 .footer-links a {
-    padding-top:1rem;
     font-size: 15px !important;
-    display:inline-block;
+    display:inline-block !important;
+    padding:5px;
 }
 
 .copyright {
@@ -44,4 +43,14 @@
 
 .footer h5 {
     font-size: 14px !important;
+}
+
+#get-app {
+    padding-bottom:2rem;
+}
+
+.footer-head {
+    color:#000;
+    size:1.5rem;
+    font-weight: bold;
 }

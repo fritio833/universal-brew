@@ -85,4 +85,8 @@ export class CacheService {
       typeof key === 'boolean' ||
       Number.isNaN(<number>key);
   }
+
+  delete(key):void {
+    this._cache.delete(key);
+  }
 }

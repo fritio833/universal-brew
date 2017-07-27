@@ -46,6 +46,7 @@ export class SearchComponent implements OnInit {
   public breweryBtnDisabled:boolean = true;
   public beerBtnDisabled:boolean = true;
   public barBtnDisabled:boolean = true;
+  public basePage:string;
 
   //public page:string;
   @Input() showTabs: string;
@@ -65,7 +66,6 @@ export class SearchComponent implements OnInit {
 
     this.setSearchOptions('bar','city');
     this.setSearchOptions('brewery','city');
-
     
     this.beerStore =  this.cache.getBeer();
     this.breweryStore = this.cache.getBrewery();
@@ -142,24 +142,27 @@ export class SearchComponent implements OnInit {
 
   setView() {
 
-    let page = this.com.getBasePage(this.router);
+    this.basePage = this.com.getBasePage(this.router);
     
-    switch(page) {
+    switch(this.basePage) {
       case '':
       case 'home':
           this.page = 'home';
           break;
       case 'beer':
       case 'beers':
+      case 'find-beers':
           this.page = 'beer';
           break;
       case 'b':
       case 'brewery':
       case 'breweries':
+      case 'find-breweries':
           this.page = 'brewery';
           break;
       case 'bar':
-      case 'bars':     
+      case 'bars':
+      case 'find-bars':    
           this.page = 'bar';
           break;
           default: this.page = 'notfound'; console.log('page not caught');
@@ -170,8 +173,31 @@ export class SearchComponent implements OnInit {
 
   isActive(currentPage) {
     
-    //this.page = 'home';
     //console.log('last search',this.lastSearch);
+    //console.log('basePage',this.basePage + ' * ' + currentPage);
+
+    // Home pages: find-beers, find-breweries, find-bars overrides lastSearch
+    let regEx = new RegExp("find-");
+    if (regEx.test(this.basePage)) {
+      switch(this.basePage) {
+        case 'find-bars':
+          if (currentPage == 'bar')
+            return true;
+          return false;
+          //break;
+        case 'find-beers':
+          if (currentPage == 'beer')
+            return true;
+          return false;
+          //break;
+        
+        case 'find-breweries':
+          if (currentPage == 'brewery')
+            return true;
+          return false;
+          //break;
+      }
+    }
     
     if (this.lastSearch!=null)
       return ( currentPage == this.lastSearch);
@@ -348,7 +374,7 @@ export class SearchComponent implements OnInit {
     if (this.breweryOption == "city" && inputVal.length > 1) {
 
       this.model.get('/google/city_auto/'+inputVal).subscribe(resp=>{
-        console.log('resp',resp);
+        //console.log('resp',resp);
         this.cityPredictions = resp.predictions;
       },error=>{
         console.log(error);
@@ -373,12 +399,15 @@ export class SearchComponent implements OnInit {
 
     switch(tabName) {
       case 'brewery': this.qBrewerySearch = null;
-            this.breweryBtnDisabled = true;  
+            this.breweryBtnDisabled = true;
+            this.cache.clearBrewery(); 
             break;
       case 'bar':this.qBarSearch = null;
+            this.cache.clearBar();
             break;
       case 'beer':this.qBeerSearch = null;
             this.beerBtnDisabled = true; 
+            this.cache.clearBeer();
             break;
     }
   }
@@ -402,7 +431,7 @@ export class SearchComponent implements OnInit {
           break;
         default: break;
       }
-      console.log('setDisabled',setDisable);
+      // console.log('setDisabled',setDisable);
       if (setDisable)
         this.breweryBtnDisabled = true;      
       this.breweryOption = option;

@@ -1,13 +1,17 @@
 #beer-results {
-    background-color:#fff;
+    /*background-color:#fff; */
     margin-top:3rem;
     margin-bottom:3rem;
-    border: 1px solid rgba(0,0,0,.25);
+    /* border: 1px solid rgba(0,0,0,.25); */
 }
 
 #beer-results .row {
   padding-bottom: 1rem;
   padding-top: 1rem;
+}
+
+#beer-results h1 {
+    font-size:1.25rem;
 }
 
 #beer-results p {

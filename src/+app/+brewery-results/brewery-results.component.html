@@ -1,5 +1,4 @@
 <app-search id="search-box"></app-search>
-
 <div class="text-center loader" *ngIf="showLoader">
   <app-loader></app-loader>
 </div>
@@ -10,17 +9,21 @@
   </div>
 </div>
 
-<div id="brewery-results" class="container" *ngIf="breweries.length && !showLoader">
-  <div *ngIf="numPages > 1" class="row container">
-    <div class="col-md-12 text-right">
-    <pagination
-      (goPage)="goToPage($event)"
-      (goNext)="onNext()"
-      (goPrev)="onPrev()"
-      [pagesToShow]="5"
-      [page]="currentPage"
-      [perPage]="pageSize"
-      [count]="totalResults"></pagination>
+<div id="brewery-results" class="container" *ngIf="breweries.length && !showLoader"> 
+  <div class="row container">
+    <div class="col-md-6 text-left">
+      <h1 *ngIf="isLocationSearch"> Breweries in {{city}}, {{state}}</h1>
+      <h1 *ngIf="!isLocationSearch">Breweries matching "{{qBrewery}}"</h1> 
+    </div>
+    <div *ngIf="numPages > 1" class="col-md-6 text-right">
+      <pagination
+        (goPage)="goToPage($event)"
+        (goNext)="onNext()"
+        (goPrev)="onPrev()"
+        [pagesToShow]="5"
+        [page]="currentPage"
+        [perPage]="pageSize"
+        [count]="totalResults"></pagination>
     </div>
   </div>
   <div class="card-deck">

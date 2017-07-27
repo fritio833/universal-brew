@@ -1,5 +1,5 @@
 .app-features ul {
-  padding-top: 1rem;
+  padding-top: 5rem;
   
 }
 
@@ -9,7 +9,7 @@
 }
 
 .fa-green {
-  color: #C81B02;
+  color: green;
 }
 
 .sub-header {
@@ -35,20 +35,14 @@
   margin-bottom:10px !important;
 }
 
-/*
 .card {
   width: 24rem;
+  background-color:#ddd;
 }
-*/
 
-.card-columns .card {
-    column-break-inside: avoid;
-    width: 100%;
-    margin-bottom: .75rem;
-}
 
 .about-panel {
-  /*margin-top:1rem;*/
+  margin-top:4rem;
   /*background-color:#fff;*/
 }
 
@@ -84,18 +78,6 @@ section {
   
 }
 
-.image {
-  background-attachment: fixed; 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("/assets/events/emeraldcoastbeerfest.png");
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 500;
-  opacity: 0.5;
-}
-
 .stuff {
   display: flex;
   flex-direction: column;
@@ -122,21 +104,22 @@ section {
 
 .banner {
   width:inherit;
-  background-image: url("/assets/beers.jpg");
+  background-image: url("/assets/beerhome.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height:420px !important;      
+  height:350px !important;      
 }
 
 .banner h2 {
   position: absolute;
-  top:300px;
+  top:80px;
   left:0;
   right:0;
   margin: 0 auto;
   color:#ffffff;
-  font-family: 'Raleway',sans-serif !important;  
+  font-family: 'Raleway',sans-serif !important;
+  text-shadow: 0 0 10px #000000;
 }
 
 #custom-search-input {
@@ -164,54 +147,10 @@ section {
 }
 
 .fa-ul {
-  padding-left:0;
+  padding-left:1.5rem;
 }
 
 .fa-ul i {
   padding-top:0.25rem;
 }
 
-.card-columns {
-  margin-top:2rem;
-}
-
-.card i {
-  padding-left:0.75rem;
-}
-
-#column-panels {
-  padding-left:0;
-  padding-right:0;
-}
-
-@media (min-width: 34em) {
-    .card-columns {
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
-    }
-}
-
-@media (min-width: 48em) {
-    .card-columns {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-    }
-}
-
-@media (min-width: 62em) {
-    .card-columns {
-        -webkit-column-count: 3;
-        -moz-column-count: 3;
-        column-count: 3;
-    }
-}
-
-@media (min-width: 75em) {
-    .card-columns {
-        -webkit-column-count: 3;
-        -moz-column-count: 3;
-        column-count: 3;
-    }
-}

@@ -3,6 +3,9 @@ import { FormsModule } from '@angular/forms';
 
 
 import { HomeModule } from './+home/home.module';
+import { HomeBeerModule } from './+home-beer/home-beer.module';
+import { HomeBreweryModule } from './+home-brewery/home-brewery.module';
+import { HomeBarModule } from './+home-bar/home-bar.module';
 import { AboutModule } from './+about/about.module';
 import { TodoModule } from './+todo/todo.module';
 import { GetappModule } from './+getapp/getapp.module';
@@ -35,6 +38,9 @@ import { AppComponent, XLargeDirective } from './app.component';
   imports: [
     SharedModule,
     HomeModule,
+    HomeBeerModule,
+    HomeBarModule,
+    HomeBreweryModule,
     AboutModule,
     TodoModule,
     AppRoutingModule,

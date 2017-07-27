@@ -28,5 +28,8 @@ export const routes: string[] = [
   'feeds',
   'checkin',
   'bars',
-  'bar'
+  'bar',
+  'find-bars',
+  'find-beers',
+  'find-breweries'
 ];

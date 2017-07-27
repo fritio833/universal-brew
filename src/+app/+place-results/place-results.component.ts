@@ -40,7 +40,6 @@ export class PlaceResultsComponent {
     this.route.params.subscribe((params:any)=>{
 
       this.locationKey = params['locationKey'];
-      console.log('i got here');
 
       if (this.locationKey != null) {
         this.getPlacesByLocation(params['locationKey']);
@@ -134,7 +133,7 @@ export class PlaceResultsComponent {
       this.state = cityStateArray[1];
     
       let txtSearch = encodeURI('bars in '+this.city+' '+this.state);
-      console.log('search st',txtSearch);
+      //console.log('search st',txtSearch);
 
       this.model.get('/google/search_place_type/'+txtSearch)
         .subscribe(resp=>{

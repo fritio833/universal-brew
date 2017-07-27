@@ -35,7 +35,6 @@ export class SearchCacheService {
       let json = {
           name:name
       }
-      console.log('set',json);
     this._cache.set('__last_search',json);
   }
 
@@ -94,7 +93,17 @@ export class SearchCacheService {
         return this._cache.get('__bar_cache');
     else
         return null;
-  }   
+  }
 
+  clearBar() {
+    this._cache.delete('__bar_cache');
+  }
 
+  clearBeer() {
+    this._cache.delete('__beer_cache');
+  }
+
+  clearBrewery() {
+    this._cache.delete('__brewery_cache');
+  }
 }

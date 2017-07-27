@@ -11,8 +11,11 @@
 </div>
 
 <div id="beer-results" class="container" *ngIf="beers.length && !showLoader">
-  <div *ngIf="numPages > 1" class="row container">
-    <div class="col-md-12 text-right">
+  <div class="row container">
+    <div class="col-md-6 text-left">
+      <h1>Beers matching "{{qBeer}}"</h1>
+    </div>
+    <div *ngIf="numPages > 1" class="col-md-6 text-right">
     <pagination
       (goPage)="goToPage($event)"
       (goNext)="onNext()"
