@@ -154,3 +154,30 @@ section {
   padding-top:0.25rem;
 }
 
+.card {
+  background-color: #fff;
+}
+
+#featured-beer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#featured-week {
+  width:100%;
+  margin-bottom:2rem;
+}
+
+#featured-week .card-header {
+  color:#fff;
+  background-color: #C81B02;
+}
+
+.random-beer h4 {
+  font-size: 1.25rem;
+}
+
+.random-beer {
+  margin-bottom:1rem;
+}
+

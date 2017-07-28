@@ -1,4 +1,4 @@
-<app-search id="search-box"></app-search>
+<app-search id="search-box" *ngIf="!isStateSearch"></app-search>
 <div class="text-center loader" *ngIf="showLoader">
   <app-loader></app-loader>
 </div>
@@ -12,7 +12,7 @@
 <div id="brewery-results" class="container" *ngIf="breweries.length && !showLoader"> 
   <div class="row container">
     <div class="col-md-6 text-left">
-      <h1 *ngIf="isLocationSearch"> Breweries in {{city}}, {{state}}</h1>
+      <h1 *ngIf="isLocationSearch"> Breweries in {{qLocation}}</h1>
       <h1 *ngIf="!isLocationSearch">Breweries matching "{{qBrewery}}"</h1> 
     </div>
     <div *ngIf="numPages > 1" class="col-md-6 text-right">

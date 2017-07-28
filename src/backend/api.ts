@@ -84,7 +84,25 @@ export function createBreweryDbApi() {
           res.json(JSON.parse(response.body));          
         }
       });    
-    });    
+    });
+
+  router.route('/random_beers')
+    .get(function(req, res) {
+      console.log('GET RANDOM BEER');
+      
+      request(breweryDBURL
+        +'beers/?key=' 
+           + breweryDBAPI
+           +'&randomCount=8&hasLabels=Y&availableId=1&order=random&withBreweries=Y', function (error, response, body) {
+
+        if (response === undefined) {
+          var dbResp = {data:[],error:true,msg:"Brewery API Down"};
+          res.json(dbResp);          
+        } else {
+          res.json(JSON.parse(response.body));          
+        }
+      });    
+    });     
 
   router.route('/beers_by_name')
     .get(function(req, res) {
@@ -156,6 +174,33 @@ export function createBreweryDbApi() {
 
     });
 
+  router.route('/brewery_by_state/:state/:page')
+    .get(function(req, res) {
+      //console.log('lat',req.params.lat);
+      //console.log('lng',req.params.lng);
+
+    
+      var _page = ''
+
+      if (req.params.page !== undefined) {
+        _page = '&p='+req.params.page; 
+      }
+           
+      request(breweryDBURL
+          + 'locations/?region='
+          + req.params.state
+          + _page 
+          + '&key='+breweryDBAPI, function (error, response, body) {
+
+        if (response === undefined) {
+          var dbResp = {data:[],error:true,msg:"Brewery API Down"};
+          res.json(dbResp);          
+        } else {
+          res.json(JSON.parse(response.body));          
+        }
+      });       
+    });    
+
   router.route('/brewery_by_location/:lat/:lng')
     .get(function(req, res) {
       //console.log('lat',req.params.lat);
@@ -202,6 +247,22 @@ export function createBreweryDbApi() {
         }
       });  
     });
+
+  router.route('/featured/')
+    .get(function(req, res) {
+      
+      request(breweryDBURL 
+        +'featured/?key=' 
+        + breweryDBAPI, function (error, response, body) {
+
+        if (response === undefined) {
+          var dbResp = {data:[],error:true,msg:"Brewery API Down"};
+          res.json(dbResp);          
+        } else {
+          res.json(JSON.parse(response.body));          
+        }
+      });  
+    });    
 
   router.route('/brewery_detail/:brewery_id')
     .get(function(req, res) {

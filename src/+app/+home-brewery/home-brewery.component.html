@@ -9,3 +9,94 @@
   <app-search id="custom-search-input"></app-search>
   <h2 class="text-center">Search Our Database of Over 20,000 Breweries.</h2>
 </div>
+
+<div id="featured-brewery" class="container" *ngIf="!showLoader">
+  <div id="featured-week" class="card">
+    <div class="card-header">
+      Featured Brewery of the Week
+    </div>    
+    <div class="card-block">
+      <div class="row">
+        <div class="col-md-5 text-center">
+            <img *ngIf="featuredBrewery.images" [src]="featuredBrewery.images.squareMedium" />
+        </div>
+        <div class="col-md-7">
+          <h4 class="card-title">
+              <a [routerLink]="['/brewery',common.paramSEOFriendly(featuredBrewery.name),featuredBrewery.id]">
+                {{featuredBrewery.name}}
+              </a>
+          </h4>
+          <p *ngIf="featuredBrewery.locations" class="card-text"><b>{{featuredBrewery.locations[0].locality}}, {{featuredBrewery.locations[0].region}} {{featuredBrewery.locations[0].countryIsoCode}}</b></p>
+          <p class="card-text" *ngIf="featuredBrewery.description">
+            {{featuredBrewery.description}}
+          </p>
+        </div>
+      </div>
+    </div>           
+  </div>
+  <div id="state-search" class="card">
+    <div class="card-header">
+      Search Breweries in the USA
+    </div>    
+    <div class="card-block">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="state"><a routerLink="/state-breweries/alabama">Alabama</a></div>
+          <div class="state"><a routerLink="/state-breweries/alaska">Alaska</a></div>
+          <div class="state"><a routerLink="/state-breweries/arizona">Arizona</a></div>
+          <div class="state"><a routerLink="/state-breweries/arkansas">Arkansas</a></div>
+          <div class="state"><a routerLink="/state-breweries/california">California</a></div>
+          <div class="state"><a routerLink="/state-breweries/colorado">Colorado</a></div>
+          <div class="state"><a routerLink="/state-breweries/connecticut">Connecticut</a></div>
+          <div class="state"><a routerLink="/state-breweries/delaware">Delaware</a></div>
+          <div class="state"><a routerLink="/state-breweries/florida">Florida</a></div>
+          <div class="state"><a routerLink="/state-breweries/georgia">Georgia</a></div>
+          <div class="state"><a routerLink="/state-breweries/hawaii">Hawaii</a></div>
+          <div class="state"><a routerLink="/state-breweries/idaho">Idaho</a></div>
+          <div class="state"><a routerLink="/state-breweries/illinois">Illinois</a></div>
+          <div class="state"><a routerLink="/state-breweries/indiana">Indiana</a></div>
+          <div class="state"><a routerLink="/state-breweries/iowa">Iowa</a></div>
+          <div class="state"><a routerLink="/state-breweries/kansas">Kansas</a></div>
+          <div class="state"><a routerLink="/state-breweries/kentucky">Kentucky</a></div>
+        </div>
+        <div class="col-md-4">
+          <div class="state"><a routerLink="/state-breweries/louisiana">Louisiana</a></div>
+          <div class="state"><a routerLink="/state-breweries/maine">Maine</a></div>
+          <div class="state"><a routerLink="/state-breweries/maryland">Maryland</a></div>
+          <div class="state"><a routerLink="/state-breweries/massachusetts">Massachusetts</a></div>
+          <div class="state"><a routerLink="/state-breweries/michigan">Michigan</a></div>
+          <div class="state"><a routerLink="/state-breweries/minnesota">Minnesota</a></div>
+          <div class="state"><a routerLink="/state-breweries/mississippi">Mississippi</a></div>
+          <div class="state"><a routerLink="/state-breweries/missouri">Missouri</a></div>
+          <div class="state"><a routerLink="/state-breweries/montana">Montana</a></div>
+          <div class="state"><a routerLink="/state-breweries/nebraska">Nebraska</a></div>
+          <div class="state"><a routerLink="/state-breweries/nevada">Nevada</a></div>
+          <div class="state"><a routerLink="/state-breweries/new-hampshire">New Hampshire</a></div>
+          <div class="state"><a routerLink="/state-breweries/new-jersey">New Jersey</a></div>
+          <div class="state"><a routerLink="/state-breweries/new-mexico">New Mexico</a></div>
+          <div class="state"><a routerLink="/state-breweries/new-york">New York</a></div>
+          <div class="state"><a routerLink="/state-breweries/north-carolina">North Carolina</a></div>
+          <div class="state"><a routerLink="/state-breweries/north-dakota">North Dakota</a></div>
+        </div>
+        <div class="col-md-4">
+          <div class="state"><a routerLink="/state-breweries/ohio">Ohio</a></div>
+          <div class="state"><a routerLink="/state-breweries/oklahoma">Oklahoma</a></div>
+          <div class="state"><a routerLink="/state-breweries/oregon">Oregon</a></div>
+          <div class="state"><a routerLink="/state-breweries/pennsylvania">Pennsylvania</a></div>
+          <div class="state"><a routerLink="/state-breweries/rhode-island">Rhode Island</a></div>
+          <div class="state"><a routerLink="/state-breweries/south-carolina">South Carolina</a></div>
+          <div class="state"><a routerLink="/state-breweries/south-dakota">South Dakota</a></div>
+          <div class="state"><a routerLink="/state-breweries/tennessee">Tennessee</a></div>
+          <div class="state"><a routerLink="/state-breweries/texas">Texas</a></div>
+          <div class="state"><a routerLink="/state-breweries/utah">Utah</a></div>
+          <div class="state"><a routerLink="/state-breweries/vermont">Vermont</a></div>
+          <div class="state"><a routerLink="/state-breweries/virginia">Virginia</a></div>
+          <div class="state"><a routerLink="/state-breweries/washington">Washington</a></div>
+          <div class="state"><a routerLink="/state-breweries/west-virginia">West Virginia</a></div>
+          <div class="state"><a routerLink="/state-breweries/wisconsin">Wisconsin</a></div>
+          <div class="state"><a routerLink="/state-breweries/wyoming">Wyoming</a></div>
+        </div>
+      </div>
+    </div>           
+  </div>  
+</div>

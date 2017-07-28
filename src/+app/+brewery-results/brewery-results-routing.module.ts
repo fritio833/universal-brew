@@ -7,6 +7,8 @@ import { BreweryResultsComponent } from './brewery-results.component';
   imports: [
     RouterModule.forChild([
       { path: 'breweries/:locationKey',component: BreweryResultsComponent},
+      { path: 'state-breweries/:state/:page',component: BreweryResultsComponent},
+      { path: 'state-breweries/:state',component: BreweryResultsComponent},
       { path: 'breweries', component: BreweryResultsComponent }
     ])
   ]

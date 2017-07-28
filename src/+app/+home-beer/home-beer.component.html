@@ -9,3 +9,82 @@
   <app-search id="custom-search-input"></app-search>
   <h2 class="text-center">Search Our Database of Over 80,000 Beers.</h2>
 </div>
+
+<div id="featured-beer" class="container" *ngIf="!showLoader">
+  <div id="featured-week" class="card">
+    <div class="card-header">
+      Featured Beer of the Week
+    </div>    
+    <div class="card-block">
+      <div class="row">
+        <div class="col-md-5 text-center">
+          <a *ngIf="featuredBeer.breweries" [routerLink]="['/beer',common.paramSEOFriendly(featuredBeer.breweries[0].name+' '+featuredBeer.name),featuredBeer.id]">
+            <img *ngIf="featuredBeer.labels" [src]="featuredBeer.labels.medium" />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h4 class="card-title">
+            <a [routerLink]="['/beer',common.paramSEOFriendly(featuredBeer.breweries[0].name+' '+featuredBeer.name),featuredBeer.id]">
+              {{featuredBeer.nameDisplay}}
+            </a>
+          </h4>
+          <p class="card-text">
+            <a [routerLink]="['/brewery',common.paramSEOFriendly(featuredBeer.breweries[0].name),featuredBeer.breweries[0].id]">
+              {{featuredBeer.breweries[0].name}}
+            </a>
+          </p>
+          <p class="card-text" *ngIf="featuredBeer.style!=null">
+            {{featuredBeer.style.shortName}}    
+          </p>          
+          <p class="card-text" *ngIf="featuredBeer.abv">{{featuredBeer.abv}}% ABV</p>
+          <p class="card-text"*ngIf="!featuredBeer.abv">ABV Not Listed</p>          
+          <p class="card-text" *ngIf="featuredBeer.description">
+            {{featuredBeer.description}}
+          </p>
+        </div>
+      </div>
+    </div>           
+  </div>  
+  <div class="card-group">
+    <!--
+    <div class="card">
+      <img *ngIf="featuredBeer.labels" [src]="featuredBeer.labels.medium" />
+      <div class="card-block">
+        <h4 class="card-title">{{featuredBeer.nameDisplay}}</h4>
+        <p class="card-text">
+          <read-more [text]="featuredBeer.description" [maxLength]="75"></read-more>
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted" *ngIf="featuredBeer.abv">{{featuredBeer.abv}}% ABV</small>
+        <small class="text-muted" *ngIf="!featuredBeer.abv">ABV Not Listed</small>
+      </div>           
+    </div>
+    -->
+    <div class="card random-beer" *ngFor="let beer of randomBeers">
+      <a *ngIf="beer.breweries" class="beer-header" [routerLink]="['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]">
+        <img *ngIf="beer.labels" [src]="beer.labels.medium" />
+      </a>
+      <div class="card-block">
+        <h4 class="card-title text-center">
+          <a *ngIf="beer.breweries" [routerLink]="['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]">{{beer.name}}</a>
+          <a *ngIf="!beer.breweries" [routerLink]="['/beer',common.paramSEOFriendly(beer.name),beer.id]">
+            {{beer.name}}
+          </a>
+        </h4>
+        <p class="card-text text-center">
+          <a *ngIf="beer.breweries" [routerLink]="['/brewery',common.paramSEOFriendly(beer.breweries[0].name),beer.breweries[0].id]">{{beer.breweries[0].name}}</a>
+        </p>      
+        <p class="card-text text-center" *ngIf="beer.style!=null">
+          {{beer.style.shortName}}    
+        </p>
+        <p *ngIf="beer.abv!=null" class="card-text text-center">
+          <small class="text-muted">{{beer.abv}}% ABV</small>
+        </p>
+      </div>
+      <div class="card-footer text-center">
+        <small class="text-muted">Added {{common.dateFriendly(beer.createDate)}}</small>
+      </div>             
+    </div>
+  </div>
+</div>

@@ -13,11 +13,27 @@ import { CommonService } from '../shared/common.service';
 })
 export class HomeBreweryComponent {
   data: any = {};
+  featuredBrewery:any;
+  showLoader:boolean = true;
+
   constructor(public model: ModelService, public meta: Meta, public common: CommonService) {
 
     // we need the data synchronously for the client to set the server response
     // we create another method so we have more control for testing
     this.setMeta();
+
+    this.model.get('/api/featured').subscribe(featured=>{
+      //console.log('featured',featured);
+
+      if ("data" in featured) {
+        this.featuredBrewery = featured['data'].brewery;
+      }
+      //console.log('beer',this.featuredBrewery);
+      this.showLoader = false;
+      
+    },error=>{
+      console.log(error);
+    });    
   }
 
   setMeta() {

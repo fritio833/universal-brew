@@ -12,20 +12,43 @@ import { CommonService } from '../shared/common.service';
   templateUrl: './home-beer.component.html'
 })
 export class HomeBeerComponent {
-  data: any = {};
+
+  featuredBeer:any;
+  randomBeers:any;
+  showLoader:boolean = true;
+  
   constructor(public model: ModelService, public meta: Meta, public common: CommonService) {
 
     // we need the data synchronously for the client to set the server response
     // we create another method so we have more control for testing
     this.setMeta();
+
+    this.model.get('/api/featured').subscribe(featured=>{
+      //console.log('featured',featured);
+
+      if ("data" in featured) {
+        this.featuredBeer = featured['data'].beer;
+      }
+      //console.log('beer',this.featuredBeer);
+
+      this.model.get('/api/random_beers').subscribe(random=>{
+        //console.log('random',random);
+        if ("data" in random) {
+          this.randomBeers = random['data'];
+        }
+        //console.log('random',random);
+        this.showLoader = false;        
+      },error=>{
+        console.log(error);
+      });
+
+      
+    },error=>{
+      console.log(error);
+    });
   }
 
   setMeta() {
-    /*
-    this.model.get('/data.json').subscribe(data => {
-      this.data = data;
-    });
-    */
     let metaTags = [];
     let metaTagsWithFB = [];
     let keywords = [];

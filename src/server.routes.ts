@@ -23,6 +23,7 @@ export const routes: string[] = [
   'beer',
   'brewery',
   'breweries',
+  'state-breweries',
   'b',
   'beer-list',
   'feeds',
