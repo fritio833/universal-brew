@@ -2,7 +2,7 @@ import { Injectable,Inject } from '@angular/core';
 import { Http } from '@angular/http';
 import { environment } from '../../environments/environment';
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/retrywhen';
+import 'rxjs/add/operator/retryWhen';
 import 'rxjs/add/operator/delay';
 import 'rxjs/add/operator/timeout';
 import 'rxjs/add/operator/map';
