@@ -130,7 +130,7 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 557);
+/******/ 	return __webpack_require__(__webpack_require__.s = 593);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -138,7 +138,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_core__ = __webpack_require__(361);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_core__ = __webpack_require__(372);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "assertPlatform", function() { return __WEBPACK_IMPORTED_MODULE_0__src_core__["_6"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "destroyPlatform", function() { return __WEBPACK_IMPORTED_MODULE_0__src_core__["_7"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "getPlatform", function() { return __WEBPACK_IMPORTED_MODULE_0__src_core__["_8"]; });
@@ -650,8 +650,8 @@ function escapeRegExp(s) {
 "use strict";
 "use strict";
 var root_1 = __webpack_require__(34);
-var toSubscriber_1 = __webpack_require__(552);
-var observable_1 = __webpack_require__(170);
+var toSubscriber_1 = __webpack_require__(588);
+var observable_1 = __webpack_require__(172);
 /**
  * A representation of any set of values over any amount of time. This the most basic building block
  * of RxJS.
@@ -791,6 +791,53 @@ exports.Observable = Observable;
 
 /***/ },
 /* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_index__ = __webpack_require__(420);
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterLink", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["a"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterLinkWithHref", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["b"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterLinkActive", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["c"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterOutlet", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["d"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "NavigationCancel", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["e"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "NavigationEnd", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["f"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "NavigationError", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["g"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "Router", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["h"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RoutesRecognized", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["i"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "NavigationStart", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["j"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterModule", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["k"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "provideRoutes", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["l"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterOutletMap", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["m"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "PreloadAllModules", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["n"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "PreloadingStrategy", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["o"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "NoPreloading", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["p"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "ActivatedRoute", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["q"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "ActivatedRouteSnapshot", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["r"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterState", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["s"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterStateSnapshot", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["t"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "PRIMARY_OUTLET", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["u"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "DefaultUrlSerializer", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["v"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "UrlSegment", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["w"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "UrlSerializer", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["x"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "UrlTree", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["y"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "__router_private__", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["z"]; });
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @module
+ * @description
+ * Entry point for all public APIs of the router package.
+ */
+
+//# sourceMappingURL=index.js.map
+
+/***/ },
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1800,37 +1847,378 @@ function literal(value, type) {
 //# sourceMappingURL=output_ast.js.map
 
 /***/ },
-/* 5 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_index__ = __webpack_require__(409);
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterLink", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["a"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterLinkWithHref", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["b"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterLinkActive", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["c"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterOutlet", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["d"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "NavigationCancel", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["e"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "NavigationEnd", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["f"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "NavigationError", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["g"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "Router", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["h"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RoutesRecognized", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["i"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "NavigationStart", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["j"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterModule", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["k"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "provideRoutes", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["l"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterOutletMap", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["m"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "PreloadAllModules", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["n"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "PreloadingStrategy", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["o"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "NoPreloading", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["p"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "ActivatedRoute", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["q"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "ActivatedRouteSnapshot", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["r"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterState", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["s"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RouterStateSnapshot", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["t"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "PRIMARY_OUTLET", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["u"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "DefaultUrlSerializer", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["v"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "UrlSegment", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["w"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "UrlSerializer", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["x"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "UrlTree", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["y"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "__router_private__", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["z"]; });
+"use strict";
+var core_1 = __webpack_require__(0);
+var environment_1 = __webpack_require__(165);
+var CommonService = (function () {
+    function CommonService() {
+        this.FBAppId = '1034295406675441';
+        this.AppName = 'Brew Search';
+        this.AppAuthor = 'Brew Search Team';
+        this.WebSite = 'BrewSearchApp.com';
+    }
+    CommonService.prototype.showHalfStar = function (rating) {
+        //console.log(rating);
+        if ((rating % 1) > 0.4)
+            return true;
+        else
+            return false;
+    };
+    CommonService.prototype.getSiteName = function () {
+        return this.WebSite;
+    };
+    CommonService.prototype.getFBAppId = function () {
+        return this.FBAppId;
+    };
+    CommonService.prototype.getAppName = function () {
+        return this.AppName;
+    };
+    CommonService.prototype.getAuthor = function () {
+        return this.AppAuthor;
+    };
+    CommonService.prototype.getGoogleThumbs = function (photoId) {
+    };
+    CommonService.prototype.getToGoogleMapsUrl = function (lat, lng) {
+        return 'http://maps.google.com/?q=' + lat + ',' + lng;
+    };
+    CommonService.prototype.getGoogleImg = function (photo_ref, width) {
+        var _width = 500;
+        if (width != null)
+            _width = width;
+        return 'https://maps.googleapis.com/maps/api/place/photo?photoreference=' + photo_ref + '&maxwidth=' + _width + '&key=' + environment_1.environment.google.googlePlacesAPIKey;
+    };
+    CommonService.prototype.paramSEOFriendly = function (paramName) {
+        /*
+        let param = paramName.replace(/[^a-zA-Z0-9\s]+/g,""); // Remove Special Characters
+        param = param.replace(/\s+/g,"-"); // replace spaces with hyphen
+        return param.toLowerCase();
+        */
+        return paramName.toLowerCase().replace(/[^a-z0-9À-ž]+/g, "-").replace(/^-+|-+$/g, "-").replace(/^-+|-+$/g, '');
+    };
+    CommonService.prototype.revertSEOParam = function (param) {
+        var paramArray = param.split("-");
+        var state = '';
+        var city = '';
+        state = paramArray.pop();
+        city = paramArray.join("-");
+        city = city.replace(/\-/g, " ");
+        return this.titleCase(city) + "," + state.toUpperCase();
+    };
+    CommonService.prototype.titleCase = function (str) {
+        str = str.toLowerCase();
+        str = str.split(" ");
+        str = str.map(function (val) {
+            val = val.charAt(0).toUpperCase() + val.slice(1);
+            return val;
+        });
+        str = str.join(" ");
+        return str;
+    };
+    CommonService.prototype.dateFriendly = function (dateStr) {
+        var dateTemp = dateStr.split(" ");
+        var dateFormat = dateTemp[0].split("-");
+        return dateFormat[1] + '/' + dateFormat[2] + '/' + dateFormat[0];
+    };
+    CommonService.prototype.timeConverter = function (UNIX_timestamp) {
+        var a = new Date(UNIX_timestamp * 1000);
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var year = a.getFullYear();
+        var month = a.getMonth() + 1;
+        var date = a.getDate();
+        var hour = a.getHours();
+        var min = a.getMinutes();
+        var sec = a.getSeconds();
+        var time = month + '/' + date + '/' + year;
+        return time;
+    };
+    CommonService.prototype.defaultOGMetaTags = function () {
+        var metaTags = {
+            site_name: 'BrewSearcApp.com',
+            type: 'website',
+            title: 'Find Beers, Bars, and Breweries!',
+            description: 'A great description.',
+            url: 'https://brewsearchapp.com',
+            image: 'https://firebasestorage.googleapis.com/v0/b/bender-1487426215149.appspot.com/o/img%2FBrewSearchOG.jpg?alt=media&token=44ce4c8b-06f1-4e4b-ab30-80e10363b865'
+        };
+        return metaTags;
+    };
+    CommonService.prototype.getDefaultNoImage = function () {
+        return 'https://firebasestorage.googleapis.com/v0/b/bender-1487426215149.appspot.com/o/img%2FBrewSearchOG.jpg?alt=media&token=44ce4c8b-06f1-4e4b-ab30-80e10363b865';
+    };
+    CommonService.prototype.getBaseUrl = function () {
+        if (Zone.current.get("originUrl")) {
+            return Zone.current.get('originUrl');
+        }
+        else if (location) {
+            return location.origin;
+        }
+        else {
+            return '';
+        }
+    };
+    CommonService.prototype.getAbsoluteUrl = function (router) {
+        var baseUrl = this.getBaseUrl();
+        if (baseUrl.length) {
+            return baseUrl + router.url;
+        }
+        else {
+            return '';
+        }
+    };
+    CommonService.prototype.getBasePage = function (router) {
+        var bPage = router.url.replace(/\?/g, "/").split('/');
+        if (bPage.length > 1)
+            return bPage[1];
+        else
+            return null;
+    };
+    CommonService.prototype.timeDifference = function (previous, short) {
+        if (previous == null)
+            return '';
+        var current = new Date().getTime();
+        var msPerMinute = 60 * 1000;
+        var msPerHour = msPerMinute * 60;
+        var msPerDay = msPerHour * 24;
+        var msPerMonth = msPerDay * 30;
+        var msPerYear = msPerDay * 365;
+        var checkOne;
+        var elapsed = current - previous;
+        if (elapsed < msPerMinute) {
+            if (short)
+                return Math.round(elapsed / 1000) + 's';
+            else {
+                checkOne = Math.round(elapsed / 1000);
+                if (checkOne == 1)
+                    return Math.round(elapsed / 1000) + ' second ago';
+                else
+                    return Math.round(elapsed / 1000) + ' seconds ago';
+            }
+        }
+        else if (elapsed < msPerHour) {
+            if (short)
+                return Math.round(elapsed / msPerMinute) + 'm';
+            else {
+                checkOne = Math.round(elapsed / msPerMinute);
+                if (checkOne == 1)
+                    return Math.round(elapsed / msPerMinute) + ' minute ago';
+                else
+                    return Math.round(elapsed / msPerMinute) + ' minutes ago';
+            }
+        }
+        else if (elapsed < msPerDay) {
+            if (short)
+                return Math.round(elapsed / msPerHour) + 'h';
+            else {
+                checkOne = Math.round(elapsed / msPerHour);
+                if (checkOne == 1)
+                    return Math.round(elapsed / msPerHour) + ' hour ago';
+                else
+                    return Math.round(elapsed / msPerHour) + ' hours ago';
+            }
+        }
+        else if (elapsed < msPerMonth) {
+            if (short)
+                return Math.round(elapsed / msPerDay) + 'd';
+            else {
+                checkOne = Math.round(elapsed / msPerDay);
+                if (checkOne == 1)
+                    return Math.round(elapsed / msPerDay) + ' day ago';
+                else
+                    return 'approximately ' + Math.round(elapsed / msPerDay) + ' days ago';
+            }
+        }
+        else if (elapsed < msPerYear) {
+            if (short)
+                return Math.round(elapsed / msPerMonth) + 'mo';
+            else {
+                checkOne = Math.round(elapsed / msPerMonth);
+                if (checkOne == 1)
+                    return Math.round(elapsed / msPerMonth) + ' month ago';
+                else
+                    return 'approximately ' + Math.round(elapsed / msPerMonth) + ' months ago';
+            }
+        }
+        else {
+            if (short)
+                return Math.round(elapsed / msPerYear) + 'yr';
+            else {
+                checkOne = Math.round(elapsed / msPerYear);
+                if (checkOne == 1)
+                    return Math.round(elapsed / msPerYear) + ' year ago';
+                else
+                    return 'approximately ' + Math.round(elapsed / msPerYear) + ' years ago';
+            }
+        }
+    };
+    CommonService = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [])
+    ], CommonService);
+    return CommonService;
+}());
+exports.CommonService = CommonService;
+
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var common_1 = __webpack_require__(52);
+var router_1 = __webpack_require__(4);
+var forms_1 = __webpack_require__(237);
+//import { AgmCoreModule } from '@agm/core';
+var api_service_1 = __webpack_require__(290);
+var model_service_1 = __webpack_require__(8);
+var google_service_1 = __webpack_require__(291);
+var common_service_1 = __webpack_require__(6);
+var search_cache_service_1 = __webpack_require__(292);
+var footer_component_1 = __webpack_require__(477);
+var header_component_1 = __webpack_require__(479);
+var search_component_1 = __webpack_require__(484);
+var read_more_component_1 = __webpack_require__(483);
+var pagination_component_1 = __webpack_require__(481);
+var facebook_component_1 = __webpack_require__(476);
+var loader_component_1 = __webpack_require__(480);
+var rating_component_1 = __webpack_require__(482);
+var static_map_component_1 = __webpack_require__(485);
+var beer_block_component_1 = __webpack_require__(475);
+var gallery_component_1 = __webpack_require__(478);
+var active_directive_1 = __webpack_require__(474);
+var active_trigger_directive_1 = __webpack_require__(473);
+var active_listener_directive_1 = __webpack_require__(289);
+var MODULES = [
+    // Do NOT include UniversalModule, HttpModule, or JsonpModule here
+    common_1.CommonModule,
+    router_1.RouterModule,
+    forms_1.FormsModule,
+    forms_1.ReactiveFormsModule
+];
+var PIPES = [];
+var COMPONENTS = [
+    // put shared components here
+    footer_component_1.FooterComponent,
+    header_component_1.HeaderComponent,
+    search_component_1.SearchComponent,
+    pagination_component_1.PaginationComponent,
+    read_more_component_1.ReadMoreComponent,
+    facebook_component_1.FacebookComponent,
+    loader_component_1.LoaderComponent,
+    rating_component_1.RatingComponent,
+    static_map_component_1.StaticMapComponent,
+    beer_block_component_1.BeerBlockComponent,
+    gallery_component_1.GalleryComponent,
+    active_directive_1.ActiveDirective,
+    active_trigger_directive_1.ActiveTriggerDirective,
+    active_listener_directive_1.ActiveListenerDirective
+];
+var PROVIDERS = [
+    model_service_1.ModelService,
+    api_service_1.ApiService,
+    google_service_1.GoogleService,
+    common_service_1.CommonService,
+    search_cache_service_1.SearchCacheService
+];
+var SharedModule = (function () {
+    function SharedModule() {
+    }
+    SharedModule.forRoot = function () {
+        return {
+            ngModule: SharedModule,
+            providers: PROVIDERS.slice()
+        };
+    };
+    SharedModule = __decorate([
+        core_1.NgModule({
+            imports: MODULES.slice(),
+            declarations: PIPES.concat(COMPONENTS),
+            exports: MODULES.concat(PIPES, COMPONENTS)
+        }), 
+        __metadata('design:paramtypes', [])
+    ], SharedModule);
+    return SharedModule;
+}());
+exports.SharedModule = SharedModule;
+
+
+/***/ },
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var Observable_1 = __webpack_require__(3);
+__webpack_require__(166);
+__webpack_require__(296);
+__webpack_require__(298);
+var cache_service_1 = __webpack_require__(164);
+var api_service_1 = __webpack_require__(290);
+function hashCodeString(str) {
+    var hash = 0;
+    if (str.length === 0) {
+        return hash + '';
+    }
+    for (var i = 0; i < str.length; i++) {
+        var char = str.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        hash = hash & hash; // Convert to 32bit integer
+    }
+    return hash + '';
+}
+exports.hashCodeString = hashCodeString;
+// domain/feature service
+var ModelService = (function () {
+    // This is only one example of one Model depending on your domain
+    function ModelService(_api, _cache) {
+        this._api = _api;
+        this._cache = _cache;
+    }
+    /**
+     * whatever domain/feature method name
+     */
+    ModelService.prototype.get = function (url) {
+        var _this = this;
+        // you want to return the cache if there is a response in it.
+        // This would cache the first response so if your API isn't idempotent
+        // you probably want to remove the item from the cache after you use it. LRU of 10
+        // you can use also hashCodeString here
+        var key = url;
+        if (this._cache.has(key)) {
+            return Observable_1.Observable.of(this._cache.get(key));
+        }
+        // you probably shouldn't .share() and you should write the correct logic
+        return this._api.get(url)
+            .do(function (json) {
+            _this._cache.set(key, json);
+        })
+            .share();
+    };
+    // don't cache here since we're creating
+    ModelService.prototype.create = function () {
+        // TODO
+    };
+    ModelService = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof api_service_1.ApiService !== 'undefined' && api_service_1.ApiService) === 'function' && _a) || Object, (typeof (_b = typeof cache_service_1.CacheService !== 'undefined' && cache_service_1.CacheService) === 'function' && _b) || Object])
+    ], ModelService);
+    return ModelService;
+    var _a, _b;
+}());
+exports.ModelService = ModelService;
+
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -1838,22 +2226,201 @@ function literal(value, type) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
+"use strict";
+var core_1 = __webpack_require__(0);
+// es6-modules are used here
+var dom_adapter_1 = __webpack_require__(11);
+var platform_browser_1 = __webpack_require__(103);
 /**
- * @module
- * @description
- * Entry point for all public APIs of the router package.
+ * A service that can be used to get and add meta tags.
+ *
+ * @experimental
  */
+var Meta = (function () {
+    function Meta(_document) {
+        this._document = _document;
+        this._dom = dom_adapter_1.getDOM();
+    }
+    /**
+     * Sets the title of the page
+     */
+    Meta.prototype.setTitle = function (title) {
+        this._document.title = title;
+    };
+    /**
+     * this.meta.updateMeta('description', 'test'); will  set <meta name="description" content="test">
+     */
+    Meta.prototype.updateMeta = function (name, content) {
+        var head = this._document.head;
+        var childNodesAsList = this._dom.childNodesAsList(head);
+        var metaEl = childNodesAsList.find(function (el) { return el['attribs'] ? el['attribs'].name == name : false; });
+        if (metaEl)
+            metaEl['attribs'].content = content;
+    };
+    /**
+     * Adds a new meta tag to the dom.
+     *
+     *  ### Example
+     *
+     * ```ts
+     * const name: MetaDefinition = {name: 'application-name', content: 'Name of my application'};
+     * const desc: MetaDefinition = {name: 'description', content: 'A description of the page'};
+     * const tags: HTMLMetaElement[] = this.meta.addTags([name, desc]);
+     * ```
+     *
+     * @param tags
+     * @returns {HTMLMetaElement[]}
+     */
+    Meta.prototype.addTags = function () {
+        var _this = this;
+        var tags = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            tags[_i - 0] = arguments[_i];
+        }
+        var presentTags = this._flattenArray(tags);
+        if (presentTags.length === 0)
+            return [];
+        return presentTags.map(function (tag) { return _this._addInternal(tag); });
+    };
+    /**
+     * Gets the meta tag by the given selector. Returns element or null
+     * if there's no such meta element.
+     *
+     *  ### Example
+     *
+     * ```ts
+     * const meta: HTMLMetaElement = this.meta.getTag('name=description');
+     * const twitterMeta: HTMLMetaElement = this.meta.getTag('name="twitter:title"');
+     * const fbMeta: HTMLMetaElement = this.meta.getTag('property="fb:app_id"');
+     * ```
+     *
+     * @param selector
+     * @returns {HTMLMetaElement}
+     */
+    Meta.prototype.getTag = function (selector) {
+        if (!selector)
+            return null;
+        return this._dom.query("meta[" + selector + "]");
+    };
+    /**
+     * Updates the meta tag with the given selector.
+     *
+     * *  ### Example
+     *
+     * ```ts
+     * const meta: HTMLMetaElement = this.meta.updateTag('name=description', {name: 'description',
+     * content: 'New description'});
+     * console.log(meta.content); // 'New description'
+     * ```
+     *
+     * @param selector
+     * @param tag updated tag definition
+     * @returns {HTMLMetaElement}
+     */
+    Meta.prototype.updateTag = function (selector, tag) {
+        var meta = this.getTag(selector);
+        if (!meta) {
+            // create element if it doesn't exist
+            return this._addInternal(tag);
+        }
+        return this._prepareMetaElement(tag, meta);
+    };
+    /**
+     * Removes meta tag with the given selector from the dom.
+     *
+     *  ### Example
+     *
+     * ```ts
+     * this.meta.removeTagBySelector('name=description');
+     * ```
+     *
+     * @param selector
+     */
+    Meta.prototype.removeTagBySelector = function (selector) {
+        var meta = this.getTag(selector);
+        this.removeTagElement(meta);
+    };
+    /**
+     * Removes given meta element from the dom.
+     *
+     *  ### Example
+     *  ```ts
+     * const elem: HTMLMetaElement = this.meta.getTag('name=description');
+     * this.meta.removeTagElement(elem);
+     * ```
+     *
+     * @param meta meta element
+     */
+    Meta.prototype.removeTagElement = function (meta) {
+        if (meta) {
+            this._removeMetaElement(meta);
+        }
+    };
+    Meta.prototype.addCanonicalLink = function (href) {
+        var link = this._createElement('link');
+        var tag = { rel: 'canonical', href: href };
+        this._prepareMetaElement(tag, link);
+        this._appendMetaElement(link);
+        return link;
+    };
+    Meta.prototype._addInternal = function (tag) {
+        var meta = this._createMetaElement();
+        this._prepareMetaElement(tag, meta);
+        this._appendMetaElement(meta);
+        return meta;
+    };
+    Meta.prototype._createMetaElement = function () {
+        return this._dom.createElement('meta');
+    };
+    Meta.prototype._createElement = function (tag) {
+        return this._dom.createElement(tag);
+    };
+    Meta.prototype._prepareMetaElement = function (tag, el) {
+        var _this = this;
+        Object.keys(tag).forEach(function (prop) { return _this._dom.setAttribute(el, prop, tag[prop]); });
+        return el;
+    };
+    Meta.prototype._appendMetaElement = function (el) {
+        var head = this._document.head;
+        this._dom.appendChild(head, el);
+    };
+    Meta.prototype._removeMetaElement = function (meta) {
+        var head = this._dom.parentElement(meta);
+        this._dom.removeChild(head, meta);
+    };
+    Meta.prototype._flattenArray = function (input, out) {
+        if (out === void 0) { out = []; }
+        if (input) {
+            for (var i = 0; i < input.length; i++) {
+                var item = input[i];
+                if (Array.isArray(item)) {
+                    this._flattenArray(item, out);
+                }
+                else if (item) {
+                    out.push(item);
+                }
+            }
+        }
+        return out;
+    };
+    Meta = __decorate([
+        core_1.Injectable(),
+        __param(0, core_1.Inject(platform_browser_1.DOCUMENT)), 
+        __metadata('design:paramtypes', [Object])
+    ], Meta);
+    return Meta;
+}());
+exports.Meta = Meta;
 
-//# sourceMappingURL=index.js.map
 
 /***/ },
-/* 6 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(12);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return Identifiers; });
 /* unused harmony export assetUrl */
 /* harmony export (immutable) */ exports["d"] = resolveIdentifier;
@@ -2191,7 +2758,7 @@ function resolveEnumIdentifier(enumType, name) {
 //# sourceMappingURL=identifiers.js.map
 
 /***/ },
-/* 7 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2246,7 +2813,7 @@ var DomAdapter = (function () {
 //# sourceMappingURL=dom_adapter.js.map
 
 /***/ },
-/* 8 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2346,375 +2913,7 @@ var AnimationTransition = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_pr
 //# sourceMappingURL=private_import_core.js.map
 
 /***/ },
-/* 9 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var common_1 = __webpack_require__(51);
-var router_1 = __webpack_require__(5);
-var forms_1 = __webpack_require__(235);
-//import { AgmCoreModule } from '@agm/core';
-var api_service_1 = __webpack_require__(280);
-var model_service_1 = __webpack_require__(11);
-var google_service_1 = __webpack_require__(282);
-var common_service_1 = __webpack_require__(10);
-var search_cache_service_1 = __webpack_require__(579);
-var footer_component_1 = __webpack_require__(454);
-var header_component_1 = __webpack_require__(455);
-var search_component_1 = __webpack_require__(460);
-var read_more_component_1 = __webpack_require__(459);
-var pagination_component_1 = __webpack_require__(457);
-var facebook_component_1 = __webpack_require__(453);
-var loader_component_1 = __webpack_require__(456);
-var rating_component_1 = __webpack_require__(458);
-var static_map_component_1 = __webpack_require__(461);
-var beer_block_component_1 = __webpack_require__(452);
-var gallery_component_1 = __webpack_require__(575);
-var active_directive_1 = __webpack_require__(580);
-var active_trigger_directive_1 = __webpack_require__(581);
-var active_listener_directive_1 = __webpack_require__(582);
-var MODULES = [
-    // Do NOT include UniversalModule, HttpModule, or JsonpModule here
-    common_1.CommonModule,
-    router_1.RouterModule,
-    forms_1.FormsModule,
-    forms_1.ReactiveFormsModule
-];
-var PIPES = [];
-var COMPONENTS = [
-    // put shared components here
-    footer_component_1.FooterComponent,
-    header_component_1.HeaderComponent,
-    search_component_1.SearchComponent,
-    pagination_component_1.PaginationComponent,
-    read_more_component_1.ReadMoreComponent,
-    facebook_component_1.FacebookComponent,
-    loader_component_1.LoaderComponent,
-    rating_component_1.RatingComponent,
-    static_map_component_1.StaticMapComponent,
-    beer_block_component_1.BeerBlockComponent,
-    gallery_component_1.GalleryComponent,
-    active_directive_1.ActiveDirective,
-    active_trigger_directive_1.ActiveTriggerDirective,
-    active_listener_directive_1.ActiveListenerDirective
-];
-var PROVIDERS = [
-    model_service_1.ModelService,
-    api_service_1.ApiService,
-    google_service_1.GoogleService,
-    common_service_1.CommonService,
-    search_cache_service_1.SearchCacheService
-];
-var SharedModule = (function () {
-    function SharedModule() {
-    }
-    SharedModule.forRoot = function () {
-        return {
-            ngModule: SharedModule,
-            providers: PROVIDERS.slice()
-        };
-    };
-    SharedModule = __decorate([
-        core_1.NgModule({
-            imports: MODULES.slice(),
-            declarations: PIPES.concat(COMPONENTS),
-            exports: MODULES.concat(PIPES, COMPONENTS)
-        }), 
-        __metadata('design:paramtypes', [])
-    ], SharedModule);
-    return SharedModule;
-}());
-exports.SharedModule = SharedModule;
-
-
-/***/ },
-/* 10 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var environment_1 = __webpack_require__(164);
-var CommonService = (function () {
-    function CommonService() {
-        this.FBAppId = '1034295406675441';
-        this.AppName = 'Brew Search';
-        this.AppAuthor = 'Brew Search Team';
-        this.WebSite = 'BrewSearchApp.com';
-    }
-    CommonService.prototype.showHalfStar = function (rating) {
-        //console.log(rating);
-        if ((rating % 1) > 0.4)
-            return true;
-        else
-            return false;
-    };
-    CommonService.prototype.getSiteName = function () {
-        return this.WebSite;
-    };
-    CommonService.prototype.getFBAppId = function () {
-        return this.FBAppId;
-    };
-    CommonService.prototype.getAppName = function () {
-        return this.AppName;
-    };
-    CommonService.prototype.getAuthor = function () {
-        return this.AppAuthor;
-    };
-    CommonService.prototype.getGoogleThumbs = function (photoId) {
-    };
-    CommonService.prototype.getToGoogleMapsUrl = function (lat, lng) {
-        return 'http://maps.google.com/?q=' + lat + ',' + lng;
-    };
-    CommonService.prototype.getGoogleImg = function (photo_ref, width) {
-        var _width = 500;
-        if (width != null)
-            _width = width;
-        return 'https://maps.googleapis.com/maps/api/place/photo?photoreference=' + photo_ref + '&maxwidth=' + _width + '&key=' + environment_1.environment.google.googlePlacesAPIKey;
-    };
-    CommonService.prototype.paramSEOFriendly = function (paramName) {
-        /*
-        let param = paramName.replace(/[^a-zA-Z0-9\s]+/g,""); // Remove Special Characters
-        param = param.replace(/\s+/g,"-"); // replace spaces with hyphen
-        return param.toLowerCase();
-        */
-        return paramName.toLowerCase().replace(/[^a-z0-9À-ž]+/g, "-").replace(/^-+|-+$/g, "-").replace(/^-+|-+$/g, '');
-    };
-    CommonService.prototype.revertSEOParam = function (param) {
-        var paramArray = param.split("-");
-        var state = '';
-        var city = '';
-        state = paramArray.pop();
-        city = paramArray.join("-");
-        city = city.replace(/\-/g, " ");
-        return this.titleCase(city) + "," + state.toUpperCase();
-    };
-    CommonService.prototype.titleCase = function (str) {
-        str = str.toLowerCase();
-        str = str.split(" ");
-        str = str.map(function (val) {
-            val = val.charAt(0).toUpperCase() + val.slice(1);
-            return val;
-        });
-        str = str.join(" ");
-        return str;
-    };
-    CommonService.prototype.dateFriendly = function (dateStr) {
-        var dateTemp = dateStr.split(" ");
-        var dateFormat = dateTemp[0].split("-");
-        return dateFormat[1] + '/' + dateFormat[2] + '/' + dateFormat[0];
-    };
-    CommonService.prototype.timeConverter = function (UNIX_timestamp) {
-        var a = new Date(UNIX_timestamp * 1000);
-        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-        var year = a.getFullYear();
-        var month = a.getMonth() + 1;
-        var date = a.getDate();
-        var hour = a.getHours();
-        var min = a.getMinutes();
-        var sec = a.getSeconds();
-        var time = month + '/' + date + '/' + year;
-        return time;
-    };
-    CommonService.prototype.defaultOGMetaTags = function () {
-        var metaTags = {
-            site_name: 'BrewSearcApp.com',
-            type: 'website',
-            title: 'Find Beers, Bars, and Breweries!',
-            description: 'A great description.',
-            url: 'https://brewsearchapp.com',
-            image: 'https://firebasestorage.googleapis.com/v0/b/bender-1487426215149.appspot.com/o/img%2FBrewSearchOG.jpg?alt=media&token=44ce4c8b-06f1-4e4b-ab30-80e10363b865'
-        };
-        return metaTags;
-    };
-    CommonService.prototype.getDefaultNoImage = function () {
-        return 'https://firebasestorage.googleapis.com/v0/b/bender-1487426215149.appspot.com/o/img%2FBrewSearchOG.jpg?alt=media&token=44ce4c8b-06f1-4e4b-ab30-80e10363b865';
-    };
-    CommonService.prototype.getBaseUrl = function () {
-        if (Zone.current.get("originUrl")) {
-            return Zone.current.get('originUrl');
-        }
-        else if (location) {
-            return location.origin;
-        }
-        else {
-            return '';
-        }
-    };
-    CommonService.prototype.getAbsoluteUrl = function (router) {
-        var baseUrl = this.getBaseUrl();
-        if (baseUrl.length) {
-            return baseUrl + router.url;
-        }
-        else {
-            return '';
-        }
-    };
-    CommonService.prototype.getBasePage = function (router) {
-        var bPage = router.url.replace(/\?/g, "/").split('/');
-        if (bPage.length > 1)
-            return bPage[1];
-        else
-            return null;
-    };
-    CommonService.prototype.timeDifference = function (previous, short) {
-        if (previous == null)
-            return '';
-        var current = new Date().getTime();
-        var msPerMinute = 60 * 1000;
-        var msPerHour = msPerMinute * 60;
-        var msPerDay = msPerHour * 24;
-        var msPerMonth = msPerDay * 30;
-        var msPerYear = msPerDay * 365;
-        var checkOne;
-        var elapsed = current - previous;
-        if (elapsed < msPerMinute) {
-            if (short)
-                return Math.round(elapsed / 1000) + 's';
-            else {
-                checkOne = Math.round(elapsed / 1000);
-                if (checkOne == 1)
-                    return Math.round(elapsed / 1000) + ' second ago';
-                else
-                    return Math.round(elapsed / 1000) + ' seconds ago';
-            }
-        }
-        else if (elapsed < msPerHour) {
-            if (short)
-                return Math.round(elapsed / msPerMinute) + 'm';
-            else {
-                checkOne = Math.round(elapsed / msPerMinute);
-                if (checkOne == 1)
-                    return Math.round(elapsed / msPerMinute) + ' minute ago';
-                else
-                    return Math.round(elapsed / msPerMinute) + ' minutes ago';
-            }
-        }
-        else if (elapsed < msPerDay) {
-            if (short)
-                return Math.round(elapsed / msPerHour) + 'h';
-            else {
-                checkOne = Math.round(elapsed / msPerHour);
-                if (checkOne == 1)
-                    return Math.round(elapsed / msPerHour) + ' hour ago';
-                else
-                    return Math.round(elapsed / msPerHour) + ' hours ago';
-            }
-        }
-        else if (elapsed < msPerMonth) {
-            if (short)
-                return Math.round(elapsed / msPerDay) + 'd';
-            else {
-                checkOne = Math.round(elapsed / msPerDay);
-                if (checkOne == 1)
-                    return Math.round(elapsed / msPerDay) + ' day ago';
-                else
-                    return 'approximately ' + Math.round(elapsed / msPerDay) + ' days ago';
-            }
-        }
-        else if (elapsed < msPerYear) {
-            if (short)
-                return Math.round(elapsed / msPerMonth) + 'mo';
-            else {
-                checkOne = Math.round(elapsed / msPerMonth);
-                if (checkOne == 1)
-                    return Math.round(elapsed / msPerMonth) + ' month ago';
-                else
-                    return 'approximately ' + Math.round(elapsed / msPerMonth) + ' months ago';
-            }
-        }
-        else {
-            if (short)
-                return Math.round(elapsed / msPerYear) + 'yr';
-            else {
-                checkOne = Math.round(elapsed / msPerYear);
-                if (checkOne == 1)
-                    return Math.round(elapsed / msPerYear) + ' year ago';
-                else
-                    return 'approximately ' + Math.round(elapsed / msPerYear) + ' years ago';
-            }
-        }
-    };
-    CommonService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], CommonService);
-    return CommonService;
-}());
-exports.CommonService = CommonService;
-
-
-/***/ },
-/* 11 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var Observable_1 = __webpack_require__(3);
-__webpack_require__(286);
-__webpack_require__(522);
-__webpack_require__(524);
-var cache_service_1 = __webpack_require__(281);
-var api_service_1 = __webpack_require__(280);
-function hashCodeString(str) {
-    var hash = 0;
-    if (str.length === 0) {
-        return hash + '';
-    }
-    for (var i = 0; i < str.length; i++) {
-        var char = str.charCodeAt(i);
-        hash = ((hash << 5) - hash) + char;
-        hash = hash & hash; // Convert to 32bit integer
-    }
-    return hash + '';
-}
-exports.hashCodeString = hashCodeString;
-// domain/feature service
-var ModelService = (function () {
-    // This is only one example of one Model depending on your domain
-    function ModelService(_api, _cache) {
-        this._api = _api;
-        this._cache = _cache;
-    }
-    /**
-     * whatever domain/feature method name
-     */
-    ModelService.prototype.get = function (url) {
-        var _this = this;
-        // you want to return the cache if there is a response in it.
-        // This would cache the first response so if your API isn't idempotent
-        // you probably want to remove the item from the cache after you use it. LRU of 10
-        // you can use also hashCodeString here
-        var key = url;
-        if (this._cache.has(key)) {
-            return Observable_1.Observable.of(this._cache.get(key));
-        }
-        // you probably shouldn't .share() and you should write the correct logic
-        return this._api.get(url)
-            .do(function (json) {
-            _this._cache.set(key, json);
-        })
-            .share();
-    };
-    // don't cache here since we're creating
-    ModelService.prototype.create = function () {
-        // TODO
-    };
-    ModelService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof api_service_1.ApiService !== 'undefined' && api_service_1.ApiService) === 'function' && _a) || Object, (typeof (_b = typeof cache_service_1.CacheService !== 'undefined' && cache_service_1.CacheService) === 'function' && _b) || Object])
-    ], ModelService);
-    return ModelService;
-    var _a, _b;
-}());
-exports.ModelService = ModelService;
-
-
-/***/ },
-/* 12 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3223,7 +3422,7 @@ var ProviderMeta = (function () {
 //# sourceMappingURL=compile_metadata.js.map
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3233,10 +3432,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isFunction_1 = __webpack_require__(298);
+var isFunction_1 = __webpack_require__(309);
 var Subscription_1 = __webpack_require__(70);
-var Observer_1 = __webpack_require__(516);
-var rxSubscriber_1 = __webpack_require__(171);
+var Observer_1 = __webpack_require__(554);
+var rxSubscriber_1 = __webpack_require__(173);
 /**
  * Implements the {@link Observer} interface and extends the
  * {@link Subscription} class. While the {@link Observer} is the public API for
@@ -3476,205 +3675,6 @@ var SafeSubscriber = (function (_super) {
     return SafeSubscriber;
 }(Subscriber));
 //# sourceMappingURL=Subscriber.js.map
-
-/***/ },
-/* 14 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-"use strict";
-var core_1 = __webpack_require__(0);
-// es6-modules are used here
-var dom_adapter_1 = __webpack_require__(7);
-var platform_browser_1 = __webpack_require__(103);
-/**
- * A service that can be used to get and add meta tags.
- *
- * @experimental
- */
-var Meta = (function () {
-    function Meta(_document) {
-        this._document = _document;
-        this._dom = dom_adapter_1.getDOM();
-    }
-    /**
-     * Sets the title of the page
-     */
-    Meta.prototype.setTitle = function (title) {
-        this._document.title = title;
-    };
-    /**
-     * this.meta.updateMeta('description', 'test'); will  set <meta name="description" content="test">
-     */
-    Meta.prototype.updateMeta = function (name, content) {
-        var head = this._document.head;
-        var childNodesAsList = this._dom.childNodesAsList(head);
-        var metaEl = childNodesAsList.find(function (el) { return el['attribs'] ? el['attribs'].name == name : false; });
-        if (metaEl)
-            metaEl['attribs'].content = content;
-    };
-    /**
-     * Adds a new meta tag to the dom.
-     *
-     *  ### Example
-     *
-     * ```ts
-     * const name: MetaDefinition = {name: 'application-name', content: 'Name of my application'};
-     * const desc: MetaDefinition = {name: 'description', content: 'A description of the page'};
-     * const tags: HTMLMetaElement[] = this.meta.addTags([name, desc]);
-     * ```
-     *
-     * @param tags
-     * @returns {HTMLMetaElement[]}
-     */
-    Meta.prototype.addTags = function () {
-        var _this = this;
-        var tags = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            tags[_i - 0] = arguments[_i];
-        }
-        var presentTags = this._flattenArray(tags);
-        if (presentTags.length === 0)
-            return [];
-        return presentTags.map(function (tag) { return _this._addInternal(tag); });
-    };
-    /**
-     * Gets the meta tag by the given selector. Returns element or null
-     * if there's no such meta element.
-     *
-     *  ### Example
-     *
-     * ```ts
-     * const meta: HTMLMetaElement = this.meta.getTag('name=description');
-     * const twitterMeta: HTMLMetaElement = this.meta.getTag('name="twitter:title"');
-     * const fbMeta: HTMLMetaElement = this.meta.getTag('property="fb:app_id"');
-     * ```
-     *
-     * @param selector
-     * @returns {HTMLMetaElement}
-     */
-    Meta.prototype.getTag = function (selector) {
-        if (!selector)
-            return null;
-        return this._dom.query("meta[" + selector + "]");
-    };
-    /**
-     * Updates the meta tag with the given selector.
-     *
-     * *  ### Example
-     *
-     * ```ts
-     * const meta: HTMLMetaElement = this.meta.updateTag('name=description', {name: 'description',
-     * content: 'New description'});
-     * console.log(meta.content); // 'New description'
-     * ```
-     *
-     * @param selector
-     * @param tag updated tag definition
-     * @returns {HTMLMetaElement}
-     */
-    Meta.prototype.updateTag = function (selector, tag) {
-        var meta = this.getTag(selector);
-        if (!meta) {
-            // create element if it doesn't exist
-            return this._addInternal(tag);
-        }
-        return this._prepareMetaElement(tag, meta);
-    };
-    /**
-     * Removes meta tag with the given selector from the dom.
-     *
-     *  ### Example
-     *
-     * ```ts
-     * this.meta.removeTagBySelector('name=description');
-     * ```
-     *
-     * @param selector
-     */
-    Meta.prototype.removeTagBySelector = function (selector) {
-        var meta = this.getTag(selector);
-        this.removeTagElement(meta);
-    };
-    /**
-     * Removes given meta element from the dom.
-     *
-     *  ### Example
-     *  ```ts
-     * const elem: HTMLMetaElement = this.meta.getTag('name=description');
-     * this.meta.removeTagElement(elem);
-     * ```
-     *
-     * @param meta meta element
-     */
-    Meta.prototype.removeTagElement = function (meta) {
-        if (meta) {
-            this._removeMetaElement(meta);
-        }
-    };
-    Meta.prototype.addCanonicalLink = function (href) {
-        var link = this._createElement('link');
-        var tag = { rel: 'canonical', href: href };
-        this._prepareMetaElement(tag, link);
-        this._appendMetaElement(link);
-        return link;
-    };
-    Meta.prototype._addInternal = function (tag) {
-        var meta = this._createMetaElement();
-        this._prepareMetaElement(tag, meta);
-        this._appendMetaElement(meta);
-        return meta;
-    };
-    Meta.prototype._createMetaElement = function () {
-        return this._dom.createElement('meta');
-    };
-    Meta.prototype._createElement = function (tag) {
-        return this._dom.createElement(tag);
-    };
-    Meta.prototype._prepareMetaElement = function (tag, el) {
-        var _this = this;
-        Object.keys(tag).forEach(function (prop) { return _this._dom.setAttribute(el, prop, tag[prop]); });
-        return el;
-    };
-    Meta.prototype._appendMetaElement = function (el) {
-        var head = this._document.head;
-        this._dom.appendChild(head, el);
-    };
-    Meta.prototype._removeMetaElement = function (meta) {
-        var head = this._dom.parentElement(meta);
-        this._dom.removeChild(head, meta);
-    };
-    Meta.prototype._flattenArray = function (input, out) {
-        if (out === void 0) { out = []; }
-        if (input) {
-            for (var i = 0; i < input.length; i++) {
-                var item = input[i];
-                if (Array.isArray(item)) {
-                    this._flattenArray(item, out);
-                }
-                else if (item) {
-                    out.push(item);
-                }
-            }
-        }
-        return out;
-    };
-    Meta = __decorate([
-        core_1.Injectable(),
-        __param(0, core_1.Inject(platform_browser_1.DOCUMENT)), 
-        __metadata('design:paramtypes', [Object])
-    ], Meta);
-    return Meta;
-}());
-exports.Meta = Meta;
-
 
 /***/ },
 /* 15 */
@@ -4613,7 +4613,7 @@ var ParseError = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__di_metadata__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__di_forward_ref__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__di_injector__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__di_reflective_injector__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__di_reflective_injector__ = __webpack_require__(375);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__di_reflective_provider__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__di_reflective_key__ = __webpack_require__(135);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__di_opaque_token__ = __webpack_require__(134);
@@ -4656,7 +4656,7 @@ var ParseError = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assertions__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assertions__ = __webpack_require__(185);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return InterpolationConfig; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DEFAULT_INTERPOLATION_CONFIG; });
 /**
@@ -4715,11 +4715,11 @@ var NG_VALUE_ACCESSOR = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["OpaqueT
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(545);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(581);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__private_import_core__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__private_import_core__ = __webpack_require__(241);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return NG_VALIDATORS; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return NG_ASYNC_VALIDATORS; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Validators; });
@@ -4914,8 +4914,8 @@ var NavigationCancelingError = (function (_super) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identifiers__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identifiers__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(5);
 /* harmony export (immutable) */ exports["c"] = createDiTokenExpression;
 /* harmony export (immutable) */ exports["d"] = createInlineArray;
 /* harmony export (immutable) */ exports["a"] = createPureProxy;
@@ -5717,15 +5717,15 @@ function escapeRegExp(s) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_fromPromise__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_fromPromise__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_concatAll__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_concatAll__ = __webpack_require__(303);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_concatAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_concatAll__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_every__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_every__ = __webpack_require__(305);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_every___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_every__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_last__ = __webpack_require__(538);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_last__ = __webpack_require__(574);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_last___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_operator_last__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map__);
@@ -5879,11 +5879,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(3);
-var Subscriber_1 = __webpack_require__(13);
+var Subscriber_1 = __webpack_require__(14);
 var Subscription_1 = __webpack_require__(70);
-var ObjectUnsubscribedError_1 = __webpack_require__(296);
-var SubjectSubscription_1 = __webpack_require__(518);
-var rxSubscriber_1 = __webpack_require__(171);
+var ObjectUnsubscribedError_1 = __webpack_require__(307);
+var SubjectSubscription_1 = __webpack_require__(556);
+var rxSubscriber_1 = __webpack_require__(173);
 /**
  * @class SubjectSubscriber<T>
  */
@@ -6060,7 +6060,7 @@ if (freeGlobal && (freeGlobal.global === freeGlobal || freeGlobal.window === fre
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_errors__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_errors__ = __webpack_require__(327);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(16);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return InvalidPipeArgumentError; });
 /**
@@ -6280,9 +6280,9 @@ var SyncAsyncResult = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__checkbox_value_accessor__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__default_value_accessor__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__normalize_validator__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__normalize_validator__ = __webpack_require__(391);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__number_value_accessor__ = __webpack_require__(149);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__radio_control_value_accessor__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__radio_control_value_accessor__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__select_control_value_accessor__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__select_multiple_control_value_accessor__ = __webpack_require__(97);
 /* harmony export (immutable) */ exports["a"] = controlPath;
@@ -7471,7 +7471,7 @@ var UrlParser = (function () {
 
 "use strict";
 "use strict";
-var ArrayObservable_1 = __webpack_require__(288);
+var ArrayObservable_1 = __webpack_require__(299);
 exports.of = ArrayObservable_1.ArrayObservable.of;
 //# sourceMappingURL=of.js.map
 
@@ -7481,7 +7481,7 @@ exports.of = ArrayObservable_1.ArrayObservable.of;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identifiers__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identifiers__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return CompilerConfig; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RenderTypes; });
 /* unused harmony export DefaultRenderTypes */
@@ -7589,7 +7589,7 @@ var DefaultRenderTypes = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__parse_util__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ast__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__interpolation_config__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lexer__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lexer__ = __webpack_require__(348);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tags__ = __webpack_require__(40);
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return TreeError; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ParseTreeResult; });
@@ -8383,6 +8383,53 @@ var EventEmitter = (function (_super) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_index__ = __webpack_require__(396);
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "BrowserXhr", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["a"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "JSONPBackend", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["b"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "JSONPConnection", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["c"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "CookieXSRFStrategy", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["d"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "XHRBackend", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["e"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "XHRConnection", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["f"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "BaseRequestOptions", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["g"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RequestOptions", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["h"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "BaseResponseOptions", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["i"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "ResponseOptions", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["j"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "ReadyState", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["k"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RequestMethod", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["l"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "ResponseContentType", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["m"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "ResponseType", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["n"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "Headers", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["o"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "Http", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["p"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "Jsonp", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["q"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "HttpModule", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["r"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "JsonpModule", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["s"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "Connection", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["t"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "ConnectionBackend", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["u"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "XSRFStrategy", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["v"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "Request", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["w"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "Response", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["x"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "QueryEncoder", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["y"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "URLSearchParams", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["z"]; });
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @module
+ * @description
+ * Entry point for all public APIs of the http package.
+ */
+
+//# sourceMappingURL=index.js.map
+
+/***/ },
+/* 50 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return EVENT_MANAGER_PLUGINS; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return EventManager; });
@@ -8455,11 +8502,11 @@ var EventManagerPlugin = (function () {
 //# sourceMappingURL=event_manager.js.map
 
 /***/ },
-/* 50 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__ = __webpack_require__(293);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__url_tree__ = __webpack_require__(43);
@@ -8907,15 +8954,15 @@ function advanceActivatedRoute(route) {
 //# sourceMappingURL=router_state.js.map
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_location__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_location__ = __webpack_require__(328);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_localization__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_common_module__ = __webpack_require__(309);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_directives_index__ = __webpack_require__(175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_pipes_index__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_common_module__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_directives_index__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_pipes_index__ = __webpack_require__(181);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "PlatformLocation", function() { return __WEBPACK_IMPORTED_MODULE_0__src_location__["a"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "LocationStrategy", function() { return __WEBPACK_IMPORTED_MODULE_0__src_location__["b"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "APP_BASE_HREF", function() { return __WEBPACK_IMPORTED_MODULE_0__src_location__["f"]; });
@@ -8965,36 +9012,36 @@ function advanceActivatedRoute(route) {
 //# sourceMappingURL=index.js.map
 
 /***/ },
-/* 52 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_template_parser_template_ast__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_template_parser_template_parser__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_config__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_compile_metadata__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_offline_compiler__ = __webpack_require__(339);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_runtime_compiler__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_url_resolver__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_compile_metadata__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_offline_compiler__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_runtime_compiler__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_url_resolver__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_resource_loader__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_compiler__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_compiler__ = __webpack_require__(342);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_directive_resolver__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src_pipe_resolver__ = __webpack_require__(123);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__src_ng_module_resolver__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__src_ml_parser_interpolation_config__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__src_schema_element_schema_registry__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__src_i18n_index__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__src_i18n_index__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__src_directive_normalizer__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__src_expression_parser_lexer__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__src_expression_parser_parser__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__src_expression_parser_parser__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__src_metadata_resolver__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__src_ml_parser_html_parser__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__src_ng_module_compiler__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__src_directive_wrapper_compiler__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__src_output_path_util__ = __webpack_require__(343);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__src_output_ts_emitter__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__src_output_path_util__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__src_output_ts_emitter__ = __webpack_require__(199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__src_parse_util__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__src_schema_dom_element_schema_registry__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__src_schema_dom_element_schema_registry__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__src_selector__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__src_style_compiler__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__src_view_compiler_view_compiler__ = __webpack_require__(81);
@@ -9167,14 +9214,14 @@ function advanceActivatedRoute(route) {
 //# sourceMappingURL=index.js.map
 
 /***/ },
-/* 53 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__expression_parser_ast__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identifiers__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__output_output_ast__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identifiers__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__output_output_ast__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifier_util__ = __webpack_require__(27);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return EventHandlerVars; });
 /* unused harmony export ConvertPropertyBindingResult */
@@ -9747,7 +9794,7 @@ function convertStmtIntoExpression(stmt) {
 //# sourceMappingURL=expression_converter.js.map
 
 /***/ },
-/* 54 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10505,7 +10552,7 @@ var SimpleExpressionChecker = (function () {
 //# sourceMappingURL=parser.js.map
 
 /***/ },
-/* 55 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10850,13 +10897,13 @@ function _resolveUrl(base, url) {
 //# sourceMappingURL=url_resolver.js.map
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compiler_util_identifier_util__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identifiers__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identifiers__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(5);
 /* harmony export (binding) */ __webpack_require__.d(exports, "e", function() { return ViewTypeEnum; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "g", function() { return ViewEncapsulationEnum; });
 /* unused harmony export ChangeDetectionStrategyEnum */
@@ -10945,13 +10992,13 @@ var DetectChangesVars = (function () {
 //# sourceMappingURL=constants.js.map
 
 /***/ },
-/* 57 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compiler_util_identifier_util__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(5);
 /* harmony export (immutable) */ exports["a"] = getPropertyInView;
 /* harmony export (immutable) */ exports["b"] = injectFromViewParentInjector;
 /* harmony export (immutable) */ exports["c"] = getViewFactoryName;
@@ -11049,7 +11096,7 @@ function createFlatArray(expressions) {
 //# sourceMappingURL=util.js.map
 
 /***/ },
-/* 58 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11168,7 +11215,7 @@ var CompilerFactory = (function () {
 //# sourceMappingURL=compiler.js.map
 
 /***/ },
-/* 59 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11249,7 +11296,7 @@ var AbstractFormGroupDirective = (function (_super) {
 //# sourceMappingURL=abstract_form_group_directive.js.map
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11433,7 +11480,7 @@ var NgForm = (function (_super) {
 //# sourceMappingURL=ng_form.js.map
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11593,7 +11640,7 @@ var RadioControlValueAccessor = (function () {
 //# sourceMappingURL=radio_control_value_accessor.js.map
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11795,17 +11842,17 @@ var FormGroupDirective = (function (_super) {
 //# sourceMappingURL=form_group_directive.js.map
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__abstract_form_group_directive__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__abstract_form_group_directive__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__control_container__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__reactive_errors__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__form_group_directive__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__form_group_directive__ = __webpack_require__(63);
 /* unused harmony export formGroupNameProvider */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return FormGroupName; });
 /* unused harmony export formArrayNameProvider */
@@ -12026,58 +12073,11 @@ function _hasInvalidParent(parent) {
 //# sourceMappingURL=form_group_name.js.map
 
 /***/ },
-/* 64 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_index__ = __webpack_require__(385);
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "BrowserXhr", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["a"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "JSONPBackend", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["b"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "JSONPConnection", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["c"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "CookieXSRFStrategy", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["d"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "XHRBackend", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["e"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "XHRConnection", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["f"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "BaseRequestOptions", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["g"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RequestOptions", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["h"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "BaseResponseOptions", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["i"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "ResponseOptions", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["j"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "ReadyState", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["k"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RequestMethod", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["l"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "ResponseContentType", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["m"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "ResponseType", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["n"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "Headers", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["o"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "Http", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["p"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "Jsonp", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["q"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "HttpModule", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["r"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "JsonpModule", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["s"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "Connection", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["t"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "ConnectionBackend", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["u"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "XSRFStrategy", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["v"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "Request", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["w"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "Response", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["x"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "QueryEncoder", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["y"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "URLSearchParams", function() { return __WEBPACK_IMPORTED_MODULE_0__src_index__["z"]; });
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @module
- * @description
- * Entry point for all public APIs of the http package.
- */
-
-//# sourceMappingURL=index.js.map
-
-/***/ },
 /* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_facade_collection__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_facade_collection__ = __webpack_require__(394);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Headers; });
 /**
  * @license
@@ -12305,13 +12305,13 @@ var XSRFStrategy = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_from__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_from__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_from__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_of__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatMap__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatMap__ = __webpack_require__(304);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_every__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_every__ = __webpack_require__(305);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_every___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_operator_every__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map__);
@@ -12319,16 +12319,16 @@ var XSRFStrategy = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_mergeAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_operator_mergeAll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_mergeMap__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_operator_mergeMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_reduce__ = __webpack_require__(541);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_reduce__ = __webpack_require__(577);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_reduce___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_operator_reduce__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__apply_redirects__ = __webpack_require__(405);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config__ = __webpack_require__(406);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__create_router_state__ = __webpack_require__(407);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__create_url_tree__ = __webpack_require__(408);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__recognize__ = __webpack_require__(411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__apply_redirects__ = __webpack_require__(416);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config__ = __webpack_require__(417);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__create_router_state__ = __webpack_require__(418);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__create_url_tree__ = __webpack_require__(419);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__recognize__ = __webpack_require__(422);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__router_config_loader__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__router_outlet_map__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__router_state__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__router_state__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__shared__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__url_tree__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__utils_collection__ = __webpack_require__(32);
@@ -13183,7 +13183,7 @@ function getOutlet(outletMap, route) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_fromPromise__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_fromPromise__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__);
@@ -13256,7 +13256,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = __webpack_require__(13);
+var Subscriber_1 = __webpack_require__(14);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -13288,11 +13288,11 @@ exports.OuterSubscriber = OuterSubscriber;
 "use strict";
 "use strict";
 var isArray_1 = __webpack_require__(108);
-var isObject_1 = __webpack_require__(550);
-var isFunction_1 = __webpack_require__(298);
-var tryCatch_1 = __webpack_require__(300);
-var errorObject_1 = __webpack_require__(173);
-var UnsubscriptionError_1 = __webpack_require__(549);
+var isObject_1 = __webpack_require__(586);
+var isFunction_1 = __webpack_require__(309);
+var tryCatch_1 = __webpack_require__(311);
+var errorObject_1 = __webpack_require__(175);
+var UnsubscriptionError_1 = __webpack_require__(585);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
  * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -13451,7 +13451,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = __webpack_require__(13);
+var Subscriber_1 = __webpack_require__(14);
 /**
  * Applies a given `project` function to each value emitted by the source
  * Observable, and emits the resulting values as an Observable.
@@ -13708,11 +13708,11 @@ exports.MergeMapSubscriber = MergeMapSubscriber;
 "use strict";
 var root_1 = __webpack_require__(34);
 var isArray_1 = __webpack_require__(108);
-var isPromise_1 = __webpack_require__(299);
+var isPromise_1 = __webpack_require__(310);
 var Observable_1 = __webpack_require__(3);
-var iterator_1 = __webpack_require__(169);
-var InnerSubscriber_1 = __webpack_require__(515);
-var observable_1 = __webpack_require__(170);
+var iterator_1 = __webpack_require__(171);
+var InnerSubscriber_1 = __webpack_require__(553);
+var observable_1 = __webpack_require__(172);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
     if (destination.closed) {
@@ -14349,19 +14349,19 @@ var APP_BASE_HREF = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["OpaqueToken
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compiler_util_binding_util__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compiler_util_expression_converter__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compiler_util_render_util__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compiler_util_binding_util__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compiler_util_expression_converter__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compiler_util_render_util__ = __webpack_require__(187);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__expression_parser_parser__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__identifiers__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__expression_parser_parser__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__identifiers__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ml_parser_interpolation_config__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__output_class_builder__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__output_output_ast__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__output_output_ast__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__parse_util__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__private_import_core__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__private_import_core__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__schema_element_schema_registry__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__template_parser_binding_parser__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__template_parser_binding_parser__ = __webpack_require__(205);
 /* unused harmony export DirectiveWrapperCompileResult */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DirectiveWrapperCompiler; });
 /**
@@ -15369,25 +15369,25 @@ var SelectorContext = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__expression_parser_parser__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__expression_parser_parser__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__i18n_i18n_html_parser__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__i18n_i18n_html_parser__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ml_parser_ast__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ml_parser_html_parser__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ml_parser_icu_ast_expander__ = __webpack_require__(336);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ml_parser_icu_ast_expander__ = __webpack_require__(347);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ml_parser_interpolation_config__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ml_parser_tags__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__parse_util__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__private_import_core__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__provider_analyzer__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__provider_analyzer__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__schema_element_schema_registry__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__selector__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__style_url_resolver__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__binding_parser__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__style_url_resolver__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__binding_parser__ = __webpack_require__(205);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__template_ast__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__template_preparser__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__template_preparser__ = __webpack_require__(206);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return TEMPLATE_TRANSFORMS; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return TemplateParseError; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "d", function() { return TemplateParseResult; });
@@ -16078,10 +16078,10 @@ function _isEmptyTextNode(node) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__schema_element_schema_registry__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compile_element__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compile_view__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__view_binder__ = __webpack_require__(350);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__view_builder__ = __webpack_require__(351);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compile_element__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compile_view__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__view_binder__ = __webpack_require__(361);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__view_builder__ = __webpack_require__(362);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__deps__ = __webpack_require__(127);
 /* unused harmony export ViewCompileResult */
 /* harmony export (binding) */ __webpack_require__.d(exports, "d", function() { return ViewCompiler; });
@@ -16212,11 +16212,11 @@ var PACKAGE_ROOT_URL = new __WEBPACK_IMPORTED_MODULE_0__di__["a" /* OpaqueToken 
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__differs_default_iterable_differ__ = __webpack_require__(131);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__differs_default_keyvalue_differ__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__differs_iterable_differs__ = __webpack_require__(214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__differs_keyvalue_differs__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__differs_default_keyvalue_differ__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__differs_iterable_differs__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__differs_keyvalue_differs__ = __webpack_require__(217);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__change_detection_util__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__change_detector_ref__ = __webpack_require__(360);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__change_detector_ref__ = __webpack_require__(371);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__constants__ = __webpack_require__(85);
 /* unused harmony export keyValDiff */
 /* unused harmony export iterableDiff */
@@ -16685,9 +16685,9 @@ var ViewType;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__di__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__render_api__ = __webpack_require__(141);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__security__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__security__ = __webpack_require__(236);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__element__ = __webpack_require__(138);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__errors__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__errors__ = __webpack_require__(225);
 /* harmony export (binding) */ __webpack_require__.d(exports, "ViewUtils", function() { return ViewUtils; });
 /* harmony export (immutable) */ exports["flattenNestedViewRenderNodes"] = flattenNestedViewRenderNodes;
 /* harmony export (immutable) */ exports["ensureSlotCount"] = ensureSlotCount;
@@ -17239,7 +17239,7 @@ var EMPTY_INLINE_ARRAY = new InlineArray0();
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtf_impl__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtf_impl__ = __webpack_require__(386);
 /* unused harmony export wtfEnabled */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return wtfCreateScope; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return wtfLeave; });
@@ -17466,10 +17466,10 @@ var DefaultValueAccessor = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__abstract_form_group_directive__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__abstract_form_group_directive__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__control_container__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_form__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__template_driven_errors__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_form__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__template_driven_errors__ = __webpack_require__(239);
 /* unused harmony export modelGroupProvider */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NgModelGroup; });
 /**
@@ -17554,7 +17554,7 @@ var NgModelGroup = (function (_super) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__error_examples__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__error_examples__ = __webpack_require__(238);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ReactiveErrors; });
 /**
  * @license
@@ -18196,11 +18196,11 @@ function iterateListLike(obj, fn) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_shared__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_async__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(241);
 /* unused harmony export VALID */
 /* unused harmony export INVALID */
 /* unused harmony export PENDING */
@@ -19927,7 +19927,7 @@ var URLSearchParams = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_platform_browser__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_platform_browser__ = __webpack_require__(412);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "BrowserModule", function() { return __WEBPACK_IMPORTED_MODULE_0__src_platform_browser__["b"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "platformBrowser", function() { return __WEBPACK_IMPORTED_MODULE_0__src_platform_browser__["c"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "Title", function() { return __WEBPACK_IMPORTED_MODULE_0__src_platform_browser__["d"]; });
@@ -20746,7 +20746,7 @@ function isAsciiHexDigit(code) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_collection__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__facade_lang__ = __webpack_require__(1);
@@ -20754,9 +20754,9 @@ function isAsciiHexDigit(code) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ml_parser_html_parser__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ml_parser_interpolation_config__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__resource_loader__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__style_url_resolver__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__template_parser_template_preparser__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__url_resolver__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__style_url_resolver__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__template_parser_template_preparser__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__url_resolver__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__util__ = __webpack_require__(37);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DirectiveNormalizer; });
 /**
@@ -21004,7 +21004,7 @@ function _cloneDirectiveWithTemplate(directive, template) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util__ = __webpack_require__(37);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DirectiveResolver; });
 /**
@@ -21905,17 +21905,17 @@ var I18nError = (function (_super) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assertions__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compile_metadata__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assertions__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compile_metadata__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directive_resolver__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lifecycle_reflector__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lifecycle_reflector__ = __webpack_require__(346);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng_module_resolver__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pipe_resolver__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__private_import_core__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__private_import_core__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__schema_element_schema_registry__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__url_resolver__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__url_resolver__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__util__ = __webpack_require__(37);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CompileMetadataResolver; });
 /**
@@ -22763,16 +22763,16 @@ function getHtmlTagDefinition(tagName) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compiler_util_identifier_util__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__output_class_builder__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__output_output_ast__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__output_value_util__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__output_output_ast__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__output_value_util__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__parse_util__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__private_import_core__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__provider_analyzer__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__provider_analyzer__ = __webpack_require__(201);
 /* unused harmony export ComponentFactoryDependency */
 /* unused harmony export NgModuleCompileResult */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NgModuleCompiler; });
@@ -23008,7 +23008,7 @@ var InjectMethodVars = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(12);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NgModuleResolver; });
 /**
  * @license
@@ -23061,7 +23061,7 @@ var NgModuleResolver = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__output_ast__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__output_ast__ = __webpack_require__(5);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return CATCH_ERROR_VAR; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return CATCH_STACK_VAR; });
 /* unused harmony export OutputEmitter */
@@ -23493,7 +23493,7 @@ function _createIndent(count) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__output_ast__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__output_ast__ = __webpack_require__(5);
 /* harmony export (immutable) */ exports["a"] = createClassStmt;
 /**
  * @license
@@ -23531,7 +23531,7 @@ function concatClassBuilderParts(builders) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(12);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return PipeResolver; });
 /**
  * @license
@@ -23617,10 +23617,10 @@ var ResourceLoader = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shadow_css__ = __webpack_require__(345);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__url_resolver__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shadow_css__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__url_resolver__ = __webpack_require__(56);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return StylesCompileDependency; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return StylesCompileResult; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "d", function() { return CompiledStylesheet; });
@@ -23729,7 +23729,7 @@ function getStylesVarName(component) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__output_output_ast__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__output_output_ast__ = __webpack_require__(5);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CompileMethod; });
 /**
  * @license
@@ -23984,7 +23984,7 @@ var ApplicationInitStatus = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_error_handler__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_error_handler__ = __webpack_require__(220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_facade_collection__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_facade_errors__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_facade_lang__ = __webpack_require__(2);
@@ -23993,8 +23993,8 @@ var ApplicationInitStatus = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__application_tokens__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__console__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__di__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__linker_compiler__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__linker_component_factory__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__linker_compiler__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__linker_component_factory__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__linker_component_factory_resolver__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__profile_profile__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__testability_testability__ = __webpack_require__(142);
@@ -25467,7 +25467,7 @@ var _globalKeyRegistry = new KeyRegistry();
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__type__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__forward_ref__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__metadata__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__reflective_errors__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__reflective_errors__ = __webpack_require__(219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__reflective_key__ = __webpack_require__(135);
 /* unused harmony export ReflectiveDependency */
 /* unused harmony export ResolvedReflectiveProvider_ */
@@ -25828,8 +25828,8 @@ var EventEmitter = (function (_super) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_lang__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_ref__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__view_container_ref__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__element_ref__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__view_container_ref__ = __webpack_require__(229);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__view_type__ = __webpack_require__(89);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppElement; });
 /**
@@ -25959,8 +25959,8 @@ var AppElement = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__reflection_capabilities__ = __webpack_require__(232);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__reflector__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__reflection_capabilities__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__reflector__ = __webpack_require__(235);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return reflector; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__reflector__["a"]; });
 /**
@@ -26859,14 +26859,14 @@ var NgControlStatusGroup = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__validators__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__abstract_form_group_directive__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__abstract_form_group_directive__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__control_container__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__control_value_accessor__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng_control__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ng_form__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ng_form__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ng_model_group__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__template_driven_errors__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__template_driven_errors__ = __webpack_require__(239);
 /* unused harmony export formControlBinding */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NgModel; });
 /**
@@ -27327,14 +27327,14 @@ var FormControlDirective = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validators__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__abstract_form_group_directive__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__abstract_form_group_directive__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__control_container__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__control_value_accessor__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng_control__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__reactive_errors__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__form_group_directive__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__form_group_name__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__form_group_directive__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__form_group_name__ = __webpack_require__(64);
 /* unused harmony export controlNameBinding */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return FormControlName; });
 /**
@@ -27949,7 +27949,7 @@ var BaseRequestOptions = (function (_super) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__body__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__body__ = __webpack_require__(245);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Response; });
 /**
  * @license
@@ -28008,7 +28008,7 @@ var Response = (function (_super) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__private_import_core__ = __webpack_require__(257);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__private_import_core__ = __webpack_require__(259);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AnimationDriver; });
 /**
  * @license
@@ -28043,9 +28043,9 @@ var AnimationDriver = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(256);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(257);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dom_adapter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dom_adapter__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dom_renderer__ = __webpack_require__(158);
 /* unused harmony export inspectNativeElement */
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return NgProbeToken; });
@@ -28125,11 +28125,11 @@ var ELEMENT_PROBE_PROVIDERS_PROD_MODE = [{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_driver__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dom_adapter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dom_adapter__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dom_tokens__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__events_event_manager__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__events_event_manager__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_styles_host__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util__ = __webpack_require__(257);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DomRootRenderer; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return DomRootRenderer_; });
 /* unused harmony export DomRenderer */
@@ -28430,7 +28430,7 @@ function splitNamespace(name) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__hammer_common__ = __webpack_require__(397);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__hammer_common__ = __webpack_require__(408);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return HAMMER_GESTURE_CONFIG; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return HammerGestureConfig; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return HammerGesturesPlugin; });
@@ -28526,7 +28526,7 @@ var HammerGesturesPlugin = (function (_super) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_adapter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_adapter__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dom_tokens__ = __webpack_require__(104);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return SharedStylesHost; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DomSharedStylesHost; });
@@ -28613,7 +28613,7 @@ var DomSharedStylesHost = (function (_super) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_dom_adapter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_dom_adapter__ = __webpack_require__(11);
 /* harmony export (immutable) */ exports["a"] = sanitizeUrl;
 /* harmony export (immutable) */ exports["b"] = sanitizeSrcset;
 /**
@@ -28676,10 +28676,10 @@ function sanitizeSrcset(srcset) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_state__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_state__ = __webpack_require__(51);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RouterLink; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return RouterLinkWithHref; });
 /**
@@ -29011,6 +29011,100 @@ var TreeNode = (function () {
 
 /***/ },
 /* 164 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var CacheService = (function () {
+    function CacheService(_cache) {
+        this._cache = _cache;
+    }
+    /**
+     * check if there is a value in our store
+     */
+    CacheService.prototype.has = function (key) {
+        var _key = this.normalizeKey(key);
+        return this._cache.has(_key);
+    };
+    /**
+     * store our state
+     */
+    CacheService.prototype.set = function (key, value) {
+        var _key = this.normalizeKey(key);
+        this._cache.set(_key, value);
+    };
+    /**
+     * get our cached value
+     */
+    CacheService.prototype.get = function (key) {
+        var _key = this.normalizeKey(key);
+        return this._cache.get(_key);
+    };
+    /**
+     * release memory refs
+     */
+    CacheService.prototype.clear = function () {
+        this._cache.clear();
+    };
+    /**
+     * convert to json for the client
+     */
+    CacheService.prototype.dehydrate = function () {
+        var json = {};
+        this._cache.forEach(function (value, key) { return json[key] = value; });
+        return json;
+    };
+    /**
+     * convert server json into out initial state
+     */
+    CacheService.prototype.rehydrate = function (json) {
+        var _this = this;
+        Object.keys(json).forEach(function (key) {
+            var _key = _this.normalizeKey(key);
+            var value = json[_key];
+            _this._cache.set(_key, value);
+        });
+    };
+    /**
+     * allow JSON.stringify to work
+     */
+    CacheService.prototype.toJSON = function () {
+        return this.dehydrate();
+    };
+    /**
+     * convert numbers into strings
+     */
+    CacheService.prototype.normalizeKey = function (key) {
+        if (core_1.isDevMode() && this._isInvalidValue(key)) {
+            throw new Error('Please provide a valid key to save in the CacheService');
+        }
+        return key + '';
+    };
+    CacheService.prototype._isInvalidValue = function (key) {
+        return key === null ||
+            key === undefined ||
+            key === 0 ||
+            key === '' ||
+            typeof key === 'boolean' ||
+            Number.isNaN(key);
+    };
+    CacheService.prototype.delete = function (key) {
+        this._cache.delete(key);
+    };
+    CacheService.KEY = 'CacheService';
+    CacheService = __decorate([
+        core_1.Injectable(),
+        __param(0, core_1.Inject('LRU')), 
+        __metadata('design:paramtypes', [Object])
+    ], CacheService);
+    return CacheService;
+}());
+exports.CacheService = CacheService;
+
+
+/***/ },
+/* 165 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -29040,7 +29134,18 @@ exports.environment = {
 
 
 /***/ },
-/* 165 */
+/* 166 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(3);
+var of_1 = __webpack_require__(44);
+Observable_1.Observable.of = of_1.of;
+//# sourceMappingURL=of.js.map
+
+/***/ },
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29121,27 +29226,27 @@ exports.EmptyObservable = EmptyObservable;
 //# sourceMappingURL=EmptyObservable.js.map
 
 /***/ },
-/* 166 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var FromObservable_1 = __webpack_require__(529);
+var FromObservable_1 = __webpack_require__(565);
 exports.from = FromObservable_1.FromObservable.create;
 //# sourceMappingURL=from.js.map
 
 /***/ },
-/* 167 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var PromiseObservable_1 = __webpack_require__(290);
+var PromiseObservable_1 = __webpack_require__(301);
 exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 //# sourceMappingURL=fromPromise.js.map
 
 /***/ },
-/* 168 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29212,7 +29317,7 @@ var CatchSubscriber = (function (_super) {
 //# sourceMappingURL=catch.js.map
 
 /***/ },
-/* 169 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29250,7 +29355,7 @@ else {
 //# sourceMappingURL=iterator.js.map
 
 /***/ },
-/* 170 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29278,7 +29383,7 @@ exports.$$observable = getSymbolObservable(root_1.root);
 //# sourceMappingURL=observable.js.map
 
 /***/ },
-/* 171 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29290,7 +29395,7 @@ exports.$$rxSubscriber = (typeof Symbol === 'function' && typeof Symbol.for === 
 //# sourceMappingURL=rxSubscriber.js.map
 
 /***/ },
-/* 172 */
+/* 174 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -29324,7 +29429,7 @@ exports.EmptyError = EmptyError;
 //# sourceMappingURL=EmptyError.js.map
 
 /***/ },
-/* 173 */
+/* 175 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -29334,7 +29439,7 @@ exports.errorObject = { e: {} };
 //# sourceMappingURL=errorObject.js.map
 
 /***/ },
-/* 174 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29342,21 +29447,21 @@ exports.errorObject = { e: {} };
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-__export(__webpack_require__(415));
+__export(__webpack_require__(266));
 //# sourceMappingURL=browser.js.map
 
 /***/ },
-/* 175 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ng_class__ = __webpack_require__(310);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ng_for__ = __webpack_require__(311);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_if__ = __webpack_require__(312);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ng_plural__ = __webpack_require__(313);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_style__ = __webpack_require__(314);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ng_switch__ = __webpack_require__(176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng_template_outlet__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ng_class__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ng_for__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_if__ = __webpack_require__(323);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ng_plural__ = __webpack_require__(324);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_style__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ng_switch__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng_template_outlet__ = __webpack_require__(326);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return COMMON_DIRECTIVES; });
 /**
  * @license
@@ -29402,12 +29507,12 @@ var COMMON_DIRECTIVES = [
 //# sourceMappingURL=index.js.map
 
 /***/ },
-/* 176 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(179);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return SwitchView; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return NgSwitch; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return NgSwitchCase; });
@@ -29663,7 +29768,7 @@ var NgSwitchDefault = (function () {
 //# sourceMappingURL=ng_switch.js.map
 
 /***/ },
-/* 177 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29855,7 +29960,7 @@ function iterateListLike(obj, fn) {
 //# sourceMappingURL=collection.js.map
 
 /***/ },
-/* 178 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30060,19 +30165,19 @@ var DateFormatter = (function () {
 //# sourceMappingURL=intl.js.map
 
 /***/ },
-/* 179 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__async_pipe__ = __webpack_require__(320);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__date_pipe__ = __webpack_require__(321);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__i18n_plural_pipe__ = __webpack_require__(322);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__i18n_select_pipe__ = __webpack_require__(323);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__json_pipe__ = __webpack_require__(324);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lowercase_pipe__ = __webpack_require__(325);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__number_pipe__ = __webpack_require__(326);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__slice_pipe__ = __webpack_require__(327);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__uppercase_pipe__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__async_pipe__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__date_pipe__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__i18n_plural_pipe__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__i18n_select_pipe__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__json_pipe__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lowercase_pipe__ = __webpack_require__(336);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__number_pipe__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__slice_pipe__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__uppercase_pipe__ = __webpack_require__(339);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return COMMON_PIPES; });
 /**
  * @license
@@ -30121,7 +30226,7 @@ var COMMON_PIPES = [
 //# sourceMappingURL=index.js.map
 
 /***/ },
-/* 180 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30276,15 +30381,15 @@ var AnimationSequenceAst = (function (_super) {
 //# sourceMappingURL=animation_ast.js.map
 
 /***/ },
-/* 181 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identifiers__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__animation_ast__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identifiers__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__animation_ast__ = __webpack_require__(182);
 /* unused harmony export AnimationEntryCompileResult */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AnimationCompiler; });
 /**
@@ -30580,17 +30685,17 @@ function _getStylesArray(obj) {
 //# sourceMappingURL=animation_compiler.js.map
 
 /***/ },
-/* 182 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__parse_util__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__private_import_core__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__animation_ast__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__styles_collection__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__animation_ast__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__styles_collection__ = __webpack_require__(341);
 /* unused harmony export AnimationParseError */
 /* unused harmony export AnimationEntryParseResult */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AnimationParser; });
@@ -31102,7 +31207,7 @@ function _createStartKeyframeFromEndKeyframe(endKeyframe, startTime, duration, c
 //# sourceMappingURL=animation_parser.js.map
 
 /***/ },
-/* 183 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31157,12 +31262,12 @@ function assertInterpolationSymbols(identifier, value) {
 //# sourceMappingURL=assertions.js.map
 
 /***/ },
-/* 184 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__identifiers__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__output_output_ast__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__identifiers__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__output_output_ast__ = __webpack_require__(5);
 /* unused harmony export CheckBindingField */
 /* harmony export (immutable) */ exports["a"] = createCheckBindingField;
 /* harmony export (immutable) */ exports["b"] = createCheckBindingStmt;
@@ -31211,14 +31316,14 @@ function createBindFieldExpr(bindingId) {
 //# sourceMappingURL=binding_util.js.map
 
 /***/ },
-/* 185 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identifiers__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__output_output_ast__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identifiers__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__output_output_ast__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__template_parser_template_ast__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifier_util__ = __webpack_require__(27);
 /* harmony export (immutable) */ exports["a"] = writeToRenderer;
@@ -31288,15 +31393,15 @@ function sanitizedValue(view, boundProp, renderValue, securityContextExpression)
 //# sourceMappingURL=render_util.js.map
 
 /***/ },
-/* 186 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ml_parser_ast__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ml_parser_parser__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__digest__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__i18n_ast__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__i18n_parser__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__i18n_ast__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__i18n_parser__ = __webpack_require__(343);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__parse_util__ = __webpack_require__(116);
 /* harmony export (immutable) */ exports["a"] = extractMessages;
 /* harmony export (immutable) */ exports["b"] = mergeTranslations;
@@ -31716,7 +31821,7 @@ function _splitMeaningAndDesc(i18n) {
 //# sourceMappingURL=extractor_merger.js.map
 
 /***/ },
-/* 187 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31814,18 +31919,18 @@ var IcuPlaceholder = (function () {
 //# sourceMappingURL=i18n_ast.js.map
 
 /***/ },
-/* 188 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ml_parser_interpolation_config__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ml_parser_parser__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__extractor_merger__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__message_bundle__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serializers_xliff__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__serializers_xmb__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__serializers_xtb__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__translation_bundle__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__extractor_merger__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__message_bundle__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serializers_xliff__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__serializers_xmb__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__serializers_xtb__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__translation_bundle__ = __webpack_require__(345);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return I18NHtmlParser; });
 /**
  * @license
@@ -31887,15 +31992,15 @@ var I18NHtmlParser = (function () {
 //# sourceMappingURL=i18n_html_parser.js.map
 
 /***/ },
-/* 189 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__i18n_html_parser__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__message_bundle__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__serializers_xliff__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__serializers_xmb__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serializers_xtb__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__i18n_html_parser__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__message_bundle__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__serializers_xliff__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__serializers_xmb__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serializers_xtb__ = __webpack_require__(197);
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__i18n_html_parser__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__message_bundle__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__serializers_xliff__["a"]; });
@@ -31916,12 +32021,12 @@ var I18NHtmlParser = (function () {
 //# sourceMappingURL=index.js.map
 
 /***/ },
-/* 190 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__digest__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__extractor_merger__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__extractor_merger__ = __webpack_require__(188);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return MessageBundle; });
 /**
  * @license
@@ -31961,7 +32066,7 @@ var MessageBundle = (function () {
 //# sourceMappingURL=message_bundle.js.map
 
 /***/ },
-/* 191 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31995,16 +32100,16 @@ function extractPlaceholderToIds(messageBundle) {
 //# sourceMappingURL=serializer.js.map
 
 /***/ },
-/* 192 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_collection__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ml_parser_ast__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ml_parser_xml_parser__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ml_parser_xml_parser__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__parse_util__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serializer__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__xml_helper__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serializer__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__xml_helper__ = __webpack_require__(196);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Xliff; });
 /**
  * @license
@@ -32249,12 +32354,12 @@ function getCtypeForTag(tag) {
 //# sourceMappingURL=xliff.js.map
 
 /***/ },
-/* 193 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_collection__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__xml_helper__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__xml_helper__ = __webpack_require__(196);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Xmb; });
 /**
  * @license
@@ -32347,7 +32452,7 @@ var _Visitor = (function () {
 //# sourceMappingURL=xmb.js.map
 
 /***/ },
-/* 194 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32462,14 +32567,14 @@ function _escapeXml(text) {
 //# sourceMappingURL=xml_helper.js.map
 
 /***/ },
-/* 195 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ml_parser_ast__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ml_parser_xml_parser__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ml_parser_xml_parser__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__parse_util__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__serializer__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__serializer__ = __webpack_require__(193);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Xtb; });
 /**
  * @license
@@ -32633,12 +32738,12 @@ var _Visitor = (function () {
 //# sourceMappingURL=xtb.js.map
 
 /***/ },
-/* 196 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__parser__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__xml_tags__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__xml_tags__ = __webpack_require__(349);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return XmlParser; });
 /* unused harmony reexport ParseTreeResult */
 /* unused harmony reexport TreeError */
@@ -32671,13 +32776,13 @@ var XmlParser = (function (_super) {
 //# sourceMappingURL=xml_parser.js.map
 
 /***/ },
-/* 197 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_lang__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__abstract_emitter__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_ast__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_ast__ = __webpack_require__(5);
 /* harmony export (immutable) */ exports["a"] = debugOutputAstAsTypeScript;
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return TypeScriptEmitter; });
 /**
@@ -33009,13 +33114,13 @@ var _TsEmitterVisitor = (function (_super) {
 //# sourceMappingURL=ts_emitter.js.map
 
 /***/ },
-/* 198 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_ast__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_ast__ = __webpack_require__(5);
 /* harmony export (immutable) */ exports["a"] = convertValueToOutputAst;
 /**
  * @license
@@ -33061,14 +33166,14 @@ var _ValueOutputAstTransformer = (function () {
 //# sourceMappingURL=value_util.js.map
 
 /***/ },
-/* 199 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__identifiers__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__identifiers__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__parse_util__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__template_parser_template_ast__ = __webpack_require__(28);
 /* unused harmony export ProviderError */
@@ -33564,24 +33669,24 @@ function _addQueryToTokenMap(map, query) {
 //# sourceMappingURL=provider_analyzer.js.map
 
 /***/ },
-/* 200 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_animation_compiler__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_parser__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compile_metadata__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_animation_compiler__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_parser__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compile_metadata__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directive_normalizer__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directive_wrapper_compiler__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__facade_lang__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__metadata_resolver__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ng_module_compiler__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__output_output_ast__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__output_output_interpreter__ = __webpack_require__(341);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__output_output_jit__ = __webpack_require__(342);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__private_import_core__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__output_output_ast__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__output_output_interpreter__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__output_output_jit__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__private_import_core__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__style_compiler__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__template_parser_template_parser__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__util__ = __webpack_require__(37);
@@ -34023,12 +34128,12 @@ var ModuleBoundCompiler = (function () {
 //# sourceMappingURL=runtime_compiler.js.map
 
 /***/ },
-/* 201 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_security_schema__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_security_schema__ = __webpack_require__(355);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__element_schema_registry__ = __webpack_require__(41);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DomElementSchemaRegistry; });
 /**
@@ -34398,7 +34503,7 @@ var DomElementSchemaRegistry = (function (_super) {
 //# sourceMappingURL=dom_element_schema_registry.js.map
 
 /***/ },
-/* 202 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34453,7 +34558,7 @@ var _urlWithSchemaRe = /^([^:/?#]+):/;
 //# sourceMappingURL=style_url_resolver.js.map
 
 /***/ },
-/* 203 */
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34462,7 +34567,7 @@ var _urlWithSchemaRe = /^([^:/?#]+):/;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ml_parser_tags__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__parse_util__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__private_import_core__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__private_import_core__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__selector__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__template_ast__ = __webpack_require__(28);
@@ -34862,7 +34967,7 @@ function calcPossibleSecurityContexts(registry, selector, propName, isAttribute)
 //# sourceMappingURL=binding_parser.js.map
 
 /***/ },
-/* 204 */
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34958,24 +35063,24 @@ function normalizeNgContentSelect(selectAttr) {
 //# sourceMappingURL=template_preparser.js.map
 
 /***/ },
-/* 205 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compiler_util_identifier_util__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directive_wrapper_compiler__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_collection__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__output_output_ast__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__output_value_util__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__output_output_ast__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__output_value_util__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__template_parser_template_ast__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__compile_method__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__compile_query__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__constants__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__compile_query__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__constants__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__deps__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__util__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__util__ = __webpack_require__(58);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return CompileNode; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CompileElement; });
 /**
@@ -35386,15 +35491,15 @@ var _QueryWithRead = (function () {
 //# sourceMappingURL=compile_element.js.map
 
 /***/ },
-/* 206 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_collection__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identifiers__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__output_output_ast__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identifiers__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__output_output_ast__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util__ = __webpack_require__(58);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return CompileQuery; });
 /* harmony export (immutable) */ exports["a"] = createQueryList;
 /* harmony export (immutable) */ exports["c"] = addQueryToTokenMap;
@@ -35516,20 +35621,20 @@ function addQueryToTokenMap(map, query) {
 //# sourceMappingURL=compile_query.js.map
 
 /***/ },
-/* 207 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compiler_util_expression_converter__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compiler_util_expression_converter__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__output_output_ast__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__private_import_core__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__output_output_ast__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__private_import_core__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__compile_method__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__compile_pipe__ = __webpack_require__(346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__compile_query__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__compile_pipe__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__compile_query__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__util__ = __webpack_require__(58);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CompileView; });
 /**
  * @license
@@ -35665,7 +35770,7 @@ function getViewType(component, embeddedTemplateIndex) {
 //# sourceMappingURL=compile_view.js.map
 
 /***/ },
-/* 208 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35687,7 +35792,7 @@ var EMPTY_STATE = 'void';
 //# sourceMappingURL=animation_constants.js.map
 
 /***/ },
-/* 209 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35778,7 +35883,7 @@ var AnimationGroupPlayer = (function () {
 //# sourceMappingURL=animation_group_player.js.map
 
 /***/ },
-/* 210 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35807,7 +35912,7 @@ function triggerQueuedAnimations() {
 //# sourceMappingURL=animation_queue.js.map
 
 /***/ },
-/* 211 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35863,7 +35968,7 @@ var AnimationTransitionEvent = (function () {
 //# sourceMappingURL=animation_transition_event.js.map
 
 /***/ },
-/* 212 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36562,7 +36667,7 @@ function trigger(name, animation) {
 //# sourceMappingURL=metadata.js.map
 
 /***/ },
-/* 213 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36876,7 +36981,7 @@ var KeyValueChangeRecord = (function () {
 //# sourceMappingURL=default_keyvalue_differ.js.map
 
 /***/ },
-/* 214 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36959,7 +37064,7 @@ var IterableDiffers = (function () {
 //# sourceMappingURL=iterable_differs.js.map
 
 /***/ },
-/* 215 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37042,7 +37147,7 @@ var KeyValueDiffers = (function () {
 //# sourceMappingURL=keyvalue_differs.js.map
 
 /***/ },
-/* 216 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37257,7 +37362,7 @@ function removeDebugNodeFromIndex(node) {
 //# sourceMappingURL=debug_node.js.map
 
 /***/ },
-/* 217 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37543,7 +37648,7 @@ var MixingMultiProvidersWithRegularProvidersError = (function (_super) {
 //# sourceMappingURL=reflective_errors.js.map
 
 /***/ },
-/* 218 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37650,7 +37755,7 @@ var ErrorHandler = (function () {
 //# sourceMappingURL=error_handler.js.map
 
 /***/ },
-/* 219 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37681,7 +37786,7 @@ var TRANSLATIONS_FORMAT = new __WEBPACK_IMPORTED_MODULE_0__di_opaque_token__["a"
 //# sourceMappingURL=tokens.js.map
 
 /***/ },
-/* 220 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37849,7 +37954,7 @@ var ComponentFactory = (function () {
 //# sourceMappingURL=component_factory.js.map
 
 /***/ },
-/* 221 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37979,7 +38084,7 @@ var DebugContext = (function () {
 //# sourceMappingURL=debug_context.js.map
 
 /***/ },
-/* 222 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38015,7 +38120,7 @@ var ElementRef = (function () {
 //# sourceMappingURL=element_ref.js.map
 
 /***/ },
-/* 223 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38115,7 +38220,7 @@ var ViewDestroyedError = (function (_super) {
 //# sourceMappingURL=errors.js.map
 
 /***/ },
-/* 224 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38246,7 +38351,7 @@ var NgModuleInjector = (function (_super) {
 //# sourceMappingURL=ng_module_factory.js.map
 
 /***/ },
-/* 225 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38300,7 +38405,7 @@ function getModuleFactory(id) {
 //# sourceMappingURL=ng_module_factory_loader.js.map
 
 /***/ },
-/* 226 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38375,7 +38480,7 @@ var TemplateRef_ = (function (_super) {
 //# sourceMappingURL=template_ref.js.map
 
 /***/ },
-/* 227 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38551,11 +38656,11 @@ var ViewContainerRef_ = (function () {
 //# sourceMappingURL=view_container_ref.js.map
 
 /***/ },
-/* 228 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animation_animation_queue__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animation_animation_queue__ = __webpack_require__(212);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__change_detection_constants__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_errors__ = __webpack_require__(17);
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return ViewRef; });
@@ -38705,15 +38810,15 @@ var ViewRef_ = (function () {
 //# sourceMappingURL=view_ref.js.map
 
 /***/ },
-/* 229 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__metadata_di__ = __webpack_require__(371);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__metadata_directives__ = __webpack_require__(372);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__metadata_lifecycle_hooks__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__metadata_ng_module__ = __webpack_require__(373);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__metadata_view__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__metadata_di__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__metadata_directives__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__metadata_lifecycle_hooks__ = __webpack_require__(232);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__metadata_ng_module__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__metadata_view__ = __webpack_require__(233);
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "l", function() { return __WEBPACK_IMPORTED_MODULE_0__metadata_di__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "o", function() { return __WEBPACK_IMPORTED_MODULE_0__metadata_di__["d"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "p", function() { return __WEBPACK_IMPORTED_MODULE_0__metadata_di__["e"]; });
@@ -38755,7 +38860,7 @@ var ViewRef_ = (function () {
 //# sourceMappingURL=metadata.js.map
 
 /***/ },
-/* 230 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38944,7 +39049,7 @@ var AfterViewChecked = (function () {
 //# sourceMappingURL=lifecycle_hooks.js.map
 
 /***/ },
-/* 231 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39027,7 +39132,7 @@ var ViewMetadata = (function () {
 //# sourceMappingURL=view.js.map
 
 /***/ },
-/* 232 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39193,7 +39298,7 @@ function convertTsickleDecoratorIntoMetadata(decoratorInvocations) {
 //# sourceMappingURL=reflection_capabilities.js.map
 
 /***/ },
-/* 233 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39251,7 +39356,7 @@ var Reflector = (function (_super) {
 //# sourceMappingURL=reflector.js.map
 
 /***/ },
-/* 234 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39295,11 +39400,11 @@ var Sanitizer = (function () {
 //# sourceMappingURL=security.js.map
 
 /***/ },
-/* 235 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_forms__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_forms__ = __webpack_require__(393);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "AbstractControlDirective", function() { return __WEBPACK_IMPORTED_MODULE_0__src_forms__["a"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "AbstractFormGroupDirective", function() { return __WEBPACK_IMPORTED_MODULE_0__src_forms__["b"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "CheckboxControlValueAccessor", function() { return __WEBPACK_IMPORTED_MODULE_0__src_forms__["c"]; });
@@ -39351,7 +39456,7 @@ var Sanitizer = (function () {
 //# sourceMappingURL=index.js.map
 
 /***/ },
-/* 236 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39373,11 +39478,11 @@ var FormErrorExamples = {
 //# sourceMappingURL=error_examples.js.map
 
 /***/ },
-/* 237 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__error_examples__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__error_examples__ = __webpack_require__(238);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return TemplateDrivenErrors; });
 /**
  * @license
@@ -39407,7 +39512,7 @@ var TemplateDrivenErrors = (function () {
 //# sourceMappingURL=template_driven_errors.js.map
 
 /***/ },
-/* 238 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39520,7 +39625,7 @@ var FormBuilder = (function () {
 //# sourceMappingURL=form_builder.js.map
 
 /***/ },
-/* 239 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39538,7 +39643,7 @@ var isPromise = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].
 //# sourceMappingURL=private_import_core.js.map
 
 /***/ },
-/* 240 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39602,7 +39707,7 @@ var BrowserJsonp = (function () {
 //# sourceMappingURL=browser_jsonp.js.map
 
 /***/ },
-/* 241 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39614,7 +39719,7 @@ var BrowserJsonp = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__facade_lang__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__interfaces__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__static_response__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__browser_jsonp__ = __webpack_require__(240);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__browser_jsonp__ = __webpack_require__(242);
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return JSONPConnection; });
 /* unused harmony export JSONPConnection_ */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return JSONPBackend; });
@@ -39767,7 +39872,7 @@ var JSONPBackend_ = (function (_super) {
 //# sourceMappingURL=jsonp_backend.js.map
 
 /***/ },
-/* 242 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40009,7 +40114,7 @@ var XHRBackend = (function () {
 //# sourceMappingURL=xhr_backend.js.map
 
 /***/ },
-/* 243 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40088,7 +40193,7 @@ var Body = (function () {
 //# sourceMappingURL=body.js.map
 
 /***/ },
-/* 244 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40097,7 +40202,7 @@ var Body = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__base_request_options__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__enums__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__interfaces__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__static_request__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__static_request__ = __webpack_require__(247);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Http; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return Jsonp; });
 /**
@@ -40330,12 +40435,12 @@ var Jsonp = (function (_super) {
 //# sourceMappingURL=http.js.map
 
 /***/ },
-/* 245 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_facade_lang__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__body__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__body__ = __webpack_require__(245);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__headers__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__http_utils__ = __webpack_require__(101);
@@ -40505,14 +40610,14 @@ var ArrayBuffer = w['ArrayBuffer'] || noop;
 //# sourceMappingURL=static_request.js.map
 
 /***/ },
-/* 246 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_compiler__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_compiler__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_platform_browser__ = __webpack_require__(390);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__resource_loader_resource_loader_impl__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_platform_browser__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__resource_loader_resource_loader_impl__ = __webpack_require__(249);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return INTERNAL_BROWSER_DYNAMIC_PLATFORM_PROVIDERS; });
 /**
  * @license
@@ -40536,11 +40641,11 @@ var INTERNAL_BROWSER_DYNAMIC_PLATFORM_PROVIDERS = [
 //# sourceMappingURL=platform_providers.js.map
 
 /***/ },
-/* 247 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_compiler__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_compiler__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ResourceLoaderImpl; });
 var __extends = (this && this.__extends) || function (d, b) {
@@ -40599,28 +40704,28 @@ var ResourceLoaderImpl = (function (_super) {
 //# sourceMappingURL=resource_loader_impl.js.map
 
 /***/ },
-/* 248 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_dom_animation_driver__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_dom_web_animations_driver__ = __webpack_require__(398);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__browser_browser_adapter__ = __webpack_require__(249);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__browser_location_browser_platform_location__ = __webpack_require__(250);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__browser_testability__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__browser_title__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_dom_web_animations_driver__ = __webpack_require__(409);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__browser_browser_adapter__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__browser_location_browser_platform_location__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__browser_testability__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__browser_title__ = __webpack_require__(254);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dom_debug_ng_probe__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dom_dom_adapter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dom_dom_adapter__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dom_dom_renderer__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__dom_dom_tokens__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__dom_events_dom_events__ = __webpack_require__(253);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__dom_events_event_manager__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__dom_events_dom_events__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__dom_events_event_manager__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__dom_events_hammer_gestures__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__dom_events_key_events__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__dom_events_key_events__ = __webpack_require__(256);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__dom_shared_styles_host__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__security_dom_sanitization_service__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__security_dom_sanitization_service__ = __webpack_require__(260);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return INTERNAL_BROWSER_PLATFORM_PROVIDERS; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return BROWSER_SANITIZATION_PROVIDERS; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "e", function() { return platformBrowser; });
@@ -40726,13 +40831,13 @@ var BrowserModule = (function () {
 //# sourceMappingURL=browser.js.map
 
 /***/ },
-/* 249 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dom_dom_adapter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dom_dom_adapter__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__generic_browser_adapter__ = __webpack_require__(392);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__generic_browser_adapter__ = __webpack_require__(403);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BrowserDomAdapter; });
 /* unused harmony export parseCookieValue */
 /**
@@ -41140,14 +41245,14 @@ function parseCookieValue(cookieStr, name) {
 //# sourceMappingURL=browser_adapter.js.map
 
 /***/ },
-/* 250 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dom_dom_adapter__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__history__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dom_dom_adapter__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__history__ = __webpack_require__(404);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BrowserPlatformLocation; });
 /**
  * @license
@@ -41238,12 +41343,12 @@ var BrowserPlatformLocation = (function (_super) {
 //# sourceMappingURL=browser_platform_location.js.map
 
 /***/ },
-/* 251 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_dom_adapter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_dom_adapter__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(19);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BrowserGetTestability; });
 /**
@@ -41312,11 +41417,11 @@ var BrowserGetTestability = (function () {
 //# sourceMappingURL=testability.js.map
 
 /***/ },
-/* 252 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dom_dom_adapter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dom_dom_adapter__ = __webpack_require__(11);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Title; });
 /**
  * @license
@@ -41354,13 +41459,13 @@ var Title = (function () {
 //# sourceMappingURL=title.js.map
 
 /***/ },
-/* 253 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_adapter__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__event_manager__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_adapter__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__event_manager__ = __webpack_require__(50);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DomEventsPlugin; });
 /**
  * @license
@@ -41406,15 +41511,15 @@ var DomEventsPlugin = (function (_super) {
 //# sourceMappingURL=dom_events.js.map
 
 /***/ },
-/* 254 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(258);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dom_adapter__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__event_manager__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dom_adapter__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__event_manager__ = __webpack_require__(50);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return KeyEventsPlugin; });
 /**
  * @license
@@ -41530,7 +41635,7 @@ var KeyEventsPlugin = (function (_super) {
 //# sourceMappingURL=key_events.js.map
 
 /***/ },
-/* 255 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41566,7 +41671,7 @@ function dashCaseToCamelCase(input) {
 //# sourceMappingURL=util.js.map
 
 /***/ },
-/* 256 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41758,7 +41863,7 @@ function iterateListLike(obj, fn) {
 //# sourceMappingURL=collection.js.map
 
 /***/ },
-/* 257 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41802,13 +41907,13 @@ var collectAndResolveStyles = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__cor
 //# sourceMappingURL=private_import_core.js.map
 
 /***/ },
-/* 258 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__html_sanitizer__ = __webpack_require__(403);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_sanitizer__ = __webpack_require__(404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__html_sanitizer__ = __webpack_require__(414);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_sanitizer__ = __webpack_require__(415);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__url_sanitizer__ = __webpack_require__(161);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DomSanitizer; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return DomSanitizerImpl; });
@@ -41983,7 +42088,7 @@ var SafeResourceUrlImpl = (function (_super) {
 //# sourceMappingURL=dom_sanitization_service.js.map
 
 /***/ },
-/* 259 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42127,7 +42232,7 @@ var RouterLinkActive = (function () {
 //# sourceMappingURL=router_link_active.js.map
 
 /***/ },
-/* 260 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42252,20 +42357,20 @@ var RouterOutlet = (function () {
 //# sourceMappingURL=router_outlet.js.map
 
 /***/ },
-/* 261 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_router_link__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_router_link_active__ = __webpack_require__(259);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_router_outlet__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_router_link_active__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_router_outlet__ = __webpack_require__(262);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__router__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__router_config_loader__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__router_outlet_map__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__router_preloader__ = __webpack_require__(262);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__router_state__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__router_preloader__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__router_state__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__url_tree__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__utils_collection__ = __webpack_require__(32);
 /* unused harmony export ROUTER_CONFIGURATION */
@@ -42513,20 +42618,20 @@ function provideRouterInitializer() {
 //# sourceMappingURL=router_module.js.map
 
 /***/ },
-/* 262 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_from__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_from__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_from__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatMap__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatMap__ = __webpack_require__(304);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_filter__ = __webpack_require__(536);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_filter__ = __webpack_require__(572);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_operator_filter__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_mergeAll__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_mergeAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operator_mergeAll__);
@@ -42669,7 +42774,7 @@ var RouterPreloader = (function () {
 //# sourceMappingURL=router_preloader.js.map
 
 /***/ },
-/* 263 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42677,20 +42782,35 @@ var RouterPreloader = (function () {
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-__export(__webpack_require__(414));
-__export(__webpack_require__(416));
-__export(__webpack_require__(417));
+__export(__webpack_require__(425));
+__export(__webpack_require__(426));
+__export(__webpack_require__(427));
 //# sourceMappingURL=browser.js.map
 
 /***/ },
-/* 264 */
+/* 266 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+var browserUniversal = __webpack_require__(265);
+__export(__webpack_require__(265));
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = browserUniversal;
+//# sourceMappingURL=index.js.map
+
+/***/ },
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var angular2_meta_1 = __webpack_require__(14);
-var common_service_1 = __webpack_require__(10);
+var angular2_meta_1 = __webpack_require__(9);
+var common_service_1 = __webpack_require__(6);
 var AboutComponent = (function () {
     function AboutComponent(req, meta, comm) {
         // console.log('req',  req)
@@ -42712,7 +42832,7 @@ var AboutComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'about',
-            template: __webpack_require__(466)
+            template: __webpack_require__(490)
         }),
         __param(0, core_1.Inject('req')), 
         __metadata('design:paramtypes', [Object, (typeof (_a = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _a) || Object, (typeof (_b = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _b) || Object])
@@ -42724,16 +42844,16 @@ exports.AboutComponent = AboutComponent;
 
 
 /***/ },
-/* 265 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var model_service_1 = __webpack_require__(11);
-var common_service_1 = __webpack_require__(10);
-var angular2_meta_1 = __webpack_require__(14);
+var router_1 = __webpack_require__(4);
+var model_service_1 = __webpack_require__(8);
+var common_service_1 = __webpack_require__(6);
+var angular2_meta_1 = __webpack_require__(9);
 var BeerDetailComponent = (function () {
     function BeerDetailComponent(model, router, common, meta, route) {
         var _this = this;
@@ -42819,8 +42939,8 @@ var BeerDetailComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'beer-detail',
-            styles: [__webpack_require__(467)],
-            template: __webpack_require__(468)
+            styles: [__webpack_require__(491)],
+            template: __webpack_require__(492)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object, (typeof (_d = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _d) || Object, (typeof (_e = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _e) || Object])
     ], BeerDetailComponent);
@@ -42831,16 +42951,16 @@ exports.BeerDetailComponent = BeerDetailComponent;
 
 
 /***/ },
-/* 266 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var angular2_meta_1 = __webpack_require__(14);
-var model_service_1 = __webpack_require__(11);
-var common_service_1 = __webpack_require__(10);
+var router_1 = __webpack_require__(4);
+var angular2_meta_1 = __webpack_require__(9);
+var model_service_1 = __webpack_require__(8);
+var common_service_1 = __webpack_require__(6);
 var BeerResultsComponent = (function () {
     function BeerResultsComponent(model, router, common, meta, route) {
         // we need the data synchronously for the client to set the server response
@@ -42941,8 +43061,8 @@ var BeerResultsComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'beer-results',
-            styles: [__webpack_require__(469)],
-            template: __webpack_require__(470)
+            styles: [__webpack_require__(493)],
+            template: __webpack_require__(494)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object, (typeof (_d = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _d) || Object, (typeof (_e = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _e) || Object])
     ], BeerResultsComponent);
@@ -42953,16 +43073,16 @@ exports.BeerResultsComponent = BeerResultsComponent;
 
 
 /***/ },
-/* 267 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var angular2_meta_1 = __webpack_require__(14);
-var common_service_1 = __webpack_require__(10);
-var router_1 = __webpack_require__(5);
-var model_service_1 = __webpack_require__(11);
+var angular2_meta_1 = __webpack_require__(9);
+var common_service_1 = __webpack_require__(6);
+var router_1 = __webpack_require__(4);
+var model_service_1 = __webpack_require__(8);
 var BreweryBeersComponent = (function () {
     function BreweryBeersComponent(model, meta, router, route, common) {
         //this.getMeta();
@@ -43087,8 +43207,8 @@ var BreweryBeersComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'brewery-beers',
-            styles: [__webpack_require__(471)],
-            template: __webpack_require__(472)
+            styles: [__webpack_require__(495)],
+            template: __webpack_require__(496)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _b) || Object, (typeof (_c = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _c) || Object, (typeof (_d = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _d) || Object, (typeof (_e = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _e) || Object])
     ], BreweryBeersComponent);
@@ -43099,18 +43219,18 @@ exports.BreweryBeersComponent = BreweryBeersComponent;
 
 
 /***/ },
-/* 268 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-__webpack_require__(285);
-var model_service_1 = __webpack_require__(11);
-var common_service_1 = __webpack_require__(10);
-var angular2_meta_1 = __webpack_require__(14);
-var http_1 = __webpack_require__(64);
+var router_1 = __webpack_require__(4);
+__webpack_require__(295);
+var model_service_1 = __webpack_require__(8);
+var common_service_1 = __webpack_require__(6);
+var angular2_meta_1 = __webpack_require__(9);
+var http_1 = __webpack_require__(49);
 var BreweryDetailComponent = (function () {
     function BreweryDetailComponent(model, router, common, meta, _http, route) {
         var _this = this;
@@ -43232,8 +43352,8 @@ var BreweryDetailComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'brewery-detail',
-            styles: [__webpack_require__(473)],
-            template: __webpack_require__(474)
+            styles: [__webpack_require__(497)],
+            template: __webpack_require__(498)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object, (typeof (_d = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _d) || Object, (typeof (_e = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _e) || Object, (typeof (_f = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _f) || Object])
     ], BreweryDetailComponent);
@@ -43244,18 +43364,18 @@ exports.BreweryDetailComponent = BreweryDetailComponent;
 
 
 /***/ },
-/* 269 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-__webpack_require__(285);
-var model_service_1 = __webpack_require__(11);
-var common_service_1 = __webpack_require__(10);
-var angular2_meta_1 = __webpack_require__(14);
-var http_1 = __webpack_require__(64);
+var router_1 = __webpack_require__(4);
+__webpack_require__(295);
+var model_service_1 = __webpack_require__(8);
+var common_service_1 = __webpack_require__(6);
+var angular2_meta_1 = __webpack_require__(9);
+var http_1 = __webpack_require__(49);
 var BreweryLocationComponent = (function () {
     function BreweryLocationComponent(model, router, common, meta, _http, route) {
         var _this = this;
@@ -43383,8 +43503,8 @@ var BreweryLocationComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'brewery-location',
-            styles: [__webpack_require__(475)],
-            template: __webpack_require__(476)
+            styles: [__webpack_require__(499)],
+            template: __webpack_require__(500)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object, (typeof (_d = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _d) || Object, (typeof (_e = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _e) || Object, (typeof (_f = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _f) || Object])
     ], BreweryLocationComponent);
@@ -43395,16 +43515,16 @@ exports.BreweryLocationComponent = BreweryLocationComponent;
 
 
 /***/ },
-/* 270 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var angular2_meta_1 = __webpack_require__(14);
-var model_service_1 = __webpack_require__(11);
-var common_service_1 = __webpack_require__(10);
+var router_1 = __webpack_require__(4);
+var angular2_meta_1 = __webpack_require__(9);
+var model_service_1 = __webpack_require__(8);
+var common_service_1 = __webpack_require__(6);
 var BreweryResultsComponent = (function () {
     function BreweryResultsComponent(model, router, common, meta, route) {
         // we need the data synchronously for the client to set the server response
@@ -43663,8 +43783,8 @@ var BreweryResultsComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'brewery-results',
-            styles: [__webpack_require__(477)],
-            template: __webpack_require__(478)
+            styles: [__webpack_require__(501)],
+            template: __webpack_require__(502)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object, (typeof (_d = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _d) || Object, (typeof (_e = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _e) || Object])
     ], BreweryResultsComponent);
@@ -43675,16 +43795,129 @@ exports.BreweryResultsComponent = BreweryResultsComponent;
 
 
 /***/ },
-/* 271 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var http_1 = __webpack_require__(64);
-var model_service_1 = __webpack_require__(11);
-var angular2_meta_1 = __webpack_require__(14);
-var common_service_1 = __webpack_require__(10);
+var router_1 = __webpack_require__(4);
+var model_service_1 = __webpack_require__(8);
+var common_service_1 = __webpack_require__(6);
+var angular2_meta_1 = __webpack_require__(9);
+var CheckinComponent = (function () {
+    function CheckinComponent(model, router, route, meta, common) {
+        var _this = this;
+        this.model = model;
+        this.router = router;
+        this.route = route;
+        this.meta = meta;
+        this.common = common;
+        this.showLoader = true;
+        this.route.params.subscribe(function (params) {
+            _this.showLoader = true;
+            _this.getCheckin(params['checkId']);
+            _this.pageURL = _this.common.getAbsoluteUrl(_this.router);
+        });
+    }
+    CheckinComponent.prototype.getCheckin = function (checkId) {
+        var _this = this;
+        this.model
+            .get('/firebase/checkin/' + checkId)
+            .subscribe(function (check) {
+            //console.log('checkin',check);
+            _this.checkin = check;
+            _this.model
+                .get('/firebase/user/' + _this.checkin.uid)
+                .subscribe(function (resp) {
+                _this.user = resp;
+                _this.showLoader = false;
+                //console.log('user',resp);
+                _this.setMeta();
+            });
+        });
+    };
+    CheckinComponent.prototype.setMeta = function () {
+        var metaTags = [];
+        var keywords = [];
+        var pageTitle = "";
+        var pageDescription = null;
+        metaTags.push({ name: 'author', content: this.common.getAuthor() });
+        keywords.push(this.checkin.beerName);
+        if ("name" in this.checkin) {
+            keywords.push(this.checkin.name);
+            keywords.push(this.checkin.name + ' ' + this.checkin.beerName);
+            keywords.push(this.checkin.name + ' ' + this.checkin.city + ' ' + this.checkin.state);
+            pageTitle = "Checked in " + this.checkin.beerName + " at " + this.checkin.name;
+            pageDescription = 'Come out and try ' + this.checkin.beerName + ' brewed by ' + this.checkin.breweryName + '. ' + this.checkin.name + ' currently serves this beer located in ' + this.checkin.city + ', ' + this.checkin.state + '.';
+        }
+        else {
+            pageTitle = "Checked in " + this.checkin.beerName;
+            pageDescription = 'Try this wonderful beer ' + this.checkin.beerName + ' brewed by ' + this.checkin.breweryName;
+        }
+        if ("breweryName" in this.checkin)
+            keywords.push(this.checkin.breweryName);
+        if ("beerStyleName" in this.checkin)
+            keywords.push(this.checkin.beerStyleName);
+        pageTitle += ' | ' + this.common.getAppName();
+        this.meta.setTitle(pageTitle);
+        metaTags.push({
+            name: 'description',
+            content: pageDescription
+        });
+        metaTags.push({
+            name: 'keywords', content: keywords.join(", ")
+        });
+        // Facebook Tags
+        metaTags.push({ name: 'fb:app_id', content: this.common.getFBAppId() });
+        metaTags.push({ name: 'og:site_name', content: this.common.getSiteName() });
+        metaTags.push({ name: 'og:type', content: "website" });
+        metaTags.push({ name: 'og:title', content: pageTitle });
+        metaTags.push({ name: 'og:description', content: pageDescription });
+        metaTags.push({ name: 'og:url', content: this.pageURL });
+        if ("img" in this.checkin) {
+            metaTags.push({ name: 'og:image', content: this.checkin.img });
+        }
+        else if ("beerLabels" in this.checkin) {
+            metaTags.push({ name: 'og:image', content: this.checkin.beerLabels.large });
+        }
+        else if ("photo" in this.checkin) {
+            metaTags.push({ name: 'og:image', content: this.checkin.photo });
+        }
+        else if ("breweryImages" in this.checkin) {
+            metaTags.push({ name: 'og:image', content: this.checkin.breweryImages.squareLarge });
+        }
+        else
+            metaTags.push({ name: 'og:image', content: this.common.getDefaultNoImage() });
+        this.meta.addTags(metaTags);
+    };
+    CheckinComponent = __decorate([
+        core_1.Component({
+            changeDetection: core_1.ChangeDetectionStrategy.Default,
+            encapsulation: core_1.ViewEncapsulation.Emulated,
+            selector: 'checkin',
+            styles: [__webpack_require__(503)],
+            template: __webpack_require__(504)
+        }), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _c) || Object, (typeof (_d = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _d) || Object, (typeof (_e = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _e) || Object])
+    ], CheckinComponent);
+    return CheckinComponent;
+    var _a, _b, _c, _d, _e;
+}());
+exports.CheckinComponent = CheckinComponent;
+
+
+/***/ },
+/* 275 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var http_1 = __webpack_require__(49);
+var model_service_1 = __webpack_require__(8);
+var angular2_meta_1 = __webpack_require__(9);
+var common_service_1 = __webpack_require__(6);
 var ContactComponent = (function () {
     function ContactComponent(model, meta, http, common) {
         this.model = model;
@@ -43758,8 +43991,8 @@ var ContactComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'contact',
-            styles: [__webpack_require__(479)],
-            template: __webpack_require__(480)
+            styles: [__webpack_require__(505)],
+            template: __webpack_require__(506)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _b) || Object, (typeof (_c = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _c) || Object, (typeof (_d = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _d) || Object])
     ], ContactComponent);
@@ -43770,15 +44003,15 @@ exports.ContactComponent = ContactComponent;
 
 
 /***/ },
-/* 272 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var angular2_meta_1 = __webpack_require__(14);
-var common_service_1 = __webpack_require__(10);
-var model_service_1 = __webpack_require__(11);
+var angular2_meta_1 = __webpack_require__(9);
+var common_service_1 = __webpack_require__(6);
+var model_service_1 = __webpack_require__(8);
 var FaqComponent = (function () {
     function FaqComponent(model, meta, common) {
         this.model = model;
@@ -43816,8 +44049,8 @@ var FaqComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'faq',
-            styles: [__webpack_require__(481)],
-            template: __webpack_require__(482)
+            styles: [__webpack_require__(507)],
+            template: __webpack_require__(508)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object])
     ], FaqComponent);
@@ -43828,15 +44061,15 @@ exports.FaqComponent = FaqComponent;
 
 
 /***/ },
-/* 273 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var model_service_1 = __webpack_require__(11);
-var common_service_1 = __webpack_require__(10);
-var angular2_meta_1 = __webpack_require__(14);
+var model_service_1 = __webpack_require__(8);
+var common_service_1 = __webpack_require__(6);
+var angular2_meta_1 = __webpack_require__(9);
 var FeedsComponent = (function () {
     function FeedsComponent(model, common, meta) {
         this.model = model;
@@ -43909,8 +44142,8 @@ var FeedsComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'feeds',
-            styles: [__webpack_require__(483)],
-            template: __webpack_require__(484)
+            styles: [__webpack_require__(509)],
+            template: __webpack_require__(510)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _b) || Object, (typeof (_c = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _c) || Object])
     ], FeedsComponent);
@@ -43921,15 +44154,15 @@ exports.FeedsComponent = FeedsComponent;
 
 
 /***/ },
-/* 274 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var angular2_meta_1 = __webpack_require__(14);
-var common_service_1 = __webpack_require__(10);
-var model_service_1 = __webpack_require__(11);
+var angular2_meta_1 = __webpack_require__(9);
+var common_service_1 = __webpack_require__(6);
+var model_service_1 = __webpack_require__(8);
 var GetappComponent = (function () {
     function GetappComponent(model, meta, common) {
         this.model = model;
@@ -43967,8 +44200,8 @@ var GetappComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'getapp',
-            styles: [__webpack_require__(485)],
-            template: __webpack_require__(486)
+            styles: [__webpack_require__(511)],
+            template: __webpack_require__(512)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object])
     ], GetappComponent);
@@ -43979,15 +44212,233 @@ exports.GetappComponent = GetappComponent;
 
 
 /***/ },
-/* 275 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var angular2_meta_1 = __webpack_require__(14);
-var model_service_1 = __webpack_require__(11);
-var common_service_1 = __webpack_require__(10);
+var angular2_meta_1 = __webpack_require__(9);
+var model_service_1 = __webpack_require__(8);
+var common_service_1 = __webpack_require__(6);
+var HomeBarComponent = (function () {
+    function HomeBarComponent(model, meta, common) {
+        this.model = model;
+        this.meta = meta;
+        this.common = common;
+        this.data = {};
+        this.setMeta();
+    }
+    HomeBarComponent.prototype.setMeta = function () {
+        var metaTags = [];
+        var metaTagsWithFB = [];
+        var keywords = [];
+        var pageTitle = "Find Local Bars | " + this.common.getAppName();
+        this.meta.setTitle(pageTitle);
+        metaTags.push({ name: 'author', content: this.common.getAuthor() });
+        metaTags.push({
+            name: 'description',
+            content: "Find which pub services your favorite beer, introduce new craft beers, and discover new local breweries with an App that's fun and easy to use."
+        });
+        metaTags.push({
+            name: 'keywords', content: "brews, craft beers, best beers, beer festivals, local beers, import beers, brewery, draft beers, pubs, bars"
+        });
+        // Facebook Tags
+        var defaultFB = this.common.defaultOGMetaTags();
+        metaTags.push({ name: 'fb:app_id', content: this.common.getFBAppId() });
+        metaTags.push({ name: 'og:site_name', content: defaultFB.site_name });
+        metaTags.push({ name: 'og:type', content: defaultFB.type });
+        metaTags.push({ name: 'og:title', content: defaultFB.title });
+        metaTags.push({ name: 'og:description', content: defaultFB.description });
+        metaTags.push({ name: 'og:url', content: defaultFB.url });
+        metaTags.push({ name: 'og:image', content: defaultFB.image });
+        this.meta.addTags(metaTags);
+    };
+    HomeBarComponent = __decorate([
+        core_1.Component({
+            changeDetection: core_1.ChangeDetectionStrategy.Default,
+            encapsulation: core_1.ViewEncapsulation.Emulated,
+            selector: 'home-bar',
+            styles: [__webpack_require__(513)],
+            template: __webpack_require__(514)
+        }), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object])
+    ], HomeBarComponent);
+    return HomeBarComponent;
+    var _a, _b, _c;
+}());
+exports.HomeBarComponent = HomeBarComponent;
+
+
+/***/ },
+/* 280 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var angular2_meta_1 = __webpack_require__(9);
+var model_service_1 = __webpack_require__(8);
+var common_service_1 = __webpack_require__(6);
+var HomeBeerComponent = (function () {
+    function HomeBeerComponent(model, meta, common) {
+        var _this = this;
+        this.model = model;
+        this.meta = meta;
+        this.common = common;
+        this.showLoader = true;
+        // we need the data synchronously for the client to set the server response
+        // we create another method so we have more control for testing
+        this.setMeta();
+        this.model.get('/api/featured').subscribe(function (featured) {
+            //console.log('featured',featured);
+            if ("data" in featured) {
+                _this.featuredBeer = featured['data'].beer;
+            }
+            //console.log('beer',this.featuredBeer);
+            _this.model.get('/api/random_beers').subscribe(function (random) {
+                //console.log('random',random);
+                if ("data" in random) {
+                    _this.randomBeers = random['data'];
+                }
+                //console.log('random',random);
+                _this.showLoader = false;
+            }, function (error) {
+                console.log(error);
+            });
+        }, function (error) {
+            console.log(error);
+        });
+    }
+    HomeBeerComponent.prototype.setMeta = function () {
+        var metaTags = [];
+        var metaTagsWithFB = [];
+        var keywords = [];
+        var pageTitle = "Find Beers | " + this.common.getAppName();
+        this.meta.setTitle(pageTitle);
+        metaTags.push({ name: 'author', content: this.common.getAuthor() });
+        metaTags.push({
+            name: 'description',
+            content: "Find which pub services your favorite beer, introduce new craft beers, and discover new local breweries with an App that's fun and easy to use."
+        });
+        metaTags.push({
+            name: 'keywords', content: "brews, craft beers, best beers, beer festivals, local beers, import beers, brewery, draft beers, pubs, bars"
+        });
+        // Facebook Tags
+        var defaultFB = this.common.defaultOGMetaTags();
+        metaTags.push({ name: 'fb:app_id', content: this.common.getFBAppId() });
+        metaTags.push({ name: 'og:site_name', content: defaultFB.site_name });
+        metaTags.push({ name: 'og:type', content: defaultFB.type });
+        metaTags.push({ name: 'og:title', content: defaultFB.title });
+        metaTags.push({ name: 'og:description', content: defaultFB.description });
+        metaTags.push({ name: 'og:url', content: defaultFB.url });
+        metaTags.push({ name: 'og:image', content: defaultFB.image });
+        this.meta.addTags(metaTags);
+    };
+    HomeBeerComponent = __decorate([
+        core_1.Component({
+            changeDetection: core_1.ChangeDetectionStrategy.Default,
+            encapsulation: core_1.ViewEncapsulation.Emulated,
+            selector: 'home-beer',
+            styles: [__webpack_require__(515)],
+            template: __webpack_require__(516)
+        }), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object])
+    ], HomeBeerComponent);
+    return HomeBeerComponent;
+    var _a, _b, _c;
+}());
+exports.HomeBeerComponent = HomeBeerComponent;
+
+
+/***/ },
+/* 281 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var angular2_meta_1 = __webpack_require__(9);
+var model_service_1 = __webpack_require__(8);
+var common_service_1 = __webpack_require__(6);
+var HomeBreweryComponent = (function () {
+    function HomeBreweryComponent(model, meta, common) {
+        var _this = this;
+        this.model = model;
+        this.meta = meta;
+        this.common = common;
+        this.data = {};
+        this.showLoader = true;
+        // we need the data synchronously for the client to set the server response
+        // we create another method so we have more control for testing
+        this.setMeta();
+        this.model.get('/api/featured').subscribe(function (featured) {
+            //console.log('featured',featured);
+            if ("data" in featured) {
+                _this.featuredBrewery = featured['data'].brewery;
+            }
+            //console.log('beer',this.featuredBrewery);
+            _this.showLoader = false;
+        }, function (error) {
+            console.log(error);
+        });
+    }
+    HomeBreweryComponent.prototype.setMeta = function () {
+        /*
+        this.model.get('/data.json').subscribe(data => {
+          this.data = data;
+        });
+        */
+        var metaTags = [];
+        var metaTagsWithFB = [];
+        var keywords = [];
+        var pageTitle = "Find Local Breweries | " + this.common.getAppName();
+        this.meta.setTitle(pageTitle);
+        metaTags.push({ name: 'author', content: this.common.getAuthor() });
+        metaTags.push({
+            name: 'description',
+            content: "Find which pub services your favorite beer, introduce new craft beers, and discover new local breweries with an App that's fun and easy to use."
+        });
+        metaTags.push({
+            name: 'keywords', content: "brews, craft beers, best beers, beer festivals, local beers, import beers, brewery, draft beers, pubs, bars"
+        });
+        // Facebook Tags
+        var defaultFB = this.common.defaultOGMetaTags();
+        metaTags.push({ name: 'fb:app_id', content: this.common.getFBAppId() });
+        metaTags.push({ name: 'og:site_name', content: defaultFB.site_name });
+        metaTags.push({ name: 'og:type', content: defaultFB.type });
+        metaTags.push({ name: 'og:title', content: defaultFB.title });
+        metaTags.push({ name: 'og:description', content: defaultFB.description });
+        metaTags.push({ name: 'og:url', content: defaultFB.url });
+        metaTags.push({ name: 'og:image', content: defaultFB.image });
+        this.meta.addTags(metaTags);
+    };
+    HomeBreweryComponent = __decorate([
+        core_1.Component({
+            changeDetection: core_1.ChangeDetectionStrategy.Default,
+            encapsulation: core_1.ViewEncapsulation.Emulated,
+            selector: 'home-brewery',
+            styles: [__webpack_require__(517)],
+            template: __webpack_require__(518)
+        }), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object])
+    ], HomeBreweryComponent);
+    return HomeBreweryComponent;
+    var _a, _b, _c;
+}());
+exports.HomeBreweryComponent = HomeBreweryComponent;
+
+
+/***/ },
+/* 282 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var angular2_meta_1 = __webpack_require__(9);
+var model_service_1 = __webpack_require__(8);
+var common_service_1 = __webpack_require__(6);
 var HomeComponent = (function () {
     function HomeComponent(model, meta, common) {
         this.model = model;
@@ -44033,8 +44484,8 @@ var HomeComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'home',
-            styles: [__webpack_require__(487)],
-            template: __webpack_require__(488)
+            styles: [__webpack_require__(519)],
+            template: __webpack_require__(520)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object])
     ], HomeComponent);
@@ -44045,15 +44496,245 @@ exports.HomeComponent = HomeComponent;
 
 
 /***/ },
-/* 276 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var model_service_1 = __webpack_require__(11);
-var angular2_meta_1 = __webpack_require__(14);
-var common_service_1 = __webpack_require__(10);
+var router_1 = __webpack_require__(4);
+var angular2_meta_1 = __webpack_require__(9);
+var model_service_1 = __webpack_require__(8);
+var common_service_1 = __webpack_require__(6);
+var PlaceResultsComponent = (function () {
+    function PlaceResultsComponent(model, router, common, meta, route) {
+        var _this = this;
+        this.model = model;
+        this.router = router;
+        this.common = common;
+        this.meta = meta;
+        this.route = route;
+        this.showLoader = true;
+        this.getMoreLoader = false;
+        this.locations = [];
+        this.route.params.subscribe(function (params) {
+            _this.locationKey = params['locationKey'];
+            if (_this.locationKey != null) {
+                _this.getPlacesByLocation(params['locationKey']);
+                _this.pageURL = _this.common.getAbsoluteUrl(_this.router);
+            }
+        });
+    }
+    PlaceResultsComponent.prototype.setMeta = function () {
+        var metaTags = [];
+        var metaTagsWithFB = [];
+        var keywords = [];
+        var pageTitle = "Bars in " + this.city + ", " + this.state + " | " + this.common.getAppName();
+        var pageDescription = "Find bars, clubs, pubs, and sports bars in " + this.city + ", " + this.state + ". At Brew Search, you can share beers, breweries, and bars socially. Listed are bars located in '" + this.city + ", " + this.state + "'.";
+        this.meta.setTitle(pageTitle);
+        metaTags.push({ name: 'author', content: this.common.getAuthor() });
+        metaTags.push({
+            name: 'description',
+            content: pageDescription
+        });
+        metaTags.push({
+            name: 'keywords', content: this.city + " bars,bars in " + this.city + ", " + this.city + " sports bars, drinks in " + this.city + ", places to drink in " + this.city + ", " + this.state + " bars"
+        });
+        // Facebook Tags
+        var defaultFB = this.common.defaultOGMetaTags();
+        metaTags.push({ name: 'fb:app_id', content: this.common.getFBAppId() });
+        metaTags.push({ name: 'og:site_name', content: defaultFB.site_name });
+        metaTags.push({ name: 'og:type', content: defaultFB.type });
+        metaTags.push({ name: 'og:title', content: pageTitle });
+        metaTags.push({ name: 'og:description', content: pageDescription });
+        metaTags.push({ name: 'og:url', content: this.pageURL });
+        metaTags.push({ name: 'og:image', content: defaultFB.image });
+        this.meta.addTags(metaTags);
+    };
+    PlaceResultsComponent.prototype.getMoreLocations = function () {
+        var _this = this;
+        this.getMoreLoader = true;
+        this.model.get('/google/search_place_next/' + this.nextToken)
+            .subscribe(function (resp) {
+            console.log('next_resp', resp);
+            if ("next_page_token" in resp)
+                _this.nextToken = resp.next_page_token;
+            else
+                _this.nextToken = null;
+            //console.log('nextToken',this.nextToken);
+            if (resp.results.length) {
+                for (var i = 0; i < resp.results.length; i++) {
+                    if ("photos" in resp.results[i])
+                        resp.results[i]['thumb'] = _this.common.getGoogleImg(resp.results[i].photos[0].photo_reference, 350);
+                    else
+                        resp.results[i]['thumb'] = 'assets/images/no-beer.jpg';
+                    _this.locations.push(resp.results[i]);
+                }
+            }
+            _this.getMoreLoader = false;
+        }, function (error) {
+            console.log(error);
+            _this.getMoreLoader = false;
+        });
+    };
+    PlaceResultsComponent.prototype.getPlacesByLocation = function (location) {
+        var _this = this;
+        var locKey = this.common.revertSEOParam(location);
+        var cityStateArray = locKey.split(",");
+        this.qLocation = locKey;
+        this.showLoader = true;
+        if (cityStateArray.length == 2) {
+            this.city = cityStateArray[0];
+            this.state = cityStateArray[1];
+            var txtSearch = encodeURI('bars in ' + this.city + ' ' + this.state);
+            //console.log('search st',txtSearch);
+            this.model.get('/google/search_place_type/' + txtSearch)
+                .subscribe(function (resp) {
+                console.log('places', resp);
+                if (resp.status == "OK") {
+                    for (var i = 0; i < resp.results.length; i++) {
+                        if ("photos" in resp.results[i])
+                            resp.results[i]['thumb'] = _this.common.getGoogleImg(resp.results[i].photos[0].photo_reference, 350);
+                        else
+                            resp.results[i]['thumb'] = 'assets/images/no-beer.jpg';
+                    }
+                    _this.locations = resp.results;
+                    _this.nextToken = resp.next_page_token;
+                }
+                _this.showLoader = false;
+                _this.setMeta();
+            }, function (error) {
+                console.log(error);
+                _this.showLoader = false;
+            });
+        }
+    };
+    PlaceResultsComponent = __decorate([
+        core_1.Component({
+            changeDetection: core_1.ChangeDetectionStrategy.Default,
+            encapsulation: core_1.ViewEncapsulation.Emulated,
+            selector: 'place-results',
+            styles: [__webpack_require__(521)],
+            template: __webpack_require__(522)
+        }), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object, (typeof (_d = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _d) || Object, (typeof (_e = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _e) || Object])
+    ], PlaceResultsComponent);
+    return PlaceResultsComponent;
+    var _a, _b, _c, _d, _e;
+}());
+exports.PlaceResultsComponent = PlaceResultsComponent;
+
+
+/***/ },
+/* 284 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var router_1 = __webpack_require__(4);
+var model_service_1 = __webpack_require__(8);
+var common_service_1 = __webpack_require__(6);
+var angular2_meta_1 = __webpack_require__(9);
+var PlaceComponent = (function () {
+    function PlaceComponent(model, router, common, meta, route) {
+        var _this = this;
+        this.model = model;
+        this.router = router;
+        this.common = common;
+        this.meta = meta;
+        this.route = route;
+        this.data = {};
+        this.showLoader = true;
+        this.placeTypes = [];
+        this.locationPhotosArray = [];
+        this.locationPhotos = [];
+        this.showPhotos = false;
+        this.photoCount = 0;
+        this.locationPrimaryPhoto = null;
+        this.photosToLoad = [];
+        this.showPhotoLoader = false;
+        this.hidePhotos = false;
+        this.route.params.subscribe(function (params) {
+            _this.showLoader = true;
+            _this.getPlaceDetail(params['id']);
+            _this.pageURL = _this.common.getAbsoluteUrl(_this.router);
+        });
+    }
+    PlaceComponent.prototype.getPlaceDetail = function (placeId) {
+        var _this = this;
+        this.model.get('/google/place_by_id/' + placeId).subscribe(function (place) {
+            console.log('place', place);
+            _this.location = place;
+            _this.showLoader = false;
+            if ("photos" in _this.location) {
+                _this.locationPhoto = _this.common.getGoogleImg(_this.location.photos[0].photo_reference, 230);
+                _this.photoCount = _this.location.photos.length;
+            }
+            for (var i = 0; i < _this.location.types.length; i++) {
+                if (_this.location.types[i] != 'establishment' && _this.location.types[i] != 'point_of_interest')
+                    _this.placeTypes.push(_this.location.types[i]);
+            }
+            _this.setMeta();
+        }, function (error) {
+            console.log(error);
+        });
+    };
+    PlaceComponent.prototype.setMeta = function () {
+        var metaTags = [];
+        var keywords = [];
+        var pageTitle = this.location['name'];
+        var pageDescription = "Check out photos, beers list, and details of " + this.location['name'] + ". Brew Search helping people find beers, breweries, and bars around the world.";
+        metaTags.push({ name: 'author', content: this.common.getAuthor() });
+        keywords.push(this.location['name']);
+        keywords.push('bar');
+        keywords.push('bars');
+        keywords.push('reviews');
+        pageTitle += ' | ' + this.common.getAppName();
+        this.meta.setTitle(pageTitle);
+        metaTags.push({
+            name: 'description',
+            content: pageDescription
+        });
+        metaTags.push({
+            name: 'keywords', content: keywords.join(", ")
+        });
+        // Facebook Tags
+        metaTags.push({ name: 'fb:app_id', content: this.common.getFBAppId() });
+        metaTags.push({ name: 'og:site_name', content: this.common.getSiteName() });
+        metaTags.push({ name: 'og:type', content: "website" });
+        metaTags.push({ name: 'og:title', content: pageTitle });
+        metaTags.push({ name: 'og:description', content: pageDescription });
+        metaTags.push({ name: 'og:url', content: this.pageURL });
+        metaTags.push({ name: 'og:image', content: this.common.getDefaultNoImage() });
+        this.meta.addTags(metaTags);
+    };
+    PlaceComponent = __decorate([
+        core_1.Component({
+            changeDetection: core_1.ChangeDetectionStrategy.Default,
+            encapsulation: core_1.ViewEncapsulation.Emulated,
+            selector: 'place-detail',
+            styles: [__webpack_require__(523)],
+            template: __webpack_require__(524)
+        }), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object, (typeof (_d = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _d) || Object, (typeof (_e = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _e) || Object])
+    ], PlaceComponent);
+    return PlaceComponent;
+    var _a, _b, _c, _d, _e;
+}());
+exports.PlaceComponent = PlaceComponent;
+
+
+/***/ },
+/* 285 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var model_service_1 = __webpack_require__(8);
+var angular2_meta_1 = __webpack_require__(9);
+var common_service_1 = __webpack_require__(6);
 var PrivacyComponent = (function () {
     function PrivacyComponent(model, meta, common) {
         this.model = model;
@@ -44091,8 +44772,8 @@ var PrivacyComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'privacy',
-            styles: [__webpack_require__(489)],
-            template: __webpack_require__(490)
+            styles: [__webpack_require__(525)],
+            template: __webpack_require__(526)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object])
     ], PrivacyComponent);
@@ -44103,15 +44784,15 @@ exports.PrivacyComponent = PrivacyComponent;
 
 
 /***/ },
-/* 277 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var model_service_1 = __webpack_require__(11);
-var angular2_meta_1 = __webpack_require__(14);
-var common_service_1 = __webpack_require__(10);
+var model_service_1 = __webpack_require__(8);
+var angular2_meta_1 = __webpack_require__(9);
+var common_service_1 = __webpack_require__(6);
 var TermsComponent = (function () {
     function TermsComponent(model, meta, common) {
         this.model = model;
@@ -44149,8 +44830,8 @@ var TermsComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'terms',
-            styles: [__webpack_require__(491)],
-            template: __webpack_require__(492)
+            styles: [__webpack_require__(527)],
+            template: __webpack_require__(528)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object])
     ], TermsComponent);
@@ -44161,14 +44842,14 @@ exports.TermsComponent = TermsComponent;
 
 
 /***/ },
-/* 278 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var model_service_1 = __webpack_require__(11);
-var todo_schema_1 = __webpack_require__(449);
+var model_service_1 = __webpack_require__(8);
+var todo_schema_1 = __webpack_require__(470);
 var TodoComponent = (function () {
     function TodoComponent(model) {
         this.model = model;
@@ -44196,8 +44877,8 @@ var TodoComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'todo',
-            styles: [__webpack_require__(493)],
-            template: __webpack_require__(494)
+            styles: [__webpack_require__(529)],
+            template: __webpack_require__(530)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object])
     ], TodoComponent);
@@ -44208,7 +44889,7 @@ exports.TodoComponent = TodoComponent;
 
 
 /***/ },
-/* 279 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44248,7 +44929,7 @@ var AppComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'app',
-            template: __webpack_require__(495)
+            template: __webpack_require__(531)
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -44258,17 +44939,69 @@ exports.AppComponent = AppComponent;
 
 
 /***/ },
-/* 280 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var http_1 = __webpack_require__(64);
+// Directive decorator
+var ActiveListenerDirective = (function () {
+    function ActiveListenerDirective(el, renderer) {
+        this.el = el;
+        this.renderer = renderer;
+        this.triggers = [];
+    }
+    ActiveListenerDirective.prototype.add = function (trigger) {
+        this.triggers.push(trigger);
+    };
+    ActiveListenerDirective.prototype.show = function (id) {
+        for (var i = 0; i < this.triggers.length; i++) {
+            if (this.triggers[i].id == id) {
+                //console.log("YOLO");
+                this.renderer.setElementStyle(this.triggers[i].el.nativeElement, 'background-color', '#ec971f');
+            }
+            else {
+                this.renderer.setElementStyle(this.triggers[i].el.nativeElement, 'background-color', '#C81B02');
+            }
+        }
+    };
+    ActiveListenerDirective.prototype.ngOnInit = function () {
+        if (this.activeListener != 'home')
+            this.renderer.setElementStyle(this.el.nativeElement, 'background', 'none');
+    };
+    __decorate([
+        core_1.ContentChildren('activeTrigger'), 
+        __metadata('design:type', Object)
+    ], ActiveListenerDirective.prototype, "items", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', String)
+    ], ActiveListenerDirective.prototype, "activeListener", void 0);
+    ActiveListenerDirective = __decorate([
+        core_1.Directive({
+            selector: '[activeListener]',
+        }), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _b) || Object])
+    ], ActiveListenerDirective);
+    return ActiveListenerDirective;
+    var _a, _b;
+}());
+exports.ActiveListenerDirective = ActiveListenerDirective;
+
+
+/***/ },
+/* 290 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var http_1 = __webpack_require__(49);
 var Observable_1 = __webpack_require__(3);
-__webpack_require__(519);
-__webpack_require__(287);
-__webpack_require__(520);
+__webpack_require__(557);
+__webpack_require__(297);
+__webpack_require__(558);
 var ApiService = (function () {
     function ApiService(_http) {
         this._http = _http;
@@ -44295,113 +45028,19 @@ exports.ApiService = ApiService;
 
 
 /***/ },
-/* 281 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var CacheService = (function () {
-    function CacheService(_cache) {
-        this._cache = _cache;
-    }
-    /**
-     * check if there is a value in our store
-     */
-    CacheService.prototype.has = function (key) {
-        var _key = this.normalizeKey(key);
-        return this._cache.has(_key);
-    };
-    /**
-     * store our state
-     */
-    CacheService.prototype.set = function (key, value) {
-        var _key = this.normalizeKey(key);
-        this._cache.set(_key, value);
-    };
-    /**
-     * get our cached value
-     */
-    CacheService.prototype.get = function (key) {
-        var _key = this.normalizeKey(key);
-        return this._cache.get(_key);
-    };
-    /**
-     * release memory refs
-     */
-    CacheService.prototype.clear = function () {
-        this._cache.clear();
-    };
-    /**
-     * convert to json for the client
-     */
-    CacheService.prototype.dehydrate = function () {
-        var json = {};
-        this._cache.forEach(function (value, key) { return json[key] = value; });
-        return json;
-    };
-    /**
-     * convert server json into out initial state
-     */
-    CacheService.prototype.rehydrate = function (json) {
-        var _this = this;
-        Object.keys(json).forEach(function (key) {
-            var _key = _this.normalizeKey(key);
-            var value = json[_key];
-            _this._cache.set(_key, value);
-        });
-    };
-    /**
-     * allow JSON.stringify to work
-     */
-    CacheService.prototype.toJSON = function () {
-        return this.dehydrate();
-    };
-    /**
-     * convert numbers into strings
-     */
-    CacheService.prototype.normalizeKey = function (key) {
-        if (core_1.isDevMode() && this._isInvalidValue(key)) {
-            throw new Error('Please provide a valid key to save in the CacheService');
-        }
-        return key + '';
-    };
-    CacheService.prototype._isInvalidValue = function (key) {
-        return key === null ||
-            key === undefined ||
-            key === 0 ||
-            key === '' ||
-            typeof key === 'boolean' ||
-            Number.isNaN(key);
-    };
-    CacheService.prototype.delete = function (key) {
-        this._cache.delete(key);
-    };
-    CacheService.KEY = 'CacheService';
-    CacheService = __decorate([
-        core_1.Injectable(),
-        __param(0, core_1.Inject('LRU')), 
-        __metadata('design:paramtypes', [Object])
-    ], CacheService);
-    return CacheService;
-}());
-exports.CacheService = CacheService;
-
-
-/***/ },
-/* 282 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var http_1 = __webpack_require__(64);
-var environment_1 = __webpack_require__(164);
+var http_1 = __webpack_require__(49);
+var environment_1 = __webpack_require__(165);
 var Observable_1 = __webpack_require__(3);
-__webpack_require__(523);
-__webpack_require__(521);
-__webpack_require__(525);
-__webpack_require__(287);
+__webpack_require__(560);
+__webpack_require__(559);
+__webpack_require__(561);
+__webpack_require__(297);
 var GoogleService = (function () {
     function GoogleService(http) {
         //this.googlePlacesURL = 'https://maps.googleapis.com/maps/api/place/';
@@ -44541,7 +45180,116 @@ exports.GoogleService = GoogleService;
 
 
 /***/ },
-/* 283 */
+/* 292 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var Observable_1 = __webpack_require__(3);
+__webpack_require__(166);
+__webpack_require__(296);
+__webpack_require__(298);
+var cache_service_1 = __webpack_require__(164);
+// domain/feature service
+var SearchCacheService = (function () {
+    // This is only one example of one Model depending on your domain
+    function SearchCacheService(_cache) {
+        this._cache = _cache;
+    }
+    /**
+     * whatever domain/feature method name
+     */
+    SearchCacheService.prototype.get = function (url) {
+        // you want to return the cache if there is a response in it.
+        // This would cache the first response so if your API isn't idempotent
+        // you probably want to remove the item from the cache after you use it. LRU of 10
+        // you can use also hashCodeString here
+        var key = url;
+        if (this._cache.has(key)) {
+            return Observable_1.Observable.of(this._cache.get(key));
+        }
+        else
+            return null;
+    };
+    SearchCacheService.prototype.setLastSearch = function (name) {
+        var json = {
+            name: name
+        };
+        this._cache.set('__last_search', json);
+    };
+    SearchCacheService.prototype.getLastSearch = function () {
+        if (this._cache.has('__last_search')) {
+            var page = this._cache.get('__last_search');
+            return page.name;
+        }
+        else
+            return null;
+    };
+    SearchCacheService.prototype.setBeer = function (name) {
+        var json = {
+            q: name
+        };
+        this.setLastSearch('beer');
+        this._cache.set('__beer_cache', json);
+    };
+    SearchCacheService.prototype.getBeer = function () {
+        if (this._cache.has('__beer_cache'))
+            return this._cache.get('__beer_cache');
+        else
+            return null;
+    };
+    SearchCacheService.prototype.setBrewery = function (name, options, geo) {
+        var json = {
+            q: name,
+            opt: options,
+            geo: geo
+        };
+        this.setLastSearch('brewery');
+        this._cache.set('__brewery_cache', json);
+    };
+    SearchCacheService.prototype.getBrewery = function () {
+        if (this._cache.has('__brewery_cache'))
+            return this._cache.get('__brewery_cache');
+        else
+            return null;
+    };
+    SearchCacheService.prototype.setBar = function (name, options, geo) {
+        var json = {
+            q: name,
+            opt: options,
+            geo: geo
+        };
+        this.setLastSearch('bar');
+        this._cache.set('__bar_cache', json);
+    };
+    SearchCacheService.prototype.getBar = function () {
+        if (this._cache.has('__bar_cache'))
+            return this._cache.get('__bar_cache');
+        else
+            return null;
+    };
+    SearchCacheService.prototype.clearBar = function () {
+        this._cache.delete('__bar_cache');
+    };
+    SearchCacheService.prototype.clearBeer = function () {
+        this._cache.delete('__beer_cache');
+    };
+    SearchCacheService.prototype.clearBrewery = function () {
+        this._cache.delete('__brewery_cache');
+    };
+    SearchCacheService = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof cache_service_1.CacheService !== 'undefined' && cache_service_1.CacheService) === 'function' && _a) || Object])
+    ], SearchCacheService);
+    return SearchCacheService;
+    var _a;
+}());
+exports.SearchCacheService = SearchCacheService;
+
+
+/***/ },
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44552,7 +45300,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subject_1 = __webpack_require__(33);
-var ObjectUnsubscribedError_1 = __webpack_require__(296);
+var ObjectUnsubscribedError_1 = __webpack_require__(307);
 /**
  * @class BehaviorSubject<T>
  */
@@ -44596,7 +45344,7 @@ exports.BehaviorSubject = BehaviorSubject;
 //# sourceMappingURL=BehaviorSubject.js.map
 
 /***/ },
-/* 284 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44729,29 +45477,30 @@ exports.Notification = Notification;
 //# sourceMappingURL=Notification.js.map
 
 /***/ },
-/* 285 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(3);
-var forkJoin_1 = __webpack_require__(532);
+var forkJoin_1 = __webpack_require__(568);
 Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
 //# sourceMappingURL=forkJoin.js.map
 
 /***/ },
-/* 286 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(3);
-var of_1 = __webpack_require__(44);
-Observable_1.Observable.of = of_1.of;
-//# sourceMappingURL=of.js.map
+var do_1 = __webpack_require__(571);
+Observable_1.Observable.prototype.do = do_1._do;
+Observable_1.Observable.prototype._do = do_1._do;
+//# sourceMappingURL=do.js.map
 
 /***/ },
-/* 287 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44762,7 +45511,18 @@ Observable_1.Observable.prototype.map = map_1.map;
 //# sourceMappingURL=map.js.map
 
 /***/ },
-/* 288 */
+/* 298 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(3);
+var share_1 = __webpack_require__(579);
+Observable_1.Observable.prototype.share = share_1.share;
+//# sourceMappingURL=share.js.map
+
+/***/ },
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44773,9 +45533,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(3);
-var ScalarObservable_1 = __webpack_require__(291);
-var EmptyObservable_1 = __webpack_require__(165);
-var isScheduler_1 = __webpack_require__(551);
+var ScalarObservable_1 = __webpack_require__(302);
+var EmptyObservable_1 = __webpack_require__(167);
+var isScheduler_1 = __webpack_require__(587);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -44890,7 +45650,7 @@ exports.ArrayObservable = ArrayObservable;
 //# sourceMappingURL=ArrayObservable.js.map
 
 /***/ },
-/* 289 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44902,7 +45662,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Subject_1 = __webpack_require__(33);
 var Observable_1 = __webpack_require__(3);
-var Subscriber_1 = __webpack_require__(13);
+var Subscriber_1 = __webpack_require__(14);
 var Subscription_1 = __webpack_require__(70);
 /**
  * @class ConnectableObservable<T>
@@ -45050,7 +45810,7 @@ var RefCountSubscriber = (function (_super) {
 //# sourceMappingURL=ConnectableObservable.js.map
 
 /***/ },
-/* 290 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45177,7 +45937,7 @@ function dispatchError(arg) {
 //# sourceMappingURL=PromiseObservable.js.map
 
 /***/ },
-/* 291 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45241,7 +46001,7 @@ exports.ScalarObservable = ScalarObservable;
 //# sourceMappingURL=ScalarObservable.js.map
 
 /***/ },
-/* 292 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45296,7 +46056,7 @@ exports.concatAll = concatAll;
 //# sourceMappingURL=concatAll.js.map
 
 /***/ },
-/* 293 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45365,7 +46125,7 @@ exports.concatMap = concatMap;
 //# sourceMappingURL=concatMap.js.map
 
 /***/ },
-/* 294 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45375,7 +46135,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = __webpack_require__(13);
+var Subscriber_1 = __webpack_require__(14);
 /**
  * Returns an Observable that emits whether or not every item of the source satisfies the condition specified.
  * @param {function} predicate a function for determining if an item meets a specified condition.
@@ -45439,18 +46199,18 @@ var EverySubscriber = (function (_super) {
 //# sourceMappingURL=every.js.map
 
 /***/ },
-/* 295 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var AsyncAction_1 = __webpack_require__(547);
-var AsyncScheduler_1 = __webpack_require__(548);
+var AsyncAction_1 = __webpack_require__(583);
+var AsyncScheduler_1 = __webpack_require__(584);
 exports.async = new AsyncScheduler_1.AsyncScheduler(AsyncAction_1.AsyncAction);
 //# sourceMappingURL=async.js.map
 
 /***/ },
-/* 296 */
+/* 307 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -45483,7 +46243,7 @@ exports.ObjectUnsubscribedError = ObjectUnsubscribedError;
 //# sourceMappingURL=ObjectUnsubscribedError.js.map
 
 /***/ },
-/* 297 */
+/* 308 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -45495,7 +46255,7 @@ exports.isDate = isDate;
 //# sourceMappingURL=isDate.js.map
 
 /***/ },
-/* 298 */
+/* 309 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -45507,7 +46267,7 @@ exports.isFunction = isFunction;
 //# sourceMappingURL=isFunction.js.map
 
 /***/ },
-/* 299 */
+/* 310 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -45519,12 +46279,12 @@ exports.isPromise = isPromise;
 //# sourceMappingURL=isPromise.js.map
 
 /***/ },
-/* 300 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var errorObject_1 = __webpack_require__(173);
+var errorObject_1 = __webpack_require__(175);
 var tryCatchTarget;
 function tryCatcher() {
     try {
@@ -45544,7 +46304,7 @@ exports.tryCatch = tryCatch;
 //# sourceMappingURL=tryCatch.js.map
 
 /***/ },
-/* 301 */
+/* 312 */
 /***/ function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -45553,11 +46313,11 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 301;
+webpackEmptyContext.id = 312;
 
 
 /***/ },
-/* 302 */
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45579,20 +46339,20 @@ function bootloader(main) {
 //# sourceMappingURL=index.js.map
 
 /***/ },
-/* 303 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-__webpack_require__(462);
-__webpack_require__(463);
-__webpack_require__(464);
-__webpack_require__(514);
-__webpack_require__(413);
+__webpack_require__(486);
+__webpack_require__(487);
+__webpack_require__(488);
+__webpack_require__(552);
+__webpack_require__(424);
 //# sourceMappingURL=browser.js.map
 
 /***/ },
-/* 304 */
+/* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45601,7 +46361,7 @@ __webpack_require__(413);
  */
 "use strict";
 /* tslint:disable */
-var __compiler__ = __webpack_require__(52);
+var __compiler__ = __webpack_require__(53);
 var core_1 = __webpack_require__(0);
 if (!core_1.__core_private__['ViewUtils']) {
     core_1.__core_private__['ViewUtils'] = core_1.__core_private__['view_utils'];
@@ -45615,22 +46375,22 @@ if (__compiler__ && __compiler__.SelectorMatcher && __compiler__.CssSelector) {
 
 
 /***/ },
-/* 305 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var forms_1 = __webpack_require__(235);
-var router_1 = __webpack_require__(5);
-var browser_1 = __webpack_require__(174); // for AoT we need to manually split universal packages
-var idle_preload_1 = __webpack_require__(412);
-var app_module_1 = __webpack_require__(451);
-var shared_module_1 = __webpack_require__(9);
-var cache_service_1 = __webpack_require__(281);
+var forms_1 = __webpack_require__(237);
+var router_1 = __webpack_require__(4);
+var browser_1 = __webpack_require__(176); // for AoT we need to manually split universal packages
+var idle_preload_1 = __webpack_require__(423);
+var app_module_1 = __webpack_require__(472);
+var shared_module_1 = __webpack_require__(7);
+var cache_service_1 = __webpack_require__(164);
 // Will be merged into @angular/platform-browser in a later release
 // see https://github.com/angular/angular/pull/12322
-var angular2_meta_1 = __webpack_require__(14);
+var angular2_meta_1 = __webpack_require__(9);
 // import * as LRU from 'modern-lru';
 function getLRU(lru) {
     // use LRU for node
@@ -45715,7 +46475,7 @@ exports.MainModule = MainModule;
 
 
 /***/ },
-/* 306 */
+/* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {function __assignFn(t) {
@@ -45785,7 +46545,7 @@ function __awaiterFn(thisArg, _arguments, P, generator) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15)))
 
 /***/ },
-/* 307 */
+/* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/* Web Font Loader v1.6.28 - (c) Adobe Systems, Google. License: Apache 2.0 */(function(){function aa(a,b,c){return a.call.apply(a.bind,arguments)}function ba(a,b,c){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var c=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(c,d);return a.apply(b,c)}}return function(){return a.apply(b,arguments)}}function p(a,b,c){p=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?aa:ba;return p.apply(null,arguments)}var q=Date.now||function(){return+new Date};function ca(a,b){this.a=a;this.o=b||a;this.c=this.o.document}var da=!!window.FontFace;function t(a,b,c,d){b=a.c.createElement(b);if(c)for(var e in c)c.hasOwnProperty(e)&&("style"==e?b.style.cssText=c[e]:b.setAttribute(e,c[e]));d&&b.appendChild(a.c.createTextNode(d));return b}function u(a,b,c){a=a.c.getElementsByTagName(b)[0];a||(a=document.documentElement);a.insertBefore(c,a.lastChild)}function v(a){a.parentNode&&a.parentNode.removeChild(a)}
@@ -45808,15 +46568,15 @@ g,0<d.length&&(d=za[d[0]])&&(a.c[e]=d))}a.c[e]||(d=za[e])&&(a.c[e]=d);for(d=0;d<
 
 
 /***/ },
-/* 308 */,
-/* 309 */
+/* 319 */,
+/* 320 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_index__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_index__ = __webpack_require__(177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__localization__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pipes_index__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pipes_index__ = __webpack_require__(181);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CommonModule; });
 /**
  * @license
@@ -45855,12 +46615,12 @@ var CommonModule = (function () {
 //# sourceMappingURL=common_module.js.map
 
 /***/ },
-/* 310 */
+/* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(16);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NgClass; });
 /**
@@ -46012,7 +46772,7 @@ var NgClass = (function () {
 //# sourceMappingURL=ng_class.js.map
 
 /***/ },
-/* 311 */
+/* 322 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46221,7 +46981,7 @@ var RecordViewTuple = (function () {
 //# sourceMappingURL=ng_for.js.map
 
 /***/ },
-/* 312 */
+/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46295,13 +47055,13 @@ var NgIf = (function () {
 //# sourceMappingURL=ng_if.js.map
 
 /***/ },
-/* 313 */
+/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__localization__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_switch__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_switch__ = __webpack_require__(178);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NgPlural; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return NgPluralCase; });
 /**
@@ -46426,7 +47186,7 @@ var NgPluralCase = (function () {
 //# sourceMappingURL=ng_plural.js.map
 
 /***/ },
-/* 314 */
+/* 325 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46514,7 +47274,7 @@ var NgStyle = (function () {
 //# sourceMappingURL=ng_style.js.map
 
 /***/ },
-/* 315 */
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46588,7 +47348,7 @@ var NgTemplateOutlet = (function () {
 //# sourceMappingURL=ng_template_outlet.js.map
 
 /***/ },
-/* 316 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46663,14 +47423,14 @@ var WrappedError = (function (_super) {
 //# sourceMappingURL=errors.js.map
 
 /***/ },
-/* 317 */
+/* 328 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__location_platform_location__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__location_location_strategy__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__location_hash_location_strategy__ = __webpack_require__(318);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__location_path_location_strategy__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__location_hash_location_strategy__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__location_path_location_strategy__ = __webpack_require__(330);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__location_location__ = __webpack_require__(109);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__location_platform_location__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__location_location_strategy__["a"]; });
@@ -46693,7 +47453,7 @@ var WrappedError = (function (_super) {
 //# sourceMappingURL=location.js.map
 
 /***/ },
-/* 318 */
+/* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46803,7 +47563,7 @@ var HashLocationStrategy = (function (_super) {
 //# sourceMappingURL=hash_location_strategy.js.map
 
 /***/ },
-/* 319 */
+/* 330 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46904,12 +47664,12 @@ var PathLocationStrategy = (function (_super) {
 //# sourceMappingURL=path_location_strategy.js.map
 
 /***/ },
-/* 320 */
+/* 331 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__private_import_core__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__private_import_core__ = __webpack_require__(340);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__invalid_pipe_argument_error__ = __webpack_require__(35);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AsyncPipe; });
 /**
@@ -47041,12 +47801,12 @@ var AsyncPipe = (function () {
 //# sourceMappingURL=async_pipe.js.map
 
 /***/ },
-/* 321 */
+/* 332 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_intl__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_intl__ = __webpack_require__(180);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__invalid_pipe_argument_error__ = __webpack_require__(35);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DatePipe; });
@@ -47170,7 +47930,7 @@ var DatePipe = (function () {
 //# sourceMappingURL=date_pipe.js.map
 
 /***/ },
-/* 322 */
+/* 333 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47233,7 +47993,7 @@ var I18nPluralPipe = (function () {
 //# sourceMappingURL=i18n_plural_pipe.js.map
 
 /***/ },
-/* 323 */
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47288,7 +48048,7 @@ var I18nSelectPipe = (function () {
 //# sourceMappingURL=i18n_select_pipe.js.map
 
 /***/ },
-/* 324 */
+/* 335 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47329,7 +48089,7 @@ var JsonPipe = (function () {
 //# sourceMappingURL=json_pipe.js.map
 
 /***/ },
-/* 325 */
+/* 336 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47382,12 +48142,12 @@ var LowerCasePipe = (function () {
 //# sourceMappingURL=lowercase_pipe.js.map
 
 /***/ },
-/* 326 */
+/* 337 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_intl__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_intl__ = __webpack_require__(180);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__invalid_pipe_argument_error__ = __webpack_require__(35);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DecimalPipe; });
@@ -47574,7 +48334,7 @@ var CurrencyPipe = (function () {
 //# sourceMappingURL=number_pipe.js.map
 
 /***/ },
-/* 327 */
+/* 338 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47658,7 +48418,7 @@ var SlicePipe = (function () {
 //# sourceMappingURL=slice_pipe.js.map
 
 /***/ },
-/* 328 */
+/* 339 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47711,7 +48471,7 @@ var UpperCasePipe = (function () {
 //# sourceMappingURL=uppercase_pipe.js.map
 
 /***/ },
-/* 329 */
+/* 340 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47729,7 +48489,7 @@ var isPromise = __WEBPACK_IMPORTED_MODULE_0__angular_core__["__core_private__"].
 //# sourceMappingURL=private_import_core.js.map
 
 /***/ },
-/* 330 */
+/* 341 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47797,7 +48557,7 @@ var StylesCollection = (function () {
 //# sourceMappingURL=styles_collection.js.map
 
 /***/ },
-/* 331 */
+/* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47807,21 +48567,21 @@ var StylesCollection = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directive_resolver__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directive_wrapper_compiler__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__expression_parser_lexer__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__expression_parser_parser__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__i18n_index__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__expression_parser_parser__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__i18n_index__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__metadata_resolver__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ml_parser_html_parser__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ng_module_compiler__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ng_module_resolver__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pipe_resolver__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__private_import_core__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__private_import_core__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__resource_loader__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__runtime_compiler__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__schema_dom_element_schema_registry__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__runtime_compiler__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__schema_dom_element_schema_registry__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__schema_element_schema_registry__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__style_compiler__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__template_parser_template_parser__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__url_resolver__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__url_resolver__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__view_compiler_view_compiler__ = __webpack_require__(81);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return COMPILER_PROVIDERS; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return RuntimeCompilerFactory; });
@@ -47981,17 +48741,17 @@ function _mergeArrays(parts) {
 //# sourceMappingURL=compiler.js.map
 
 /***/ },
-/* 332 */
+/* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__expression_parser_lexer__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__expression_parser_parser__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__expression_parser_parser__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ml_parser_ast__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ml_parser_html_tags__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__digest__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__i18n_ast__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__serializers_placeholder__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__i18n_ast__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__serializers_placeholder__ = __webpack_require__(344);
 /* harmony export (immutable) */ exports["a"] = createI18nMessageFactory;
 /**
  * @license
@@ -48118,7 +48878,7 @@ function _extractPlaceholderName(input) {
 //# sourceMappingURL=i18n_parser.js.map
 
 /***/ },
-/* 333 */
+/* 344 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48232,7 +48992,7 @@ var PlaceholderRegistry = (function () {
 //# sourceMappingURL=placeholder.js.map
 
 /***/ },
-/* 334 */
+/* 345 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48262,11 +49022,11 @@ var TranslationBundle = (function () {
 //# sourceMappingURL=translation_bundle.js.map
 
 /***/ },
-/* 335 */
+/* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__private_import_core__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__private_import_core__ = __webpack_require__(12);
 /* harmony export (immutable) */ exports["a"] = hasLifecycleHook;
 /**
  * @license
@@ -48302,7 +49062,7 @@ function getHookName(hook) {
 //# sourceMappingURL=lifecycle_reflector.js.map
 
 /***/ },
-/* 336 */
+/* 347 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48419,7 +49179,7 @@ function _expandDefaultForm(ast, errors) {
 //# sourceMappingURL=icu_ast_expander.js.map
 
 /***/ },
-/* 337 */
+/* 348 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49094,7 +49854,7 @@ function mergeTextTokens(srcTokens) {
 //# sourceMappingURL=lexer.js.map
 
 /***/ },
-/* 338 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49128,16 +49888,16 @@ function getXmlTagDefinition(tagName) {
 //# sourceMappingURL=xml_tags.js.map
 
 /***/ },
-/* 339 */
+/* 350 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animation_animation_compiler__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_animation_parser__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compile_metadata__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animation_animation_compiler__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_animation_parser__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compile_metadata__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_collection__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__output_output_ast__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__output_output_ast__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__view_compiler_view_compiler__ = __webpack_require__(81);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return SourceModule; });
 /* harmony export (immutable) */ exports["b"] = analyzeNgModules;
@@ -49429,13 +50189,13 @@ function _extractModulesAndPipesOrDirectives(programStaticSymbols, metadataResol
 //# sourceMappingURL=offline_compiler.js.map
 
 /***/ },
-/* 340 */
+/* 351 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_lang__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__abstract_emitter__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_ast__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_ast__ = __webpack_require__(5);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AbstractJsEmitterVisitor; });
 /**
  * @license
@@ -49607,13 +50367,13 @@ var AbstractJsEmitterVisitor = (function (_super) {
 //# sourceMappingURL=abstract_js_emitter.js.map
 
 /***/ },
-/* 341 */
+/* 352 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__output_ast__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ts_emitter__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__output_ast__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ts_emitter__ = __webpack_require__(199);
 /* harmony export (immutable) */ exports["a"] = interpretStatements;
 /**
  * @license
@@ -49957,14 +50717,14 @@ var CATCH_STACK_VAR = 'stack';
 //# sourceMappingURL=output_interpreter.js.map
 
 /***/ },
-/* 342 */
+/* 353 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_lang__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__abstract_emitter__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__abstract_js_emitter__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__abstract_js_emitter__ = __webpack_require__(351);
 /* harmony export (immutable) */ exports["a"] = jitStatements;
 /**
  * @license
@@ -50029,7 +50789,7 @@ var JitEmitterVisitor = (function (_super) {
 //# sourceMappingURL=output_jit.js.map
 
 /***/ },
-/* 343 */
+/* 354 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50075,7 +50835,7 @@ var AssetUrl = (function () {
 //# sourceMappingURL=path_util.js.map
 
 /***/ },
-/* 344 */
+/* 355 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50139,7 +50899,7 @@ registerContext(__WEBPACK_IMPORTED_MODULE_0__angular_core__["SecurityContext"].R
 //# sourceMappingURL=dom_security_schema.js.map
 
 /***/ },
-/* 345 */
+/* 356 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50706,14 +51466,14 @@ function escapeBlocks(input) {
 //# sourceMappingURL=shadow_css.js.map
 
 /***/ },
-/* 346 */
+/* 357 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compiler_util_identifier_util__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identifiers__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identifiers__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util__ = __webpack_require__(58);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CompilePipe; });
 /**
  * @license
@@ -50805,16 +51565,16 @@ function _findPipeMeta(view, name) {
 //# sourceMappingURL=compile_pipe.js.map
 
 /***/ },
-/* 347 */
+/* 358 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compiler_util_expression_converter__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compiler_util_expression_converter__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identifiers__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__output_output_ast__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identifiers__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__output_output_ast__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compile_method__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__constants__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__constants__ = __webpack_require__(57);
 /* unused harmony export CompileEventListener */
 /* harmony export (immutable) */ exports["a"] = collectEventListeners;
 /* harmony export (immutable) */ exports["c"] = bindDirectiveOutputs;
@@ -50968,13 +51728,13 @@ function sanitizeEventName(name) {
 //# sourceMappingURL=event_binder.js.map
 
 /***/ },
-/* 348 */
+/* 359 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__output_output_ast__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__private_import_core__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__output_output_ast__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__private_import_core__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants__ = __webpack_require__(57);
 /* harmony export (immutable) */ exports["b"] = bindDirectiveAfterContentLifecycleCallbacks;
 /* harmony export (immutable) */ exports["c"] = bindDirectiveAfterViewLifecycleCallbacks;
 /* harmony export (immutable) */ exports["d"] = bindInjectableDestroyLifecycleCallbacks;
@@ -51031,19 +51791,19 @@ function bindPipeDestroyLifecycleCallbacks(pipeMeta, pipeInstance, view) {
 //# sourceMappingURL=lifecycle_binder.js.map
 
 /***/ },
-/* 349 */
+/* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compiler_util_binding_util__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compiler_util_expression_converter__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compiler_util_binding_util__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compiler_util_expression_converter__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compiler_util_identifier_util__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compiler_util_render_util__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__output_output_ast__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__private_import_core__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compiler_util_render_util__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__output_output_ast__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__private_import_core__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__template_parser_template_ast__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__constants__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__constants__ = __webpack_require__(57);
 /* harmony export (immutable) */ exports["a"] = bindRenderText;
 /* harmony export (immutable) */ exports["b"] = bindRenderInputs;
 /* harmony export (immutable) */ exports["d"] = bindDirectiveHostProps;
@@ -51188,14 +51948,14 @@ function bindDirectiveInputs(directiveAst, directiveWrapperInstance, dirIndex, c
 //# sourceMappingURL=property_binder.js.map
 
 /***/ },
-/* 350 */
+/* 361 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__template_parser_template_ast__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__event_binder__ = __webpack_require__(347);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lifecycle_binder__ = __webpack_require__(348);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__property_binder__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__event_binder__ = __webpack_require__(358);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lifecycle_binder__ = __webpack_require__(359);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__property_binder__ = __webpack_require__(360);
 /* harmony export (immutable) */ exports["a"] = bindView;
 /**
  * @license
@@ -51291,25 +52051,25 @@ var ViewBinderVisitor = (function () {
 //# sourceMappingURL=view_binder.js.map
 
 /***/ },
-/* 351 */
+/* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compiler_util_expression_converter__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compiler_util_expression_converter__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compiler_util_identifier_util__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__facade_lang__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__output_class_builder__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__output_output_ast__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__private_import_core__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__output_output_ast__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__private_import_core__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__template_parser_template_ast__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__compile_element__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__compile_view__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__constants__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__compile_element__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__compile_view__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__constants__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__deps__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__util__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__util__ = __webpack_require__(58);
 /* harmony export (immutable) */ exports["a"] = buildView;
 /* harmony export (immutable) */ exports["b"] = finishView;
 /**
@@ -51808,7 +52568,7 @@ function getChangeDetectionMode(view) {
 //# sourceMappingURL=view_builder.js.map
 
 /***/ },
-/* 352 */
+/* 363 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51830,7 +52590,7 @@ var AnimationKeyframe = (function () {
 //# sourceMappingURL=animation_keyframe.js.map
 
 /***/ },
-/* 353 */
+/* 364 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51928,14 +52688,14 @@ var AnimationSequencePlayer = (function () {
 //# sourceMappingURL=animation_sequence_player.js.map
 
 /***/ },
-/* 354 */
+/* 365 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_collection__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_constants__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__metadata__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_constants__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__metadata__ = __webpack_require__(214);
 /* harmony export (immutable) */ exports["a"] = prepareFinalAnimationStyles;
 /* harmony export (immutable) */ exports["b"] = balanceAnimationKeyframes;
 /* harmony export (immutable) */ exports["d"] = clearStyles;
@@ -52046,7 +52806,7 @@ function flattenStyles(styles) {
 //# sourceMappingURL=animation_style_util.js.map
 
 /***/ },
-/* 355 */
+/* 366 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52067,11 +52827,11 @@ var AnimationStyles = (function () {
 //# sourceMappingURL=animation_styles.js.map
 
 /***/ },
-/* 356 */
+/* 367 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animation_transition_event__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animation_transition_event__ = __webpack_require__(213);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AnimationTransition; });
 
 var AnimationTransition = (function () {
@@ -52102,7 +52862,7 @@ var AnimationTransition = (function () {
 //# sourceMappingURL=animation_transition.js.map
 
 /***/ },
-/* 357 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52162,7 +52922,7 @@ var ViewAnimationMap = (function () {
 //# sourceMappingURL=view_animation_map.js.map
 
 /***/ },
-/* 358 */
+/* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52170,10 +52930,10 @@ var ViewAnimationMap = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__application_ref__ = __webpack_require__(130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__application_tokens__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__change_detection_change_detection__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__i18n_tokens__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__linker_compiler__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__i18n_tokens__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__linker_compiler__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__linker_view_utils__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__metadata__ = __webpack_require__(229);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__metadata__ = __webpack_require__(231);
 /* unused harmony export _iterableDiffersFactory */
 /* unused harmony export _keyValueDiffersFactory */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ApplicationModule; });
@@ -52229,7 +52989,7 @@ var ApplicationModule = (function () {
 //# sourceMappingURL=application_module.js.map
 
 /***/ },
-/* 359 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52259,7 +53019,7 @@ var ApplicationModule = (function () {
 //# sourceMappingURL=change_detection.js.map
 
 /***/ },
-/* 360 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52282,34 +53042,34 @@ var ChangeDetectorRef = (function () {
 //# sourceMappingURL=change_detector_ref.js.map
 
 /***/ },
-/* 361 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__metadata__ = __webpack_require__(229);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__metadata__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(388);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__di__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__application_ref__ = __webpack_require__(130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__application_tokens__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__application_init__ = __webpack_require__(129);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__zone__ = __webpack_require__(378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__render__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__linker__ = __webpack_require__(365);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__debug_debug_node__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__zone__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__render__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__linker__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__debug_debug_node__ = __webpack_require__(218);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__testability_testability__ = __webpack_require__(142);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__change_detection__ = __webpack_require__(359);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__platform_core_providers__ = __webpack_require__(374);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__i18n_tokens__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__application_module__ = __webpack_require__(358);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__change_detection__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__platform_core_providers__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__i18n_tokens__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__application_module__ = __webpack_require__(369);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__profile_profile__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__type__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__facade_async__ = __webpack_require__(137);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__error_handler__ = __webpack_require__(218);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__core_private_export__ = __webpack_require__(362);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__animation_metadata__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__animation_animation_transition_event__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__error_handler__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__core_private_export__ = __webpack_require__(373);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__animation_metadata__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__animation_animation_transition_event__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__animation_animation_player__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__security__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__security__ = __webpack_require__(236);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__metadata__["b"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "f", function() { return __WEBPACK_IMPORTED_MODULE_0__metadata__["c"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "A", function() { return __WEBPACK_IMPORTED_MODULE_0__metadata__["d"]; });
@@ -52480,37 +53240,37 @@ var ChangeDetectorRef = (function () {
 //# sourceMappingURL=core.js.map
 
 /***/ },
-/* 362 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animation_animation_constants__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_animation_group_player__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_keyframe__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animation_animation_constants__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_animation_group_player__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_keyframe__ = __webpack_require__(363);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__animation_animation_player__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__animation_animation_sequence_player__ = __webpack_require__(353);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__animation_animation_style_util__ = __webpack_require__(354);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__animation_animation_styles__ = __webpack_require__(355);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__animation_animation_transition__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__animation_animation_sequence_player__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__animation_animation_style_util__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__animation_animation_styles__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__animation_animation_transition__ = __webpack_require__(367);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__change_detection_change_detection_util__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__change_detection_constants__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__console__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__debug_debug_renderer__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__debug_debug_renderer__ = __webpack_require__(374);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__di_reflective_provider__ = __webpack_require__(136);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__linker_compiler__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__linker_compiler__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__linker_component_factory_resolver__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__linker_debug_context__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__linker_debug_context__ = __webpack_require__(223);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__linker_element__ = __webpack_require__(138);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__linker_ng_module_factory__ = __webpack_require__(224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__linker_ng_module_factory_loader__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__linker_template_ref__ = __webpack_require__(226);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__linker_view__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__linker_ng_module_factory__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__linker_ng_module_factory_loader__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__linker_template_ref__ = __webpack_require__(228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__linker_view__ = __webpack_require__(381);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__linker_view_type__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__linker_view_utils__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__metadata_lifecycle_hooks__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__metadata_view__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__metadata_lifecycle_hooks__ = __webpack_require__(232);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__metadata_view__ = __webpack_require__(233);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__reflection_reflection__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__reflection_reflection_capabilities__ = __webpack_require__(232);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__reflection_reflection_capabilities__ = __webpack_require__(234);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__reflection_reflector_reader__ = __webpack_require__(140);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__render_api__ = __webpack_require__(141);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__util_decorators__ = __webpack_require__(47);
@@ -52606,12 +53366,12 @@ var __core_private__ = {
 //# sourceMappingURL=core_private_export.js.map
 
 /***/ },
-/* 363 */
+/* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_lang__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__debug_node__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__debug_node__ = __webpack_require__(218);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DebugDomRootRenderer; });
 /* unused harmony export DebugDomRenderer */
 /**
@@ -52748,14 +53508,14 @@ var DebugDomRenderer = (function () {
 //# sourceMappingURL=debug_renderer.js.map
 
 /***/ },
-/* 364 */
+/* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_errors__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__injector__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__metadata__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reflective_errors__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reflective_errors__ = __webpack_require__(219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__reflective_key__ = __webpack_require__(135);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reflective_provider__ = __webpack_require__(136);
 /* unused harmony export ReflectiveProtoInjectorInlineStrategy */
@@ -53576,21 +54336,21 @@ function _mapProviders(injector, fn) {
 //# sourceMappingURL=reflective_injector.js.map
 
 /***/ },
-/* 365 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__linker_compiler__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__linker_component_factory__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__linker_compiler__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__linker_component_factory__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__linker_component_factory_resolver__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__linker_element_ref__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__linker_ng_module_factory__ = __webpack_require__(224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__linker_ng_module_factory_loader__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__linker_query_list__ = __webpack_require__(368);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__linker_system_js_ng_module_factory_loader__ = __webpack_require__(369);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__linker_template_ref__ = __webpack_require__(226);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__linker_view_container_ref__ = __webpack_require__(227);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__linker_view_ref__ = __webpack_require__(228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__linker_element_ref__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__linker_ng_module_factory__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__linker_ng_module_factory_loader__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__linker_query_list__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__linker_system_js_ng_module_factory_loader__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__linker_template_ref__ = __webpack_require__(228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__linker_view_container_ref__ = __webpack_require__(229);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__linker_view_ref__ = __webpack_require__(230);
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "j", function() { return __WEBPACK_IMPORTED_MODULE_0__linker_compiler__["e"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "k", function() { return __WEBPACK_IMPORTED_MODULE_0__linker_compiler__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "h", function() { return __WEBPACK_IMPORTED_MODULE_0__linker_compiler__["d"]; });
@@ -53632,13 +54392,13 @@ function _mapProviders(injector, fn) {
 //# sourceMappingURL=linker.js.map
 
 /***/ },
-/* 366 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animation_animation_group_player__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_animation_queue__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_view_animation_map__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animation_animation_group_player__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_animation_queue__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_view_animation_map__ = __webpack_require__(368);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AnimationViewContext; });
 
 
@@ -53679,7 +54439,7 @@ var AnimationViewContext = (function () {
 //# sourceMappingURL=animation_view_context.js.map
 
 /***/ },
-/* 367 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53722,7 +54482,7 @@ var ElementInjector = (function (_super) {
 //# sourceMappingURL=element_injector.js.map
 
 /***/ },
-/* 368 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53841,12 +54601,12 @@ var QueryList = (function () {
 //# sourceMappingURL=query_list.js.map
 
 /***/ },
-/* 369 */
+/* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__di__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compiler__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compiler__ = __webpack_require__(59);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return SystemJsNgModuleLoaderConfig; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return SystemJsNgModuleLoader; });
 /**
@@ -53893,7 +54653,7 @@ var SystemJsNgModuleLoader = (function () {
         var _a = path.split(_SEPARATOR), module = _a[0], exportName = _a[1];
         if (exportName === undefined)
             exportName = 'default';
-        return __webpack_require__(301)(module)
+        return __webpack_require__(312)(module)
             .then(function (module) { return module[exportName]; })
             .then(function (type) { return checkNotEmpty(type, module, exportName); })
             .then(function (type) { return _this._compiler.compileModuleAsync(type); });
@@ -53905,7 +54665,7 @@ var SystemJsNgModuleLoader = (function () {
             exportName = 'default';
             factoryClassSuffix = '';
         }
-        return __webpack_require__(301)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
+        return __webpack_require__(312)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
             .then(function (module) { return module[exportName + factoryClassSuffix]; })
             .then(function (factory) { return checkNotEmpty(factory, module, exportName); });
     };
@@ -53928,7 +54688,7 @@ function checkNotEmpty(value, modulePath, exportName) {
 //# sourceMappingURL=system_js_ng_module_factory_loader.js.map
 
 /***/ },
-/* 370 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53936,12 +54696,12 @@ function checkNotEmpty(value, modulePath, exportName) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile_profile__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__animation_view_context__ = __webpack_require__(366);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__debug_context__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__animation_view_context__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__debug_context__ = __webpack_require__(223);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__element__ = __webpack_require__(138);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__element_injector__ = __webpack_require__(367);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__errors__ = __webpack_require__(223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__view_ref__ = __webpack_require__(228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__element_injector__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__errors__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__view_ref__ = __webpack_require__(230);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__view_type__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__view_utils__ = __webpack_require__(90);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppView; });
@@ -54329,7 +55089,7 @@ function _findLastRenderNode(node) {
 //# sourceMappingURL=view.js.map
 
 /***/ },
-/* 371 */
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54511,7 +55271,7 @@ var ViewChild = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__util_decorato
 //# sourceMappingURL=di.js.map
 
 /***/ },
-/* 372 */
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54615,7 +55375,7 @@ var HostListener = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__util_decor
 //# sourceMappingURL=directives.js.map
 
 /***/ },
-/* 373 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54669,7 +55429,7 @@ var NgModule = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__util_decorator
 //# sourceMappingURL=ng_module.js.map
 
 /***/ },
-/* 374 */
+/* 385 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54711,7 +55471,7 @@ var platformCore = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__applicatio
 //# sourceMappingURL=platform_core_providers.js.map
 
 /***/ },
-/* 375 */
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54759,7 +55519,7 @@ function endTimeRange(range) {
 //# sourceMappingURL=wtf_impl.js.map
 
 /***/ },
-/* 376 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54779,7 +55539,7 @@ function endTimeRange(range) {
 //# sourceMappingURL=render.js.map
 
 /***/ },
-/* 377 */
+/* 388 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54797,7 +55557,7 @@ function endTimeRange(range) {
 //# sourceMappingURL=util.js.map
 
 /***/ },
-/* 378 */
+/* 389 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54815,7 +55575,7 @@ function endTimeRange(range) {
 //# sourceMappingURL=zone.js.map
 
 /***/ },
-/* 379 */
+/* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54823,15 +55583,15 @@ function endTimeRange(range) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_checkbox_value_accessor__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_default_value_accessor__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_ng_control_status__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_ng_form__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_ng_form__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_ng_model__ = __webpack_require__(148);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directives_ng_model_group__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__directives_number_value_accessor__ = __webpack_require__(149);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_radio_control_value_accessor__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_radio_control_value_accessor__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_reactive_directives_form_control_directive__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__directives_reactive_directives_form_control_name__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__directives_reactive_directives_form_group_directive__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__directives_reactive_directives_form_group_name__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__directives_reactive_directives_form_group_directive__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__directives_reactive_directives_form_group_name__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__directives_select_control_value_accessor__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__directives_select_multiple_control_value_accessor__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__directives_validators__ = __webpack_require__(152);
@@ -54938,7 +55698,7 @@ var InternalFormsSharedModule = (function () {
 //# sourceMappingURL=directives.js.map
 
 /***/ },
-/* 380 */
+/* 391 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54970,14 +55730,14 @@ function normalizeAsyncValidator(validator) {
 //# sourceMappingURL=normalize_validator.js.map
 
 /***/ },
-/* 381 */
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_radio_control_value_accessor__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__form_builder__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_radio_control_value_accessor__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__form_builder__ = __webpack_require__(240);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return FormsModule; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return ReactiveFormsModule; });
 /**
@@ -55030,33 +55790,33 @@ var ReactiveFormsModule = (function () {
 //# sourceMappingURL=form_providers.js.map
 
 /***/ },
-/* 382 */
+/* 393 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__directives_abstract_control_directive__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_abstract_form_group_directive__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_abstract_form_group_directive__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_checkbox_value_accessor__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_control_container__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_control_value_accessor__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_default_value_accessor__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directives_ng_control__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__directives_ng_control_status__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_ng_form__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_ng_form__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_ng_model__ = __webpack_require__(148);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__directives_ng_model_group__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__directives_radio_control_value_accessor__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__directives_radio_control_value_accessor__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__directives_reactive_directives_form_control_directive__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__directives_reactive_directives_form_control_name__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__directives_reactive_directives_form_group_directive__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__directives_reactive_directives_form_group_name__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__directives_reactive_directives_form_group_directive__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__directives_reactive_directives_form_group_name__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__directives_select_control_value_accessor__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__directives_select_multiple_control_value_accessor__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__directives_validators__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__form_builder__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__form_builder__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__model__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__validators__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__form_providers__ = __webpack_require__(381);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__form_providers__ = __webpack_require__(392);
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__directives_abstract_control_directive__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__directives_abstract_form_group_directive__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__directives_checkbox_value_accessor__["a"]; });
@@ -55136,7 +55896,7 @@ var ReactiveFormsModule = (function () {
 //# sourceMappingURL=forms.js.map
 
 /***/ },
-/* 383 */
+/* 394 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55328,18 +56088,18 @@ function iterateListLike(obj, fn) {
 //# sourceMappingURL=collection.js.map
 
 /***/ },
-/* 384 */
+/* 395 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__backends_browser_jsonp__ = __webpack_require__(240);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__backends_browser_jsonp__ = __webpack_require__(242);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__backends_browser_xhr__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__backends_jsonp_backend__ = __webpack_require__(241);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__backends_xhr_backend__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__backends_jsonp_backend__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__backends_xhr_backend__ = __webpack_require__(244);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__base_request_options__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__base_response_options__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__http__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__http__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__interfaces__ = __webpack_require__(66);
 /* unused harmony export _createDefaultCookieXSRFStrategy */
 /* unused harmony export httpFactory */
@@ -55425,21 +56185,21 @@ var JsonpModule = (function () {
 //# sourceMappingURL=http_module.js.map
 
 /***/ },
-/* 385 */
+/* 396 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__backends_browser_xhr__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__backends_jsonp_backend__ = __webpack_require__(241);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__backends_xhr_backend__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__backends_jsonp_backend__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__backends_xhr_backend__ = __webpack_require__(244);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__base_request_options__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__base_response_options__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__enums__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__headers__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__http__ = __webpack_require__(244);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__http_module__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__http__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__http_module__ = __webpack_require__(395);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__interfaces__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__static_request__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__static_request__ = __webpack_require__(247);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__static_response__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__url_search_params__ = __webpack_require__(102);
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__backends_browser_xhr__["a"]; });
@@ -55491,11 +56251,11 @@ var JsonpModule = (function () {
 //# sourceMappingURL=index.js.map
 
 /***/ },
-/* 386 */
+/* 397 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_platform_browser_dynamic__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_platform_browser_dynamic__ = __webpack_require__(399);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "RESOURCE_CACHE_PROVIDER", function() { return __WEBPACK_IMPORTED_MODULE_0__src_platform_browser_dynamic__["a"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "platformBrowserDynamic", function() { return __WEBPACK_IMPORTED_MODULE_0__src_platform_browser_dynamic__["b"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "__platform_browser_dynamic_private__", function() { return __WEBPACK_IMPORTED_MODULE_0__src_platform_browser_dynamic__["c"]; });
@@ -55515,7 +56275,7 @@ var JsonpModule = (function () {
 //# sourceMappingURL=index.js.map
 
 /***/ },
-/* 387 */
+/* 398 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55694,15 +56454,15 @@ function escapeRegExp(s) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15)))
 
 /***/ },
-/* 388 */
+/* 399 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_compiler__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_compiler__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__platform_providers__ = __webpack_require__(246);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__resource_loader_resource_loader_cache__ = __webpack_require__(391);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__private_export__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__platform_providers__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__resource_loader_resource_loader_cache__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__private_export__ = __webpack_require__(400);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RESOURCE_CACHE_PROVIDER; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return platformBrowserDynamic; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_4__private_export__["a"]; });
@@ -55729,12 +56489,12 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__
 //# sourceMappingURL=platform-browser-dynamic.js.map
 
 /***/ },
-/* 389 */
+/* 400 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__platform_providers__ = __webpack_require__(246);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__resource_loader_resource_loader_impl__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__platform_providers__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__resource_loader_resource_loader_impl__ = __webpack_require__(249);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return __platform_browser_dynamic_private__; });
 /**
  * @license
@@ -55752,7 +56512,7 @@ var __platform_browser_dynamic_private__ = {
 //# sourceMappingURL=private_export.js.map
 
 /***/ },
-/* 390 */
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55772,12 +56532,12 @@ var getDOM = __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["__platform
 //# sourceMappingURL=private_import_platform-browser.js.map
 
 /***/ },
-/* 391 */
+/* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_compiler__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_compiler__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(398);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CachedResourceLoader; });
 /**
  * @license
@@ -55822,11 +56582,11 @@ var CachedResourceLoader = (function (_super) {
 //# sourceMappingURL=resource_loader_cache.js.map
 
 /***/ },
-/* 392 */
+/* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dom_dom_adapter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dom_dom_adapter__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(19);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return GenericBrowserDomAdapter; });
 /**
@@ -55905,7 +56665,7 @@ var GenericBrowserDomAdapter = (function (_super) {
 //# sourceMappingURL=generic_browser_adapter.js.map
 
 /***/ },
-/* 393 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55923,13 +56683,13 @@ function supportsState() {
 //# sourceMappingURL=history.js.map
 
 /***/ },
-/* 394 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_dom_adapter__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_browser__ = __webpack_require__(400);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_dom_adapter__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_browser__ = __webpack_require__(411);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(19);
 /* unused harmony export ChangeDetectionPerfRecord */
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AngularTools; });
@@ -56018,12 +56778,12 @@ var AngularProfiler = (function () {
 //# sourceMappingURL=common_tools.js.map
 
 /***/ },
-/* 395 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_lang__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_tools__ = __webpack_require__(394);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_tools__ = __webpack_require__(405);
 /* harmony export (immutable) */ exports["b"] = enableDebugTools;
 /* harmony export (immutable) */ exports["a"] = disableDebugTools;
 /**
@@ -56064,11 +56824,11 @@ function disableDebugTools() {
 //# sourceMappingURL=tools.js.map
 
 /***/ },
-/* 396 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dom_dom_adapter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dom_dom_adapter__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(19);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return By; });
 /**
@@ -56125,11 +56885,11 @@ var By = (function () {
 //# sourceMappingURL=by.js.map
 
 /***/ },
-/* 397 */
+/* 408 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__event_manager__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__event_manager__ = __webpack_require__(50);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return HammerGesturesPluginCommon; });
 /**
  * @license
@@ -56194,14 +56954,14 @@ var HammerGesturesPluginCommon = (function (_super) {
 //# sourceMappingURL=hammer_common.js.map
 
 /***/ },
-/* 398 */
+/* 409 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util__ = __webpack_require__(255);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__web_animations_player__ = __webpack_require__(399);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util__ = __webpack_require__(257);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__web_animations_player__ = __webpack_require__(410);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return WebAnimationsDriver; });
 /**
  * @license
@@ -56332,13 +57092,13 @@ function _isPixelDimensionStyle(prop) {
 //# sourceMappingURL=web_animations_driver.js.map
 
 /***/ },
-/* 399 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dom_adapter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dom_adapter__ = __webpack_require__(11);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return WebAnimationsPlayer; });
 /**
  * @license
@@ -56440,7 +57200,7 @@ function _computeStyle(element, prop) {
 //# sourceMappingURL=web_animations_player.js.map
 
 /***/ },
-/* 400 */
+/* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56482,21 +57242,21 @@ var EventListener = win['EventListener'];
 //# sourceMappingURL=browser.js.map
 
 /***/ },
-/* 401 */
+/* 412 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__browser__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__browser_title__ = __webpack_require__(252);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__browser_tools_tools__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__browser__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__browser_title__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__browser_tools_tools__ = __webpack_require__(406);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dom_animation_driver__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dom_debug_by__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dom_debug_by__ = __webpack_require__(407);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dom_debug_ng_probe__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dom_dom_tokens__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dom_events_event_manager__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dom_events_event_manager__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dom_events_hammer_gestures__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__security_dom_sanitization_service__ = __webpack_require__(258);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__private_export__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__security_dom_sanitization_service__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__private_export__ = __webpack_require__(413);
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__browser__["d"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_0__browser__["e"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "d", function() { return __WEBPACK_IMPORTED_MODULE_1__browser_title__["a"]; });
@@ -56533,20 +57293,20 @@ var EventListener = win['EventListener'];
 //# sourceMappingURL=platform-browser.js.map
 
 /***/ },
-/* 402 */
+/* 413 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__browser__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__browser_browser_adapter__ = __webpack_require__(249);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__browser_location_browser_platform_location__ = __webpack_require__(250);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__browser_testability__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__browser__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__browser_browser_adapter__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__browser_location_browser_platform_location__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__browser_testability__ = __webpack_require__(253);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dom_debug_ng_probe__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dom_dom_adapter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dom_dom_adapter__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dom_dom_renderer__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dom_events_dom_events__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dom_events_dom_events__ = __webpack_require__(255);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dom_events_hammer_gestures__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dom_events_key_events__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dom_events_key_events__ = __webpack_require__(256);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dom_shared_styles_host__ = __webpack_require__(160);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return __platform_browser_private__; });
 /**
@@ -56589,12 +57349,12 @@ var __platform_browser_private__ = {
 //# sourceMappingURL=private_export.js.map
 
 /***/ },
-/* 403 */
+/* 414 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_dom_adapter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_dom_adapter__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__url_sanitizer__ = __webpack_require__(161);
 /* harmony export (immutable) */ exports["a"] = sanitizeHtml;
 /**
@@ -56864,12 +57624,12 @@ function sanitizeHtml(unsafeHtmlInput) {
 //# sourceMappingURL=html_sanitizer.js.map
 
 /***/ },
-/* 404 */
+/* 415 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_dom_adapter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_dom_adapter__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__url_sanitizer__ = __webpack_require__(161);
 /* harmony export (immutable) */ exports["a"] = sanitizeStyle;
 /**
@@ -56965,27 +57725,27 @@ function sanitizeStyle(value) {
 //# sourceMappingURL=style_sanitizer.js.map
 
 /***/ },
-/* 405 */
+/* 416 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_from__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_from__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_from__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatAll__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatAll__ = __webpack_require__(303);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatAll__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_first__ = __webpack_require__(537);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_first__ = __webpack_require__(573);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_first___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_operator_first__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_mergeMap__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_operator_mergeMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_util_EmptyError__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_util_EmptyError__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_util_EmptyError___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_util_EmptyError__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__router_config_loader__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared__ = __webpack_require__(26);
@@ -57379,7 +58139,7 @@ function getOutlet(route) {
 //# sourceMappingURL=apply_redirects.js.map
 
 /***/ },
-/* 406 */
+/* 417 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57436,13 +58196,13 @@ function validateNode(route) {
 //# sourceMappingURL=config.js.map
 
 /***/ },
-/* 407 */
+/* 418 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__ = __webpack_require__(293);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router_state__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router_state__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_tree__ = __webpack_require__(163);
 /* harmony export (immutable) */ exports["a"] = createRouterState;
 /**
@@ -57492,7 +58252,7 @@ function equalRouteSnapshots(a, b) {
 //# sourceMappingURL=create_router_state.js.map
 
 /***/ },
-/* 408 */
+/* 419 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57796,21 +58556,21 @@ function compare(path, params, segment) {
 //# sourceMappingURL=create_url_tree.js.map
 
 /***/ },
-/* 409 */
+/* 420 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__directives_router_link__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_router_link_active__ = __webpack_require__(259);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_router_outlet__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_router_link_active__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_router_outlet__ = __webpack_require__(262);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__router_module__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__router_module__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__router_outlet_map__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__router_preloader__ = __webpack_require__(262);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__router_state__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__router_preloader__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__router_state__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__url_tree__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__private_export__ = __webpack_require__(410);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__private_export__ = __webpack_require__(421);
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__directives_router_link__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__directives_router_link__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_1__directives_router_link_active__["a"]; });
@@ -57858,12 +58618,12 @@ function compare(path, params, segment) {
 //# sourceMappingURL=index.js.map
 
 /***/ },
-/* 410 */
+/* 421 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__router_config_loader__ = __webpack_require__(68);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router_module__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router_module__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_collection__ = __webpack_require__(32);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return __router_private__; });
 /**
@@ -57884,7 +58644,7 @@ var __router_private__ = {
 //# sourceMappingURL=private_export.js.map
 
 /***/ },
-/* 411 */
+/* 422 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57892,7 +58652,7 @@ var __router_private__ = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router_state__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router_state__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__url_tree__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_collection__ = __webpack_require__(32);
@@ -58166,7 +58926,7 @@ function getResolve(route) {
 //# sourceMappingURL=recognize.js.map
 
 /***/ },
-/* 412 */
+/* 423 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58177,7 +58937,7 @@ function getResolve(route) {
 var core_1 = __webpack_require__(0);
 // import { PreloadingStrategy, Route } from '@angular/router';
 var Observable_1 = __webpack_require__(3);
-__webpack_require__(286);
+__webpack_require__(166);
 /*
  * token to requestIdleCallback
  */
@@ -58258,15 +59018,15 @@ exports.IdlePreloadModule = IdlePreloadModule;
 //# sourceMappingURL=index.js.map
 
 /***/ },
-/* 413 */
+/* 424 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(554);
-__webpack_require__(553);
+__webpack_require__(590);
+__webpack_require__(589);
 //# sourceMappingURL=zone-browser.js.map
 
 /***/ },
-/* 414 */
+/* 425 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -58276,33 +59036,18 @@ exports.isNode = false;
 //# sourceMappingURL=env.js.map
 
 /***/ },
-/* 415 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-var browserUniversal = __webpack_require__(263);
-__export(__webpack_require__(263));
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = browserUniversal;
-//# sourceMappingURL=index.js.map
-
-/***/ },
-/* 416 */
+/* 426 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var http_1 = __webpack_require__(64);
-var platform_browser_dynamic_1 = __webpack_require__(386);
+var http_1 = __webpack_require__(49);
+var platform_browser_dynamic_1 = __webpack_require__(397);
 var platform_browser_1 = __webpack_require__(103);
 var prebootClient;
 try {
-    prebootClient = __webpack_require__(465);
+    prebootClient = __webpack_require__(489);
     prebootClient = (prebootClient && prebootClient.prebootClient) || prebootClient;
 }
 catch (e) { }
@@ -58418,7 +59163,7 @@ exports.platformUniversalDynamic = platformUniversalDynamic;
 //# sourceMappingURL=universal-module.js.map
 
 /***/ },
-/* 417 */
+/* 427 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -58477,14 +59222,14 @@ exports.ZoneStore = ZoneStore;
 //# sourceMappingURL=index.js.map
 
 /***/ },
-/* 418 */
+/* 428 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var about_component_1 = __webpack_require__(264);
+var router_1 = __webpack_require__(4);
+var about_component_1 = __webpack_require__(267);
 var AboutRoutingModule = (function () {
     function AboutRoutingModule() {
     }
@@ -58504,15 +59249,15 @@ exports.AboutRoutingModule = AboutRoutingModule;
 
 
 /***/ },
-/* 419 */
+/* 429 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var about_component_1 = __webpack_require__(264);
-var about_routing_module_1 = __webpack_require__(418);
+var shared_module_1 = __webpack_require__(7);
+var about_component_1 = __webpack_require__(267);
+var about_routing_module_1 = __webpack_require__(428);
 var AboutModule = (function () {
     function AboutModule() {
     }
@@ -58534,14 +59279,14 @@ exports.AboutModule = AboutModule;
 
 
 /***/ },
-/* 420 */
+/* 430 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var beer_detail_component_1 = __webpack_require__(265);
+var router_1 = __webpack_require__(4);
+var beer_detail_component_1 = __webpack_require__(268);
 var BeerDetailRoutingModule = (function () {
     function BeerDetailRoutingModule() {
     }
@@ -58562,15 +59307,15 @@ exports.BeerDetailRoutingModule = BeerDetailRoutingModule;
 
 
 /***/ },
-/* 421 */
+/* 431 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var beer_detail_component_1 = __webpack_require__(265);
-var beer_detail_routing_module_1 = __webpack_require__(420);
+var shared_module_1 = __webpack_require__(7);
+var beer_detail_component_1 = __webpack_require__(268);
+var beer_detail_routing_module_1 = __webpack_require__(430);
 var BeerDetailModule = (function () {
     function BeerDetailModule() {
     }
@@ -58592,14 +59337,14 @@ exports.BeerDetailModule = BeerDetailModule;
 
 
 /***/ },
-/* 422 */
+/* 432 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var beer_results_component_1 = __webpack_require__(266);
+var router_1 = __webpack_require__(4);
+var beer_results_component_1 = __webpack_require__(269);
 var BeerResultsRoutingModule = (function () {
     function BeerResultsRoutingModule() {
     }
@@ -58619,15 +59364,15 @@ exports.BeerResultsRoutingModule = BeerResultsRoutingModule;
 
 
 /***/ },
-/* 423 */
+/* 433 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var beer_results_component_1 = __webpack_require__(266);
-var beer_results_routing_module_1 = __webpack_require__(422);
+var shared_module_1 = __webpack_require__(7);
+var beer_results_component_1 = __webpack_require__(269);
+var beer_results_routing_module_1 = __webpack_require__(432);
 var BeerResultsModule = (function () {
     function BeerResultsModule() {
     }
@@ -58649,14 +59394,14 @@ exports.BeerResultsModule = BeerResultsModule;
 
 
 /***/ },
-/* 424 */
+/* 434 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var brewery_beers_component_1 = __webpack_require__(267);
+var router_1 = __webpack_require__(4);
+var brewery_beers_component_1 = __webpack_require__(270);
 var BreweryBeersRoutingModule = (function () {
     function BreweryBeersRoutingModule() {
     }
@@ -58676,15 +59421,15 @@ exports.BreweryBeersRoutingModule = BreweryBeersRoutingModule;
 
 
 /***/ },
-/* 425 */
+/* 435 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var brewery_beers_component_1 = __webpack_require__(267);
-var brewery_beers_routing_module_1 = __webpack_require__(424);
+var shared_module_1 = __webpack_require__(7);
+var brewery_beers_component_1 = __webpack_require__(270);
+var brewery_beers_routing_module_1 = __webpack_require__(434);
 var BreweryBeersModule = (function () {
     function BreweryBeersModule() {
     }
@@ -58706,14 +59451,14 @@ exports.BreweryBeersModule = BreweryBeersModule;
 
 
 /***/ },
-/* 426 */
+/* 436 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var brewery_detail_component_1 = __webpack_require__(268);
+var router_1 = __webpack_require__(4);
+var brewery_detail_component_1 = __webpack_require__(271);
 var BreweryDetailRoutingModule = (function () {
     function BreweryDetailRoutingModule() {
     }
@@ -58734,15 +59479,15 @@ exports.BreweryDetailRoutingModule = BreweryDetailRoutingModule;
 
 
 /***/ },
-/* 427 */
+/* 437 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var brewery_detail_component_1 = __webpack_require__(268);
-var brewery_detail_routing_module_1 = __webpack_require__(426);
+var shared_module_1 = __webpack_require__(7);
+var brewery_detail_component_1 = __webpack_require__(271);
+var brewery_detail_routing_module_1 = __webpack_require__(436);
 var BreweryDetailModule = (function () {
     function BreweryDetailModule() {
     }
@@ -58764,14 +59509,14 @@ exports.BreweryDetailModule = BreweryDetailModule;
 
 
 /***/ },
-/* 428 */
+/* 438 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var brewery_location_component_1 = __webpack_require__(269);
+var router_1 = __webpack_require__(4);
+var brewery_location_component_1 = __webpack_require__(272);
 var BreweryLocationRoutingModule = (function () {
     function BreweryLocationRoutingModule() {
     }
@@ -58792,15 +59537,15 @@ exports.BreweryLocationRoutingModule = BreweryLocationRoutingModule;
 
 
 /***/ },
-/* 429 */
+/* 439 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var brewery_location_component_1 = __webpack_require__(269);
-var brewery_location_routing_module_1 = __webpack_require__(428);
+var shared_module_1 = __webpack_require__(7);
+var brewery_location_component_1 = __webpack_require__(272);
+var brewery_location_routing_module_1 = __webpack_require__(438);
 var BreweryLocationModule = (function () {
     function BreweryLocationModule() {
     }
@@ -58822,14 +59567,14 @@ exports.BreweryLocationModule = BreweryLocationModule;
 
 
 /***/ },
-/* 430 */
+/* 440 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var brewery_results_component_1 = __webpack_require__(270);
+var router_1 = __webpack_require__(4);
+var brewery_results_component_1 = __webpack_require__(273);
 var BreweryResultsRoutingModule = (function () {
     function BreweryResultsRoutingModule() {
     }
@@ -58852,15 +59597,15 @@ exports.BreweryResultsRoutingModule = BreweryResultsRoutingModule;
 
 
 /***/ },
-/* 431 */
+/* 441 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var brewery_results_component_1 = __webpack_require__(270);
-var brewery_results_routing_module_1 = __webpack_require__(430);
+var shared_module_1 = __webpack_require__(7);
+var brewery_results_component_1 = __webpack_require__(273);
+var brewery_results_routing_module_1 = __webpack_require__(440);
 var BreweryResultsModule = (function () {
     function BreweryResultsModule() {
     }
@@ -58882,14 +59627,71 @@ exports.BreweryResultsModule = BreweryResultsModule;
 
 
 /***/ },
-/* 432 */
+/* 442 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var contact_component_1 = __webpack_require__(271);
+var router_1 = __webpack_require__(4);
+var checkin_component_1 = __webpack_require__(274);
+var CheckinRoutingModule = (function () {
+    function CheckinRoutingModule() {
+    }
+    CheckinRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                router_1.RouterModule.forChild([
+                    { path: 'checkin/:checkId', component: checkin_component_1.CheckinComponent }
+                ])
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], CheckinRoutingModule);
+    return CheckinRoutingModule;
+}());
+exports.CheckinRoutingModule = CheckinRoutingModule;
+
+
+/***/ },
+/* 443 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var shared_module_1 = __webpack_require__(7);
+var checkin_component_1 = __webpack_require__(274);
+var checkin_routing_module_1 = __webpack_require__(442);
+var CheckinModule = (function () {
+    function CheckinModule() {
+    }
+    CheckinModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                shared_module_1.SharedModule,
+                checkin_routing_module_1.CheckinRoutingModule
+            ],
+            declarations: [
+                checkin_component_1.CheckinComponent
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], CheckinModule);
+    return CheckinModule;
+}());
+exports.CheckinModule = CheckinModule;
+
+
+/***/ },
+/* 444 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var router_1 = __webpack_require__(4);
+var contact_component_1 = __webpack_require__(275);
 var ContactRoutingModule = (function () {
     function ContactRoutingModule() {
     }
@@ -58909,15 +59711,15 @@ exports.ContactRoutingModule = ContactRoutingModule;
 
 
 /***/ },
-/* 433 */
+/* 445 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var contact_component_1 = __webpack_require__(271);
-var contact_routing_module_1 = __webpack_require__(432);
+var shared_module_1 = __webpack_require__(7);
+var contact_component_1 = __webpack_require__(275);
+var contact_routing_module_1 = __webpack_require__(444);
 var ContactModule = (function () {
     function ContactModule() {
     }
@@ -58939,14 +59741,14 @@ exports.ContactModule = ContactModule;
 
 
 /***/ },
-/* 434 */
+/* 446 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var faq_component_1 = __webpack_require__(272);
+var router_1 = __webpack_require__(4);
+var faq_component_1 = __webpack_require__(276);
 var FaqRoutingModule = (function () {
     function FaqRoutingModule() {
     }
@@ -58966,15 +59768,15 @@ exports.FaqRoutingModule = FaqRoutingModule;
 
 
 /***/ },
-/* 435 */
+/* 447 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var faq_component_1 = __webpack_require__(272);
-var faq_routing_module_1 = __webpack_require__(434);
+var shared_module_1 = __webpack_require__(7);
+var faq_component_1 = __webpack_require__(276);
+var faq_routing_module_1 = __webpack_require__(446);
 var FaqModule = (function () {
     function FaqModule() {
     }
@@ -58996,14 +59798,14 @@ exports.FaqModule = FaqModule;
 
 
 /***/ },
-/* 436 */
+/* 448 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var feeds_component_1 = __webpack_require__(273);
+var router_1 = __webpack_require__(4);
+var feeds_component_1 = __webpack_require__(277);
 var FeedsRoutingModule = (function () {
     function FeedsRoutingModule() {
     }
@@ -59023,15 +59825,15 @@ exports.FeedsRoutingModule = FeedsRoutingModule;
 
 
 /***/ },
-/* 437 */
+/* 449 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var feeds_component_1 = __webpack_require__(273);
-var feeds_routing_module_1 = __webpack_require__(436);
+var shared_module_1 = __webpack_require__(7);
+var feeds_component_1 = __webpack_require__(277);
+var feeds_routing_module_1 = __webpack_require__(448);
 var FeedsModule = (function () {
     function FeedsModule() {
     }
@@ -59053,15 +59855,14 @@ exports.FeedsModule = FeedsModule;
 
 
 /***/ },
-/* 438 */,
-/* 439 */
+/* 450 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var getapp_component_1 = __webpack_require__(274);
+var router_1 = __webpack_require__(4);
+var getapp_component_1 = __webpack_require__(278);
 var GetappRoutingModule = (function () {
     function GetappRoutingModule() {
     }
@@ -59081,15 +59882,15 @@ exports.GetappRoutingModule = GetappRoutingModule;
 
 
 /***/ },
-/* 440 */
+/* 451 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var getapp_component_1 = __webpack_require__(274);
-var getapp_routing_module_1 = __webpack_require__(439);
+var shared_module_1 = __webpack_require__(7);
+var getapp_component_1 = __webpack_require__(278);
+var getapp_routing_module_1 = __webpack_require__(450);
 var GetappModule = (function () {
     function GetappModule() {
     }
@@ -59111,14 +59912,185 @@ exports.GetappModule = GetappModule;
 
 
 /***/ },
-/* 441 */
+/* 452 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var home_component_1 = __webpack_require__(275);
+var router_1 = __webpack_require__(4);
+var home_bar_component_1 = __webpack_require__(279);
+var HomeBarRoutingModule = (function () {
+    function HomeBarRoutingModule() {
+    }
+    HomeBarRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                router_1.RouterModule.forChild([
+                    { path: 'find-bars', component: home_bar_component_1.HomeBarComponent }
+                ])
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], HomeBarRoutingModule);
+    return HomeBarRoutingModule;
+}());
+exports.HomeBarRoutingModule = HomeBarRoutingModule;
+
+
+/***/ },
+/* 453 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var shared_module_1 = __webpack_require__(7);
+var home_bar_component_1 = __webpack_require__(279);
+var home_bar_routing_module_1 = __webpack_require__(452);
+var HomeBarModule = (function () {
+    function HomeBarModule() {
+    }
+    HomeBarModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                shared_module_1.SharedModule,
+                home_bar_routing_module_1.HomeBarRoutingModule
+            ],
+            declarations: [
+                home_bar_component_1.HomeBarComponent
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], HomeBarModule);
+    return HomeBarModule;
+}());
+exports.HomeBarModule = HomeBarModule;
+
+
+/***/ },
+/* 454 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var router_1 = __webpack_require__(4);
+var home_beer_component_1 = __webpack_require__(280);
+var HomeBeerRoutingModule = (function () {
+    function HomeBeerRoutingModule() {
+    }
+    HomeBeerRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                router_1.RouterModule.forChild([
+                    { path: 'find-beers', component: home_beer_component_1.HomeBeerComponent }
+                ])
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], HomeBeerRoutingModule);
+    return HomeBeerRoutingModule;
+}());
+exports.HomeBeerRoutingModule = HomeBeerRoutingModule;
+
+
+/***/ },
+/* 455 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var shared_module_1 = __webpack_require__(7);
+var home_beer_component_1 = __webpack_require__(280);
+var home_beer_routing_module_1 = __webpack_require__(454);
+var HomeBeerModule = (function () {
+    function HomeBeerModule() {
+    }
+    HomeBeerModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                shared_module_1.SharedModule,
+                home_beer_routing_module_1.HomeBeerRoutingModule
+            ],
+            declarations: [
+                home_beer_component_1.HomeBeerComponent
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], HomeBeerModule);
+    return HomeBeerModule;
+}());
+exports.HomeBeerModule = HomeBeerModule;
+
+
+/***/ },
+/* 456 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var router_1 = __webpack_require__(4);
+var home_brewery_component_1 = __webpack_require__(281);
+var HomeBreweryRoutingModule = (function () {
+    function HomeBreweryRoutingModule() {
+    }
+    HomeBreweryRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                router_1.RouterModule.forChild([
+                    { path: 'find-breweries', component: home_brewery_component_1.HomeBreweryComponent }
+                ])
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], HomeBreweryRoutingModule);
+    return HomeBreweryRoutingModule;
+}());
+exports.HomeBreweryRoutingModule = HomeBreweryRoutingModule;
+
+
+/***/ },
+/* 457 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var shared_module_1 = __webpack_require__(7);
+var home_brewery_component_1 = __webpack_require__(281);
+var home_brewery_routing_module_1 = __webpack_require__(456);
+var HomeBreweryModule = (function () {
+    function HomeBreweryModule() {
+    }
+    HomeBreweryModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                shared_module_1.SharedModule,
+                home_brewery_routing_module_1.HomeBreweryRoutingModule
+            ],
+            declarations: [
+                home_brewery_component_1.HomeBreweryComponent
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], HomeBreweryModule);
+    return HomeBreweryModule;
+}());
+exports.HomeBreweryModule = HomeBreweryModule;
+
+
+/***/ },
+/* 458 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var router_1 = __webpack_require__(4);
+var home_component_1 = __webpack_require__(282);
 var HomeRoutingModule = (function () {
     function HomeRoutingModule() {
     }
@@ -59139,15 +60111,15 @@ exports.HomeRoutingModule = HomeRoutingModule;
 
 
 /***/ },
-/* 442 */
+/* 459 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var home_component_1 = __webpack_require__(275);
-var home_routing_module_1 = __webpack_require__(441);
+var shared_module_1 = __webpack_require__(7);
+var home_component_1 = __webpack_require__(282);
+var home_routing_module_1 = __webpack_require__(458);
 var HomeModule = (function () {
     function HomeModule() {
     }
@@ -59169,14 +60141,130 @@ exports.HomeModule = HomeModule;
 
 
 /***/ },
-/* 443 */
+/* 460 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var privacy_component_1 = __webpack_require__(276);
+var router_1 = __webpack_require__(4);
+var place_results_component_1 = __webpack_require__(283);
+var PlaceResultsRoutingModule = (function () {
+    function PlaceResultsRoutingModule() {
+    }
+    PlaceResultsRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                router_1.RouterModule.forChild([
+                    { path: 'bars/:locationKey/:token', component: place_results_component_1.PlaceResultsComponent },
+                    { path: 'bars/:locationKey', component: place_results_component_1.PlaceResultsComponent }
+                ])
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], PlaceResultsRoutingModule);
+    return PlaceResultsRoutingModule;
+}());
+exports.PlaceResultsRoutingModule = PlaceResultsRoutingModule;
+
+
+/***/ },
+/* 461 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var shared_module_1 = __webpack_require__(7);
+var place_results_component_1 = __webpack_require__(283);
+var place_results_routing_module_1 = __webpack_require__(460);
+var PlaceResultsModule = (function () {
+    function PlaceResultsModule() {
+    }
+    PlaceResultsModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                shared_module_1.SharedModule,
+                place_results_routing_module_1.PlaceResultsRoutingModule
+            ],
+            declarations: [
+                place_results_component_1.PlaceResultsComponent
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], PlaceResultsModule);
+    return PlaceResultsModule;
+}());
+exports.PlaceResultsModule = PlaceResultsModule;
+
+
+/***/ },
+/* 462 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var router_1 = __webpack_require__(4);
+var place_component_1 = __webpack_require__(284);
+var PlaceRoutingModule = (function () {
+    function PlaceRoutingModule() {
+    }
+    PlaceRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                router_1.RouterModule.forChild([
+                    { path: 'bar/:SEO/:id', component: place_component_1.PlaceComponent },
+                    { path: 'bar/:id', component: place_component_1.PlaceComponent }
+                ])
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], PlaceRoutingModule);
+    return PlaceRoutingModule;
+}());
+exports.PlaceRoutingModule = PlaceRoutingModule;
+
+
+/***/ },
+/* 463 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var shared_module_1 = __webpack_require__(7);
+var place_component_1 = __webpack_require__(284);
+var place_routing_module_1 = __webpack_require__(462);
+var PlaceModule = (function () {
+    function PlaceModule() {
+    }
+    PlaceModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                shared_module_1.SharedModule,
+                place_routing_module_1.PlaceRoutingModule
+            ],
+            declarations: [
+                place_component_1.PlaceComponent
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], PlaceModule);
+    return PlaceModule;
+}());
+exports.PlaceModule = PlaceModule;
+
+
+/***/ },
+/* 464 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var router_1 = __webpack_require__(4);
+var privacy_component_1 = __webpack_require__(285);
 var PrivacyRoutingModule = (function () {
     function PrivacyRoutingModule() {
     }
@@ -59196,15 +60284,15 @@ exports.PrivacyRoutingModule = PrivacyRoutingModule;
 
 
 /***/ },
-/* 444 */
+/* 465 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var privacy_component_1 = __webpack_require__(276);
-var privacy_routing_module_1 = __webpack_require__(443);
+var shared_module_1 = __webpack_require__(7);
+var privacy_component_1 = __webpack_require__(285);
+var privacy_routing_module_1 = __webpack_require__(464);
 var PrivacyModule = (function () {
     function PrivacyModule() {
     }
@@ -59226,14 +60314,14 @@ exports.PrivacyModule = PrivacyModule;
 
 
 /***/ },
-/* 445 */
+/* 466 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var terms_component_1 = __webpack_require__(277);
+var router_1 = __webpack_require__(4);
+var terms_component_1 = __webpack_require__(286);
 var TermsRoutingModule = (function () {
     function TermsRoutingModule() {
     }
@@ -59253,15 +60341,15 @@ exports.TermsRoutingModule = TermsRoutingModule;
 
 
 /***/ },
-/* 446 */
+/* 467 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var terms_component_1 = __webpack_require__(277);
-var terms_routing_module_1 = __webpack_require__(445);
+var shared_module_1 = __webpack_require__(7);
+var terms_component_1 = __webpack_require__(286);
+var terms_routing_module_1 = __webpack_require__(466);
 var TermsModule = (function () {
     function TermsModule() {
     }
@@ -59283,14 +60371,14 @@ exports.TermsModule = TermsModule;
 
 
 /***/ },
-/* 447 */
+/* 468 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var todo_component_1 = __webpack_require__(278);
+var router_1 = __webpack_require__(4);
+var todo_component_1 = __webpack_require__(287);
 var TodoRoutingModule = (function () {
     function TodoRoutingModule() {
     }
@@ -59310,15 +60398,15 @@ exports.TodoRoutingModule = TodoRoutingModule;
 
 
 /***/ },
-/* 448 */
+/* 469 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var todo_component_1 = __webpack_require__(278);
-var todo_routing_module_1 = __webpack_require__(447);
+var shared_module_1 = __webpack_require__(7);
+var todo_component_1 = __webpack_require__(287);
+var todo_routing_module_1 = __webpack_require__(468);
 var TodoModule = (function () {
     function TodoModule() {
     }
@@ -59340,7 +60428,7 @@ exports.TodoModule = TodoModule;
 
 
 /***/ },
-/* 449 */
+/* 470 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -59358,15 +60446,15 @@ exports.Todo = Todo;
 
 
 /***/ },
-/* 450 */
+/* 471 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {"use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
+var router_1 = __webpack_require__(4);
 function getLazyModule() {
-    return __webpack_require__(555)("./lazy.module" + (process.env.AOT ? '.ngfactory' : ''))
+    return __webpack_require__(591)("./lazy.module" + (process.env.AOT ? '.ngfactory' : ''))
         .then(function (mod) { return mod[(process.env.AOT ? 'LazyModuleNgFactory' : 'LazyModule')]; });
 }
 exports.getLazyModule = getLazyModule;
@@ -59388,36 +60476,36 @@ exports.AppRoutingModule = AppRoutingModule;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(106)))
 
 /***/ },
-/* 451 */
+/* 472 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var home_module_1 = __webpack_require__(442);
-var home_beer_module_1 = __webpack_require__(590);
-var home_brewery_module_1 = __webpack_require__(595);
-var home_bar_module_1 = __webpack_require__(585);
-var about_module_1 = __webpack_require__(419);
-var todo_module_1 = __webpack_require__(448);
-var getapp_module_1 = __webpack_require__(440);
-var faq_module_1 = __webpack_require__(435);
-var privacy_module_1 = __webpack_require__(444);
-var terms_module_1 = __webpack_require__(446);
-var contact_module_1 = __webpack_require__(433);
-var beer_results_module_1 = __webpack_require__(423);
-var beer_detail_module_1 = __webpack_require__(421);
-var brewery_results_module_1 = __webpack_require__(431);
-var brewery_detail_module_1 = __webpack_require__(427);
-var brewery_location_module_1 = __webpack_require__(429);
-var brewery_beers_module_1 = __webpack_require__(425);
-var feeds_module_1 = __webpack_require__(437);
-var checkin_module_1 = __webpack_require__(562);
-var place_results_module_1 = __webpack_require__(567);
-var place_module_1 = __webpack_require__(572);
-var shared_module_1 = __webpack_require__(9);
-var app_routing_module_1 = __webpack_require__(450);
-var app_component_1 = __webpack_require__(279);
+var home_module_1 = __webpack_require__(459);
+var home_beer_module_1 = __webpack_require__(455);
+var home_brewery_module_1 = __webpack_require__(457);
+var home_bar_module_1 = __webpack_require__(453);
+var about_module_1 = __webpack_require__(429);
+var todo_module_1 = __webpack_require__(469);
+var getapp_module_1 = __webpack_require__(451);
+var faq_module_1 = __webpack_require__(447);
+var privacy_module_1 = __webpack_require__(465);
+var terms_module_1 = __webpack_require__(467);
+var contact_module_1 = __webpack_require__(445);
+var beer_results_module_1 = __webpack_require__(433);
+var beer_detail_module_1 = __webpack_require__(431);
+var brewery_results_module_1 = __webpack_require__(441);
+var brewery_detail_module_1 = __webpack_require__(437);
+var brewery_location_module_1 = __webpack_require__(439);
+var brewery_beers_module_1 = __webpack_require__(435);
+var feeds_module_1 = __webpack_require__(449);
+var checkin_module_1 = __webpack_require__(443);
+var place_results_module_1 = __webpack_require__(461);
+var place_module_1 = __webpack_require__(463);
+var shared_module_1 = __webpack_require__(7);
+var app_routing_module_1 = __webpack_require__(471);
+var app_component_1 = __webpack_require__(288);
 var AppModule = (function () {
     function AppModule() {
     }
@@ -59458,18 +60546,113 @@ var AppModule = (function () {
     return AppModule;
 }());
 exports.AppModule = AppModule;
-var app_component_2 = __webpack_require__(279);
+var app_component_2 = __webpack_require__(288);
 exports.AppComponent = app_component_2.AppComponent;
 
 
 /***/ },
-/* 452 */
+/* 473 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var common_service_1 = __webpack_require__(10);
+var active_listener_directive_1 = __webpack_require__(289);
+// Directive decorator
+var ActiveTriggerDirective = (function () {
+    /*
+    @HostBinding ('class.active') get selected() {
+      return this.tabActive;
+    }
+    */
+    function ActiveTriggerDirective(el, renderer, tabContainer) {
+        this.el = el;
+        this.renderer = renderer;
+        this.tabContainer = tabContainer;
+        this.tabActive = false;
+        // Use renderer to render the element with styles
+        this.tabContainer.add(this);
+    }
+    ActiveTriggerDirective.prototype.click = function () {
+        //this.renderer.setElementClass(this.el.nativeElement, 'active', true);
+        this.tabContainer.show(this.id);
+    };
+    __decorate([
+        core_1.Input('activeTrigger'), 
+        __metadata('design:type', String)
+    ], ActiveTriggerDirective.prototype, "id", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], ActiveTriggerDirective.prototype, "tabActive", void 0);
+    __decorate([
+        core_1.HostListener('click'), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
+    ], ActiveTriggerDirective.prototype, "click", null);
+    ActiveTriggerDirective = __decorate([
+        core_1.Directive({
+            selector: '[activeTrigger]',
+        }), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _b) || Object, (typeof (_c = typeof active_listener_directive_1.ActiveListenerDirective !== 'undefined' && active_listener_directive_1.ActiveListenerDirective) === 'function' && _c) || Object])
+    ], ActiveTriggerDirective);
+    return ActiveTriggerDirective;
+    var _a, _b, _c;
+}());
+exports.ActiveTriggerDirective = ActiveTriggerDirective;
+
+
+/***/ },
+/* 474 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+// Directive decorator
+var ActiveDirective = (function () {
+    /*
+    @HostListener('click') click() {
+      console.log('hello world');
+      this.renderer.setElementClass(this.el.nativeElement, 'active', true);
+    }
+    */
+    function ActiveDirective(el, renderer) {
+        this.el = el;
+        this.renderer = renderer;
+        // Use renderer to render the element with styles
+    }
+    ActiveDirective.prototype.ngOnInit = function () {
+        //console.log('el',this.el.nativeElement);
+        //console.log('isActive',this.active);
+        if (this.active)
+            this.renderer.setElementClass(this.el.nativeElement, 'active', true);
+    };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Boolean)
+    ], ActiveDirective.prototype, "active", void 0);
+    ActiveDirective = __decorate([
+        core_1.Directive({
+            selector: '[active]',
+        }), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _b) || Object])
+    ], ActiveDirective);
+    return ActiveDirective;
+    var _a, _b;
+}());
+exports.ActiveDirective = ActiveDirective;
+
+
+/***/ },
+/* 475 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var common_service_1 = __webpack_require__(6);
 var BeerBlockComponent = (function () {
     function BeerBlockComponent(common) {
         this.common = common;
@@ -59501,8 +60684,8 @@ var BeerBlockComponent = (function () {
     BeerBlockComponent = __decorate([
         core_1.Component({
             selector: 'beer-block',
-            template: __webpack_require__(497),
-            styles: [__webpack_require__(496)]
+            template: __webpack_require__(533),
+            styles: [__webpack_require__(532)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _a) || Object])
     ], BeerBlockComponent);
@@ -59513,7 +60696,7 @@ exports.BeerBlockComponent = BeerBlockComponent;
 
 
 /***/ },
-/* 453 */
+/* 476 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59542,8 +60725,8 @@ var FacebookComponent = (function () {
     FacebookComponent = __decorate([
         core_1.Component({
             selector: 'app-facebook',
-            template: __webpack_require__(499),
-            styles: [__webpack_require__(498)]
+            template: __webpack_require__(535),
+            styles: [__webpack_require__(534)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object])
     ], FacebookComponent);
@@ -59554,7 +60737,7 @@ exports.FacebookComponent = FacebookComponent;
 
 
 /***/ },
-/* 454 */
+/* 477 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59568,8 +60751,8 @@ var FooterComponent = (function () {
     FooterComponent = __decorate([
         core_1.Component({
             selector: 'app-footer',
-            template: __webpack_require__(501),
-            styles: [__webpack_require__(500)]
+            template: __webpack_require__(537),
+            styles: [__webpack_require__(536)]
         }), 
         __metadata('design:paramtypes', [])
     ], FooterComponent);
@@ -59579,13 +60762,69 @@ exports.FooterComponent = FooterComponent;
 
 
 /***/ },
-/* 455 */
+/* 478 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var angular2_universal_1 = __webpack_require__(415);
+var common_service_1 = __webpack_require__(6);
+var GalleryComponent = (function () {
+    function GalleryComponent(elementRef, com) {
+        this.elementRef = elementRef;
+        this.com = com;
+        this.photos = [];
+        this._photos = [];
+        this.locationPhotoThumbs = [];
+        this.photoCount = 0;
+        this.photosToLoad = [];
+        this.showPhotoLoader = false;
+        this.hidePhotos = false;
+    }
+    GalleryComponent.prototype.ngOnInit = function () {
+        this._photos = this.photos;
+        //console.log('refKes',this._photos); 
+        for (var i = 0; i < this._photos.length; i++) {
+            this.locationPhotoThumbs.push(this._photos[i].photo_reference);
+        }
+        this.photoCount = this._photos.length;
+    };
+    GalleryComponent.prototype.loadSinglePhoto = function () {
+        //this.showPhotoLoader = true;
+        this.photosToLoad.push(this.com.getGoogleImg(this.locationPhotoThumbs.pop()));
+    };
+    GalleryComponent.prototype.toggleHidePhotos = function () {
+        if (!this.hidePhotos)
+            this.hidePhotos = true;
+        else
+            this.hidePhotos = false;
+    };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], GalleryComponent.prototype, "photos", void 0);
+    GalleryComponent = __decorate([
+        core_1.Component({
+            selector: 'gallery',
+            template: __webpack_require__(539),
+            styles: [__webpack_require__(538)]
+        }), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object, (typeof (_b = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _b) || Object])
+    ], GalleryComponent);
+    return GalleryComponent;
+    var _a, _b;
+}());
+exports.GalleryComponent = GalleryComponent;
+
+
+/***/ },
+/* 479 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var core_1 = __webpack_require__(0);
+var angular2_universal_1 = __webpack_require__(266);
 var HeaderComponent = (function () {
     function HeaderComponent() {
     }
@@ -59602,8 +60841,8 @@ var HeaderComponent = (function () {
     HeaderComponent = __decorate([
         core_1.Component({
             selector: 'app-header',
-            template: __webpack_require__(503),
-            styles: [__webpack_require__(502)]
+            template: __webpack_require__(541),
+            styles: [__webpack_require__(540)]
         }), 
         __metadata('design:paramtypes', [])
     ], HeaderComponent);
@@ -59613,7 +60852,7 @@ exports.HeaderComponent = HeaderComponent;
 
 
 /***/ },
-/* 456 */
+/* 480 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59627,8 +60866,8 @@ var LoaderComponent = (function () {
     LoaderComponent = __decorate([
         core_1.Component({
             selector: 'app-loader',
-            template: __webpack_require__(505),
-            styles: [__webpack_require__(504)]
+            template: __webpack_require__(543),
+            styles: [__webpack_require__(542)]
         }), 
         __metadata('design:paramtypes', [])
     ], LoaderComponent);
@@ -59638,7 +60877,7 @@ exports.LoaderComponent = LoaderComponent;
 
 
 /***/ },
-/* 457 */
+/* 481 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59743,8 +60982,8 @@ var PaginationComponent = (function () {
     PaginationComponent = __decorate([
         core_1.Component({
             selector: 'pagination',
-            template: __webpack_require__(507),
-            styles: [__webpack_require__(506)]
+            template: __webpack_require__(545),
+            styles: [__webpack_require__(544)]
         }), 
         __metadata('design:paramtypes', [])
     ], PaginationComponent);
@@ -59754,7 +60993,7 @@ exports.PaginationComponent = PaginationComponent;
 
 
 /***/ },
-/* 458 */
+/* 482 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59792,8 +61031,8 @@ var RatingComponent = (function () {
     RatingComponent = __decorate([
         core_1.Component({
             selector: 'app-rating',
-            template: __webpack_require__(509),
-            styles: [__webpack_require__(508)]
+            template: __webpack_require__(547),
+            styles: [__webpack_require__(546)]
         }), 
         __metadata('design:paramtypes', [])
     ], RatingComponent);
@@ -59803,7 +61042,7 @@ exports.RatingComponent = RatingComponent;
 
 
 /***/ },
-/* 459 */
+/* 483 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59861,18 +61100,18 @@ exports.ReadMoreComponent = ReadMoreComponent;
 
 
 /***/ },
-/* 460 */
+/* 484 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
+var router_1 = __webpack_require__(4);
 //import * as $ from 'jquery';
-var google_service_1 = __webpack_require__(282);
-var model_service_1 = __webpack_require__(11);
-var common_service_1 = __webpack_require__(10);
-var search_cache_service_1 = __webpack_require__(579);
+var google_service_1 = __webpack_require__(291);
+var model_service_1 = __webpack_require__(8);
+var common_service_1 = __webpack_require__(6);
+var search_cache_service_1 = __webpack_require__(292);
 //declare var $:any;
 var SearchComponent = (function () {
     function SearchComponent(router, geo, com, route, el, renderer, cache, model) {
@@ -60223,8 +61462,8 @@ var SearchComponent = (function () {
             changeDetection: core_1.ChangeDetectionStrategy.Default,
             encapsulation: core_1.ViewEncapsulation.Emulated,
             selector: 'app-search',
-            template: __webpack_require__(511),
-            styles: [__webpack_require__(510)]
+            template: __webpack_require__(549),
+            styles: [__webpack_require__(548)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof google_service_1.GoogleService !== 'undefined' && google_service_1.GoogleService) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object, (typeof (_d = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _d) || Object, (typeof (_e = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _e) || Object, (typeof (_f = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _f) || Object, (typeof (_g = typeof search_cache_service_1.SearchCacheService !== 'undefined' && search_cache_service_1.SearchCacheService) === 'function' && _g) || Object, (typeof (_h = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _h) || Object])
     ], SearchComponent);
@@ -60235,14 +61474,14 @@ exports.SearchComponent = SearchComponent;
 
 
 /***/ },
-/* 461 */
+/* 485 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var core_1 = __webpack_require__(0);
-var common_service_1 = __webpack_require__(10);
-var environment_1 = __webpack_require__(164);
+var common_service_1 = __webpack_require__(6);
+var environment_1 = __webpack_require__(165);
 var StaticMapComponent = (function () {
     function StaticMapComponent(common) {
         this.common = common;
@@ -60297,8 +61536,8 @@ var StaticMapComponent = (function () {
     StaticMapComponent = __decorate([
         core_1.Component({
             selector: 'static-map',
-            template: __webpack_require__(513),
-            styles: [__webpack_require__(512)]
+            template: __webpack_require__(551),
+            styles: [__webpack_require__(550)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _a) || Object])
     ], StaticMapComponent);
@@ -60309,7 +61548,7 @@ exports.StaticMapComponent = StaticMapComponent;
 
 
 /***/ },
-/* 462 */
+/* 486 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process, global) {var require;var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -60443,7 +61682,7 @@ exports.StaticMapComponent = StaticMapComponent;
     function lib$es6$promise$asap$$attemptVertx() {
       try {
         var r = require;
-        var vertx = __webpack_require__(556);
+        var vertx = __webpack_require__(592);
         lib$es6$promise$asap$$vertxNext = vertx.runOnLoop || vertx.runOnContext;
         return lib$es6$promise$asap$$useVertxTimer();
       } catch(e) {
@@ -61283,7 +62522,7 @@ exports.StaticMapComponent = StaticMapComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(106), __webpack_require__(15)))
 
 /***/ },
-/* 463 */
+/* 487 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__; /*!
@@ -65132,7 +66371,7 @@ exports.StaticMapComponent = StaticMapComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15), __webpack_require__(106)))
 
 /***/ },
-/* 464 */
+/* 488 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/******/ (function(modules) { // webpackBootstrap
@@ -65319,7 +66558,7 @@ exports.StaticMapComponent = StaticMapComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15)))
 
 /***/ },
-/* 465 */
+/* 489 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -65607,295 +66846,379 @@ exports.prebootClient = prebootClient;
 
 
 /***/ },
-/* 466 */
+/* 490 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"container\">\r\n  <div class=\"page-header\">\r\n    <h2>About Us</h2>\r\n  </div>\r\n  <p>\r\n    There are two things we love at Brew Search:  Programming and enjoying craft brew.  \r\n    We came up of the idea of a beer version of Tinder&copy; called Binder. Our App would suggest beers you might like based\r\n    on the ones that fit your taste profile.  After some research, we tossed the idea because we found that\r\n    beer apps today were lackluster, ancient, and hard to use. Thus, Brew Search is born. We decided to be \r\n    the all inclusive beer app for anybody that loves craft beer.\r\n  </p>\r\n  <p>\r\n   Our mission is to help everybody find their favorite beer at a nice location, introduce new craft beers, \r\n   and an app that's easy and fun to use. The success of Brew Search highly depends on our community in populating \r\n   beers by location.  Through crowdsource, we hope to become the biggest beer directory in the world!   \r\n  </p>\r\n  <p>\r\n    We also do beer events such as beer festivals. If you wanted to know everything about the beer and brewery\r\n    at the event, you would need a book with over 100 pages. With our app, you can plan ahead of time.  At the \r\n    event, easily find where the brewery booth is located using our interactive map and check the ones you \r\n    like to enjoy after the event. Who's guilty of going to an event and not remembering the name of the beer\r\n    the next day? I know I am.\r\n  </p>\r\n  <p>\r\n    One thing we take pride in our app is we're brewery friendly. Not only are we a beer app, we're a brewery app.\r\n    We list all the breweries in your hometown with their list of beers on tap with a detailed description of the brewery. \r\n    We encourage people to visit their local breweries, check-in with our app, and buy a couple of pints to support the \r\n    small micro-breweries.\r\n  </p>\r\n  <p>\r\n   Please contact us if you have any questions, comments, or if you're an event organizer that wants us to \r\n   help promote your beer event. \r\n  </p>\r\n\r\n  <p>Cheers!<br />Brew Search Team</p>\r\n    \r\n</div>"
 
 /***/ },
-/* 467 */
+/* 491 */
 /***/ function(module, exports) {
 
 module.exports = "#beer-detail {\r\n    margin-top:3rem;\r\n    margin-bottom:3rem;\r\n    background-color:#fff;\r\n    border: 1px solid rgba(0,0,0,.25);\r\n}\r\n\r\n#brewery-title {\r\n  font-size:1.5rem;\r\n}\r\n\r\n#search-box {\r\n  position: relative;\r\n  top:20px;\r\n}\r\n\r\n#beer-logo {\r\n    margin-top:1rem;\r\n    margin-bottom:1rem;\r\n}\r\n\r\n#rand-beer {\r\n    margin-top:0.9rem;\r\n}\r\n\r\n#rand-beer p {\r\n    line-height: 1.75rem;\r\n    margin-bottom: 0 !important;\r\n}\r\n\r\n#rand-beer div {\r\n    padding-bottom: 0.75rem !important;\r\n}\r\n\r\n.rand-brew {\r\n    font-size:1.25rem;\r\n}\r\n\r\n.rand-btn{\r\n    display:inline-block;\r\n    margin:0.4rem;\r\n}\r\n\r\n.loader {\r\n  height:50rem;\r\n}"
 
 /***/ },
-/* 468 */
+/* 492 */
 /***/ function(module, exports) {
 
 module.exports = "<!-- <app-search id=\"search-box\"></app-search> -->\r\n\r\n<div class=\"text-center loader\" *ngIf=\"showLoader\">\r\n  <app-loader></app-loader>\r\n</div>\r\n\r\n<div id=\"beer-detail\" class=\"container\" *ngIf=\"beer && !showLoader\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-5 beer-img text-center\">\r\n      <div> \r\n        <img id=\"beer-logo\" *ngIf=\"beer.labels!=null\" [src]=\"beer.labels.medium\" />\r\n        <img id=\"beer-logo\" *ngIf=\"beer.labels==null\" src=\"assets/images/no-beer.jpg\" />\r\n      </div>\r\n      <app-facebook [url]=\"pageURL\"></app-facebook>\r\n    </div>\r\n    <div class=\"col-md-7\">\r\n      <h2>{{beer.name}}</h2>\r\n      <p *ngIf=\"beer.breweries\">\r\n        <img *ngIf=\"beer.breweries[0].images\" [src]=\"beer.breweries[0].images.icon\" />\r\n        <a id=\"brewery-title\">{{beer.breweries[0].name}}</a>\r\n      </p>\r\n      <p *ngIf=\"beer.style\"><b>Style:</b> {{beer.style.name}}</p>\r\n      <p *ngIf=\"beer.style\"><b>Category:</b> {{beer.style.category.name}}</p>\r\n      <p *ngIf=\"beer.abv\"><b>ABV:</b> {{beer.abv}}%</p>\r\n      <p *ngIf=\"beer.ibu\"><b>IBU:</b> {{beer.ibu}} IBU</p>\r\n      <p *ngIf=\"beer.available\">{{beer.available.description}}</p>\r\n      <p *ngIf=\"beer.isOrganic == 'Y'\">Organic Beer</p>\r\n      <p *ngIf=\"beer.srm\" [style.color]=\"beerSRM\">\r\n        <i class=\"fa fa-beer fa-2x\">Beer Color</i>\r\n      </p>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\" *ngIf=\"beer.description\">\r\n    <div class=\"col-md-12\">\r\n      <hr />\r\n      <div id=\"rand-beer\" class=\"alert alert-warning\">\r\n        <strong>If you like {{beer.name}}, you might want to try these beers.</strong>\r\n        <div>\r\n          <span class=\"rand-btn\" *ngFor=\"let beer of randomBeers\">\r\n            <a class=\"btn btn-warning btn-sm\" role=\"button\" *ngIf=\"beer.breweries\" [routerLink]=\"['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]\">\r\n              {{beer.nameDisplay}}\r\n            </a>\r\n            <a class=\"btn btn-warning btn-sm\" role=\"button\" *ngIf=\"!beer.breweries\" [routerLink]=\"['/beer',common.paramSEOFriendly(beer.name),beer.id]\">\r\n              {{beer.nameDisplay}}\r\n            </a>\r\n          </span>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>  \r\n  <div class=\"row\" *ngIf=\"beer.description\">\r\n    <div class=\"col-md-12\">\r\n      <hr />\r\n      <h4>Notes / Commercial Description</h4>\r\n      <p>{{beer.description}}</p>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\" *ngIf=\"beer.foodPairings\">\r\n    <div class=\"col-md-12\">\r\n      <hr />\r\n      <h4>Food Parings</h4>\r\n      <p>{{beer.foodPairings}}</p>\r\n    </div>\r\n  </div>  \r\n</div>"
 
 /***/ },
-/* 469 */
+/* 493 */
 /***/ function(module, exports) {
 
 module.exports = "#beer-results {\r\n    /*background-color:#fff; */\r\n    margin-top:3rem;\r\n    margin-bottom:3rem;\r\n    /* border: 1px solid rgba(0,0,0,.25); */\r\n}\r\n\r\n#beer-results .row {\r\n  padding-bottom: 1rem;\r\n  padding-top: 1rem;\r\n}\r\n\r\n#beer-results h1 {\r\n    font-size:1.25rem;\r\n}\r\n\r\n#beer-results p {\r\n    margin: 0 !important;\r\n}\r\n\r\n#beer-results a {\r\n    display:block;\r\n}\r\n\r\n#beer-results a:hover {\r\n    text-decoration:none;\r\n}\r\n\r\n.beer-img {\r\n    margin-top:1rem;\r\n}\r\n\r\n.beer-img img {\r\n    width:12rem;\r\n}\r\n\r\n.beer-header {\r\n    padding-top:1rem;\r\n    font-size:1.5rem;\r\n    font-weight:bold;\r\n}\r\n\r\n.beer-style {\r\n    font-weight:bold;  \r\n}\r\n\r\n.loader {\r\n  height:50rem;\r\n}\r\n\r\n#search-box {\r\n  position: relative;\r\n  top:20px;\r\n}\r\n\r\n#alert-msg {\r\n  padding: 5rem 0;\r\n  min-height: 40rem;\r\n}\r\n\r\nbeer-block {\r\n    width:20rem;\r\n    float:left;\r\n    padding: 1rem;\r\n}\r\n\r\n.card img {\r\n    width:242px !important;\r\n}\r\n\r\nh4.card-title {\r\n    font-size:1.25rem;\r\n}\r\n\r\n.card {\r\n    margin-bottom:0.5rem;\r\n    margin-top:0.5rem;\r\n\r\n}\r\n\r\n\r\n"
 
 /***/ },
-/* 470 */
+/* 494 */
 /***/ function(module, exports) {
 
 module.exports = "<app-search id=\"search-box\"></app-search>\r\n\r\n<div class=\"text-center loader\" *ngIf=\"showLoader\">\r\n  <app-loader></app-loader>\r\n</div>\r\n\r\n<div id=\"alert-msg\" *ngIf=\"msg!=null\" class=\"container\">\r\n  <div class=\"alert alert-danger\" role=\"alert\">\r\n    <strong>Sorry!</strong> {{msg}}\r\n  </div>\r\n</div>\r\n\r\n<div id=\"beer-results\" class=\"container\" *ngIf=\"beers.length && !showLoader\">\r\n  <div class=\"row container\">\r\n    <div class=\"col-md-6 text-left\">\r\n      <h1>Beers matching \"{{qBeer}}\"</h1>\r\n    </div>\r\n    <div *ngIf=\"numPages > 1\" class=\"col-md-6 text-right\">\r\n    <pagination\r\n      (goPage)=\"goToPage($event)\"\r\n      (goNext)=\"onNext()\"\r\n      (goPrev)=\"onPrev()\"\r\n      [pagesToShow]=\"5\"\r\n      [page]=\"currentPage\"\r\n      [perPage]=\"pageSize\"\r\n      [count]=\"totalResults\"></pagination>\r\n    </div>\r\n  </div>\r\n  <div class=\"card-deck\">\r\n    <div class=\"card\" *ngFor=\"let beer of beers\">\r\n      <div class=\"text-center\">\r\n        <a *ngIf=\"beer.breweries\" class=\"beer-header\" [routerLink]=\"['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]\">\r\n          <img class=\"card-img-top rounded\" *ngIf=\"beer.labels!=null\" [src]=\"beer.labels.medium\" alt=\"Card image cap\">\r\n          <img class=\"card-img-top rounded\" *ngIf=\"beer.labels==null\" src=\"assets/images/no-beer.jpg\" />\r\n        </a>\r\n      </div>\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title text-center\">\r\n          <a *ngIf=\"beer.breweries\" [routerLink]=\"['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]\">{{beer.name}}</a>\r\n          <a *ngIf=\"!beer.breweries\" [routerLink]=\"['/beer',common.paramSEOFriendly(beer.name),beer.id]\">\r\n            {{beer.name}}\r\n          </a>\r\n        </h4>\r\n        <p class=\"card-text text-center\">\r\n          <a *ngIf=\"beer.breweries\" [routerLink]=\"['/brewery',common.paramSEOFriendly(beer.breweries[0].name),beer.breweries[0].id]\">{{beer.breweries[0].name}}</a>\r\n        </p>      \r\n        <p class=\"card-text text-center\" *ngIf=\"beer.style!=null\">\r\n          {{beer.style.shortName}}    \r\n        </p>\r\n        <p *ngIf=\"beer.abv!=null\" class=\"card-text text-center\">\r\n          <small class=\"text-muted\">{{beer.abv}}% ABV</small>\r\n        </p>\r\n      </div>\r\n      <div class=\"card-footer text-center\">\r\n        <small class=\"text-muted\">Added {{common.dateFriendly(beer.createDate)}}</small>\r\n      </div>\r\n    </div>\r\n  </div>  \r\n  <div *ngIf=\"numPages > 1\" class=\"row container\">\r\n    <div class=\"col-md-12 text-right\">\r\n    <pagination id=\"botton-pagination\"\r\n      (goPage)=\"goToPage($event)\"\r\n      (goNext)=\"onNext()\"\r\n      (goPrev)=\"onPrev()\"\r\n      [pagesToShow]=\"5\"\r\n      [page]=\"currentPage\"\r\n      [perPage]=\"pageSize\"\r\n      [count]=\"totalResults\"></pagination>\r\n    </div>\r\n  </div>  \r\n</div>"
 
 /***/ },
-/* 471 */
+/* 495 */
 /***/ function(module, exports) {
 
 module.exports = "#beer-detail {\r\n    margin-top:3rem;\r\n    margin-bottom:3rem;\r\n    background-color:#fff;\r\n    border: 1px solid rgba(0,0,0,.25);\r\n}\r\n\r\n#search-box {\r\n  position: relative;\r\n  top:20px;\r\n}\r\n\r\n.social-btns a {\r\n    display: inline-block;\r\n    margin-right: 1rem;\r\n}\r\n\r\n#brewery-info span {\r\n  margin-right:1rem;\r\n}\r\n\r\n#brewery-info i {\r\n    margin-right:0.5rem;\r\n}\r\n\r\n#brewery-locations {\r\n    margin-top:2rem;\r\n}\r\n\r\n#brewery-locations p {\r\n    line-height: 1.75rem;\r\n    margin-bottom: 0 !important;\r\n}\r\n\r\n#brewery-locations div {\r\n    padding-bottom: 1rem !important;\r\n}\r\n\r\n#brewery-locations .city {\r\n    font-size:1rem;\r\n    font-weight:bold;\r\n}\r\n\r\n#brewery-locations .loc-type {\r\n    font-size:0.9rem;\r\n}\r\n\r\n#social-area {\r\n    display:inline-block;\r\n}\r\n\r\n#get-more {\r\n    margin-bottom:2rem;\r\n}\r\n\r\n"
 
 /***/ },
-/* 472 */
+/* 496 */
 /***/ function(module, exports) {
 
 module.exports = "<app-search id=\"search-box\"></app-search>\r\n\r\n<div class=\"text-center loader\" *ngIf=\"showLoader\">\r\n  <app-loader></app-loader>\r\n</div>\r\n\r\n<div id=\"beer-detail\" class=\"container\" *ngIf=\"!showLoader\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-3 beer-img text-center\">\r\n      <div>\r\n        <img id=\"beer-logo\" *ngIf=\"brewery.images!=null\" [src]=\"brewery.images.squareMedium\" />\r\n      </div>\r\n      <app-facebook [url]=\"pageURL\"></app-facebook>\r\n    </div>\r\n    <div class=\"col-md-6 beer-img text-left\">\r\n      <h2>{{brewery.name}}</h2>\r\n      <h5 id=\"brewery-info\">\r\n        <span *ngIf=\"breweryBeers.length\"><i class=\"fa fa-caret-right\"></i>{{breweryBeers.length}} Beers</span>\r\n        <span *ngIf=\"brewery.established\"><i class=\"fa fa-caret-right\"></i>Established {{brewery.established}}</span>\r\n      </h5>\r\n      <div id=\"social-area\">\r\n        <span>\r\n          <a class=\"social-btns\" *ngIf=\"brewery.website\" class=\"btn btn-warning\" target=\"_blank\" [href]=\"brewery.website\" role=\"button\">\r\n            <i class=\"fa fa-globe\"></i> \r\n            View Website\r\n          </a>\r\n        </span>      \r\n        <span class=\"social-btns\" *ngFor=\"let social of brewery.socialAccounts\">\r\n          <a *ngIf=\"social.socialMediaId == 1\" class=\"btn btn-warning\" target=\"_blank\" [href]=\"social.link\" role=\"button\">\r\n            <i class=\"fa fa-facebook\"></i> \r\n            Facebook\r\n          </a>\r\n          <a *ngIf=\"social.socialMediaId == 2\" class=\"btn btn-warning\" target=\"_blank\" [href]=\"social.link\" role=\"button\">\r\n            <i class=\"fa fa-twitter\"></i> \r\n            Twitter\r\n          </a>                                     \r\n        </span>\r\n      </div>\r\n      <hr />\r\n      <div *ngFor=\"let beer of breweryBeers\">\r\n        <beer-block [beer]=\"beer\" [brewery]=\"brewery\" [showBreweryName]=\"false\"></beer-block>\r\n      </div>\r\n      <div id=\"get-more\" *ngIf=\"showMoreBeers\" class=\"text-center\">\r\n        <button class=\"btn btn-warning btn-block\" (click)=\"getMoreBeers()\">View More</button>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-3\">\r\n      <div id=\"brewery-locations\" class=\"alert alert-warning\">\r\n        <h4>Locations</h4>\r\n        <div *ngFor=\"let location of brewery.locations\">\r\n          <p>\r\n            <a class=\"city\" [routerLink]=\"['/b',common.paramSEOFriendly(brewery.name),location.id]\">\r\n              {{location.locality}}, {{location.region}}\r\n            </a>\r\n          </p>\r\n          <p>{{location.locationTypeDisplay}}</p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ },
-/* 473 */
+/* 497 */
 /***/ function(module, exports) {
 
 module.exports = "#search-box {\r\n  position: relative;\r\n  top:20px;\r\n}\r\n\r\n#brewery-detail {\r\n    margin-top:3rem;\r\n    margin-bottom:3rem;\r\n    background-color:#fff;\r\n    border: 1px solid rgba(0,0,0,.25);\r\n}\r\n\r\n\r\n.beer-info span {\r\n   padding-left:1.5rem;\r\n   display: inline-block;\r\n}\r\n\r\n.beer-info i {\r\n    padding-right:0.5rem;\r\n}\r\n\r\n.beer-list {\r\n    padding-top:3rem;\r\n    padding-bottom:3rem;\r\n}\r\n\r\n.beer-row {\r\n    margin-right:0.5rem;\r\n    margin-left:0.5rem;\r\n    margin-bottom:1rem !important;\r\n}\r\n\r\n.beer-row h4, p {\r\n    margin-bottom:5px !important;\r\n}\r\n\r\n#social-media .btn{\r\n    margin-top:0.5rem;\r\n    width:15rem;\r\n}\r\n\r\n.review-avatar {\r\n    width:4rem !important;\r\n}\r\n\r\n#brewery-reviews {\r\n    padding-top:2rem;\r\n}\r\n\r\n#brewery-description {\r\n    padding-top:2rem;\r\n}\r\n\r\n.brew-thumb {\r\n    padding:5px;\r\n    cursor: pointer;\r\n}\r\n\r\n#beer-logo {\r\n    margin-top:1rem;\r\n    margin-bottom:1rem;\r\n}\r\n\r\napp-rating {\r\n    margin-bottom:1rem;\r\n}\r\n\r\nh2 {\r\n    margin-top:1rem;\r\n    margin-bottom:1rem;\r\n}\r\n\r\nh4>i {\r\n    margin-right:1rem;\r\n}"
 
 /***/ },
-/* 474 */
+/* 498 */
 /***/ function(module, exports) {
 
 module.exports = "<!-- <app-search id=\"search-box\"></app-search> -->\r\n\r\n<div class=\"text-center loader\" *ngIf=\"showLoader\">\r\n  <app-loader></app-loader>\r\n</div>\r\n\r\n<div id=\"brewery-detail\" class=\"container\" *ngIf=\"!showLoader\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-3 beer-img text-center\">  \r\n      <img id=\"beer-logo\" *ngIf=\"brewery.images\" [src]=\"brewery.images.squareMedium\" />\r\n      <img id=\"beer-logo\" *ngIf=\"!brewery.images\" src=\"assets/images/no-beer.jpg\" />\r\n      <div id=\"social-media\">\r\n        <app-facebook [url]=\"pageURL\"></app-facebook>\r\n        <div *ngIf=\"brewery.website\">\r\n          <a class=\"btn btn-warning\" target=\"_blank\" [href]=\"brewery.website\" role=\"button\">\r\n            <i class=\"fa fa-globe\"></i> \r\n            View Website\r\n          </a>\r\n        </div>\r\n        <div *ngIf=\"breweryBeers\">\r\n          <a class=\"btn btn-warning\" [routerLink]=\"['/beer-list',brewery.id,common.paramSEOFriendly(brewery.name),'beers']\" role=\"button\">\r\n            <i class=\"fa fa-beer\"></i> \r\n            Beer List\r\n          </a>\r\n        </div>       \r\n        <div *ngFor=\"let social of brewery.socialAccounts\">\r\n\r\n          <a *ngIf=\"social.socialMediaId == 1\" class=\"btn btn-warning\" target=\"_blank\" [href]=\"social.link\" role=\"button\">\r\n            <i class=\"fa fa-facebook\"></i> \r\n            Facebook\r\n          </a>\r\n          <a *ngIf=\"social.socialMediaId == 2\" class=\"btn btn-warning\" target=\"_blank\" [href]=\"social.link\" role=\"button\">\r\n            <i class=\"fa fa-twitter\"></i> \r\n            Twitter\r\n          </a>                              \r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-9\">\r\n      <div class=\"text-center\">\r\n        <h2>{{brewery.name}}</h2>\r\n        <app-rating *ngIf=\"location.rating\" [rate]=\"location.rating\"></app-rating>\r\n      </div>\r\n      <div class=\"alert alert-warning beer-info\">\r\n        <strong>Brewery Info</strong>\r\n        <div>\r\n          <span *ngIf=\"brewery.established\"><i class=\"fa fa-caret-right\"></i>Established {{brewery.established}}</span>\r\n          <span *ngIf=\"brewery.isOrganic=='Y'\"><i class=\"fa fa-caret-right\"></i>Organic Brewery</span>\r\n          <span *ngIf=\"brewery.isMassOwned=='Y'\"><i class=\"fa fa-caret-right\"></i>Mass Owned</span>\r\n          <span *ngIf=\"brewery.brandClassification\"><i class=\"fa fa-caret-right\"></i>{{brewery.brandClassification}} brewery</span>\r\n          <span *ngIf=\"breweryBeers\">\r\n            <i class=\"fa fa-caret-right\"></i>\r\n            <a [routerLink]=\"['/beer-list',brewery.id,common.paramSEOFriendly(brewery.name),'beers']\">\r\n             {{breweryBeers.length}} Beers\r\n            </a>\r\n          </span>\r\n          <span *ngIf=\"brewery.statusDisplay\"><i class=\"fa fa-caret-right\"></i>{{brewery.statusDisplay}} brewery</span>\r\n        </div>\r\n      </div>      \r\n      <table class=\"table\">\r\n        <thead>\r\n          <tr>\r\n            <th>Type</th>\r\n            <!--<th class=\"text-center\">Open to Public</th>-->\r\n            <th>Location</th>\r\n            <th>&nbsp;</th>\r\n          </tr>\r\n        </thead>\r\n        <tbody>          \r\n          <tr *ngFor=\"let loc of brewery.locations\">\r\n            <td>{{loc.locationTypeDisplay}}</td>\r\n            <!-- <td class=\"text-center\">{{loc.openToPublic}}</td>-->\r\n            <td><a>{{loc.locality}}, {{loc.region}} {{loc.country.isoCode}}</a></td>\r\n            <td>\r\n              <a class=\"btn btn-warning\" [routerLink]=\"['/b',common.paramSEOFriendly(brewery.name),loc.id]\" role=\"button\">\r\n                View\r\n              </a>              \r\n            </td>\r\n          </tr>\r\n        </tbody>        \r\n      </table>\r\n      <div *ngIf=\"locationPhotos\" class=\"text-center\">\r\n        <gallery [photos]=\"locationPhotos\"></gallery>\r\n      </div>\r\n      <div id=\"brewery-description\" *ngIf=\"brewery.description\">        \r\n        <h4><i class=\"fa fa-info-circle\"></i>{{brewery.nameShortDisplay}} Description</h4>\r\n        <hr />        \r\n        <p>\r\n          <read-more [text]=\"brewery.description\" [maxLength]=\"300\"></read-more>\r\n        </p>\r\n      </div>      \r\n      <div id=\"brewery-reviews\" *ngIf=\"locationReviews\" class=\"col-md-12\">\r\n          <h4><i class=\"fa fa-comments\"></i>{{brewery.nameShortDisplay}} Reviews</h4>\r\n          <div class=\"row alert alert-warning\" *ngFor=\"let review of locationReviews\">\r\n            <hr />\r\n            <div class=\"col-md-2 text-center\">\r\n              <img [src]=\"review.profile_photo_url\" class=\"rounded-circle review-avatar\" />\r\n            </div>\r\n            <div class=\"col-md-10\">\r\n              <p *ngIf=\"review.rating\">\r\n                <app-rating [rate]=\"review.rating\"></app-rating>\r\n              </p>\r\n              <p *ngIf=\"review.text\">\r\n                <b>{{review.author_name}} said:</b>\r\n                {{review.text}}\r\n              </p>\r\n              <p class=\"text-right\">\r\n               {{common.timeConverter(review.time)}}\r\n              </p>\r\n            </div>            \r\n          </div>\r\n      </div>\r\n      <!--      \r\n      <div class=\"beer-list\" *ngIf=\"breweryBeers.length\">\r\n        <h4>{{brewery.nameShortDisplay}}'s Beer List</h4>\r\n        <div class=\"row alert alert-warning beer-row\" *ngFor=\"let beer of breweryBeers\">\r\n          <div class=\"col-md-2\">\r\n            <a [routerLink]=\"['/beer',beer.id]\">\r\n              <img *ngIf=\"beer.labels\" [src]=\"beer.labels.icon\" />\r\n            </a>\r\n          </div>\r\n          <div class=\"col-md-5 text-left\">\r\n            <h4><a [routerLink]=\"['/beer',beer.id]\">{{beer.nameDisplay}}</a></h4>\r\n            <p>{{beer.style.shortName}} <span *ngIf=\"beer.abv\"> - {{beer.abv}}%</span></p>\r\n          </div>          \r\n        </div>\r\n      </div>\r\n      -->      \r\n      <!-- <h4>{{brewery.nameShortDisplay}}'s Beer List</h4> -->\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ },
-/* 475 */
+/* 499 */
 /***/ function(module, exports) {
 
 module.exports = "#search-box {\r\n  position: relative;\r\n  top:20px;\r\n}\r\n\r\n#brewery-detail {\r\n    margin-top:3rem;\r\n    margin-bottom:3rem;\r\n    background-color:#fff;\r\n    border: 1px solid rgba(0,0,0,.25);\r\n}\r\n\r\n#static-map {\r\n    padding-top:2rem;\r\n}\r\n\r\n#map-area {\r\n    margin-bottom:2rem;\r\n}\r\n\r\n\r\n.beer-info span {\r\n   padding-left:1.5rem;\r\n   display: inline-block;\r\n}\r\n\r\n.beer-info i {\r\n    padding-right:0.5rem;\r\n}\r\n\r\n.beer-list {\r\n    padding-top:3rem;\r\n    padding-bottom:3rem;\r\n}\r\n\r\n.beer-row {\r\n    margin-right:0.5rem;\r\n    margin-left:0.5rem;\r\n    margin-bottom:1rem !important;\r\n}\r\n\r\n.beer-row h4, p {\r\n    margin-bottom:5px !important;\r\n}\r\n\r\n#social-media .btn{\r\n    margin-top:0.5rem;\r\n    width:15rem;\r\n}\r\n\r\n.review-avatar {\r\n    width:4rem !important;\r\n}\r\n\r\n#brewery-reviews {\r\n    padding-top:2rem;\r\n}\r\n\r\n.brew-thumb {\r\n    padding:5px;\r\n    cursor: pointer;\r\n}\r\n\r\nh4 {\r\n    margin-top:2rem;\r\n}\r\n\r\nh4>i {\r\n    margin-right:1rem;\r\n}\r\n\r\nh2 {\r\n    margin-top:1rem;\r\n    margin-bottom:0.5rem;\r\n}\r\n\r\n#beer-logo {\r\n    margin-top:1rem;\r\n    margin-bottom:1rem;\r\n}\r\n\r\napp-rating {\r\n    margin-bottom:1rem;\r\n}"
 
 /***/ },
-/* 476 */
+/* 500 */
 /***/ function(module, exports) {
 
 module.exports = "<!-- <app-search id=\"search-box\"></app-search> -->\r\n\r\n<div class=\"text-center loader\" *ngIf=\"showLoader\">\r\n  <app-loader></app-loader>\r\n</div>\r\n\r\n<div id=\"brewery-detail\" class=\"container\" *ngIf=\"!showLoader\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-3 beer-img text-center\">  \r\n      <img id=\"beer-logo\" *ngIf=\"brewery.brewery.images\" [src]=\"brewery.brewery.images.squareMedium\" />\r\n      <img id=\"beer-logo\" *ngIf=\"!brewery.brewery.images\" src=\"assets/images/no-beer.jpg\" />\r\n      <div id=\"social-media\">\r\n        <app-facebook [url]=\"pageURL\"></app-facebook>\r\n        <div *ngIf=\"brewery.website\">\r\n          <a class=\"btn btn-warning\" target=\"_blank\" [href]=\"brewery.website\" role=\"button\">\r\n            <i class=\"fa fa-globe\"></i> \r\n            View Website\r\n          </a>\r\n        </div>\r\n        <div *ngIf=\"breweryBeers.length\">\r\n          <a class=\"btn btn-warning\" [routerLink]=\"['/beer-list',breweryPrimary.id,common.paramSEOFriendly(brewery.brewery.name),'beers']\" role=\"button\">\r\n            <i class=\"fa fa-beer\"></i> \r\n            Beer List\r\n          </a>\r\n        </div>       \r\n        <div *ngFor=\"let social of brewery.socialAccounts\">\r\n          <a *ngIf=\"social.socialMediaId == 1\" class=\"btn btn-warning\" target=\"_blank\" [href]=\"social.link\" role=\"button\">\r\n            <i class=\"fa fa-facebook\"></i> \r\n            Facebook\r\n          </a>\r\n          <a *ngIf=\"social.socialMediaId == 2\" class=\"btn btn-warning\" target=\"_blank\" [href]=\"social.link\" role=\"button\">\r\n            <i class=\"fa fa-twitter\"></i> \r\n            Twitter\r\n          </a>                              \r\n        </div>\r\n        <div *ngIf=\"brewery.phone\">\r\n          <a class=\"btn btn-warning\" role=\"button\">\r\n            <i class=\"fa fa-mobile\"></i> \r\n            {{brewery.phone}}\r\n          </a>          \r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-9\">\r\n      <div class=\"text-center\">\r\n        <h2>{{brewery.brewery.name}}</h2>\r\n        <h5 *ngIf=\"brewery.locationTypeDisplay\">{{brewery.locationTypeDisplay}}</h5>\r\n        <app-rating *ngIf=\"location.rating\" [rate]=\"location.rating\"></app-rating>\r\n      </div>\r\n      <div class=\"alert alert-warning beer-info\">\r\n        <strong>Brewery Location Info</strong>\r\n        <div>\r\n          <span *ngIf=\"breweryPrimary.established != null\"><i class=\"fa fa-caret-right\"></i>Established {{breweryPrimary.established}}</span>\r\n          <span *ngIf=\"breweryBeers.length\">\r\n            <i class=\"fa fa-caret-right\"></i>\r\n            <a [routerLink]=\"['/beer-list',breweryPrimary.id,common.paramSEOFriendly(brewery.brewery.name),'beers']\">\r\n             {{breweryBeers.length}} Beers\r\n            </a>\r\n          </span>          \r\n          <span *ngIf=\"breweryPrimary.isOrganic == 'Y'\"><i class=\"fa fa-caret-right\"></i>Organic Brewery</span>\r\n          <span *ngIf=\"breweryPrimary.isMassOwned == 'Y'\"><i class=\"fa fa-caret-right\"></i>Mass Owned</span>\r\n          <span *ngIf=\"breweryPrimary.brandClassification != null\"><i class=\"fa fa-caret-right\"></i>{{breweryPrimary.brandClassification}} brewery</span>\r\n          \r\n          <span *ngIf=\"brewery.inPlanning =='Y'\"><i class=\"fa fa-caret-right\"></i>Planning Phase</span>\r\n          <span *ngIf=\"brewery.isClosed == 'Y'\"><i class=\"fa fa-caret-right\"></i>Currently Closed</span>\r\n          <span *ngIf=\"brewery.isPrimary == 'Y'\"><i class=\"fa fa-caret-right\"></i>Primary Location</span>\r\n          <span *ngIf=\"brewery.openToPublic == 'Y'\"><i class=\"fa fa-caret-right\"></i>Open to Public</span>\r\n          <span *ngIf=\"brewery.locationTypeDisplay\"><i class=\"fa fa-caret-right\"></i>Type: {{brewery.locationTypeDisplay}}</span>\r\n          <span *ngIf=\"brewery.yearOpened\"><i class=\"fa fa-caret-right\"></i>Opened in {{brewery.yearOpened}}</span>\r\n          <span *ngIf=\"brewery.statusDisplay\"><i class=\"fa fa-caret-right\"></i>{{brewery.statusDisplay}} Brewery</span>  \r\n        </div>\r\n        <div>\r\n          <span><i class=\"fa fa-caret-right\"></i>Location:{{brewery.locality}}, {{brewery.region}} {{brewery.countryIsoCode}}</span>\r\n        </div>         \r\n      </div>     \r\n      <div *ngIf=\"locationPhotos.length\" class=\"text-center\">\r\n         <gallery [photos]=\"locationPhotos\"></gallery>\r\n      </div>\r\n      <div *ngIf=\"brewery.hoursOfOperation\">    \r\n        <h4><i class=\"fa fa-clock-o\"></i>{{brewery.brewery.nameShortDisplay}} Hours of Operation</h4>\r\n        <hr />\r\n        <div class=\"alert alert-warning\">\r\n            {{brewery.hoursOfOperation}}\r\n        </div>\r\n      </div>      \r\n      <div *ngIf=\"breweryPrimary.description\">        \r\n        <h4><i class=\"fa fa-info-circle\"></i>{{brewery.brewery.nameShortDisplay}} Description</h4>\r\n        <hr />        \r\n        <div>\r\n          <read-more [text]=\"breweryPrimary.description\" [maxLength]=\"300\"></read-more>\r\n        </div>\r\n      </div>      \r\n      <div id=\"brewery-reviews\" *ngIf=\"locationReviews\" class=\"col-md-12\">\r\n          <h4><i class=\"fa fa-comments\"></i>{{brewery.brewery.nameShortDisplay}} Reviews</h4>\r\n          <hr />\r\n          <div class=\"row alert alert-warning\" *ngFor=\"let review of locationReviews\">           \r\n            <div class=\"col-md-2 text-center\">\r\n              <img [src]=\"review.profile_photo_url\" class=\"rounded-circle review-avatar\" />\r\n            </div>\r\n            <div class=\"col-md-10\">\r\n              <p *ngIf=\"review.rating\">\r\n                <app-rating [rate]=\"review.rating\"></app-rating>\r\n              </p>\r\n              <p *ngIf=\"review.text\">\r\n                <b>{{review.author_name}} said:</b>\r\n                {{review.text}}\r\n              </p>\r\n              <p class=\"text-right\">\r\n               {{common.timeConverter(review.time)}}\r\n              </p>\r\n            </div>            \r\n          </div>\r\n      </div>\r\n      <div>        \r\n        <h4><i class=\"fa fa-map\"></i>Brewery Map</h4>\r\n        <hr />\r\n        <div class=\"row\" id=\"map-area\">\r\n          <div class=\"text-center col-md-7\">   \r\n            <static-map [lat]=\"brewery.latitude\" \r\n                        [lng]=\"brewery.longitude\"\r\n                        [width]=\"420\"\r\n                        [height]=\"300\"\r\n                        [zoom]=\"14\">\r\n            </static-map>\r\n          </div>\r\n          <div id=\"static-map\" class=\"text-center col-md-5\">\r\n            <h5>{{brewery.locationTypeDisplay}}</h5>  \r\n            <p><b>{{brewery.streetAddress}}</b></p>\r\n            <p>{{brewery.locality}}, {{brewery.region}}</p>\r\n            <a class=\"btn btn-warning\" target=\"_blank\" [href]=\"common.getToGoogleMapsUrl(brewery.latitude,brewery.longitude)\" role=\"button\">Get Directions</a>\r\n          </div>\r\n        </div>\r\n      </div>      \r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ },
-/* 477 */
+/* 501 */
 /***/ function(module, exports) {
 
 module.exports = "#search-box {\r\n  position: relative;\r\n  top:20px;\r\n}\r\n\r\n#brewery-results {\r\n    /*background-color:#fff;*/\r\n    margin-top:3rem;\r\n    margin-bottom:3rem;\r\n    /*border: 1px solid rgba(0,0,0,.25); */\r\n}\r\n\r\n#brewery-results h1 {\r\n    font-size:1.25rem;\r\n}\r\n\r\n#brewery-results .row {\r\n  /* border-bottom: 1px solid rgba(0,0,0,.25); */\r\n  padding-bottom: 1rem;\r\n  padding-top: 1rem;\r\n}\r\n\r\n.brewery-img {\r\n    margin-top:1rem;\r\n}\r\n\r\n.brewery-img img {\r\n    width:10rem;\r\n}\r\n\r\n.brewery-header {\r\n    padding-top:1rem;\r\n    font-size:1.25rem;\r\n    font-weight:bold;\r\n}\r\n\r\n.card img {\r\n    width:242px !important;\r\n}\r\n\r\nh4.card-title {\r\n    font-size:1.25rem;\r\n}\r\n\r\n.card {\r\n    margin-bottom:0.5rem;\r\n    margin-top:0.5rem;\r\n\r\n}"
 
 /***/ },
-/* 478 */
+/* 502 */
 /***/ function(module, exports) {
 
 module.exports = "<app-search id=\"search-box\" *ngIf=\"!isStateSearch\"></app-search>\r\n<div class=\"text-center loader\" *ngIf=\"showLoader\">\r\n  <app-loader></app-loader>\r\n</div>\r\n\r\n<div id=\"alert-msg\" *ngIf=\"msg!=null\" class=\"container\">\r\n  <div class=\"alert alert-danger\" role=\"alert\">\r\n    <strong>Sorry!</strong> {{msg}}\r\n  </div>\r\n</div>\r\n\r\n<div id=\"brewery-results\" class=\"container\" *ngIf=\"breweries.length && !showLoader\"> \r\n  <div class=\"row container\">\r\n    <div class=\"col-md-6 text-left\">\r\n      <h1 *ngIf=\"isLocationSearch\"> Breweries in {{qLocation}}</h1>\r\n      <h1 *ngIf=\"!isLocationSearch\">Breweries matching \"{{qBrewery}}\"</h1> \r\n    </div>\r\n    <div *ngIf=\"numPages > 1\" class=\"col-md-6 text-right\">\r\n      <pagination\r\n        (goPage)=\"goToPage($event)\"\r\n        (goNext)=\"onNext()\"\r\n        (goPrev)=\"onPrev()\"\r\n        [pagesToShow]=\"5\"\r\n        [page]=\"currentPage\"\r\n        [perPage]=\"pageSize\"\r\n        [count]=\"totalResults\"></pagination>\r\n    </div>\r\n  </div>\r\n  <div class=\"card-deck\">\r\n    <div class=\"card\" *ngFor=\"let brewery of breweries\">\r\n      <div class=\"text-center\">\r\n        <a *ngIf=\"!isLocationSearch\" [routerLink]=\"['/brewery',common.paramSEOFriendly(brewery.name),brewery.id]\">  \r\n          <img *ngIf=\"brewery.images\" [src]=\"brewery.images.squareMedium\" />\r\n          <img *ngIf=\"!brewery.images\" src=\"assets/images/no-beer.jpg\" />\r\n        </a>\r\n        <a *ngIf=\"isLocationSearch\" [routerLink]=\"['/b',common.paramSEOFriendly(brewery.name),brewery.locId]\">  \r\n          <img *ngIf=\"brewery.images\" [src]=\"brewery.images.squareMedium\" />\r\n          <img *ngIf=\"!brewery.images\" src=\"assets/images/no-beer.jpg\" />\r\n        </a>        \r\n      </div>\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title text-center\">\r\n          <a *ngIf=\"!isLocationSearch\" class=\"brewery-header\" [routerLink]=\"['/brewery',common.paramSEOFriendly(brewery.name),brewery.id]\">{{brewery.name}}</a>\r\n          <a *ngIf=\"isLocationSearch\" class=\"brewery-header\" [routerLink]=\"['/b',common.paramSEOFriendly(brewery.name),brewery.locId]\">{{brewery.name}}</a>\r\n        </h4>\r\n        <p *ngIf=\"brewery.locations\" class=\"card-text text-center\">\r\n           {{brewery.locations[0].locality}}, {{brewery.locations[0].region}}\r\n        </p>\r\n        <p  *ngIf=\"isLocationSearch\"class=\"card-text text-center\">\r\n           {{brewery.locality}}, {{brewery.region}}\r\n        </p>           \r\n        <p class=\"card-text text-center\">\r\n          {{brewery.type}}  \r\n        </p>\r\n      </div>\r\n      <div class=\"card-footer text-center\">\r\n        <small class=\"text-muted\">Added {{common.dateFriendly(brewery.createDate)}}</small>\r\n      </div>\r\n    </div>\r\n  </div>    \r\n  <!--\r\n  <div class=\"row\" *ngFor=\"let brewery of breweries\">\r\n    <div class=\"col-md-4 brewery-img text-center\">\r\n      <a [routerLink]=\"['/brewery',common.paramSEOFriendly(brewery.name),brewery.id]\">    \r\n        <img *ngIf=\"brewery.images\" [src]=\"brewery.images.squareMedium\" />\r\n        <img *ngIf=\"!brewery.images\" src=\"assets/images/no-beer.jpg\" />\r\n      </a>\r\n    </div>\r\n    <div class=\"col-md-8\">\r\n      <a *ngIf=\"!isLocationSearch\" class=\"brewery-header\" [routerLink]=\"['/brewery',common.paramSEOFriendly(brewery.name),brewery.id]\">{{brewery.name}}</a>\r\n      <a *ngIf=\"isLocationSearch\" class=\"brewery-header\" [routerLink]=\"['/b',common.paramSEOFriendly(brewery.name),brewery.locId]\">{{brewery.name}}</a>\r\n      <h5 *ngIf=\"brewery.locations\">\r\n        {{brewery.locations[0].locality}}, {{brewery.locations[0].region}}\r\n      </h5>\r\n      <h5 *ngIf=\"isLocationSearch\">\r\n        {{brewery.locality}}, {{brewery.region}}\r\n      </h5>      \r\n      <p>{{brewery.type}}</p>\r\n    </div>\r\n  </div>\r\n  -->\r\n  <div *ngIf=\"numPages > 1\" class=\"row container\">\r\n    <div class=\"col-md-12 text-right\">\r\n    <pagination\r\n      (goPage)=\"goToPage($event)\"\r\n      (goNext)=\"onNext()\"\r\n      (goPrev)=\"onPrev()\"\r\n      [pagesToShow]=\"5\"\r\n      [page]=\"currentPage\"\r\n      [perPage]=\"pageSize\"\r\n      [count]=\"totalResults\"></pagination>\r\n    </div>\r\n  </div>  \r\n</div>\r\n"
 
 /***/ },
-/* 479 */
-/***/ function(module, exports) {
-
-module.exports = "\r\n#contact-page {\r\n    padding-top:40px;\r\n    min-height: 30rem;\r\n}"
-
-/***/ },
-/* 480 */
-/***/ function(module, exports) {
-
-module.exports = "<div id=\"contact-page\" class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-5\">\r\n      <div class=\"alert alert-warning\" role=\"alert\">\r\n        <strong><i class=\"fa fa-envelope\"></i></strong>\r\n        If you have any questions, suggestions, want to advertise, report a bug, or have questions\r\n        about our App, please let us know.\r\n      </div>\r\n      <div class=\"alert alert-danger\"  *ngIf=\"notifyEmailStatus\" role=\"alert\">\r\n        <h4><i class=\"fa fa-frown-o\"></i> Uh-Oh!</h4>\r\n        <p>{{notifyEmailStatus}}</p>\r\n      </div>      \r\n    </div>\r\n    <div class=\"col-md-7\">\r\n        <div *ngIf=\"formSubmitted\" class=\"alert alert-success\" role=\"alert\">\r\n            <h4><i class=\"fa fa-hand-o-right\"></i> Email Sent!</h4>\r\n            <p>Thanks for your input. We will contact you shortly.</p>\r\n        </div>\r\n        <div *ngIf=\"!formSubmitted\" class=\"panel panel-info\">\r\n            <div class=\"panel-heading\" id=\"panel-heading\">\r\n                <h2 class=\"titre\">Contact Us</h2>\r\n            </div>\r\n            <div class=\"panel-body\">\r\n                <form #f=\"ngForm\" class=\"form\" (ngSubmit)=\"sendEmail()\">\r\n                    <div class=\"form-group has-info\">\r\n                        <div class=\"input-group\">\r\n                            <span class=\"input-group-addon\"><i class=\"fa fa-user fa-fw\"></i></span>\r\n                            <label for=\"name\" class=\"sr-only\"></label>\r\n                            <input type=\"text\" class=\"form-control\" name=\"contactName\" id=\"name\"[(ngModel)]=\"data.contactName\" placeholder=\"Enter Name\" required/><br/>\r\n                        </div>\r\n                    </div>                          \r\n                    <div class=\"form-group has-info\">\r\n                        <div class=\"input-group\">\r\n                            <span class=\"input-group-addon\"><i class=\"fa fa-envelope fa-fw\"></i></span>\r\n                            <label for=\"email\" class=\"sr-only\"></label>\r\n                            <input type=\"email\" class=\"form-control\" id=\"email\" name=\"contactEmail\" [(ngModel)]=\"data.contactEmail\" placeholder=\"Enter Email\" required/><br/>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group has-info\">\r\n                        <textarea class=\"form-control\" id=\"exampleTextarea\" rows=\"6\" name=\"contactMessage\" [(ngModel)]=\"data.contactMessage\" placeholder=\"Message\" required></textarea>\r\n                    </div>\r\n                    <span id=\"clear\"></span>\r\n                    <button *ngIf=\"!showLoader\" type=\"submit\" class=\"btn btn-warning btn-lg btn-block\" >Submit</button><br/>\r\n                    <div *ngIf=\"showLoader\" class=\"text-center\">\r\n                        <i class=\"fa fa-spinner fa-pulse fa-3x fa-fw\"></i>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n        </div>     \r\n    </div>    \r\n  </div>\r\n</div>"
-
-/***/ },
-/* 481 */
-/***/ function(module, exports) {
-
-module.exports = ".getapp {\r\n    background-image: url(\"/assets/getapp-background.jpg\");\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-size: cover;\r\n    background-position: center center;\r\n    width:100%;\r\n    height:600px !important;      \r\n}\r\n\r\n.getapp #dl-app-area {\r\n    color:#fff;\r\n    text-align: center;\r\n    position:relative;\r\n    top:10rem;\r\n    width:100%;\r\n    padding:1rem;\r\n    background: rgba(0, 0, 0,0.5);\r\n}\r\n\r\n.getapp img {\r\n    width:20rem;\r\n}\r\n\r\n.dl-btn {\r\n    padding-bottom:1rem;\r\n}\r\n\r\n.getapp i { \r\n    padding-right:1rem;\r\n    position:relative;\r\n    top:1rem;\r\n}\r\n\r\n.getapp h1 {\r\n     font-family: \"Raleway\", Helvetica, Arial, sans-serif !important;\r\n}"
-
-/***/ },
-/* 482 */
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"container\">\r\n  <div class=\"page-header\">\r\n    <h2>Frequently Asked Questions</h2>\r\n  </div>\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> I tried locating a beer and I got nothing! What gives?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> We are a start-up company and we rely on people to enter locations for us.  \r\n    If nobody checked in a beer at your location, you would get \"No beers at this location\" warning.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Brew Search crashes! Uninstall! 0 stars!\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> We are at the early stage of our software development and bugs\r\n    do happen.  Help us fix this by going to the <a routerLink=\"/contact\">\"contact us\"</a> \r\n    page and tell us what happened and what mobile device so we can get this issue resolved.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Do I need GPS turned on to check-in places?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> No.  However, GPS will give you a more pinpoint location.\r\n    All you need is internet data.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> What version of Android or IOS do you support?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> We support Android KitKat and above. For Apple, iPhone 5 and above.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Beer and brewery data isn't up to date\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> Click the 3 dots icon &nbsp;<i class=\"fa fa-ellipsis-v\"></i>&nbsp; on the beer and brewery detail page to update.\r\n    It takes 24 hours for the update to change upon approval.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Will you offer a Windows Phone version?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> No. Technology we use doesn't support Windows phone.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Do you sell my personal data to solicitors?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> No. We hate getting spammed just as much as you do.\r\n  </div>\r\n  <hr />  \r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Where do you get your beer and location information?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> We use 3rd party websites.  We use BreweryDB.com for beer / brewery information.\r\n    For other locations, maps, and location reviews, we use Google.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> I'm traveling overseas.  Will Brew Search work in other countries?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> Yes it will.  As long as you have data connection, our App will work.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> How come I see Nail Bars when I search for bars?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> We know this problem exists.  The 3rd party compnay we use to pull data from \r\n    searches for where the business type is a bar or where the business name has the word \"bar\".  \r\n    We are currently looking for a solution to fix this.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Your App said this brewery is open. In fact, it's been closed for awhile!\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> A lot of new breweries open and sadly, a lot of them go out of business.\r\n    Flag the brewery as closed on the brewery detail page by clicking on  &nbsp;<i class=\"fa fa-ellipsis-v\"></i>&nbsp; icon.\r\n    Review process takes 24 hours and the brewery will be flagged as permanently closed.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> There's a beer/brewery that's not on your app.  How do I add it?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> You can either contact us and provide us with the name of the beer or brewery if possible\r\n    and we'll take care of the rest. Or, you can click the \"Post\" button in the app menu tab to submit a new beer/brewery.\r\n  </div>\r\n  <hr /> \r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> How close do I have to be to check-in at a location?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> 1000 yards.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Someone is giving false info on new check-ins.  How can I notify you?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> Click on the user's check-in detail, hit the red flag button, and tell us the reason why.\r\n    We take users that abuse the system seriously and will have them removed.\r\n  </div>\r\n  <hr />    \r\n</div>"
-
-/***/ },
-/* 483 */
-/***/ function(module, exports) {
-
-module.exports = ".table {\r\n  padding-top: 30px;\r\n}\r\n.row {\r\n  display: table-row;\r\n  background: #f6f6f6;\r\n}\r\n\r\n.row:nth-of-type(odd) {\r\n  background: #e9e9e9;\r\n}\r\n\r\n.row.header {\r\n  color: #ffffff;\r\n  font-weight: bold;\r\n  background: #158126;\r\n}\r\n\r\n.cell {\r\n  padding: 20px;\r\n  display: table-cell;\r\n}\r\n\r\n.card {\r\n  margin: 2rem 0;\r\n}\r\n\r\n.avatar {\r\n    width:4rem;\r\n    height:4rem;\r\n}\r\n\r\n#get-more-btn {\r\n  margin:2rem 0;\r\n}\r\n\r\n"
-
-/***/ },
-/* 484 */
-/***/ function(module, exports) {
-
-module.exports = "\r\n\r\n<div class=\"container\">\r\n  <div class=\"card\" *ngFor=\"let feed of feeds\">\r\n    <div class=\"card-block\">\r\n      <h6 class=\"card-title\">\r\n        <img *ngIf=\"feed.userIMG !=''\" [src]=\"feed.userIMG\" class=\"rounded-circle avatar\" />\r\n        {{feed.userName}} drinking {{feed.beerName}}  \r\n      </h6>\r\n      <h5 class=\"card-title text-center\">\r\n        <i *ngIf=\"feed.name\" class=\"fa fa-at\"></i> {{feed.name}}\r\n      </h5>\r\n      <p class=\"text-center card-text\" *ngIf=\"feed.beerLabelIcon\">\r\n        <img [src]=\"feed.beerLabelIcon\" class=\"img-rounded\" />\r\n      </p>\r\n      <p *ngIf=\"feed.beerRating\" class=\"card-text text-center\">\r\n        {{feed.userName}} rated {{feed.beerName}} \r\n        <app-rating [rate]=\"feed.beerRating\"></app-rating>        \r\n      </p>\r\n      <p class=\"card-text alert alert-warning\" *ngIf=\"feed.comments\">\r\n          <b>{{feed.userName}} said:</b>\r\n          {{feed.comments}}\r\n      </p>\r\n      <p class=\"text-center card-text\">\r\n        <a [routerLink]=\"['/checkin',feed.key]\" class=\"btn btn-warning\">View Detail</a>\r\n      </p>\r\n      <p class=\"text-center\" *ngIf=\"feed.img !=''\">\r\n        <i class=\"fa fa-camera\"></i> Photo Taken \r\n      </p>\r\n    </div>\r\n    <div class=\"card-footer text-muted text-center\">\r\n      Checked-In {{common.timeDifference(feed.dateCreated)}}\r\n    </div>    \r\n  </div>\r\n  <div class=\"text-center\" *ngIf=\"nextToken && !showLoader\">\r\n    <button id=\"get-more-btn\" class=\"btn btn-warning btn-block\" (click)=\"getMoreFeeds()\">Get More</button>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"text-center loader\" *ngIf=\"showLoader\">\r\n  <app-loader></app-loader>\r\n</div>\r\n"
-
-/***/ },
-/* 485 */
-/***/ function(module, exports) {
-
-module.exports = ".getapp {\r\n    background-image: url(\"/assets/getapp-background.jpg\");\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-size: cover;\r\n    background-position: center center;\r\n    width:100%;\r\n    height:600px !important;      \r\n}\r\n\r\n.getapp #dl-app-area {\r\n    color:#fff;\r\n    text-align: center;\r\n    position:relative;\r\n    top:10rem;\r\n    width:100%;\r\n    padding:1rem;\r\n    background: rgba(0, 0, 0,0.5);\r\n}\r\n\r\n.getapp img {\r\n    width:20rem;\r\n}\r\n\r\n.dl-btn {\r\n    padding-bottom:1rem;\r\n}\r\n\r\n.getapp i { \r\n    padding-right:1rem;\r\n    position:relative;\r\n    top:1rem;\r\n}\r\n\r\n.getapp h1 {\r\n     font-family: \"Raleway\", Helvetica, Arial, sans-serif !important;\r\n}"
-
-/***/ },
-/* 486 */
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"container-fluid getapp\">\r\n  <div align=\"center\">\r\n    <div id=\"dl-app-area\">\r\n      <h1><i class=\"fa fa-mobile fa-2x\"></i>Get the App</h1>\r\n      <!--\r\n      <div class=\"dl-btn\">\r\n        <img src=\"assets/buttons/google-button.png\"/>\r\n      </div>\r\n      <div class=\"dl-btn\">\r\n        <img src=\"assets/buttons/apple-button.png\"/>\r\n      </div>\r\n      -->\r\n      <h5>App Coming in August 24th, 2017</h5>\r\n    </div>\r\n  </div>\r\n</div>"
-
-/***/ },
-/* 487 */
-/***/ function(module, exports) {
-
-module.exports = ".app-features ul {\r\n  padding-top: 1rem;\r\n  \r\n}\r\n\r\n.app-features li {\r\n  font-size:1rem;\r\n  padding-bottom:0.5rem;\r\n}\r\n\r\n.fa-green {\r\n  color: #C81B02;\r\n}\r\n\r\n.sub-header {\r\n  font-family: \"Raleway\", Helvetica, Arial, sans-serif !important;\r\n  margin-top:20px;\r\n}\r\n\r\n.row-centered {\r\n    text-align: center;\r\n}\r\n\r\n.col-centered {\r\n    display: inline-block;\r\n    float: none;\r\n    /* reset the text-align */\r\n    text-align: left;\r\n    /* inline-block space fix */\r\n    margin-right: -4px;\r\n}\r\n\r\n.apple-btn img{\r\n  padding-bottom:10px !important;\r\n  margin-bottom:10px !important;\r\n}\r\n\r\n/*\r\n.card {\r\n  width: 24rem;\r\n}\r\n*/\r\n\r\n.card-columns .card {\r\n    column-break-inside: avoid;\r\n    width: 100%;\r\n    margin-bottom: .75rem;\r\n}\r\n\r\n.about-panel {\r\n  /*margin-top:1rem;*/\r\n  /*background-color:#fff;*/\r\n}\r\n\r\n.about-panel i {\r\n  padding-left:0.75rem;\r\n}\r\n\r\n#ticket-btn {\r\n  padding-top:1rem;\r\n}\r\n\r\n.paralax-window {\r\n  display: flex;\r\n  align-content: center;\r\n  align-items: center;\r\n  flex-direction: column; \r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  justify-content: space-around;\r\n  position: relative;\r\n  width: 100%;   \r\n}\r\n\r\nsection {\r\n  width: 100%;\r\n  height: 100vh;\r\n  flex: 1;\r\n  display: flex;\r\n  text-align: center;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background-color: #000;\r\n  \r\n}\r\n\r\n.image {\r\n  background-attachment: fixed; \r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  background-image: url(\"/assets/events/emeraldcoastbeerfest.png\");\r\n  width: 100%;\r\n  height: 100%;\r\n  position: absolute;\r\n  z-index: 500;\r\n  opacity: 0.5;\r\n}\r\n\r\n.stuff {\r\n  display: flex;\r\n  flex-direction: column;\r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  width: 100%;\r\n  max-width: 70%;\r\n  justify-content: center;\r\n  text-align: center;\r\n  z-index: 1000;\r\n  color: #fff;\r\n  margin: 0 auto;\r\n  font-weight:bold;\r\n  font-size: 3rem;\r\n  position: relative;\r\n  text-shadow: black 0.1em 0.1em 0.2em;\r\n}\r\n\r\n.stuff .btn {\r\n  width:12rem;\r\n  text-align:center;\r\n  text-shadow:none;\r\n}\r\n\r\n.banner {\r\n  width:inherit;\r\n  background-image: url(\"/assets/beers.jpg\");\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center center;\r\n  height:420px !important;      \r\n}\r\n\r\n.banner h2 {\r\n  position: absolute;\r\n  top:300px;\r\n  left:0;\r\n  right:0;\r\n  margin: 0 auto;\r\n  color:#ffffff;\r\n  font-family: 'Raleway',sans-serif !important;  \r\n}\r\n\r\n#custom-search-input {\r\n  position: relative;\r\n  top:100px;\r\n}\r\n\r\n.banner h3 {\r\n  position: absolute;\r\n  top:420px;\r\n  right:20px;\r\n  font-size:16px;\r\n  color:#fff;\r\n  text-shadow: 2px 2px 4px #000000;\r\n}\r\n\r\n.fest {\r\n  background-color:#fff;\r\n  border: 1px solid rgba(0,0,0,.25);\r\n  padding:2rem;\r\n}\r\n\r\n.fest h3 {\r\n  padding-bottom:1rem;\r\n}\r\n\r\n.fa-ul {\r\n  padding-left:0;\r\n}\r\n\r\n.fa-ul i {\r\n  padding-top:0.25rem;\r\n}\r\n\r\n.card-columns {\r\n  margin-top:2rem;\r\n}\r\n\r\n.card i {\r\n  padding-left:0.75rem;\r\n}\r\n\r\n#column-panels {\r\n  padding-left:0;\r\n  padding-right:0;\r\n}\r\n\r\n@media (min-width: 34em) {\r\n    .card-columns {\r\n        -webkit-column-count: 1;\r\n        -moz-column-count: 1;\r\n        column-count: 1;\r\n    }\r\n}\r\n\r\n@media (min-width: 48em) {\r\n    .card-columns {\r\n        -webkit-column-count: 2;\r\n        -moz-column-count: 2;\r\n        column-count: 2;\r\n    }\r\n}\r\n\r\n@media (min-width: 62em) {\r\n    .card-columns {\r\n        -webkit-column-count: 3;\r\n        -moz-column-count: 3;\r\n        column-count: 3;\r\n    }\r\n}\r\n\r\n@media (min-width: 75em) {\r\n    .card-columns {\r\n        -webkit-column-count: 3;\r\n        -moz-column-count: 3;\r\n        column-count: 3;\r\n    }\r\n}"
-
-/***/ },
-/* 488 */
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"banner\">\r\n  <!--\r\n  <div id=\"alert-msg\" *ngIf=\"msg.length\" class=\"container\">\r\n    <ngb-alert>\r\n      <strong>Sorry!</strong> {{msg}}\r\n    </ngb-alert>\r\n  </div>\r\n   -->\r\n  <app-search id=\"custom-search-input\" showTabs=\"true\"></app-search>\r\n  <h2 class=\"text-center\">Find Beers, Breweries, and Bars Around the World.<i class=\"fa fa-globe\"></i> </h2>\r\n  <h3>Available for Apple &amp; Android Aug. 24th</h3>\r\n</div>\r\n<h2 class=\"page-header text-center\">Featured Event</h2>\r\n<div class=\"container fest\">\r\n    <div class=\"row\">\r\n      <div class=\"col-sm-12 col-md-6  text-center\">\r\n        <img src=\"/assets/events/beerfest.png\" />\r\n      </div>\r\n      <div class=\"col-sm-12 col-md-6 \">\r\n        <h3>Emerald Coast Beer Festival</h3>\r\n        <p>\r\n          Location: 130 E Government St, Pensacola, FL 32502\r\n        </p>\r\n        <p>Time: 5:30pm to 8:30pm Friday September 8, 2017</p>\r\n        <p>Ticket Price: $40 or $60 VIP </p>\r\n        <p>Website: <a href=\"http://emeraldcoastbeerfest.com\" target=\"_blank\">http://emeraldcoastbeerfest.com</a></p>\r\n        <p>Beer list will be available on our App 2 weeks before the event.</p>\r\n      </div>\r\n    </div>\r\n</div>\r\n<div id=\"column-panels\" class=\"container\">\r\n  <div class=\"card-columns\">\r\n    <div class=\"card card-inverse\" style=\"background-color:#8a6d3b\">\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title\">Easy to Use<i class=\"fa fa-thumbs-o-up\"></i></h4>\r\n        <p class=\"card-text\">\r\n          You can quickly find a beer,\r\n          brewery, or bar within seconds.  An App that is fast, clear, and informative is our mission.\r\n          Also, you can save a beer and locations to make the check-in process easier. \r\n        </p>\r\n      </div>\r\n    </div>\r\n    <div class=\"card card-inverse\" style=\"background-color:#8a6d3b\">\r\n      <div class=\"card-block\">\r\n      <h4 class=\"card-title\">Crowdsourced<i class=\"fa fa-bullhorn\"></i></h4>\r\n      <p class=\"card-text\">\r\n        Ever had a great brew at a new brewery or bar and wanted the world to know?  Everytime you use our app \r\n        and check-in, the Brew Search community will be able to locate their favorite brews thanks to you!\r\n      </p>\r\n      </div>\r\n    </div>\r\n    <div class=\"card card-inverse\" style=\"background-color:#8a6d3b\">\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title\">Social Friendly<i class=\"fa fa-users\"></i></h4>\r\n        <p class=\"card-text\">\r\n          When you check-in, you have the option to post your experience on your wall. Notify all your\r\n          friends what they are missing out when they see you having a great time and invite them over.\r\n        </p>\r\n      </div>\r\n    </div>\r\n    <div class=\"card card-inverse\" style=\"background-color:#8a6d3b\">\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title\">Beer Game<i class=\"fa fa-gamepad\"></i></h4>\r\n        <p class=\"card-text\">\r\n          When you check-in a beer at a location, you get points.  You get more points either by \r\n          taking a picture, sharing on social media, leaving a rating, or leaving a comment.  Points are\r\n          reset every 30 days. Check out the leaderboard on our App and see if you come up on top.\r\n        </p>\r\n      </div>\r\n    </div>\r\n    <div class=\"card card-inverse\" style=\"background-color:#8a6d3b\">\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title\">Achievements<i class=\"fa fa-trophy\"></i></h4>\r\n        <p class=\"card-text\">\r\n          Earn achievements by number of check-ins, drinking beer styles, and checkin-in at events.\r\n          We'll continue to add more badges in the future so you'll never run out badges to unlock.\r\n        </p>\r\n      </div>\r\n    </div>\r\n    <div class=\"card card-inverse\" style=\"background-color:#8a6d3b\">\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title\">Beer Festivals<i class=\"fa fa-beer\"></i></h4>\r\n        <p class=\"card-text\">\r\n          Keep track of beer festivals happening in your area with our App. Login to our App and\r\n          see all the beers served at the event, breweries attending, and use our interactive map ( Feature applies\r\n          to only fesivals we got on board). You can plan ahead before the event, research beers that fit your profile, \r\n          and a check list of beers you enjoyed at the festival so you can enjoy it later on.\r\n        </p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"container app-features\">\r\n  <hr />\r\n  <div class=\"row\">\r\n    <div class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center\">\r\n      <img src=\"assets/events/handphone2.png\" width=\"100%\" />\r\n    </div>\r\n    <div class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6 alert alert-warning\">\r\n      <h3 class=\"text-center\">App Features</h3>      \r\n      <ul class=\"fa-ul\">\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Track breweries you visited.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Search beers by style, ABV, and by brewery.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Geolocation enabled. Find bars, breweries, and gas stations near you.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Brewery and bar map search.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Beer ratings and detailed description.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Brewery ratings and beers they have available.</li> \r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Save places visted and beers you like.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Locate beers locally submitted by our community.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Photos of bars and breweries.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>See all the popular beers and locations in your area.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Location and beer reviews.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Search other cities for breweries and bars. Great trip companion!</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Get notified when a friend check-ins at a location so you can meet up.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Made a beer game of earning achievements and points.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Find beer festivals.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Fast and intuitive. Super fast check-ins.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Social media enabled.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Beer suggestions.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Submit photos of places you visited.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Search over 500,000+ locations.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Search over 80,000 beers and 20,000+ breweries.</li>        \r\n      </ul>\r\n    </div>  \r\n  </div>\r\n</div>\r\n"
-
-/***/ },
-/* 489 */
-/***/ function(module, exports) {
-
-module.exports = "#privacy h4 {\r\n    margin-top:3rem;\r\n}\r\n\r\n#privacy h2 {\r\n    margin-top:2rem;\r\n}"
-
-/***/ },
-/* 490 */
-/***/ function(module, exports) {
-
-module.exports = "<div id=\"privacy\" class=\"container\">\r\n  <div class=\"page-title\"><h2>Privacy Policy</h2></div>\r\n<h4>1. Introduction</h4>\r\n<p>\r\n  Thank you for visiting Brew Search and, if applicable, downloading and/or installing our App.  Please read our Terms of Service and this Privacy Policy carefully as you must agree to both documents in order to have permission to use our Service.\r\n</p>\r\n<h4>2.  Definitions</h4>\r\n<p>\r\n  Throughout this document, we may use certain words or phrases, and it is important that you understand the meaning of them.  The following is a non-exhaustive list of definitions of words and phrases found in this document:\r\n</p>\r\n<p>\r\n  “App” refers to our mobile software application;\r\n</p>\r\n<p>\r\n  “Brew Search” refers to our company, known as “Brew Search LLC”; our Site; our App; our Service; or a combination of all or some of the preceding definitions, depending on the context in which the word is used;\r\n</p>\r\n<p>\r\n  “Service” refers to the services that we provide, including our Site and our App;\r\n</p>\r\n<p>\r\n  “Site” refers to our website, www.brewsearchapp.com or brewsearchapp.com;\r\n</p>\r\n<p>\r\n  “User” refers to anyone who uses our Service, including general visitors to our Site;\r\n</p>\r\n<p>\r\n  “You” refers to you, the person who is governed by this Privacy Policy.\r\n</p>\r\n<h4>3.  Information Collected</h4>\r\n<p>\r\n  Identifying Information\r\n</p>\r\n<p>\r\n  We collect certain personal information from you when you sign up to our Service that can be used to identify you, such as your name, e-mail address, PayPal address (if different from e-mail address), mailing address, date of birth, telephone number, unique device ID, credit card information, mobile carrier, Facebook profile, location and any other information that we deem relevant for the purpose of providing you with our Service of which you provide to us voluntarily.  The information we collect from you, to the extent that it is private, is disclosed only in accordance with our Terms of Service and/or this Privacy Policy.\r\n</p>\r\n<p>\r\n  Non-Identifying Information\r\n</p>\r\n<p>\r\n  Whenever you visit our Site, we may collect non-identifying information from you, such as your IP address, referring URL, browser, operating system, cookie information, and Internet Service Provider.  Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, this information alone cannot usually be used to identify you.\r\n</p>\r\n<h4>4.  Use of Your Information</h4>\r\n<p>\r\n  We may use your information to:\r\n</p>\r\n<ul>\r\n  <li>Enhance or improve User experience, our Site, or our Service.</li>\r\n  <li>Process transactions.</li>\r\n  <li>Transfer with your consent, including to restaurant owners and other parties as mentioned in our Terms of Service.</li>\r\n  <li>Send e-mails about our Site or respond to inquiries.</li>\r\n  <li>Send e-mails and updates about Brew Search, including our e-mail newsletter.</li>\r\n  <li>Send e-mails with third party offers.</li>\r\n  <li>\r\n    Perform any other function that we believe in good faith is necessary to protect the security or \r\n    proper functioning of our Site or Service.\r\n  </li>\r\n</ul>\r\n\r\n<h4>5.  Accessing, Editing, and Removing Your Information</h4>\r\n<p>\r\n  Users may in some cases be able to review and edit the personal information they have provided to us\r\n  by logging into your account on the Site and editing their account.  Although most changes may occur \r\n  immediately, information may still be stored in a web browser’s cache.  We take no responsibility for \r\n  stored information in your cache, or in other devices that may store information, and disclaim all liability of such.  In addition, we may, from time to time, retain residual information about you in our backup and/or database.\r\n</p>\r\n\r\n<h4>6.  Cookies</h4>\r\n<p>\r\n  We use cookies to remember your preferences, track advertisements, and remember shopping cart items.  For these \r\n  reasons, it is necessary that you enable cookies in your browser, and you hereby acknowledge that we have \r\n  informed you of our use of cookies and that you consent to our use of cookies in relation to your computer system.\r\n</p>\r\n<p>\r\n  Our Service may use cookies that are accessible to third parties.  Additionally, our Service uses Google AdSense, \r\n  which uses the DoubleClick cookie.  For more information about the DoubleClick cookie including how to opt out\r\n  of it, please visit <a href=\"http://www.google.com/policies/technologies/ads/\" target=\"_blank\">http://www.google.com/policies/technologies/ads/</a>\r\n</p>\r\n\r\n<h4>7.  Third Parties</h4>\r\n\r\n<h4>7.1  Third Party Websites</h4>\r\n<p>\r\n  Brew Search or its Users may post links to third party websites on our Site.  These third party websites are not \r\n  screened for privacy or security issues by Brew Search, and you release us from any liability for the conduct \r\n  of these third party websites.\r\n</p>\r\n<p>\r\n  Please be aware that this Privacy Policy, and any other policies in place, in addition to any amendments, \r\n  does not create rights enforceable by third parties or require disclosure of any personal information \r\n  relating to members of the Service or Site.  Brew Search bears no responsibility for the information collected\r\n  or used by any advertiser or third party website.  Please review the privacy policy and terms of service \r\n  for each site you visit through third party links.\r\n</p>\r\n\r\n<h4>7.2  Third Party Social Networks</h4>\r\n<p>\r\n  Brew Search permits Users to link their Facebook, Twitter and Untappd accounts to their Brew Search accounts.  If you \r\n  wish to limit what Facebook, Twitter, and Untappd share with us, you must adjust your privacy settings with \r\n  your accounts at these third parties accordingly.\r\n</p>\r\n<h4>8.  Third Party Access to Your Information</h4>\r\n<p>\r\nAlthough you are entering into an Agreement with Brew Search to disclose your information to us, we do use third \r\nparty individuals and organizations to assist us, including contractors, web hosts, and others.\r\n</p>\r\n<p>\r\nThroughout the course of our provision of our Service to you, we may delegate our authority to collect, access, use, and disseminate your information.  For example, our web host stores the information that you provide us, and we may hire outside contractors to perform maintenance or assist us in securing our website.\r\n</p>\r\n<p>\r\nIt is therefore necessary that you grant the third parties we may use in the course of our business the same rights that you afford us under this Privacy Policy.  For this reason, you hereby agree that for every authorization which you grant to us in this Privacy Policy, you also grant to any third party that we may hire, contract, or otherwise retain the services of for the purpose of operating, maintaining, repairing, or otherwise improving or preserving our website or its underlying files or systems.  You agree not to hold us liable for the actions of any of these third parties, even if we would normally be held vicariously liable for their actions, and that you must take legal action against them directly should they commit any tort or other actionable wrong against you.\r\n</p>\r\n<p>\r\nWithout limiting the generality of the foregoing, you authorize us to collect, share, exchange, store, and otherwise use your information in conjunction with:\r\n</p>\r\n<ul>\r\n  <li>Facebook</li>\r\n  <li>PayPal</li>\r\n  <li>Twitter</li>\r\n  <li>Google</li>\r\n</ul>\r\n<h4>9.  Release of Your Information for Legal Purposes</h4>\r\n<p>\r\n  At times it may become necessary or desirable to Brew Search, for legal purposes, to release your information in \r\n  response to a request from a government agency or a private litigant.  You agree that we may disclose your \r\n  information to a third party where we believe, in good faith, that it is desirable to do so for the purposes\r\n  of a civil action, criminal investigation, or other legal matter.  In the event that we receive a subpoena \r\n  affecting your privacy, we may elect to notify you to give you an opportunity to file a motion to quash \r\n  the subpoena, or we may attempt to quash it ourselves, but we are not obligated to do either.  We may \r\n  also proactively report you, and release your information to, third parties where we believe that it is \r\n  prudent to do so for legal reasons, such as our belief that you have engaged in fraudulent activities.  \r\n  You release us from any damages that may arise from or relate to the release of your information to a\r\n  request from law enforcement agencies or private litigants.\r\n</p>\r\n<h4>10.  Commercial and Non-Commercial Communications</h4>\r\n<p>\r\n  By providing information to the Site that forms the basis of communication with you, such as contact information, \r\n  you waive all rights to file complaints concerning unsolicited e-mails from Brew Search since, by providing such \r\n  information, you agree to receive communications from us or anyone else covered under this Privacy Policy. \r\n  However, you may unsubscribe from certain communications by notifying Brew Search that you no longer wish to receive \r\n  solicitations or information and we will endeavor to remove you from the database.\r\n</p>\r\n<h4>11.  Security Measures</h4>\r\n\r\n<p>\r\n  We take certain measures to enhance the security of our Site and Service, including using SSL certificates\r\n  and vulnerability scanning.   However, we make no representations as to the security or privacy of your \r\n  information.  It is in our interest to keep our website secure, but we recommend that you use anti-virus \r\n  software, firewalls, and other precautions to protect yourself from security threats.\r\n</p>\r\n\r\n<h4>12.  Your California Online Rights</h4>\r\n<p>\r\n  Brew Search permits residents of the State of California to use its services.  Therefore, it is the intent of Brew Search\r\n  to comply with the California Business and Professions Code §§ 22575-22579.  If you are a California resident \r\n  you may request certain information regarding our disclosure of personal information to any third parties for \r\n  their direct marketing purposes.  Various provisions throughout this Privacy Policy address requirements of \r\n  the Californian privacy statutes.  In summary, you must presume that we collect electronic information from \r\n  all visitors.  You may contact us at hello@brewsearchapp.com with any questions.\r\n</p>\r\n\r\n<h4>13.  International Transfer</h4>\r\n\r\n<p>\r\n  Your information may be transferred to—and maintained on—computers located outside of your state, province, \r\n  country or other governmental jurisdiction where the privacy laws may not be as protective as those in your \r\n  jurisdiction.  If you are located outside the United States and choose to provide information to us, Brew Search \r\n  transfers Personal Information to the United States and processes it there.  Your consent to this Privacy \r\n  Policy followed by your submission of such information represents your agreement to that transfer.\r\n</p>\r\n<h4>14.  Amendments</h4>\r\n\r\n<p>\r\n  We may amend this Privacy Policy from time to time.  When we amend this Privacy Policy, we will update \r\n  this page accordingly and require that you accept the amendments as a condition of your continued use of our Service.\r\n</p>\r\n</div>"
-
-/***/ },
-/* 491 */
-/***/ function(module, exports) {
-
-module.exports = "#terms h4 {\r\n    margin-top:3rem;\r\n}\r\n\r\n#terms h2 {\r\n    margin-top:2rem;\r\n}"
-
-/***/ },
-/* 492 */
-/***/ function(module, exports) {
-
-module.exports = "<div id=\"terms\" class=\"container\">\r\n  <div class=\"page-title\"><h2>Terms of Use</h2></div>\r\n\r\n<h4>1. Introduction</h4>\r\n<p>\r\n  Thank you for visiting Brew Search and, if applicable, downloading and/or installing our App.  \r\n  Please read these Terms of Service and our Privacy Policy carefully as you must agree to both \r\n  documents in order to have permission to use our Service.\r\n</p>\r\n\r\n<h4>2. Definitions</h4>\r\n<p>\r\n  Throughout this Agreement, we may use certain words or phrases, and it is important that you understand \r\n  the meaning of them.  The list is not all-encompassing and no definition should be considered binding \r\n  to the point that it renders this Agreement nonsensical:\r\n</p>\r\n<p>\r\n  “Agreement” refers to these Terms of Service;\r\n</p>\r\n<p>\r\n  “App” refers to our mobile software application;\r\n</p>\r\n<p>\r\n  “Brew Search” refers to our company, known as “Brew Search LLC”; our Site; our App; our Service; or a combination \r\n  of all or some of the preceding definitions, depending on the context in which the word is used;\r\n</p>\r\n<p>\r\n  “Service” refers to the services that we provide, including our Site and our App;\r\n</p>\r\n<p>\r\n  “Site” refers to our website, www.brewsearchapp.com, brewsearch.com, or about.brewsearch.com;\r\n</p>\r\n<p>\r\n  “User” refers to anyone who uses our Service, including general visitors to our Site;\r\n</p>\r\n<p>\r\n  “You” refers to you, the person who is entering into this Agreement with Brew Search.\r\n</p>\r\n\r\n<h4>3.  How Brew Search Works</h4>\r\n<p>\r\n  Brew Search is currently targeted at sellers and consumers of craft beer.  Our Service is designed to \r\n  notify Users of when their favorite beers go on tap or are released in store.  Additionally, our \r\n  Service will use an iBeacon to permit consumers to check into restaurants so that owners of those \r\n  restaurants are informed of how long consumers are in those restaurants.  Our Service will also \r\n  permit Users to discover more information about each other via Facebook.  At this time, our Service \r\n  is designed for craft beer and restaurants, but we may expand it to apply to other beverages and venues in the future.\r\n</p>\r\n\r\n<h4>4.  Eligibility</h4>\r\n<p>\r\n  In order to use our Service, you must meet a number of conditions, including but not limited to:\r\n</p>\r\n\r\n<ul>\r\n  <li>\r\n    You must not be in violation of any embargoes, export controls, or other laws of the United States \r\n    or other countries having jurisdiction over this Agreement, Brew Search, and yourself.  For example, if the Office\r\n    of Foreign Assets Control prohibits conducting financial transactions with nationals, residents, or banks \r\n    of your country, you must not use our Service.\r\n  </li>\r\n  <li>\r\n    You must be the minimum age required to enter into a contract and purchase alcohol in the area in which \r\n    you reside and, in any event, must not be less than 18 years of age.\r\n  </li>\r\n  <li>\r\n    You must not sign up on behalf of a natural person other than yourself.\r\n  </li>\r\n  <li>\r\n    You must, if signing up on behalf of a person other than a natural person, be authorized by that person \r\n    to bind it to this Agreement and you hereby warrant that you are binding both that person and yourself \r\n    to this Agreement and that both of you shall be jointly and severally liable to Brew Search for any duties \r\n    imposed under, or breaches of, this Agreement.\r\n  </li>\r\n  <li>\r\n    You must agree that we may create your account using OAuth/OpenID Connect.\r\n  </li>\r\n  <li>\r\n    You must provide us with personal information, payment information, and other information that we\r\n     deem necessary to provide you with our Service.\r\n  </li>\r\n</ul>\r\n\r\n\r\n<h4>5.  Nature of Service</h4>\r\n<p>\r\n  Brew Search is provided to facilitate information sharing and customer service between consumers and members of \r\n  the beverage industry and hospitality business.  However, Brew Search may not be appropriate for your purposes, \r\n  and in any event, Brew Search does not endorse any of its Users unless otherwise stated.  You therefore agree \r\n  to release Brew Search from any liability relating to the actions of any other User who may use our Service \r\n  and you are advised to not enter into relations with any other party any differently than you would if you \r\n  were not a User of Brew Search.\r\n</p>\r\n<h4>6.  Rules of Use</h4>\r\n<p>\r\nYou must not:\r\n</p>\r\n<ul>\r\n  <li>\r\n    Violate the laws of the United States, its states, or any foreign political entity having jurisdiction over\r\n     this Agreement, whether or not the foreign political entity is a country or a subdivision (such as a state or province)\r\n      or municipality (such as a city, town, county, or region) of a foreign country.\r\n  </li>\r\n  <li>\r\n    Post or send anything violent, threatening, pornographic, racist, hateful, or otherwise objectionable \r\n    according to the opinion of Brew Search or its delegates.\r\n  </li>\r\n  <li>\r\n    Infringe on anyone’s intellectual property rights, defame anyone, impersonate anyone, or otherwise violate \r\n    the rights of a third party.\r\n  </li>\r\n  <li>\r\n    Sell alcohol to minors or in violation of any licensing conditions imposed upon you, or promote the consumption \r\n    of such unauthorized sale or consumption.\r\n  </li>\r\n  <li>\r\n    Rate, review, or otherwise assess any business or beer where a reasonable person would believe that there \r\n    could be an appearance of bias on your part, including rating your own business or beer or that of a competitor.\r\n  </li>\r\n  <li>\r\n    Hack, crack, phish, SQL inject, or otherwise compromise the security or integrity of the Brew Search Site,\r\n     Service, or its Users’ computers.\r\n  </li>\r\n  <li>\r\n    Do anything else which could bring Brew Search into disrepute or violate the rights of any person.\r\n  </li>\r\n  <li>\r\n      Brew Search reserves the right to block, edit, delete, or otherwise exercise editorial discretion \r\n      to ensure that the rules contained in this section of this Agreement are followed.\r\n  </li>\r\n</ul>\r\n\r\n<h4>7.  Payment and Refunds</h4>\r\n<p>\r\n  Payment may be made by means of credit card, PayPal or purchase order.  Unless otherwise stated, all \r\n  prices are listed in United States dollars.  Rebilling will be conducted at thirty day intervals.  \r\n  In the event that you are offered a free trial period, you will be billed immediately upon the expiration\r\n   of such a trial period.  Because our Service is intangible, you may cancel your subscription at any \r\n   time but no refunds will be permitted, even on a pro rata basis.  Additional terms surrounding \r\n   payment may be located on our Site or communicated to you directly and are hereby incorporated \r\n   into this Agreement by reference.\r\n</p>\r\n\r\n<h4>8.  Chargebacks, Credit Card Cancellations, and PayPal Disputes</h4>\r\n<p>\r\n  Where a User conducts a chargeback or PayPal dispute against Brew Search, such User shall be liable to\r\n   Brew Search for the full amount reversed as a result of such chargeback or PayPal dispute, as well \r\n   as all reasonable attorneys’ fees, collection agency fees, court costs, disbursements, and other \r\n   expenses incurred by Brew Search in its enforcement of its rights under this section.\r\n</p>\r\n<p>\r\n  Users are responsible for ensuring that their payment methods are able to be charged on time and as required.  \r\n  Should a User’s payment not be charged due to a credit card or PayPal account transaction being declined, \r\n  Brew Search may choose to inform the User of the problem and give the User time to correct the error, \r\n  but is under no obligation to do so and may terminate such a User’s account immediately and delete \r\n  all associated User data without notice.\r\n</p>\r\n\r\n<h4>9.  Authority to Release Information</h4>\r\n<p>\r\n  Brew Search may share data about consumer trends and other information with businesses and other \r\n  interested parties.  You agree that we may share such information for commercial and non-commercial\r\n   purposes without notification or remuneration o you.\r\n</p>\r\n\r\n<h4>10. Third Party Charges</h4>\r\n<p>\r\n  Because our App is a mobile software application, your mobile carrier may assess data, text messaging,\r\n   or other charges against you while using all or some features of our App or our App in general.  You agree \r\n   that Brew Search is not responsible for any such charges and you are advised to contact your mobile carrier \r\n   to ensure that you are fully aware of the cost of using our Service.\r\n</p>\r\n<h4>11.  Limited License</h4>\r\n<p>\r\n  The Brew Search App is offered on a licensed basis.  By downloading and/or installing our App, you \r\n  are agreeing to be granted a revocable license to use our Service for your own personal purposes.  \r\n  You agree not to attempt to reverse engineer, resell, copy, or otherwise tamper with or distribute our Service.\r\n</p>\r\n<p>\r\n  We may revoke this license to you at any time without compensation.  You agree that upon receiving \r\n  notice of such revocation, you will make all reasonable efforts to remove any of our proprietary \r\n  files from your hardware or any hardware under your control.\r\n</p>\r\n<h4>12.  Our Copyright</h4>\r\n\r\n<p>Brew Search values its copyright as it distinguishes us from third party competitors.  You agree not to copy, distribute, \r\n  display, disseminate, or otherwise reproduce any of the information made available through the Service—including \r\n  third party-owned content—without receiving our prior written permission or that of the relevant copyright holder.\r\n</p>\r\n<h4>13.  Your Copyright</h4>\r\n\r\n<p>Brew Search must be assured that it has the right to use the content that is published through its Service by its Users. \r\n   Such content may include, but is not limited to, photographs, videos, text, audio, and other materials.  Whenever \r\n   submitting content to our Service, you agree that you are granting us a non-exclusive, universal, perpetual, \r\n   irrevocable, sublicensable, commercial and non-commercial right to use, distribute, sell, publish, and \r\n   otherwise make use of the content that you submit to us.  You warrant to us that you have the right to\r\n    grant us this right over the content, and that you will indemnify us for any loss resulting from a breach \r\n    of this warranty and defend us against claims regarding the same.\r\n</p>\r\n\r\n<h4>14.  Trademarks</h4>\r\n\r\n<p>\r\n  Brew Search is a mark used by us, Brew Search LLC, to uniquely identify our Site, App, Service, and business.  \r\n  You agree not to use this phrase anywhere without our prior written consent.  Additionally, you agree \r\n  not to use our trade dress, or copy the look and feel of our website or its design, without our prior \r\n  written consent.  You agree that this paragraph goes beyond the governing law on intellectual property \r\n  law, and includes prohibitions on any competition that violates the provisions of this paragraph, \r\n  including starting your own competing website or business.\r\n</p>\r\n\r\n<h4>15.  Revocation of Consent</h4>\r\n<p>\r\n  We may revoke our consent for your use of our intellectual property, or any other permission granted to you \r\n  under this Agreement, at any time.  You agree that if we so request, you must take immediate action to remove\r\n   any usage of our intellectual property that you may have engaged in, even if it would cause a loss to you.\r\n</p>\r\n<h4>16.  Copyright &amp; Trademark Infringement</h4>\r\n<p>\r\n  We take copyright infringement very seriously, and we have registered a Copyright Agent with the United \r\n  States Copyright Office, which limits our liability under the Digital Millennium Copyright Act.  If \r\n  you believe that your copyright has been infringed, please send us a message which contains:\r\n</p>\r\n<ul>\r\n<li>Your name.</li>\r\n<li>The name of the party whose copyright has been infringed, if different from your name.</li>\r\n<li>The name and description of the work that is being infringed.</li>\r\n<li>The location on our website of the infringing copy.</li>\r\n<li>\r\n  A statement that you have a good faith belief that use of the copyrighted work described above is not \r\n  authorized by the copyright owner (or by a third party who is legally entitled to do so on behalf of \r\n  the copyright owner) and is not otherwise permitted by law.\r\n</li>\r\n<li>\r\n  A statement that you swear, under penalty of perjury, that the information contained in this notification \r\n  is accurate and that you are the copyright owner or have an exclusive right in law to bring infringement \r\n  proceedings with respect to its use.</li>\r\n</ul>\r\n<p>\r\n  You must sign this notification electronically and send it to our Copyright Agent at hello@bresearch.com.\r\n</p>\r\n<p>\r\n  Although U.S. law does not provide for a similar procedure for trademark infringement, we recommend that \r\n  you send us similar information to that above in regards to any allegation of trademark infringement, and \r\n  we will address it as soon as practicable.\r\n</p>\r\n\r\n<h4>17.  Communications Decency Act</h4>\r\n<p>\r\n  Similar to the DMCA provisions above, United States law—specifically Section 230 of the Communications \r\n  Decency Act—creates a defense for us for the actions of third parties in regards to any defamatory content\r\n   published through our Service.  Although we are not liable for defamatory words published through our \r\n   Service by our Users even if given notice, we do prohibit defamation under this Agreement and we may, \r\n   if we believe the situation warrants it, take action against the offending User.  Please notify us at \r\n   hello@brewsearch.com if any of our Users have posted anything that you believe is defamatory.\r\n</p>\r\n<h4>18.  Representations &amp; Warranties</h4>\r\n<p>\r\n  WE MAKE NO REPRESENTATIONS OR WARRANTIES AS TO THE MERCHANTABILITY OF OUR SERVICE OR FITNESS FOR ANY PARTICULAR \r\n  PURPOSE.  YOU AGREE THAT YOU ARE RELEASING US FROM ANY LIABILITY THAT WE MAY OTHERWISE HAVE TO YOU IN RELATION \r\n  TO OR ARISING FROM THIS AGREEMENT OR OUR SERVICES, FOR REASONS INCLUDING, BUT NOT LIMITED TO, FAILURE OF OUR \r\n  SERVICE, NEGLIGENCE, OR ANY OTHER TORT.  TO THE EXTENT THAT APPLICABLE LAW RESTRICTS THIS RELEASE OF LIABILITY,\r\n   YOU AGREE THAT WE ARE ONLY LIABLE TO YOU FOR THE MINIMUM AMOUNT OF DAMAGES THAT THE LAW RESTRICTS OUR LIABILITY \r\n   TO, IF SUCH A MINIMUM EXISTS.\r\n</p>\r\n<p>\r\n  YOU AGREE THAT WE ARE NOT RESPONSIBLE IN ANY WAY FOR DAMAGES CAUSED BY THIRD PARTIES WHO MAY USE OUR SERVICES, \r\n  INCLUDING BUT NOT LIMITED TO PEOPLE WHO COMMIT INTELLECTUAL PROPERTY INFRINGEMENT, DEFAMATION, TORTIOUS INTERFERENCE \r\n  WITH ECONOMIC RELATIONS, OR ANY OTHER ACTIONABLE CONDUCT TOWARDS YOU.\r\n</p>\r\n<p>\r\n  YOU AGREE THAT WE ARE NOT RESPONSIBLE FOR ANY INJURY OR LOSS SUFFERED BY YOU AS A RESULT—IN WHOLE OR IN PART—OF \r\n  THE ACTIONS OF ANY OTHER USER.\r\n</p>\r\n<p>\r\n  YOU AGREE THAT WE ARE NOT RESPONSIBLE FOR ANY FAILURE ON THE PART OF A PAYMENT PROCESSOR, INCLUDING PAYPAL OR \r\n  THE CREDIT CARD COMPANY OR BANK THAT YOU USE TO FUND PAYPAL, TO DIRECT PAYMENTS TO THE CORRECT DESTINATION, OR \r\n  ANY ACTIONS ON THEIR PART IN PLACING A HOLD ON YOUR FUNDS.\r\n</p>\r\n<p>\r\n  WE ARE NOT LIABLE FOR ANY FAILURE OF THE GOODS OR SERVICES OF OUR COMPANY OR A THIRD PARTY, INCLUDING ANY \r\n  FAILURES OR DISRUPTIONS, UNTIMELY DELIVERY, SCHEDULED OR UNSCHEDULED, INTENTIONAL OR UNINTENTIONAL, ON OUR \r\n  WEBSITE WHICH PREVENT ACCESS TO OUR WEBSITE TEMPORARILY OR PERMANENTLY.\r\n</p>\r\n<p>\r\n  THE PROVISION OF OUR SERVICE TO YOU IS CONTINGENT ON YOUR AGREEMENT WITH THIS AND ALL OTHER SECTIONS OF \r\n  THIS AGREEMENT.  NOTHING IN THE PROVISIONS OF THIS “REPRESENTATIONS & WARRANTIES” SECTION SHALL BE CONSTRUED \r\n  TO LIMIT THE GENERALITY OF THE FIRST PARAGRAPH OF THIS SECTION.\r\n</p>\r\n<p>\r\n  For Jurisdictions that do not allow us to limit our liability: Notwithstanding any provision of these Terms, \r\n  if your jurisdiction has provisions specific to waiver or liability that conflict with the above then our \r\n  liability is limited to the smallest extent possible by law.  Specifically, in those jurisdictions not allowed, we do not disclaim liability for: (a) death or personal injury caused by its negligence or that of any of its officers, employees or agents; or (b) fraudulent misrepresentation; or (c) any liability which it is not lawful to exclude either now or in the future.\r\n</p>\r\n<p>\r\n  IF YOU ARE A RESIDENT OF A JURISDICTION THAT REQUIRES A SPECIFIC STATEMENT REGARDING RELEASE THEN THE \r\n  FOLLOWING APPLIES.  FOR EXAMPLE, CALIFORNIA RESIDENTS MUST, AS A CONDITION OF THIS AGREEMENT, WAIVE \r\n  THE APPLICABILITY OF CALIFORNIA CIVIL CODE SECTION 1542, WHICH STATES, “A GENERAL RELEASE DOES NOT \r\n  EXTEND TO CLAIMS WHICH THE CREDITOR DOES NOT KNOW OR SUSPECT TO EXIST IN HIS OR HER FAVOR AT THE TIME \r\n  OF EXECUTING THE RELEASE, WHICH IF KNOWN BY HIM OR HER MUST HAVE MATERIALLY AFFECTED HIS OR HER \r\n  SETTLEMENT WITH THE DEBTOR.”  YOU HEREBY WAIVE THIS SECTION OF THE CALIFORNIA CIVIL CODE.  YOU HEREBY\r\n   WAIVE ANY SIMILAR PROVISION IN LAW, REGULATION, OR CODE THAT HAS THE SAME INTENT OR EFFECT AS THE AFOREMENTIONED RELEASE.\r\n</p>\r\n<h4>19.  Indemnity</h4>\r\n<p>\r\n  You agree to indemnify and hold us harmless for any claims by you or any third party which may arise from or \r\n  relate to this Agreement or the provision of our service to you, including any damages caused by your use \r\n  of our Service.  You also agree that you have a duty to defend us against such claims and we may require \r\n  you to pay for an attorney(s) of our choice in such cases.  You agree that this indemnity extends to \r\n  requiring you to pay for our reasonable attorneys’ fees, court costs, and disbursements.  In the event \r\n  of a claim such as one described in this paragraph, we may elect to settle with the party/parties making \r\n  the claim, and you shall be liable for the damages as though we had proceeded with a trial.\r\n</p>\r\n\r\n<h4>20.  Choice of Law</h4>\r\n<p>\r\n  This Agreement shall be governed by the laws in force in the State of Michigan.  The offer and acceptance \r\n  of this contract are deemed to have occurred in the State of Michigan.\r\n</p>\r\n<h4>21.  Forum of Dispute</h4>\r\n<p>\r\n  You agree that any dispute arising from or relating to this Agreement will be heard solely by a court\r\n   of competent jurisdiction in the State of Michigan.  Specifically, where the subject matter of a \r\n   dispute is eligible for it, you agree that any disputes shall be heard solely within the lowest \r\n   civil court of competent jurisdiction in the State of Michigan (“Small Claims Court”) in accordance \r\n   with MCL 600.8401 through MCL 600.8427, MCL 600.8302, MCR 4.301 through MCR 4.306, and all other applicable legislation.\r\n</p>\r\n<p>\r\n  If a dispute claims multiple claims and one or more of those claims would be eligible to be heard by \r\n  the Small Claims Court, you agree not to bring the other claims against us and to instead proceed \r\n  within the Small Claims Court.\r\n</p>\r\n<p>\r\n  If you would be entitled in a dispute to an amount exceeding the monetary jurisdiction of the Small \r\n  Claims Court, you agree to waive your right to collect any damages in excess of the monetary jurisdiction \r\n  and instead still bring your claim within the Small Claims Court.  At the time of drafting this \r\n  Agreement, the monetary jurisdiction of the Small Claims Court is $5,000.\r\n</p>\r\n<p>\r\n  You agree that if a dispute is eligible to be heard in Small Claims Court but you would be entitled to an \r\n  additional or alternative remedy in a higher court, such as injunctive relief, you will waive your right to \r\n  that remedy and still bring the dispute within the Small Claims Court.\r\n</p>\r\n<p>\r\n  If you bring a dispute in a manner other than in accordance with this section, you agree that we may move \r\n  to have it dismissed, and that you will be responsible for our reasonable attorneys’ fees, court costs,\r\n   and disbursements in doing so.\r\n</p>\r\n<p>\r\n  You agree that the unsuccessful party in any dispute arising from or relating to this Agreement will be \r\n  responsible for the reimbursement of the successful party’s reasonable attorneys’ fees, court costs, and disbursements.\r\n</p>\r\n\r\n<h4>22.  Force Majeure</h4>\r\n<p>\r\n  You agree that we are not responsible to you for anything that we may otherwise be responsible for, if it\r\n   is the result of events beyond our control, including, but not limited to, acts of God, war, insurrection, \r\n   riots, terrorism, crime, labor shortages (including lawful and unlawful strikes), embargoes, postal \r\n   disruption, communication disruption, unavailability of payment processors, failure or shortage of \r\n   infrastructure, shortage of materials, or any other event beyond our control.\r\n</p>\r\n<h4>23.  Severability</h4>\r\n<p>\r\n  In the event that a provision of this Agreement is found to be unlawful, conflicting with another \r\n  provision of the Agreement, or otherwise unenforceable, the Agreement will remain in force as though \r\n  it had been entered into without that unenforceable provision being included in it.\r\n</p>\r\n<p>\r\n  If two or more provisions of this Agreement are deemed to conflict with each other’s operation, Brew Search \r\n  shall have the sole right to elect which provision remains in force.\r\n</p>\r\n<h4>24.  Non-Waiver</h4>\r\n<p>\r\n  Brew Search reserves all rights afforded to us under this Agreement as well as under the provisions \r\n  of any applicable law.  Our non-enforcement of any particular provision or provisions of this \r\n  Agreement or any applicable law should not be construed as our waiver of the right to enforce that \r\n  same provision under the same or different circumstances at any time in the future.\r\n</p>\r\n<h4>25.  Termination & Cancellation</h4>\r\n<p>\r\n  We may terminate your access to our Site and Service at our discretion without explanation, though \r\n  we will strive to provide a timely explanation in most cases.  Our liability for refunding you, \r\n  if you have paid anything to us, will be limited to the amount you paid for goods or services \r\n  which have not yet been and will not be delivered, except in cases where the termination or \r\n  cancellation was due to your breach of this Agreement, in which case you agree that we are not \r\n  required to provide any refund or other compensation whatsoever.\r\n</p>\r\n<p>\r\n  Under no circumstances, including termination or cancellation of our Service to you, will we be \r\n  liable for any losses related to actions of other Users.\r\n</p>\r\n<h4>26.  Assignment of Rights</h4>\r\n<p>\r\n  You may not assign your rights and/or obligations under this Agreement to any other party without our \r\n  prior written consent.  We may assign our rights and/or obligations under this Agreement to \r\n  any other party at our discretion.\r\n</p>\r\n<h4>27.  Amendments</h4>\r\n<p>\r\n  We may amend this Agreement from time to time.  When we amend this Agreement, we will update this \r\n  page accordingly and require that you accept the amendments as a condition of your continued use of our Service.\r\n</p>\r\n\r\n<h4>28.  California Users and Residents</h4>\r\n<p>\r\n  Pursuant to California Civil Code Section 1789.3, any questions about pricing, complaints, or inquiries \r\n  about Brew Search must be addressed to our agent for notice and sent via certified mail to that agent.  \r\n  For our agent’s most current contact information, please send a request to hello@brewsearch.com.\r\n</p>\r\n<p>\r\n  Lastly, California users are also entitled to the following specific consumer rights notice: The \r\n  Complaint Assistance Unit of the Division of Consumer Services of the California Department of \r\n  Consumer Affairs may be contacted in writing at 1625 North Market Blvd., Sacramento, CA 95834, \r\n  or by telephone at (916) 445-1254 or (800) 952-5210.\r\n</p>\r\n</div>"
-
-/***/ },
-/* 493 */
-/***/ function(module, exports) {
-
-module.exports = ".table {\r\n  padding-top: 30px;\r\n}\r\n.row {\r\n  display: table-row;\r\n  background: #f6f6f6;\r\n}\r\n\r\n.row:nth-of-type(odd) {\r\n  background: #e9e9e9;\r\n}\r\n\r\n.row.header {\r\n  color: #ffffff;\r\n  font-weight: bold;\r\n  background: #158126;\r\n}\r\n\r\n.cell {\r\n  padding: 20px;\r\n  display: table-cell;\r\n}\r\n"
-
-/***/ },
-/* 494 */
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"todo\">\r\n\r\n  Todo component\r\n    <form #f=\"ngForm\" (ngSubmit)=\"addTodo()\">\r\n    <input name=\"newTodo\" [(ngModel)]=\"newValue\">\r\n    <button>Submit</button>\r\n  </form>\r\n\r\n  <div class=\"table\">\r\n    <div class=\"row header\">\r\n      <div class=\"cell\">Id</div>\r\n      <div class=\"cell\">Created at</div>\r\n      <div class=\"cell\">Value</div>\r\n      <div class=\"cell\">Completed</div>\r\n    </div>\r\n    <div class=\"row\" *ngFor=\"let todo of todos\">\r\n      <div class=\"cell\">{{todo.id}}</div>\r\n      <div class=\"cell\">{{todo.createDate}}</div>\r\n      <div class=\"cell\">{{todo.name}}</div>\r\n      <div class=\"cell\">{{todo.isOrganic}}</div>\r\n    </div>\r\n\r\n</div>\r\n"
-
-/***/ },
-/* 495 */
-/***/ function(module, exports) {
-
-module.exports = "<app-header></app-header>\r\n<router-outlet (deactivate)=\"onDeactivate()\"></router-outlet>\r\n<app-footer></app-footer>\r\n\r\n<!--\r\n<div class=\"hero-universal\">\r\n    <div class=\"inner-hero\">\r\n        <div>\r\n        <span xLarge>Universal JavaScript {{ title }}!</span>\r\n        </div>\r\n\r\n        Two-way binding: <input type=\"text\" [value]=\"title\" (input)=\"title = $event.target.value\">\r\n\r\n        <br>\r\n        <br>\r\n\r\n        <strong>Router-outlet:</strong>\r\n        <main>\r\n        <router-outlet></router-outlet>\r\n        </main>\r\n    </div>\r\n</div>\r\n-->"
-
-/***/ },
-/* 496 */
-/***/ function(module, exports) {
-
-module.exports = "#brewery-beers span {\r\n  margin-right:1.5rem;\r\n}\r\n\r\n#brewery-beers i {\r\n  margin-right:0.5rem;\r\n}\r\n\r\n.beer-row {\r\n    /*border: 1px solid #CCC !important;*/\r\n    margin-top: 1rem;\r\n    margin-bottom: 1rem;\r\n    padding-bottom:1rem;\r\n}"
-
-/***/ },
-/* 497 */
-/***/ function(module, exports) {
-
-module.exports = "  <div id=\"brewery-beers\" class=\"row beer-row alert alert-warning\">\r\n    <div class=\"col-md-2 text-center\">\r\n      <a [routerLink]=\"['/beer',_beer.id]\">\r\n        <img *ngIf=\"_beer.labels\" [src]=\"_beer.labels.icon\" />\r\n      </a>\r\n    </div>\r\n    <div class=\"col-md-10 text-left\">\r\n      <h4 *ngIf=\"_brewery\"><a [routerLink]=\"['/beer',common.paramSEOFriendly(_brewery.name+' '+_beer.name),_beer.id]\">{{_beer.nameDisplay}}</a></h4>\r\n      <h4 *ngIf=\"!_brewery\"><a [routerLink]=\"['/beer',common.paramSEOFriendly(_beer.breweries[0].name+' '+_beer.name),_beer.id]\">{{_beer.nameDisplay}}</a></h4>\r\n      <h5 *ngIf=\"_showBreweryName && _brewery\"><a [routerLink]=\"['/brewery',common.paramSEOFriendly(_brewery.name),_brewery.id]\">{{_brewery.name}}</a></h5>\r\n      <h5 *ngIf=\"_showBreweryName && _beer.breweries\"><a [routerLink]=\"['/brewery',common.paramSEOFriendly(_beer.breweries[0].name),_beer.breweries[0].id]\">{{_beer.breweries[0].name}}</a></h5>\r\n      <h6 *ngIf=\"_beer.style\">{{_beer.style.shortName}}</h6>\r\n      <p *ngIf=\"_beer.description && _showDescription\">\r\n        <read-more [text]=\"_beer.description\" [maxLength]=\"100\"></read-more>\r\n      </p>\r\n      <div>\r\n        <span *ngIf=\"_beer.abv\">\r\n          <i class=\"fa fa-caret-right\"></i>{{_beer.abv}}% ABV\r\n        </span>\r\n        <span *ngIf=\"!_beer.abv\">\r\n          <i class=\"fa fa-caret-right\"></i>N/A ABV\r\n        </span>            \r\n        <span *ngIf=\"_beer.ibu\">\r\n          <i class=\"fa fa-caret-right\"></i>{{_beer.ibu}} IBU\r\n        </span>\r\n        <span *ngIf=\"!_beer.ibu\">\r\n          <i class=\"fa fa-caret-right\"></i>N/A IBU\r\n        </span>            \r\n        <span><i class=\"fa fa-caret-right\"></i>Added {{common.dateFriendly(_beer.createDate)}}</span>\r\n      </div>\r\n    </div>         \r\n  </div>"
-
-/***/ },
-/* 498 */
-/***/ function(module, exports) {
-
-module.exports = ".footer {\r\n    background-color: #333 !important;\r\n    color:#fff;\r\n    min-height:10rem;\r\n}\r\n\r\n.footer a {\r\n    color:#fff;\r\n    font-weight:1rem;\r\n    padding: 0 0.5rem;\r\n\r\n}\r\n\r\n.footer-top {\r\n   padding:2rem;\r\n}\r\n\r\n.footer-links {\r\n    padding-top:1rem;\r\n}\r\n\r\n.footer-links a {\r\n    padding-top:1rem;\r\n    font-size: 15px !important;\r\n    display:inline-block;\r\n}\r\n\r\n.copyright {\r\n    background-color: #222 !important;\r\n    vertical-align: middle !important;\r\n}\r\n\r\n.copyright h5 {\r\n    padding:1rem;\r\n}\r\n\r\n.footer hr {\r\n     border-top: 1px solid #222;\r\n}\r\n\r\n.footer .social {\r\n    padding:2rem;\r\n}\r\n\r\n.footer h5 {\r\n    font-size: 14px !important;\r\n}\r\n\r\n.btn-facebook {\r\n    width: 15rem;\r\n}\r\n\r\n\r\n.btn-facebook {\r\n    color: #fff;\r\n    background-color: #3b5998;\r\n    border-color: #3b5998;\r\n}\r\n\r\n.btn-facebook:hover {\r\n    color: #fff;\r\n    background-color: #2a4887;\r\n    border-color: #2a4887;\r\n}"
-
-/***/ },
-/* 499 */
-/***/ function(module, exports) {
-
-module.exports = "<div>\n  <a class=\"btn btn-facebook\" target=\"_blank\" href=\"#\" role=\"button\" (click)=\"btnClick()\">\n    <i class=\"fa fa-facebook\"></i>\n    Share\n  </a>\n</div>"
-
-/***/ },
-/* 500 */
-/***/ function(module, exports) {
-
-module.exports = ".footer {\r\n    background-color: #333 !important;\r\n    color:#fff;\r\n    min-height:10rem;\r\n}\r\n\r\n.footer a {\r\n    color:#fff;\r\n    font-weight:1rem;\r\n\r\n}\r\n\r\n.footer-top {\r\n   padding:2rem;\r\n}\r\n\r\n.footer-links {\r\n    padding-bottom:1rem;\r\n}\r\n\r\n.footer-links a {\r\n    font-size: 15px !important;\r\n    display:inline-block !important;\r\n    padding:5px;\r\n}\r\n\r\n.copyright {\r\n    background-color: #222 !important;\r\n    vertical-align: middle !important;\r\n}\r\n\r\n.copyright h5 {\r\n    padding:1rem;\r\n}\r\n\r\n.footer hr {\r\n     border-top: 1px solid #222;\r\n}\r\n\r\n.footer .social {\r\n    padding:2rem;\r\n}\r\n\r\n.footer h5 {\r\n    font-size: 14px !important;\r\n}\r\n\r\n#get-app {\r\n    padding-bottom:2rem;\r\n}\r\n\r\n.footer-head {\r\n    color:#000;\r\n    size:1.5rem;\r\n    font-weight: bold;\r\n}"
-
-/***/ },
-/* 501 */
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"footer center-on-small-only\">\n  <div class=\"container\">\n    <div class=\"row footer-top\">\n      <div id=\"get-app\" class=\"col-xs-12 col-sm-12 col-md-6 text-center\">        \n        <!--<h5>Get the App</h5>-->\n        <h5>App Available Aug. 24th</h5>\n        <img src=\"assets/buttons/google-button.png\"/>\n        <img src=\"assets/buttons/apple-button.png\"/>\n      </div>\n      <div class=\"col-xs-12 col-sm-12 col-md-6\">\n        <div class=\"row\">\n          <div class=\"col-xs-6 col-sm-6 col-md-6 footer-links\">\n            <h6 class=\"footer-head\">Tools</h6>\n            <div><a routerLink=\"find-beers\">Search Beers</a></div>\n            <div><a routerLink=\"find-breweries\">Search Breweries</a></div>\n            <div><a routerLink=\"find-bars\">Search Bars</a></div>\n            <div><a routerLink=\"feeds\">Feeds</a></div>\n            <div><a routerLink=\"getapp\">Get App</a></div>\n          </div>\n          <div class=\"col-xs-6 col-sm-6 col-md-6 footer-links\">\n            <h6 class=\"footer-head\">Company</h6>\n            <div><a routerLink=\"faq\">FAQ</a></div>\n            <div><a routerLink=\"about\">About</a></div>\n            <div><a routerLink=\"privacy\">Privacy Policy</a></div>\n            <div><a routerLink=\"terms\">Terms of Use</a></div>\n            <div><a routerLink=\"contact\">Contact Us</a></div>\n          </div>\n        </div>          \n      </div>\n    </div>\n  </div>\n  <hr />\n  <div class=\"container text-left social\">\n    <a class=\"btn btn-facebook btn-circle\" href=\"http://facebook.com\" target=\"_blank\" role=\"button\">\n      <i class=\"fa fa-facebook\"></i>\n    </a>\n  </div>  \n  <div class=\"container-fluid copyright text-center\">\n    <h5>© 2017 Copyright Brew Search</h5>\n  </div>  \n</div>"
-
-/***/ },
-/* 502 */
-/***/ function(module, exports) {
-
-module.exports = "/*\r\n\r\n  .navbar {\r\n    -webkit-box-shadow: 0 8px 6px -6px #999;\r\n    -moz-box-shadow: 0 8px 6px -6px #999;\r\n    box-shadow: 0 3px 5px rgba(0,20,30,0.5);\r\n    border-radius: 0px;\r\n    border-width: 0px;\r\n\r\n  }\r\n\r\n  .navbar-inner {\r\n      background: none repeat scroll 0 0 #C81B02;\r\n      opacity:1;         \r\n  }\r\n\r\n  .navbar-inner li a {\r\n      min-height:50px !important;\r\n      line-height: 50px !important;\r\n      padding: 0 20px;    \r\n  }\r\n\r\n  .navbar-inner li a:hover {\r\n    text-shadow: 0px 1px 1px rgba(0,0,0,0.4);\r\n    opacity:1;\r\n    color:#ffffff;\r\n    \r\n  } \r\n\r\n  .navbar-inner li.active {\r\n    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2) inset;\r\n  }\r\n\r\n  .navbar-inner li.active a {\r\n    background-color: inherit;\r\n    box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.2) inset;\r\n    cursor: default;\r\n    filter: alpha(opacity=100);\r\n    opacity: 1;\r\n    background-position: center bottom;\r\n    background-repeat: no-repeat;\r\n  }  \r\n  \r\n\r\n  .nav>li>a:focus, .nav>li>a:hover {\r\n    text-decoration: none;\r\n    background-color:#A60900;\r\n    opacity:0.8;\r\n  }\r\n\r\n  a.navbar-brand {\r\n      color:#ffffff;\r\n      min-height:50px !important;\r\n      line-height: 50px !important;\r\n      padding: 0 20px;      \r\n  }\r\n\r\n  .navbar-inner li a {\r\n      color:#ffffff;\r\n      font-size: 16px;\r\n      font-family: 'Source Sans Pro',sans-serif !important;\r\n  } \r\n\r\n  */\r\n\r\n  #nav-header {\r\n    -webkit-box-shadow: 0 8px 6px -6px #999;\r\n    -moz-box-shadow: 0 8px 6px -6px #999;\r\n    box-shadow: 0 3px 5px rgba(0,20,30,0.5);\r\n    padding: 0 1rem;  \r\n  }\r\n\r\n  .bg-faded {\r\n      background-color: #C81B02;\r\n      opacity:1;         \r\n  }\r\n\r\n  #nav-header a {\r\n      color:#ffffff;\r\n      font-size: 16px;\r\n      font-family: 'Source Sans Pro',sans-serif !important;\r\n      min-height:50px !important;\r\n      line-height: 50px !important;\r\n      padding: 0 20px;\r\n         \r\n  }\r\n\r\n  .navbar-brand {\r\n      color:#ffffff;\r\n      min-height:50px !important;\r\n      line-height: 50px !important;\r\n      padding: 0;\r\n      font-weight: bold;\r\n  }\r\n\r\n   a.nav-item:hover {\r\n    text-decoration: none;\r\n    background-color:#A60900;\r\n    opacity:0.8;\r\n  }\r\n\r\n  a.active {\r\n    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2) inset;\r\n  }\r\n\r\n  .navbar-toggler {\r\n    color:#fff;\r\n  }\r\n\r\n  #nav-header .fa-bars {\r\n    font-size:2rem;\r\n    padding-top:0.25rem;\r\n    cursor: pointer;\r\n    outline: none;\r\n  }"
-
-/***/ },
 /* 503 */
 /***/ function(module, exports) {
 
-module.exports = "<!-- Fixed navbar -->\n<nav id=\"nav-header\" class=\"navbar navbar-toggleable-md fixed-top bg-faded\">\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <i class=\"fa fa-bars\"></i>  \n  </button>\n  <a class=\"navbar-brand\" routerLink=\"/\">\n    <img src=\"assets/images/brewsearch-logo.png\" />\n  </a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\n    <div class=\"navbar-nav\">\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" routerLink=\"find-beers\">Beers</a>\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" routerLink=\"find-breweries\">Breweries</a>\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" routerLink=\"find-bars\">Bars</a>\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" routerLink=\"getapp\">Get the App</a>\n    </div>\n  </div>\n</nav>"
+module.exports = ".loader {\r\n    height:50rem;\r\n}\r\n\r\n.container {\r\n    min-height:50rem;\r\n}\r\n\r\n#checkin-well {\r\n    margin-top:2rem;\r\n    padding-top:2rem;\r\n}\r\n\r\n.top-panel {\r\n    background-color: #fff;\r\n    border: 1px solid rgba(0,0,0,.25); \r\n}\r\n\r\n#card-header {\r\n    padding-left:1rem;\r\n}\r\n\r\n#check-time {\r\n    width:100%;\r\n    text-align: right;\r\n}\r\n\r\n#check-img {\r\n    width:15rem;\r\n    padding-bottom:2rem;\r\n}\r\n\r\n.beer-info h4 {\r\n    padding-top:1rem;\r\n}\r\n\r\n.beer-info span {\r\n    padding-left:1.5rem;\r\n    display: inline-block;\r\n}\r\n\r\n.beer-info i {\r\n    padding-right:0.5rem;\r\n}\r\n\r\n.info-label h4 {\r\n  margin-top:2rem;\r\n  margin-bottom: 0px;\r\n}\r\n\r\n.info-label hr {\r\n  margin-top: 0px;\r\n}\r\n\r\n#comment-label {\r\n    margin-top:1rem;\r\n}\r\n\r\n.star {\r\n    font-size: 4rem !important;\r\n    color: #b0c4de;\r\n}\r\n.filled {\r\n    color: #1e90ff;\r\n}\r\n\r\n#check-circle {\r\n    position:absolute;\r\n    right:10px;\r\n    top:-20px;\r\n}\r\n\r\n#loc-area img {\r\n    margin-top:2rem;\r\n}\r\n\r\n#beer-info-area {\r\n    margin-left:1rem;\r\n    margin-right:1rem;\r\n}\r\n\r\n#beer-info-area a.norm {\r\n    color:#8a6d3b;\r\n}\r\n\r\n#check-map {\r\n    margin-bottom:2rem;\r\n}\r\n\r\n#get-directions {\r\n  padding:2rem;\r\n}\r\n\r\n.head-label {\r\n  color: #C81B02;\r\n}\r\n"
 
 /***/ },
 /* 504 */
 /***/ function(module, exports) {
 
-module.exports = ".loader {\r\n    padding-top:10rem;\r\n    height:30rem;\r\n}"
+module.exports = "<div class=\"text-center loader\" *ngIf=\"showLoader\">\r\n  <app-loader></app-loader>\r\n</div>\r\n\r\n<div id=\"checkin-well\" class=\"container card\" *ngIf=\"!showLoader\">\r\n  <div class=\"row\">\r\n    <div id=\"user-area\" class=\"col-md-12 text-center\">\r\n      <div class=\"alert alert-success\">\r\n        <i id=\"check-circle\" class=\"fa fa-check-circle fa-4x\"></i>\r\n        <span>\r\n            <img *ngIf=\"user.photo !=''\" [src]=\"user.photo\" class=\"rounded-circle avatar\" />\r\n        </span>\r\n        <span id=\"card-header\">\r\n            {{user.name}}\r\n        </span>\r\n        <span>\r\n          checked in {{common.timeDifference(checkin.dateCreated)}}\r\n        </span>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n        <div class=\"info-label\">\r\n            <h4 class=\"head-label\"><i class=\"fa fa-beer\"></i> Beer Info</h4>\r\n            <hr />\r\n        </div>\r\n        <div id=\"beer-info-area\" class=\"alert alert-warning\">\r\n            <div class=\"text-center\">\r\n                <div>\r\n                    <a [routerLink]=\"['/beer',common.paramSEOFriendly(checkin.breweryName+' '+checkin.beerName),checkin.beerId]\">\r\n                        <img id=\"check-img\" *ngIf=\"checkin.beerIMG\" [src]=\"checkin.beerIMG\" />\r\n                    </a>\r\n                </div>\r\n            </div>\r\n            <div class=\"beer-info text-center\">\r\n                <h4>\r\n                    <a class=\"norm\" [routerLink]=\"['/beer',common.paramSEOFriendly(checkin.breweryName+' '+checkin.beerName),checkin.beerId]\">\r\n                        {{checkin.beerDisplayName}}\r\n                    </a>\r\n                </h4>\r\n                <h5>{{checkin.beerStyleName}}</h5>\r\n                <div>\r\n                    <span *ngIf=\"checkin.beerABV\"><i class=\"fa fa-caret-right\"></i>{{checkin.beerABV}}% ABV </span>\r\n                    <span *ngIf=\"checkin.beerIBU\"><i class=\"fa fa-caret-right\"></i>{{checkin.beerIBU}} IBU</span>\r\n                </div>\r\n                <div>          \r\n                    <a class=\"btn btn-warning\" [routerLink]=\"['/beer',common.paramSEOFriendly(checkin.breweryName+' '+checkin.beerName),checkin.beerId]\" role=\"button\">\r\n                        <i class=\"fa fa-beer\"></i> \r\n                        Beer Detail\r\n                    </a>\r\n                </div>                \r\n                <hr />\r\n                <div class=\"text-center\">\r\n                    <h5>\r\n                        <a class=\"norm\" [routerLink]=\"['/brewery',common.paramSEOFriendly(checkin.breweryName),checkin.breweryId]\">\r\n                            Brewed by {{checkin.breweryName}}\r\n                        </a>\r\n                    </h5>\r\n                    <div *ngIf=\"checkin.breweryImages.icon\">\r\n                        <a [routerLink]=\"['/brewery',common.paramSEOFriendly(checkin.breweryName),checkin.breweryId]\">\r\n                            <img [src]=\"checkin.breweryImages.icon\" />\r\n                        </a>\r\n                    </div>\r\n                    <div>\r\n                        <a class=\"btn btn-warning\" [routerLink]=\"['/brewery',common.paramSEOFriendly(checkin.breweryName),checkin.breweryId]\" role=\"button\">\r\n                            View Brewery\r\n                        </a>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"info-label\" *ngIf=\"checkin.img\">\r\n          <h4 class=\"head-label\"><i class=\"fa fa-camera\"></i> Picture Taken</h4>\r\n          <hr />          \r\n          <div class=\"text-center\">\r\n            <img [src]=\"checkin.img\" />\r\n          </div>\r\n        </div>\r\n        <div *ngIf=\"checkin.comments || checkin.beerRating\" class=\"info-label\">\r\n          <h4 class=\"head-label\"><i class=\"fa fa-comments\"></i> Beer Comments &amp; Ratings</h4>\r\n          <hr />\r\n          <div class=\"text-center\">\r\n            <div class=\"alert alert-warning\">\r\n              <div *ngIf=\"checkin.comments\">\r\n                <i class=\"fa fa-quote-left\"></i>\r\n                  {{checkin.comments}}\r\n                <i class=\"fa fa-quote-right\"></i>\r\n              </div>\r\n              <div *ngIf=\"checkin.beerRating\">\r\n                <app-rating [rate]=\"checkin.beerRating\"></app-rating>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-md-6\">\r\n        <div id=\"loc-area\" class=\"info-label\">\r\n          <h4 class=\"head-label\"><i class=\"fa fa-map-pin\"></i> Check-in Location</h4>\r\n          <hr />\r\n          <div class=\"text-center\">\r\n            <h4>{{checkin.name}}</h4>\r\n            <h5 *ngIf=\"checkin.placeType\">{{checkin.placeType}}</h5>\r\n            <div *ngIf=\"checkin.locationRating\">\r\n                <app-rating [rate]=\"checkin.locationRating\"></app-rating>\r\n            </div>            \r\n            <div>\r\n              <img [src]=\"checkin.photo\" />\r\n            </div>\r\n          </div>\r\n          <h4 class=\"head-label\"><i class=\"fa fa-map\"></i> Location Map</h4>\r\n          <hr />\r\n          <div class=\"text-center\">\r\n            {{checkin.address}} - {{checkin.city}}, {{checkin.state}} {{checkin.country}}\r\n          </div>\r\n          <div id=\"check-map\" class=\"text-center\">\r\n            <static-map [lat]=\"checkin.lat\" \r\n                        [lng]=\"checkin.lng\"\r\n                        [width]=\"420\"\r\n                        [height]=\"300\"\r\n                        [zoom]=\"14\">\r\n            </static-map>\r\n            <div id=\"get-directions\">\r\n                <a class=\"btn btn-warning\" target=\"_blank\" [href]=\"common.getToGoogleMapsUrl(checkin.lat,checkin.lng)\" role=\"button\">\r\n                    Get Directions\r\n                </a>\r\n            </div>\r\n          </div>                  \r\n        </div>\r\n    </div>    \r\n  </div>\r\n</div>\r\n\r\n"
 
 /***/ },
 /* 505 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"text-center loader\">\r\n  <i class=\"fa fa-spinner fa-pulse fa-3x fa-fw\"></i>\r\n  <span class=\"sr-only\">Loading...</span>\r\n</div>\r\n"
+module.exports = "\r\n#contact-page {\r\n    padding-top:40px;\r\n    min-height: 30rem;\r\n}"
 
 /***/ },
 /* 506 */
 /***/ function(module, exports) {
 
-module.exports = ".pagination{\r\n    margin:0px;\r\n}\r\n\r\n.active>a {\r\n  background-color:#C81B02;\r\n  border-color:#C81B02;\r\n}\r\n\r\n.pagination>li>a {\r\n    color:#666;\r\n    cursor: pointer;\r\n}\r\n\r\n\r\n.pagination>.active>a {\r\n    color:#fff;\r\n}"
+module.exports = "<div id=\"contact-page\" class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-5\">\r\n      <div class=\"alert alert-warning\" role=\"alert\">\r\n        <strong><i class=\"fa fa-envelope\"></i></strong>\r\n        If you have any questions, suggestions, want to advertise, report a bug, or have questions\r\n        about our App, please let us know.\r\n      </div>\r\n      <div class=\"alert alert-danger\"  *ngIf=\"notifyEmailStatus\" role=\"alert\">\r\n        <h4><i class=\"fa fa-frown-o\"></i> Uh-Oh!</h4>\r\n        <p>{{notifyEmailStatus}}</p>\r\n      </div>      \r\n    </div>\r\n    <div class=\"col-md-7\">\r\n        <div *ngIf=\"formSubmitted\" class=\"alert alert-success\" role=\"alert\">\r\n            <h4><i class=\"fa fa-hand-o-right\"></i> Email Sent!</h4>\r\n            <p>Thanks for your input. We will contact you shortly.</p>\r\n        </div>\r\n        <div *ngIf=\"!formSubmitted\" class=\"panel panel-info\">\r\n            <div class=\"panel-heading\" id=\"panel-heading\">\r\n                <h2 class=\"titre\">Contact Us</h2>\r\n            </div>\r\n            <div class=\"panel-body\">\r\n                <form #f=\"ngForm\" class=\"form\" (ngSubmit)=\"sendEmail()\">\r\n                    <div class=\"form-group has-info\">\r\n                        <div class=\"input-group\">\r\n                            <span class=\"input-group-addon\"><i class=\"fa fa-user fa-fw\"></i></span>\r\n                            <label for=\"name\" class=\"sr-only\"></label>\r\n                            <input type=\"text\" class=\"form-control\" name=\"contactName\" id=\"name\"[(ngModel)]=\"data.contactName\" placeholder=\"Enter Name\" required/><br/>\r\n                        </div>\r\n                    </div>                          \r\n                    <div class=\"form-group has-info\">\r\n                        <div class=\"input-group\">\r\n                            <span class=\"input-group-addon\"><i class=\"fa fa-envelope fa-fw\"></i></span>\r\n                            <label for=\"email\" class=\"sr-only\"></label>\r\n                            <input type=\"email\" class=\"form-control\" id=\"email\" name=\"contactEmail\" [(ngModel)]=\"data.contactEmail\" placeholder=\"Enter Email\" required/><br/>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group has-info\">\r\n                        <textarea class=\"form-control\" id=\"exampleTextarea\" rows=\"6\" name=\"contactMessage\" [(ngModel)]=\"data.contactMessage\" placeholder=\"Message\" required></textarea>\r\n                    </div>\r\n                    <span id=\"clear\"></span>\r\n                    <button *ngIf=\"!showLoader\" type=\"submit\" class=\"btn btn-warning btn-lg btn-block\" >Submit</button><br/>\r\n                    <div *ngIf=\"showLoader\" class=\"text-center\">\r\n                        <i class=\"fa fa-spinner fa-pulse fa-3x fa-fw\"></i>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n        </div>     \r\n    </div>    \r\n  </div>\r\n</div>"
 
 /***/ },
 /* 507 */
 /***/ function(module, exports) {
 
-module.exports = "<nav aria-label=\"Page navigation\">\r\n  <ul class=\"pagination justify-content-end\">\r\n    <li class=\"page-item\" (click)=\"onPrev()\" *ngIf=\"page != 1\"><a class=\"page-link\">Previous</a></li>\r\n    <li class=\"page-item\" [class.active]=\"page===pageNum\" *ngFor=\"let pageNum of getPages()\" (click)=\"onPage(pageNum)\">\r\n      <a class=\"page-link\">{{pageNum}}</a>\r\n    </li>\r\n    <li class=\"page-item\" *ngIf=\"!lastPage()\" (click)=\"onNext()\"><a class=\"page-link\">Next</a></li>\r\n  </ul>\r\n</nav>"
+module.exports = ".getapp {\r\n    background-image: url(\"/assets/getapp-background.jpg\");\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-size: cover;\r\n    background-position: center center;\r\n    width:100%;\r\n    height:600px !important;      \r\n}\r\n\r\n.getapp #dl-app-area {\r\n    color:#fff;\r\n    text-align: center;\r\n    position:relative;\r\n    top:10rem;\r\n    width:100%;\r\n    padding:1rem;\r\n    background: rgba(0, 0, 0,0.5);\r\n}\r\n\r\n.getapp img {\r\n    width:20rem;\r\n}\r\n\r\n.dl-btn {\r\n    padding-bottom:1rem;\r\n}\r\n\r\n.getapp i { \r\n    padding-right:1rem;\r\n    position:relative;\r\n    top:1rem;\r\n}\r\n\r\n.getapp h1 {\r\n     font-family: \"Raleway\", Helvetica, Arial, sans-serif !important;\r\n}"
 
 /***/ },
 /* 508 */
 /***/ function(module, exports) {
 
-module.exports = "i.filled {\r\n    color:#f0ad4e;\r\n}\r\n\r\ni.empty {\r\n    color:#aaa;\r\n}\r\n\r\ni {\r\n    font-size:1.4rem;\r\n}"
+module.exports = "<div class=\"container\">\r\n  <div class=\"page-header\">\r\n    <h2>Frequently Asked Questions</h2>\r\n  </div>\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> I tried locating a beer and I got nothing! What gives?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> We are a start-up company and we rely on people to enter locations for us.  \r\n    If nobody checked in a beer at your location, you would get \"No beers at this location\" warning.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Brew Search crashes! Uninstall! 0 stars!\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> We are at the early stage of our software development and bugs\r\n    do happen.  Help us fix this by going to the <a routerLink=\"/contact\">\"contact us\"</a> \r\n    page and tell us what happened and what mobile device so we can get this issue resolved.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Do I need GPS turned on to check-in places?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> No.  However, GPS will give you a more pinpoint location.\r\n    All you need is internet data.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> What version of Android or IOS do you support?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> We support Android KitKat and above. For Apple, iPhone 5 and above.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Beer and brewery data isn't up to date\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> Click the 3 dots icon &nbsp;<i class=\"fa fa-ellipsis-v\"></i>&nbsp; on the beer and brewery detail page to update.\r\n    It takes 24 hours for the update to change upon approval.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Will you offer a Windows Phone version?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> No. Technology we use doesn't support Windows phone.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Do you sell my personal data to solicitors?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> No. We hate getting spammed just as much as you do.\r\n  </div>\r\n  <hr />  \r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Where do you get your beer and location information?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> We use 3rd party websites.  We use BreweryDB.com for beer / brewery information.\r\n    For other locations, maps, and location reviews, we use Google.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> I'm traveling overseas.  Will Brew Search work in other countries?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> Yes it will.  As long as you have data connection, our App will work.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> How come I see Nail Bars when I search for bars?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> We know this problem exists.  The 3rd party compnay we use to pull data from \r\n    searches for where the business type is a bar or where the business name has the word \"bar\".  \r\n    We are currently looking for a solution to fix this.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Your App said this brewery is open. In fact, it's been closed for awhile!\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> A lot of new breweries open and sadly, a lot of them go out of business.\r\n    Flag the brewery as closed on the brewery detail page by clicking on  &nbsp;<i class=\"fa fa-ellipsis-v\"></i>&nbsp; icon.\r\n    Review process takes 24 hours and the brewery will be flagged as permanently closed.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> There's a beer/brewery that's not on your app.  How do I add it?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> You can either contact us and provide us with the name of the beer or brewery if possible\r\n    and we'll take care of the rest. Or, you can click the \"Post\" button in the app menu tab to submit a new beer/brewery.\r\n  </div>\r\n  <hr /> \r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> How close do I have to be to check-in at a location?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> 1000 yards.\r\n  </div>\r\n  <hr />\r\n  <div class=\"alert alert-info question\">\r\n    <strong>Question:</strong> Someone is giving false info on new check-ins.  How can I notify you?\r\n  </div>\r\n  <div class=\"alert alert-success answer\">\r\n    <strong>Answer:</strong> Click on the user's check-in detail, hit the red flag button, and tell us the reason why.\r\n    We take users that abuse the system seriously and will have them removed.\r\n  </div>\r\n  <hr />    \r\n</div>"
 
 /***/ },
 /* 509 */
 /***/ function(module, exports) {
 
-module.exports = "<div>\r\n    <span *ngFor=\"let star of rateList;  let i = index;\">\r\n        <i *ngIf=\"star=='filled'\" class=\"fa fa-star filled\"></i>\r\n        <i *ngIf=\"star=='half'\" class=\"fa fa-star-half-o filled\"></i>\r\n        <i *ngIf=\"star=='empty'\" class=\"fa fa-star-o filled\"></i>\r\n    </span>\r\n</div>"
+module.exports = ".table {\r\n  padding-top: 30px;\r\n}\r\n.row {\r\n  display: table-row;\r\n  background: #f6f6f6;\r\n}\r\n\r\n.row:nth-of-type(odd) {\r\n  background: #e9e9e9;\r\n}\r\n\r\n.row.header {\r\n  color: #ffffff;\r\n  font-weight: bold;\r\n  background: #158126;\r\n}\r\n\r\n.cell {\r\n  padding: 20px;\r\n  display: table-cell;\r\n}\r\n\r\n.card {\r\n  margin: 2rem 0;\r\n}\r\n\r\n.avatar {\r\n    width:4rem;\r\n    height:4rem;\r\n}\r\n\r\n#get-more-btn {\r\n  margin:2rem 0;\r\n}\r\n\r\n"
 
 /***/ },
 /* 510 */
 /***/ function(module, exports) {
 
-module.exports = "/*\r\n#custom-search-input .search-query {\r\n  height:3.5rem;\r\n  font-size:1.5rem;\r\n}\r\n\r\n#custom-search-input #search-btn {\r\n  height:3.5rem;\r\n  width:4.5rem;\r\n}\r\n\r\n#alert-msg {\r\n    position: absolute;\r\n    top:70px;\r\n    left:0;\r\n    right:0;\r\n    margin: 0 auto;\r\n}\r\n\r\n.fa-ul i {\r\n  padding-top:0.5rem;\r\n}\r\n\r\n#custom-search-input li.active a {\r\n  background-color:#C81B02 !important;\r\n  color:#fff;\r\n}\r\n\r\n#custom-search-input li a {\r\n  background-color:#666;\r\n  color:#fff;\r\n  margin:0 1px;\r\n  text-align:center;\r\n  padding: 5px 30px;\r\n  \r\n}\r\n\r\n#custom-search-input .nav-tabs {\r\n  border-bottom-width: 0px !important;\r\n  margin-left:18px;\r\n}\r\n\r\n.search-options {\r\n  background: rgba(0, 0, 0,0.5);\r\n  color:#fff;\r\n}\r\n\r\n.search-options button {\r\n  color:#fff;\r\n  padding:0.75rem 0.25rem;\r\n}\r\n\r\n.search-options button:hover {\r\n  color:#fff;\r\n  text-decoration: none;\r\n}\r\n\r\n#custom-search-input .dropdown-menu {\r\n  background-color: #C81B02;\r\n  padding: 5px;\r\n}\r\n\r\n.autocomplete-area {\r\n  position:relative;\r\n  background-color:#C81B02;\r\n  padding-left:1rem;\r\n  padding-right:1rem;\r\n  padding-bottom:0.5rem;\r\n  color:#fff;\r\n  z-index: 1;\r\n  top:-30px;\r\n  cursor: pointer;\r\n}\r\n\r\n.autocomplete-area:hover {\r\n  background-color:#A60900;\r\n}\r\n*/\r\n\r\n\r\n.nav-tabs {\r\n    border-bottom: none;\r\n}\r\n\r\n.nav-tabs .nav-item {\r\n    width:100%;\r\n    text-align:center;\r\n    margin-top:0;\r\n    margin-right:5px;\r\n    height:24px;\r\n}\r\n\r\n.nav-tabs li:last-child {\r\n    float: right;\r\n    margin-right: 0;\r\n}\r\n\r\n.tab-pane {\r\n  margin-top:0.25rem;\r\n}\r\n\r\n.nav-tabs li {\r\n\r\n    max-width: 33.3%;\r\n    width:100%;\r\n}\r\n\r\n.selectedTab {\r\n    border: none;\r\n    background: none repeat scroll 0 0 #C81B02;\r\n    color: #FFFFFF;    \r\n}\r\n\r\n.nav-tabs li.active a {\r\n    border: none;\r\n    background: none repeat scroll 0 0 #ec971f;\r\n    color: #FFFFFF;\r\n}\r\n\r\na.active {\r\n    background:transparent !important;\r\n    box-shadow: initial !important;\r\n}\r\n\r\n.nav-tabs li a {\r\n\r\n    background: none repeat scroll 0 0 rgba(200,27,2,1);\r\n    border: none;\r\n    -moz-border-radius: 0;\r\n    -webkit-border-radius: 0;\r\n    border-radius: 0;\r\n    -webkit-box-sizing: border-box;\r\n    -moz-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n    color: #FFFFFF;\r\n    display: inline-block;\r\n    float: left;\r\n    font-size: 1rem;\r\n    margin-bottom: 0;\r\n    padding: 0 0.125rem;\r\n    width: 100%;\r\n    text-decoration: none;\r\n}\r\n\r\n.tabbable {\r\n    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);\r\n}\r\n\r\n.dropdown-item.active, .dropdown-item:active {\r\n  background-color:#C81B02;\r\n  color:#fff;\r\n}\r\n\r\n.dropdown-item.active, .dropdown-item:hover {\r\n  background-color:#C81B02;\r\n  color:#fff !important;\r\n  cursor: pointer;\r\n}\r\n\r\n.nav-tabs li:not(.active):hover a {\r\n    color: #FFFFFF;\r\n    background: none;\r\n    background-color:red;\r\n    filter: alpha(opacity=100);\r\n    opacity: 1;\r\n    text-decoration: none;\r\n    text-shadow: 0px 1px 1px rgba(0,0,0,0.4);\r\n    transition: 0.3s ease;\r\n}\r\n\r\n.choose-search {\r\n    text-align: left;\r\n    height:50px;\r\n    line-height:1;\r\n    margin-right:5px;\r\n    background-color:#C81B02;\r\n    color:#fff;\r\n}\r\n\r\n.choose-search:hover {\r\n    color:#fff;\r\n}\r\n\r\n.choose-search:visited {\r\n    color:#fff;\r\n}\r\n\r\n.input-group {\r\n    padding: 5px;\r\n}\r\n\r\n.dropdown-toggle::after {\r\n    display:none;\r\n}\r\n\r\n#clear-button {\r\n    position: absolute;\r\n    right: 80px;\r\n    top: 0;\r\n    bottom: 0;\r\n    height: 14px;\r\n    margin: auto;\r\n    font-size: 14px;\r\n    cursor: pointer;\r\n    color: #ccc;\r\n    z-index: 10;\r\n    \r\n}\r\n\r\n#clear-button i {\r\n    color:#999;\r\n}\r\n\r\n#search-btn {\r\n    border-radius:0;\r\n    margin-left:5px;\r\n}\r\n\r\n.search-query {\r\n    font-size: 22px;\r\n    font-weight: 300;\r\n}\r\n\r\n.autocomplete-area {\r\n  position: relative;\r\n  background-color:#C81B02;\r\n  padding-left:1rem;\r\n  padding-right:1rem;\r\n  padding-bottom:0.5rem;\r\n  color:#fff;\r\n  cursor: pointer;\r\n  z-index: 1;\r\n}\r\n\r\n\r\n\r\n.autocomplete-area:hover {\r\n  background-color:#A60900;\r\n}"
+module.exports = "\r\n\r\n<div class=\"container\">\r\n  <div class=\"card\" *ngFor=\"let feed of feeds\">\r\n    <div class=\"card-block\">\r\n      <h6 class=\"card-title\">\r\n        <img *ngIf=\"feed.userIMG !=''\" [src]=\"feed.userIMG\" class=\"rounded-circle avatar\" />\r\n        {{feed.userName}} drinking {{feed.beerName}}  \r\n      </h6>\r\n      <h5 class=\"card-title text-center\">\r\n        <i *ngIf=\"feed.name\" class=\"fa fa-at\"></i> {{feed.name}}\r\n      </h5>\r\n      <p class=\"text-center card-text\" *ngIf=\"feed.beerLabelIcon\">\r\n        <img [src]=\"feed.beerLabelIcon\" class=\"img-rounded\" />\r\n      </p>\r\n      <p *ngIf=\"feed.beerRating\" class=\"card-text text-center\">\r\n        {{feed.userName}} rated {{feed.beerName}} \r\n        <app-rating [rate]=\"feed.beerRating\"></app-rating>        \r\n      </p>\r\n      <p class=\"card-text alert alert-warning\" *ngIf=\"feed.comments\">\r\n          <b>{{feed.userName}} said:</b>\r\n          {{feed.comments}}\r\n      </p>\r\n      <p class=\"text-center card-text\">\r\n        <a [routerLink]=\"['/checkin',feed.key]\" class=\"btn btn-warning\">View Detail</a>\r\n      </p>\r\n      <p class=\"text-center\" *ngIf=\"feed.img !=''\">\r\n        <i class=\"fa fa-camera\"></i> Photo Taken \r\n      </p>\r\n    </div>\r\n    <div class=\"card-footer text-muted text-center\">\r\n      Checked-In {{common.timeDifference(feed.dateCreated)}}\r\n    </div>    \r\n  </div>\r\n  <div class=\"text-center\" *ngIf=\"nextToken && !showLoader\">\r\n    <button id=\"get-more-btn\" class=\"btn btn-warning btn-block\" (click)=\"getMoreFeeds()\">Get More</button>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"text-center loader\" *ngIf=\"showLoader\">\r\n  <app-loader></app-loader>\r\n</div>\r\n"
 
 /***/ },
 /* 511 */
 /***/ function(module, exports) {
 
-module.exports = "\n\n<!--\n      <li active-trigger=\"beer-tab\" [active]=\"setView('beer')\" class=\"nav-item\"><a data-toggle=\"tab\" href=\"#beers\" role=\"tab\" (click)=\"clearStuff('beer')\">Beers</a></li>\n      <li active-trigger=\"brewery-tab\" [active]=\"setView('brewery')\" class=\"nav-item\"><a data-toggle=\"tab\" href=\"#brewery\" role=\"tab\" (click)=\"clearStuff('brewery')\">Brewery</a></li>\n      <li active-trigger=\"bar-tab\" [active]=\"setView('bar')\" class=\"nav-item\"><a data-toggle=\"tab\" href=\"#bars\" role=\"tab\" (click)=\"clearStuff('bar')\">Bars</a></li>\n-->  \n\n<div id=\"custom-search-input\" class=\"container\">\n  <div class=\"tabbable\" [activeListener]=\"page\">\n    <ul *ngIf=\"showTabs\" class=\"nav nav-tabs #page-search-area-tabs\" role=\"tablist\">\n      <li activeTrigger=\"beer\"class=\"nav-item\" [active]=\"isActive('beer')\"><a data-toggle=\"tab\" href=\"#beers\" role=\"tab\">Beers</a></li>\n      <li activeTrigger=\"brewery\" class=\"nav-item\" [active]=\"isActive('brewery')\"><a data-toggle=\"tab\" href=\"#brewery\" role=\"tab\">Brewery</a></li>\n      <li activeTrigger=\"bar\" class=\"nav-item\" [active]=\"isActive('bar')\"><a data-toggle=\"tab\" href=\"#bars\" role=\"tab\">Bars</a></li>\n    </ul>\n    <div class=\"tab-content\">\n      <!-- Beer Tab Area -->\n      <div class=\"tab-pane\" [active]=\"isActive('beer')\" id=\"beers\" role=\"tabpanel\">\n        <div class=\"input-group col-md-12\">            \n            <input type=\"text\" \n                    class=\"search-query form-control\"\n                    [(ngModel)]=\"qBeerSearch\"\n                    (ngModelChange)=\"getBeerSearchInput($event)\"\n                    required\n                    placeholder=\"Enter Beer Name\" />\n            <span id=\"clear-button\" class=\"input-group-btn\" (click)=\"clearStuff('beer')\">\n              <i class=\"fa fa-times-circle fa-2x\"></i>\n            </span>                    \n            <span class=\"input-group-btn\">\n                <button id=\"search-btn\" class=\"btn btn-warning\" [disabled]=\"beerBtnDisabled\" type=\"button\" (click)=\"doBeerSearch()\">\n                  <i class=\"fa fa-search fa-2x\"></i>\n                </button>\n            </span>\n        </div>\n      </div>\n\n      <!-- Brewery Tab Area -->\n      <div class=\"tab-pane\" [active]=\"isActive('brewery')\" id=\"brewery\" role=\"tabpanel\">          \n        <div class=\"input-group col-md-12\">\n            <span>\n                <a class=\"btn choose-search dropdown-toggle hidden-sm-down\" href=\"#\" type=\"button\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                  <strong>Search By:</strong>\n                  <div>\n                    {{setSearhLabel('brewery',breweryOption)}} <i class=\"fa fa-caret-down\"></i>\n                  </div>\n                </a>\n                <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n                  <a class=\"dropdown-item\" (click)=\"setSearchOptions('brewery','name',true)\">Brewery Name</a>\n                  <a class=\"dropdown-item\" (click)=\"setSearchOptions('brewery','city',true)\">Brewery City</a>\n                </div>                  \n            </span>            \n            <input type=\"text\" \n                    class=\"search-query form-control\"\n                    [(ngModel)]=\"qBrewerySearch\"\n                    required\n                    (ngModelChange)=\"getBrewerySearchInput($event)\"\n                    [placeholder]=\"breweryPlaceHolder\" />\n            <span id=\"clear-button\" class=\"input-group-btn\" (click)=\"clearStuff('brewery')\">\n              <i class=\"fa fa-times-circle fa-2x\"></i>\n            </span>\n            <span>\n                <button id=\"search-btn\" class=\"btn btn-warning\" [disabled]=\"breweryBtnDisabled\" type=\"button\" (click)=\"doBrewerySearch()\">\n                  <i class=\"fa fa-search fa-2x\"></i>\n                </button>\n            </span>              \n        </div>\n        <div class=\"autocomplete-area\" *ngFor=\"let city of cityPredictions\" (click)=\"setGeoData(city,'brewery')\">\n          {{city.description}}\n        </div>              \n      </div>\n\n      <!-- Bar Tab Area -->\n      <div class=\"tab-pane\" [active]=\"isActive('bar')\" id=\"bars\" role=\"tabpanel\">\n        <div class=\"input-group col-md-12\">\n            <span>\n                <a class=\"btn choose-search dropdown-toggle hidden-sm-down\" href=\"#\" type=\"button\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                  <strong>Search By:</strong>\n                  <div>\n                   {{setSearhLabel('bar',barOption)}} <i class=\"fa fa-caret-down\"></i>\n                  </div>\n                </a>\n                <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n                  <a class=\"dropdown-item\" (click)=\"setSearchOptions('bar','name',true)\">Bar Name</a>\n                  <a class=\"dropdown-item\" (click)=\"setSearchOptions('bar','city',true)\">Bar City</a>\n                </div>                  \n            </span>            \n            <input type=\"text\" \n                    class=\"search-query form-control\"\n                    [(ngModel)]=\"qBarSearch\"\n                    required\n                    (ngModelChange)=\"getBarSearchInput($event)\"\n                    [placeholder]=\"barPlaceHolder\" />\n            <span id=\"clear-button\" class=\"input-group-btn\" (click)=\"clearStuff('bar')\">\n              <i class=\"fa fa-times-circle fa-2x\"></i>\n            </span>                    \n            <span class=\"input-group-btn\">\n                <button id=\"search-btn\" class=\"btn btn-warning\" [disabled]=\"barBtnDisabled\" type=\"button\" (click)=\"doBarSearch()\">\n                  <i class=\"fa fa-search fa-2x\"></i>\n                </button>\n            </span>\n        </div>\n        <div class=\"autocomplete-area\" *ngFor=\"let bar of barNamePredictions\" (click)=\"setGeoData(bar,'bar-name')\">\n          {{bar.name}}\n        </div>\n        <div class=\"autocomplete-area\" *ngFor=\"let city of cityPredictions\" (click)=\"setGeoData(city,'bar-city')\">\n          {{city.description}}\n        </div>                      \n      </div>            \n    </div>\n  </div>\n</div>"
+module.exports = ".getapp {\r\n    background-image: url(\"/assets/getapp-background.jpg\");\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-size: cover;\r\n    background-position: center center;\r\n    width:100%;\r\n    height:600px !important;      \r\n}\r\n\r\n.getapp #dl-app-area {\r\n    color:#fff;\r\n    text-align: center;\r\n    position:relative;\r\n    top:10rem;\r\n    width:100%;\r\n    padding:1rem;\r\n    background: rgba(0, 0, 0,0.5);\r\n}\r\n\r\n.getapp img {\r\n    width:20rem;\r\n}\r\n\r\n.dl-btn {\r\n    padding-bottom:1rem;\r\n}\r\n\r\n.getapp i { \r\n    padding-right:1rem;\r\n    position:relative;\r\n    top:1rem;\r\n}\r\n\r\n.getapp h1 {\r\n     font-family: \"Raleway\", Helvetica, Arial, sans-serif !important;\r\n}"
 
 /***/ },
 /* 512 */
 /***/ function(module, exports) {
 
-module.exports = "#static-map {width:100%}"
+module.exports = "<div class=\"container-fluid getapp\">\r\n  <div align=\"center\">\r\n    <div id=\"dl-app-area\">\r\n      <h1><i class=\"fa fa-mobile fa-2x\"></i>Get the App</h1>\r\n      <!--\r\n      <div class=\"dl-btn\">\r\n        <img src=\"assets/buttons/google-button.png\"/>\r\n      </div>\r\n      <div class=\"dl-btn\">\r\n        <img src=\"assets/buttons/apple-button.png\"/>\r\n      </div>\r\n      -->\r\n      <h5>App Coming in August 24th, 2017</h5>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ },
 /* 513 */
 /***/ function(module, exports) {
 
-module.exports = "<a target=\"_blank\" [href]=\"common.getToGoogleMapsUrl(currentLat,currentLng)\">\r\n  <img id=\"static-map\" [src]=\"getStaticMap()\" />\r\n</a>"
+module.exports = ".app-features ul {\r\n  padding-top: 5rem;\r\n  \r\n}\r\n\r\n.app-features li {\r\n  font-size:1rem;\r\n  padding-bottom:0.5rem;\r\n}\r\n\r\n.fa-green {\r\n  color: green;\r\n}\r\n\r\n.sub-header {\r\n  font-family: \"Raleway\", Helvetica, Arial, sans-serif !important;\r\n  margin-top:20px;\r\n}\r\n\r\n.row-centered {\r\n    text-align: center;\r\n}\r\n\r\n.col-centered {\r\n    display: inline-block;\r\n    float: none;\r\n    /* reset the text-align */\r\n    text-align: left;\r\n    /* inline-block space fix */\r\n    margin-right: -4px;\r\n}\r\n\r\n.apple-btn img{\r\n  padding-bottom:10px !important;\r\n  margin-bottom:10px !important;\r\n}\r\n\r\n.card {\r\n  width: 24rem;\r\n  background-color:#ddd;\r\n}\r\n\r\n\r\n.about-panel {\r\n  margin-top:4rem;\r\n  /*background-color:#fff;*/\r\n}\r\n\r\n.about-panel i {\r\n  padding-left:0.75rem;\r\n}\r\n\r\n#ticket-btn {\r\n  padding-top:1rem;\r\n}\r\n\r\n.paralax-window {\r\n  display: flex;\r\n  align-content: center;\r\n  align-items: center;\r\n  flex-direction: column; \r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  justify-content: space-around;\r\n  position: relative;\r\n  width: 100%;   \r\n}\r\n\r\nsection {\r\n  width: 100%;\r\n  height: 100vh;\r\n  flex: 1;\r\n  display: flex;\r\n  text-align: center;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background-color: #000;\r\n  \r\n}\r\n\r\n\r\n.stuff {\r\n  display: flex;\r\n  flex-direction: column;\r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  width: 100%;\r\n  max-width: 70%;\r\n  justify-content: center;\r\n  text-align: center;\r\n  z-index: 1000;\r\n  color: #fff;\r\n  margin: 0 auto;\r\n  font-weight:bold;\r\n  font-size: 3rem;\r\n  position: relative;\r\n  text-shadow: black 0.1em 0.1em 0.2em;\r\n}\r\n\r\n.stuff .btn {\r\n  width:12rem;\r\n  text-align:center;\r\n  text-shadow:none;\r\n}\r\n\r\n.banner {\r\n  width:inherit;\r\n  background-image: url(\"/assets/barhome.jpg\");\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center center;\r\n  height:480px !important;      \r\n}\r\n\r\n.banner h2 {\r\n  position: absolute;\r\n  top:80px;\r\n  left:0;\r\n  right:0;\r\n  margin: 0 auto;\r\n  color:#ffffff;\r\n  font-family: 'Raleway',sans-serif !important;\r\n  text-shadow: 0 0 10px #000000;\r\n}\r\n\r\n#custom-search-input {\r\n  position: relative;\r\n  top:100px;\r\n}\r\n\r\n.banner h3 {\r\n  position: absolute;\r\n  top:420px;\r\n  right:20px;\r\n  font-size:16px;\r\n  color:#fff;\r\n  text-shadow: 2px 2px 4px #000000;\r\n}\r\n\r\n.fest {\r\n  background-color:#fff;\r\n  border: 1px solid rgba(0,0,0,.25);\r\n  padding:2rem;\r\n}\r\n\r\n.fest h3 {\r\n  padding-bottom:1rem;\r\n}\r\n\r\n.fa-ul {\r\n  padding-left:1.5rem;\r\n}\r\n\r\n.fa-ul i {\r\n  padding-top:0.25rem;\r\n}\r\n\r\n"
 
 /***/ },
 /* 514 */
+/***/ function(module, exports) {
+
+module.exports = "<div class=\"banner\">\r\n  <!--\r\n  <div id=\"alert-msg\" *ngIf=\"msg.length\" class=\"container\">\r\n    <ngb-alert>\r\n      <strong>Sorry!</strong> {{msg}}\r\n    </ngb-alert>\r\n  </div>\r\n   -->\r\n  <app-search id=\"custom-search-input\"></app-search>\r\n  <h2 class=\"text-center\">Find Local Bars in your Hometown.</h2>\r\n</div>"
+
+/***/ },
+/* 515 */
+/***/ function(module, exports) {
+
+module.exports = ".app-features ul {\r\n  padding-top: 5rem;\r\n  \r\n}\r\n\r\n.app-features li {\r\n  font-size:1rem;\r\n  padding-bottom:0.5rem;\r\n}\r\n\r\n.fa-green {\r\n  color: green;\r\n}\r\n\r\n.sub-header {\r\n  font-family: \"Raleway\", Helvetica, Arial, sans-serif !important;\r\n  margin-top:20px;\r\n}\r\n\r\n.row-centered {\r\n    text-align: center;\r\n}\r\n\r\n.col-centered {\r\n    display: inline-block;\r\n    float: none;\r\n    /* reset the text-align */\r\n    text-align: left;\r\n    /* inline-block space fix */\r\n    margin-right: -4px;\r\n}\r\n\r\n.apple-btn img{\r\n  padding-bottom:10px !important;\r\n  margin-bottom:10px !important;\r\n}\r\n\r\n.card {\r\n  width: 24rem;\r\n  background-color:#ddd;\r\n}\r\n\r\n\r\n.about-panel {\r\n  margin-top:4rem;\r\n  /*background-color:#fff;*/\r\n}\r\n\r\n.about-panel i {\r\n  padding-left:0.75rem;\r\n}\r\n\r\n#ticket-btn {\r\n  padding-top:1rem;\r\n}\r\n\r\n.paralax-window {\r\n  display: flex;\r\n  align-content: center;\r\n  align-items: center;\r\n  flex-direction: column; \r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  justify-content: space-around;\r\n  position: relative;\r\n  width: 100%;   \r\n}\r\n\r\nsection {\r\n  width: 100%;\r\n  height: 100vh;\r\n  flex: 1;\r\n  display: flex;\r\n  text-align: center;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background-color: #000;\r\n  \r\n}\r\n\r\n.stuff {\r\n  display: flex;\r\n  flex-direction: column;\r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  width: 100%;\r\n  max-width: 70%;\r\n  justify-content: center;\r\n  text-align: center;\r\n  z-index: 1000;\r\n  color: #fff;\r\n  margin: 0 auto;\r\n  font-weight:bold;\r\n  font-size: 3rem;\r\n  position: relative;\r\n  text-shadow: black 0.1em 0.1em 0.2em;\r\n}\r\n\r\n.stuff .btn {\r\n  width:12rem;\r\n  text-align:center;\r\n  text-shadow:none;\r\n}\r\n\r\n.banner {\r\n  width:inherit;\r\n  background-image: url(\"/assets/beerhome.jpg\");\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center center;\r\n  height:350px !important;      \r\n}\r\n\r\n.banner h2 {\r\n  position: absolute;\r\n  top:80px;\r\n  left:0;\r\n  right:0;\r\n  margin: 0 auto;\r\n  color:#ffffff;\r\n  font-family: 'Raleway',sans-serif !important;\r\n  text-shadow: 0 0 10px #000000;\r\n}\r\n\r\n#custom-search-input {\r\n  position: relative;\r\n  top:100px;\r\n}\r\n\r\n.banner h3 {\r\n  position: absolute;\r\n  top:420px;\r\n  right:20px;\r\n  font-size:16px;\r\n  color:#fff;\r\n  text-shadow: 2px 2px 4px #000000;\r\n}\r\n\r\n.fest {\r\n  background-color:#fff;\r\n  border: 1px solid rgba(0,0,0,.25);\r\n  padding:2rem;\r\n}\r\n\r\n.fest h3 {\r\n  padding-bottom:1rem;\r\n}\r\n\r\n.fa-ul {\r\n  padding-left:1.5rem;\r\n}\r\n\r\n.fa-ul i {\r\n  padding-top:0.25rem;\r\n}\r\n\r\n.card {\r\n  background-color: #fff;\r\n}\r\n\r\n#featured-beer {\r\n  margin-top: 1rem;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n#featured-week {\r\n  width:100%;\r\n  margin-bottom:2rem;\r\n}\r\n\r\n#featured-week .card-header {\r\n  color:#fff;\r\n  background-color: #C81B02;\r\n}\r\n\r\n.random-beer h4 {\r\n  font-size: 1.25rem;\r\n}\r\n\r\n.random-beer {\r\n  margin-bottom:1rem;\r\n}\r\n\r\n"
+
+/***/ },
+/* 516 */
+/***/ function(module, exports) {
+
+module.exports = "<div class=\"banner\">\r\n  <!--\r\n  <div id=\"alert-msg\" *ngIf=\"msg.length\" class=\"container\">\r\n    <ngb-alert>\r\n      <strong>Sorry!</strong> {{msg}}\r\n    </ngb-alert>\r\n  </div>\r\n   -->\r\n  <app-search id=\"custom-search-input\"></app-search>\r\n  <h2 class=\"text-center\">Search Our Database of Over 80,000 Beers.</h2>\r\n</div>\r\n\r\n<div id=\"featured-beer\" class=\"container\" *ngIf=\"!showLoader\">\r\n  <div id=\"featured-week\" class=\"card\">\r\n    <div class=\"card-header\">\r\n      Featured Beer of the Week\r\n    </div>    \r\n    <div class=\"card-block\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-5 text-center\">\r\n          <a *ngIf=\"featuredBeer.breweries\" [routerLink]=\"['/beer',common.paramSEOFriendly(featuredBeer.breweries[0].name+' '+featuredBeer.name),featuredBeer.id]\">\r\n            <img *ngIf=\"featuredBeer.labels\" [src]=\"featuredBeer.labels.medium\" />\r\n          </a>\r\n        </div>\r\n        <div class=\"col-md-7\">\r\n          <h4 class=\"card-title\">\r\n            <a [routerLink]=\"['/beer',common.paramSEOFriendly(featuredBeer.breweries[0].name+' '+featuredBeer.name),featuredBeer.id]\">\r\n              {{featuredBeer.nameDisplay}}\r\n            </a>\r\n          </h4>\r\n          <p class=\"card-text\">\r\n            <a [routerLink]=\"['/brewery',common.paramSEOFriendly(featuredBeer.breweries[0].name),featuredBeer.breweries[0].id]\">\r\n              {{featuredBeer.breweries[0].name}}\r\n            </a>\r\n          </p>\r\n          <p class=\"card-text\" *ngIf=\"featuredBeer.style!=null\">\r\n            {{featuredBeer.style.shortName}}    \r\n          </p>          \r\n          <p class=\"card-text\" *ngIf=\"featuredBeer.abv\">{{featuredBeer.abv}}% ABV</p>\r\n          <p class=\"card-text\"*ngIf=\"!featuredBeer.abv\">ABV Not Listed</p>          \r\n          <p class=\"card-text\" *ngIf=\"featuredBeer.description\">\r\n            {{featuredBeer.description}}\r\n          </p>\r\n        </div>\r\n      </div>\r\n    </div>           \r\n  </div>  \r\n  <div class=\"card-group\">\r\n    <!--\r\n    <div class=\"card\">\r\n      <img *ngIf=\"featuredBeer.labels\" [src]=\"featuredBeer.labels.medium\" />\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title\">{{featuredBeer.nameDisplay}}</h4>\r\n        <p class=\"card-text\">\r\n          <read-more [text]=\"featuredBeer.description\" [maxLength]=\"75\"></read-more>\r\n        </p>\r\n      </div>\r\n      <div class=\"card-footer\">\r\n        <small class=\"text-muted\" *ngIf=\"featuredBeer.abv\">{{featuredBeer.abv}}% ABV</small>\r\n        <small class=\"text-muted\" *ngIf=\"!featuredBeer.abv\">ABV Not Listed</small>\r\n      </div>           \r\n    </div>\r\n    -->\r\n    <div class=\"card random-beer\" *ngFor=\"let beer of randomBeers\">\r\n      <a *ngIf=\"beer.breweries\" class=\"beer-header\" [routerLink]=\"['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]\">\r\n        <img *ngIf=\"beer.labels\" [src]=\"beer.labels.medium\" />\r\n      </a>\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title text-center\">\r\n          <a *ngIf=\"beer.breweries\" [routerLink]=\"['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]\">{{beer.name}}</a>\r\n          <a *ngIf=\"!beer.breweries\" [routerLink]=\"['/beer',common.paramSEOFriendly(beer.name),beer.id]\">\r\n            {{beer.name}}\r\n          </a>\r\n        </h4>\r\n        <p class=\"card-text text-center\">\r\n          <a *ngIf=\"beer.breweries\" [routerLink]=\"['/brewery',common.paramSEOFriendly(beer.breweries[0].name),beer.breweries[0].id]\">{{beer.breweries[0].name}}</a>\r\n        </p>      \r\n        <p class=\"card-text text-center\" *ngIf=\"beer.style!=null\">\r\n          {{beer.style.shortName}}    \r\n        </p>\r\n        <p *ngIf=\"beer.abv!=null\" class=\"card-text text-center\">\r\n          <small class=\"text-muted\">{{beer.abv}}% ABV</small>\r\n        </p>\r\n      </div>\r\n      <div class=\"card-footer text-center\">\r\n        <small class=\"text-muted\">Added {{common.dateFriendly(beer.createDate)}}</small>\r\n      </div>             \r\n    </div>\r\n  </div>\r\n</div>"
+
+/***/ },
+/* 517 */
+/***/ function(module, exports) {
+
+module.exports = ".app-features ul {\r\n  padding-top: 5rem;\r\n  \r\n}\r\n\r\n.app-features li {\r\n  font-size:1rem;\r\n  padding-bottom:0.5rem;\r\n}\r\n\r\n.fa-green {\r\n  color: green;\r\n}\r\n\r\n.sub-header {\r\n  font-family: \"Raleway\", Helvetica, Arial, sans-serif !important;\r\n  margin-top:20px;\r\n}\r\n\r\n.row-centered {\r\n    text-align: center;\r\n}\r\n\r\n.col-centered {\r\n    display: inline-block;\r\n    float: none;\r\n    /* reset the text-align */\r\n    text-align: left;\r\n    /* inline-block space fix */\r\n    margin-right: -4px;\r\n}\r\n\r\n.apple-btn img{\r\n  padding-bottom:10px !important;\r\n  margin-bottom:10px !important;\r\n}\r\n\r\n.card {\r\n  width: 24rem;\r\n  background-color:#ddd;\r\n}\r\n\r\n\r\n.about-panel {\r\n  margin-top:4rem;\r\n  /*background-color:#fff;*/\r\n}\r\n\r\n.about-panel i {\r\n  padding-left:0.75rem;\r\n}\r\n\r\n#ticket-btn {\r\n  padding-top:1rem;\r\n}\r\n\r\n.paralax-window {\r\n  display: flex;\r\n  align-content: center;\r\n  align-items: center;\r\n  flex-direction: column; \r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  justify-content: space-around;\r\n  position: relative;\r\n  width: 100%;   \r\n}\r\n\r\nsection {\r\n  width: 100%;\r\n  height: 100vh;\r\n  flex: 1;\r\n  display: flex;\r\n  text-align: center;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background-color: #000;\r\n  \r\n}\r\n\r\n.stuff {\r\n  display: flex;\r\n  flex-direction: column;\r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  width: 100%;\r\n  max-width: 70%;\r\n  justify-content: center;\r\n  text-align: center;\r\n  z-index: 1000;\r\n  color: #fff;\r\n  margin: 0 auto;\r\n  font-weight:bold;\r\n  font-size: 3rem;\r\n  position: relative;\r\n  text-shadow: black 0.1em 0.1em 0.2em;\r\n}\r\n\r\n.stuff .btn {\r\n  width:12rem;\r\n  text-align:center;\r\n  text-shadow:none;\r\n}\r\n\r\n.banner {\r\n  width:inherit;\r\n  background-image: url(\"/assets/breweryhome.jpg\");\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center center;\r\n  height:350px !important;      \r\n}\r\n\r\n.banner h2 {\r\n  position: absolute;\r\n  top:80px;\r\n  left:0;\r\n  right:0;\r\n  margin: 0 auto;\r\n  color:#ffffff;\r\n  font-family: 'Raleway',sans-serif !important;\r\n  text-shadow: 0 0 10px #000000;\r\n}\r\n\r\n#custom-search-input {\r\n  position: relative;\r\n  top:100px;\r\n}\r\n\r\n.banner h3 {\r\n  position: absolute;\r\n  top:420px;\r\n  right:20px;\r\n  font-size:16px;\r\n  color:#fff;\r\n  text-shadow: 2px 2px 4px #000000;\r\n}\r\n\r\n.fest {\r\n  background-color:#fff;\r\n  border: 1px solid rgba(0,0,0,.25);\r\n  padding:2rem;\r\n}\r\n\r\n.fest h3 {\r\n  padding-bottom:1rem;\r\n}\r\n\r\n.fa-ul {\r\n  padding-left:1.5rem;\r\n}\r\n\r\n.fa-ul i {\r\n  padding-top:0.25rem;\r\n}\r\n\r\n.card {\r\n  background-color: #fff;\r\n}\r\n\r\n#featured-brewery {\r\n  margin-top: 1rem;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n#featured-week {\r\n  width:100%;\r\n  margin-bottom:2rem;\r\n}\r\n\r\n#featured-week .card-header {\r\n  color:#fff;\r\n  background-color: #C81B02;\r\n}\r\n\r\n.random-beer h4 {\r\n  font-size: 1.25rem;\r\n}\r\n\r\n.random-beer {\r\n  margin-bottom:1rem;\r\n}\r\n\r\n#state-search {\r\n  width:100%;\r\n  margin-bottom:2rem;  \r\n}\r\n\r\n#state-search .card-header {\r\n  color:#fff;\r\n  background-color: #C81B02;  \r\n}\r\n\r\n"
+
+/***/ },
+/* 518 */
+/***/ function(module, exports) {
+
+module.exports = "<div class=\"banner\">\r\n  <!--\r\n  <div id=\"alert-msg\" *ngIf=\"msg.length\" class=\"container\">\r\n    <ngb-alert>\r\n      <strong>Sorry!</strong> {{msg}}\r\n    </ngb-alert>\r\n  </div>\r\n   -->\r\n  <app-search id=\"custom-search-input\"></app-search>\r\n  <h2 class=\"text-center\">Search Our Database of Over 20,000 Breweries.</h2>\r\n</div>\r\n\r\n<div id=\"featured-brewery\" class=\"container\" *ngIf=\"!showLoader\">\r\n  <div id=\"featured-week\" class=\"card\">\r\n    <div class=\"card-header\">\r\n      Featured Brewery of the Week\r\n    </div>    \r\n    <div class=\"card-block\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-5 text-center\">\r\n            <img *ngIf=\"featuredBrewery.images\" [src]=\"featuredBrewery.images.squareMedium\" />\r\n        </div>\r\n        <div class=\"col-md-7\">\r\n          <h4 class=\"card-title\">\r\n              <a [routerLink]=\"['/brewery',common.paramSEOFriendly(featuredBrewery.name),featuredBrewery.id]\">\r\n                {{featuredBrewery.name}}\r\n              </a>\r\n          </h4>\r\n          <p *ngIf=\"featuredBrewery.locations\" class=\"card-text\"><b>{{featuredBrewery.locations[0].locality}}, {{featuredBrewery.locations[0].region}} {{featuredBrewery.locations[0].countryIsoCode}}</b></p>\r\n          <p class=\"card-text\" *ngIf=\"featuredBrewery.description\">\r\n            {{featuredBrewery.description}}\r\n          </p>\r\n        </div>\r\n      </div>\r\n    </div>           \r\n  </div>\r\n  <div id=\"state-search\" class=\"card\">\r\n    <div class=\"card-header\">\r\n      Search Breweries in the USA\r\n    </div>    \r\n    <div class=\"card-block\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/alabama\">Alabama</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/alaska\">Alaska</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/arizona\">Arizona</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/arkansas\">Arkansas</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/california\">California</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/colorado\">Colorado</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/connecticut\">Connecticut</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/delaware\">Delaware</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/florida\">Florida</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/georgia\">Georgia</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/hawaii\">Hawaii</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/idaho\">Idaho</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/illinois\">Illinois</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/indiana\">Indiana</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/iowa\">Iowa</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/kansas\">Kansas</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/kentucky\">Kentucky</a></div>\r\n        </div>\r\n        <div class=\"col-md-4\">\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/louisiana\">Louisiana</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/maine\">Maine</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/maryland\">Maryland</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/massachusetts\">Massachusetts</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/michigan\">Michigan</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/minnesota\">Minnesota</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/mississippi\">Mississippi</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/missouri\">Missouri</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/montana\">Montana</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/nebraska\">Nebraska</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/nevada\">Nevada</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/new-hampshire\">New Hampshire</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/new-jersey\">New Jersey</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/new-mexico\">New Mexico</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/new-york\">New York</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/north-carolina\">North Carolina</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/north-dakota\">North Dakota</a></div>\r\n        </div>\r\n        <div class=\"col-md-4\">\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/ohio\">Ohio</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/oklahoma\">Oklahoma</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/oregon\">Oregon</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/pennsylvania\">Pennsylvania</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/rhode-island\">Rhode Island</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/south-carolina\">South Carolina</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/south-dakota\">South Dakota</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/tennessee\">Tennessee</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/texas\">Texas</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/utah\">Utah</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/vermont\">Vermont</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/virginia\">Virginia</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/washington\">Washington</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/west-virginia\">West Virginia</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/wisconsin\">Wisconsin</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/wyoming\">Wyoming</a></div>\r\n        </div>\r\n      </div>\r\n    </div>           \r\n  </div>  \r\n</div>"
+
+/***/ },
+/* 519 */
+/***/ function(module, exports) {
+
+module.exports = ".app-features ul {\r\n  padding-top: 1rem;\r\n  \r\n}\r\n\r\n.app-features li {\r\n  font-size:1rem;\r\n  padding-bottom:0.5rem;\r\n}\r\n\r\n.fa-green {\r\n  color: #C81B02;\r\n}\r\n\r\n.sub-header {\r\n  font-family: \"Raleway\", Helvetica, Arial, sans-serif !important;\r\n  margin-top:20px;\r\n}\r\n\r\n.row-centered {\r\n    text-align: center;\r\n}\r\n\r\n.col-centered {\r\n    display: inline-block;\r\n    float: none;\r\n    /* reset the text-align */\r\n    text-align: left;\r\n    /* inline-block space fix */\r\n    margin-right: -4px;\r\n}\r\n\r\n.apple-btn img{\r\n  padding-bottom:10px !important;\r\n  margin-bottom:10px !important;\r\n}\r\n\r\n/*\r\n.card {\r\n  width: 24rem;\r\n}\r\n*/\r\n\r\n.card-columns .card {\r\n    column-break-inside: avoid;\r\n    width: 100%;\r\n    margin-bottom: .75rem;\r\n}\r\n\r\n.about-panel {\r\n  /*margin-top:1rem;*/\r\n  /*background-color:#fff;*/\r\n}\r\n\r\n.about-panel i {\r\n  padding-left:0.75rem;\r\n}\r\n\r\n#ticket-btn {\r\n  padding-top:1rem;\r\n}\r\n\r\n.paralax-window {\r\n  display: flex;\r\n  align-content: center;\r\n  align-items: center;\r\n  flex-direction: column; \r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  justify-content: space-around;\r\n  position: relative;\r\n  width: 100%;   \r\n}\r\n\r\nsection {\r\n  width: 100%;\r\n  height: 100vh;\r\n  flex: 1;\r\n  display: flex;\r\n  text-align: center;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background-color: #000;\r\n  \r\n}\r\n\r\n.image {\r\n  background-attachment: fixed; \r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  background-image: url(\"/assets/events/emeraldcoastbeerfest.png\");\r\n  width: 100%;\r\n  height: 100%;\r\n  position: absolute;\r\n  z-index: 500;\r\n  opacity: 0.5;\r\n}\r\n\r\n.stuff {\r\n  display: flex;\r\n  flex-direction: column;\r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  width: 100%;\r\n  max-width: 70%;\r\n  justify-content: center;\r\n  text-align: center;\r\n  z-index: 1000;\r\n  color: #fff;\r\n  margin: 0 auto;\r\n  font-weight:bold;\r\n  font-size: 3rem;\r\n  position: relative;\r\n  text-shadow: black 0.1em 0.1em 0.2em;\r\n}\r\n\r\n.stuff .btn {\r\n  width:12rem;\r\n  text-align:center;\r\n  text-shadow:none;\r\n}\r\n\r\n.banner {\r\n  width:inherit;\r\n  background-image: url(\"/assets/beers.jpg\");\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center center;\r\n  height:420px !important;      \r\n}\r\n\r\n.banner h2 {\r\n  position: absolute;\r\n  top:300px;\r\n  left:0;\r\n  right:0;\r\n  margin: 0 auto;\r\n  color:#ffffff;\r\n  font-family: 'Raleway',sans-serif !important;  \r\n}\r\n\r\n#custom-search-input {\r\n  position: relative;\r\n  top:100px;\r\n}\r\n\r\n.banner h3 {\r\n  position: absolute;\r\n  top:420px;\r\n  right:20px;\r\n  font-size:16px;\r\n  color:#fff;\r\n  text-shadow: 2px 2px 4px #000000;\r\n}\r\n\r\n.fest {\r\n  background-color:#fff;\r\n  border: 1px solid rgba(0,0,0,.25);\r\n  padding:2rem;\r\n}\r\n\r\n.fest h3 {\r\n  padding-bottom:1rem;\r\n}\r\n\r\n.fa-ul {\r\n  padding-left:0;\r\n}\r\n\r\n.fa-ul i {\r\n  padding-top:0.25rem;\r\n}\r\n\r\n.card-columns {\r\n  margin-top:2rem;\r\n}\r\n\r\n.card i {\r\n  padding-left:0.75rem;\r\n}\r\n\r\n#column-panels {\r\n  padding-left:0;\r\n  padding-right:0;\r\n}\r\n\r\n@media (min-width: 34em) {\r\n    .card-columns {\r\n        -webkit-column-count: 1;\r\n        -moz-column-count: 1;\r\n        column-count: 1;\r\n    }\r\n}\r\n\r\n@media (min-width: 48em) {\r\n    .card-columns {\r\n        -webkit-column-count: 2;\r\n        -moz-column-count: 2;\r\n        column-count: 2;\r\n    }\r\n}\r\n\r\n@media (min-width: 62em) {\r\n    .card-columns {\r\n        -webkit-column-count: 3;\r\n        -moz-column-count: 3;\r\n        column-count: 3;\r\n    }\r\n}\r\n\r\n@media (min-width: 75em) {\r\n    .card-columns {\r\n        -webkit-column-count: 3;\r\n        -moz-column-count: 3;\r\n        column-count: 3;\r\n    }\r\n}"
+
+/***/ },
+/* 520 */
+/***/ function(module, exports) {
+
+module.exports = "<div class=\"banner\">\r\n  <!--\r\n  <div id=\"alert-msg\" *ngIf=\"msg.length\" class=\"container\">\r\n    <ngb-alert>\r\n      <strong>Sorry!</strong> {{msg}}\r\n    </ngb-alert>\r\n  </div>\r\n   -->\r\n  <app-search id=\"custom-search-input\" showTabs=\"true\"></app-search>\r\n  <h2 class=\"text-center\">Find Beers, Breweries, and Bars Around the World.<i class=\"fa fa-globe\"></i> </h2>\r\n  <h3>Available for Apple &amp; Android Aug. 24th</h3>\r\n</div>\r\n<h2 class=\"page-header text-center\">Featured Event</h2>\r\n<div class=\"container fest\">\r\n    <div class=\"row\">\r\n      <div class=\"col-sm-12 col-md-6  text-center\">\r\n        <img src=\"/assets/events/beerfest.png\" />\r\n      </div>\r\n      <div class=\"col-sm-12 col-md-6 \">\r\n        <h3>Emerald Coast Beer Festival</h3>\r\n        <p>\r\n          Location: 130 E Government St, Pensacola, FL 32502\r\n        </p>\r\n        <p>Time: 5:30pm to 8:30pm Friday September 8, 2017</p>\r\n        <p>Ticket Price: $40 or $60 VIP </p>\r\n        <p>Website: <a href=\"http://emeraldcoastbeerfest.com\" target=\"_blank\">http://emeraldcoastbeerfest.com</a></p>\r\n        <p>Beer list will be available on our App 2 weeks before the event.</p>\r\n      </div>\r\n    </div>\r\n</div>\r\n<div id=\"column-panels\" class=\"container\">\r\n  <div class=\"card-columns\">\r\n    <div class=\"card card-inverse\" style=\"background-color:#8a6d3b\">\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title\">Easy to Use<i class=\"fa fa-thumbs-o-up\"></i></h4>\r\n        <p class=\"card-text\">\r\n          You can quickly find a beer,\r\n          brewery, or bar within seconds.  An App that is fast, clear, and informative is our mission.\r\n          Also, you can save a beer and locations to make the check-in process easier. \r\n        </p>\r\n      </div>\r\n    </div>\r\n    <div class=\"card card-inverse\" style=\"background-color:#8a6d3b\">\r\n      <div class=\"card-block\">\r\n      <h4 class=\"card-title\">Crowdsourced<i class=\"fa fa-bullhorn\"></i></h4>\r\n      <p class=\"card-text\">\r\n        Ever had a great brew at a new brewery or bar and wanted the world to know?  Everytime you use our app \r\n        and check-in, the Brew Search community will be able to locate their favorite brews thanks to you!\r\n      </p>\r\n      </div>\r\n    </div>\r\n    <div class=\"card card-inverse\" style=\"background-color:#8a6d3b\">\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title\">Social Friendly<i class=\"fa fa-users\"></i></h4>\r\n        <p class=\"card-text\">\r\n          When you check-in, you have the option to post your experience on your wall. Notify all your\r\n          friends what they are missing out when they see you having a great time and invite them over.\r\n        </p>\r\n      </div>\r\n    </div>\r\n    <div class=\"card card-inverse\" style=\"background-color:#8a6d3b\">\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title\">Beer Game<i class=\"fa fa-gamepad\"></i></h4>\r\n        <p class=\"card-text\">\r\n          When you check-in a beer at a location, you get points.  You get more points either by \r\n          taking a picture, sharing on social media, leaving a rating, or leaving a comment.  Points are\r\n          reset every 30 days. Check out the leaderboard on our App and see if you come up on top.\r\n        </p>\r\n      </div>\r\n    </div>\r\n    <div class=\"card card-inverse\" style=\"background-color:#8a6d3b\">\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title\">Achievements<i class=\"fa fa-trophy\"></i></h4>\r\n        <p class=\"card-text\">\r\n          Earn achievements by number of check-ins, drinking beer styles, and checkin-in at events.\r\n          We'll continue to add more badges in the future so you'll never run out badges to unlock.\r\n        </p>\r\n      </div>\r\n    </div>\r\n    <div class=\"card card-inverse\" style=\"background-color:#8a6d3b\">\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title\">Beer Festivals<i class=\"fa fa-beer\"></i></h4>\r\n        <p class=\"card-text\">\r\n          Keep track of beer festivals happening in your area with our App. Login to our App and\r\n          see all the beers served at the event, breweries attending, and use our interactive map ( Feature applies\r\n          to only fesivals we got on board). You can plan ahead before the event, research beers that fit your profile, \r\n          and a check list of beers you enjoyed at the festival so you can enjoy it later on.\r\n        </p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"container app-features\">\r\n  <hr />\r\n  <div class=\"row\">\r\n    <div class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center\">\r\n      <img src=\"assets/events/handphone2.png\" width=\"100%\" />\r\n    </div>\r\n    <div class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6 alert alert-warning\">\r\n      <h3 class=\"text-center\">App Features</h3>      \r\n      <ul class=\"fa-ul\">\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Track breweries you visited.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Search beers by style, ABV, and by brewery.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Geolocation enabled. Find bars, breweries, and gas stations near you.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Brewery and bar map search.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Beer ratings and detailed description.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Brewery ratings and beers they have available.</li> \r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Save places visted and beers you like.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Locate beers locally submitted by our community.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Photos of bars and breweries.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>See all the popular beers and locations in your area.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Location and beer reviews.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Search other cities for breweries and bars. Great trip companion!</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Get notified when a friend check-ins at a location so you can meet up.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Made a beer game of earning achievements and points.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Find beer festivals.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Fast and intuitive. Super fast check-ins.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Social media enabled.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Beer suggestions.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Submit photos of places you visited.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Search over 500,000+ locations.</li>\r\n        <li><i class=\"fa-li fa fa-check-square fa-green\"></i>Search over 80,000 beers and 20,000+ breweries.</li>        \r\n      </ul>\r\n    </div>  \r\n  </div>\r\n</div>\r\n"
+
+/***/ },
+/* 521 */
+/***/ function(module, exports) {
+
+module.exports = "#search-box {\r\n  position: relative;\r\n  top:20px;\r\n}\r\n\r\n#brewery-results {\r\n    /* background-color:#fff; */\r\n    margin-top:3rem;\r\n    margin-bottom:3rem;\r\n    /* border: 1px solid rgba(0,0,0,.25); */\r\n}\r\n\r\n#brewery-results h1 {\r\n  font-size:1.25rem;\r\n}\r\n\r\n/*\r\n#brewery-results .row {\r\n  border-bottom: 1px solid rgba(0,0,0,.25);\r\n  padding-bottom: 1rem;\r\n  padding-top: 1rem;\r\n}\r\n*/\r\n\r\n\r\n#get-more-btn{\r\n    margin-top:1rem;\r\n    margin-bottom:2rem;\r\n}\r\n\r\n.card {\r\n    margin-bottom:0.5rem;\r\n    margin-top:0.5rem;\r\n    min-width: 290px !important;\r\n}\r\n\r\n.place-img {\r\n    display: flex;\r\n    justify-content: center;\r\n    height: 220px; /* or other desired height */\r\n    overflow: hidden;    \r\n}\r\n\r\n\r\n.place-img img {\r\n  flex: none;\r\n  max-height: 220px;\r\n}\r\n\r\nh4.card-title {\r\n    font-size:1.25rem;\r\n}"
+
+/***/ },
+/* 522 */
+/***/ function(module, exports) {
+
+module.exports = "<app-search id=\"search-box\"></app-search>\r\n\r\n<div class=\"text-center loader\" *ngIf=\"showLoader\">\r\n  <app-loader></app-loader>\r\n</div>\r\n\r\n\r\n<div id=\"brewery-results\" class=\"card-deck container\" *ngIf=\"!showLoader\">\r\n  <h1>Bars in {{city}}, {{state}}</h1>\r\n  <div class=\"card-deck\">\r\n    <div *ngFor=\"let location of locations\" class=\"card\">\r\n      <div class=\"place-img\">\r\n        <a [routerLink]=\"['/bar',common.paramSEOFriendly(location.name),location.place_id]\">\r\n          <img [src]=\"location.thumb\" />\r\n        </a>\r\n      </div>    \r\n      <div class=\"card-block text-center\">\r\n        <!-- <img [src]=\"location.thumb\" /> -->\r\n        <h4 class=\"card-title\">\r\n          <a [routerLink]=\"['/bar',common.paramSEOFriendly(location.name),location.place_id]\">{{location.name}}</a>\r\n        </h4>\r\n        <p *ngIf=\"location.rating\" class=\"card-text\">\r\n          <app-rating [rate]=\"location.rating\"></app-rating>\r\n        </p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div *ngIf=\"nextToken\" class=\"container\">\r\n  <div id=\"get-more-btn\">\r\n    <div *ngIf=\"!getMoreLoader\" class=\"text-center\">\r\n      <button class=\"btn btn-warning btn-lg btn-block\" (click)=\"getMoreLocations()\">\r\n        <i class=\"fa fa-glass\"></i>\r\n        Get More Bars\r\n      </button>\r\n    </div>\r\n    <div *ngIf=\"getMoreLoader\" class=\"text-center\">\r\n        <i class=\"fa fa-spinner fa-pulse fa-3x fa-fw\"></i>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+
+/***/ },
+/* 523 */
+/***/ function(module, exports) {
+
+module.exports = "#search-box {\r\n  position: relative;\r\n  top:20px;\r\n}\r\n\r\n#brewery-detail {\r\n    margin-top:3rem;\r\n    margin-bottom:3rem;\r\n    background-color:#fff;\r\n    border: 1px solid rgba(0,0,0,.25);\r\n}\r\n\r\n.beer-info span {\r\n   padding-left:1.5rem;\r\n   display: inline-block;\r\n}\r\n\r\n.beer-info i {\r\n    padding-right:0.5rem;\r\n}\r\n\r\n#place-img{\r\n    margin-top:2rem;\r\n    margin-bottom:1rem;\r\n    max-height:8rem;\r\n}\r\n\r\n.photo-btn {\r\n    margin:1rem;\r\n}\r\n\r\n.web-btn .btn {\r\n    margin-top:0.5rem;\r\n    width:15rem;\r\n}\r\n\r\n.review-avatar {\r\n    width:4rem !important;\r\n}\r\n\r\n.label-value {\r\n    font-size:15px !important;\r\n}\r\n\r\n.rating {\r\n    justify-content: left !important;\r\n}\r\n\r\n.review-head {\r\n    margin-top:2rem;\r\n}\r\n\r\n\r\n#bar-hours {\r\n    margin-top:1rem;\r\n}\r\n\r\n#place-photos img {\r\n  width:40rem;\r\n  vertical-align: top;\r\n}\r\n\r\n.place-thumb {\r\n    padding:5px;\r\n    cursor: pointer;\r\n}\r\n\r\n#review-area {\r\n    margin:1rem;\r\n}\r\n"
+
+/***/ },
+/* 524 */
+/***/ function(module, exports) {
+
+module.exports = "<!-- <app-search id=\"search-box\"></app-search> -->\r\n\r\n<div class=\"text-center loader\" *ngIf=\"showLoader\">\r\n  <app-loader></app-loader>\r\n</div>\r\n\r\n<div id=\"brewery-detail\" class=\"container\" *ngIf=\"!showLoader\">\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-md-3 place-img text-center\">\r\n      <div>\r\n        <img id=\"place-img\" *ngIf=\"locationPhoto\" [src]=\"locationPhoto\" />\r\n      </div>\r\n      <div>\r\n        <app-facebook [url]=\"pageURL\"></app-facebook>\r\n      </div>\r\n      <div class=\"web-btn\">\r\n        <a *ngIf=\"location.website\" class=\"btn btn-warning\" target=\"_blank\" [href]=\"location.website\" role=\"button\">\r\n          <i class=\"fa fa-globe\"></i> \r\n          View Website\r\n        </a> \r\n      </div>    \r\n    </div>\r\n    <div class=\"col-md-9\">\r\n      <div class=\"text-center\">\r\n        <h2>{{location.name}}</h2>\r\n        <div *ngIf=\"location.rating\">\r\n          <app-rating [rate]=\"location.rating\"></app-rating>\r\n        </div>       \r\n      </div>\r\n      <div class=\"alert alert-warning beer-info\">\r\n        <strong>Bar Info</strong>\r\n        <div>\r\n          <span *ngIf=\"location.rating\"><i class=\"fa fa-caret-right\"></i>Rating: {{location.rating}} out of 5</span>\r\n          <span *ngIf=\"location.international_phone_number\">\r\n            <i class=\"fa fa-caret-right\"></i>Phone: {{location.international_phone_number}}\r\n          </span>\r\n          <span *ngFor=\"let type of placeTypes\">\r\n            <i class=\"fa fa-caret-right\"></i>\r\n            {{type}}\r\n          </span>\r\n        </div>\r\n        <div>\r\n          <span><i class=\"fa fa-caret-right\"></i>Address: {{location.vicinity}}</span>\r\n        </div>\r\n      </div>\r\n      <gallery *ngIf=\"this.photoCount > 1\" [photos]=\"location.photos\"></gallery>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div *ngIf=\"location.reviews\" class=\"col-md-6\">\r\n        <h4 class=\"review-head\"><i class=\"fa fa-comments\"></i> {{location.name}} Reviews</h4>\r\n        <hr />      \r\n        <div id=\"review-area\" class=\"row alert alert-warning\" *ngFor=\"let review of location.reviews\">\r\n          <hr />\r\n          <div class=\"col-md-2 text-center\">\r\n            <img [src]=\"review.profile_photo_url\" class=\"rounded-circle review-avatar\" />\r\n          </div>\r\n          <div class=\"col-md-9\">\r\n            <p *ngIf=\"review.rating\">\r\n              <app-rating [rate]=\"review.rating\"></app-rating>\r\n            </p>\r\n            <p *ngIf=\"review.text\">\r\n              <b>{{review.author_name}} said:</b>\r\n              <read-more [text]=\"review.text\" [maxLength]=\"200\"></read-more>\r\n            </p>\r\n            <p class=\"text-right\">\r\n              {{common.timeConverter(review.time)}}\r\n            </p>\r\n          </div>            \r\n        </div>\r\n    </div>\r\n    <div id=\"bar-hours\" class=\"col-md-6\" *ngIf=\"location.opening_hours\">\r\n      <div class=\"alert alert-warning beer-info\">\r\n        <h4>Bar Hours</h4>\r\n        <div *ngFor=\"let hour of location.opening_hours.weekday_text\">\r\n          {{hour}}\r\n        </div>\r\n      </div>\r\n      <div class=\"check-map\" class=\"text-center\">\r\n        <strong>{{location.vicinity}}</strong>\r\n          <static-map [lat]=\"location.geometry.location.lat\" \r\n                      [lng]=\"location.geometry.location.lng\"\r\n                      [width]=\"420\"\r\n                      [height]=\"300\"\r\n                      [zoom]=\"14\">\r\n          </static-map>\r\n      </div>      \r\n    </div>\r\n  </div>\r\n</div>"
+
+/***/ },
+/* 525 */
+/***/ function(module, exports) {
+
+module.exports = "#privacy h4 {\r\n    margin-top:3rem;\r\n}\r\n\r\n#privacy h2 {\r\n    margin-top:2rem;\r\n}"
+
+/***/ },
+/* 526 */
+/***/ function(module, exports) {
+
+module.exports = "<div id=\"privacy\" class=\"container\">\r\n  <div class=\"page-title\"><h2>Privacy Policy</h2></div>\r\n<h4>1. Introduction</h4>\r\n<p>\r\n  Thank you for visiting Brew Search and, if applicable, downloading and/or installing our App.  Please read our Terms of Service and this Privacy Policy carefully as you must agree to both documents in order to have permission to use our Service.\r\n</p>\r\n<h4>2.  Definitions</h4>\r\n<p>\r\n  Throughout this document, we may use certain words or phrases, and it is important that you understand the meaning of them.  The following is a non-exhaustive list of definitions of words and phrases found in this document:\r\n</p>\r\n<p>\r\n  “App” refers to our mobile software application;\r\n</p>\r\n<p>\r\n  “Brew Search” refers to our company, known as “Brew Search LLC”; our Site; our App; our Service; or a combination of all or some of the preceding definitions, depending on the context in which the word is used;\r\n</p>\r\n<p>\r\n  “Service” refers to the services that we provide, including our Site and our App;\r\n</p>\r\n<p>\r\n  “Site” refers to our website, www.brewsearchapp.com or brewsearchapp.com;\r\n</p>\r\n<p>\r\n  “User” refers to anyone who uses our Service, including general visitors to our Site;\r\n</p>\r\n<p>\r\n  “You” refers to you, the person who is governed by this Privacy Policy.\r\n</p>\r\n<h4>3.  Information Collected</h4>\r\n<p>\r\n  Identifying Information\r\n</p>\r\n<p>\r\n  We collect certain personal information from you when you sign up to our Service that can be used to identify you, such as your name, e-mail address, PayPal address (if different from e-mail address), mailing address, date of birth, telephone number, unique device ID, credit card information, mobile carrier, Facebook profile, location and any other information that we deem relevant for the purpose of providing you with our Service of which you provide to us voluntarily.  The information we collect from you, to the extent that it is private, is disclosed only in accordance with our Terms of Service and/or this Privacy Policy.\r\n</p>\r\n<p>\r\n  Non-Identifying Information\r\n</p>\r\n<p>\r\n  Whenever you visit our Site, we may collect non-identifying information from you, such as your IP address, referring URL, browser, operating system, cookie information, and Internet Service Provider.  Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, this information alone cannot usually be used to identify you.\r\n</p>\r\n<h4>4.  Use of Your Information</h4>\r\n<p>\r\n  We may use your information to:\r\n</p>\r\n<ul>\r\n  <li>Enhance or improve User experience, our Site, or our Service.</li>\r\n  <li>Process transactions.</li>\r\n  <li>Transfer with your consent, including to restaurant owners and other parties as mentioned in our Terms of Service.</li>\r\n  <li>Send e-mails about our Site or respond to inquiries.</li>\r\n  <li>Send e-mails and updates about Brew Search, including our e-mail newsletter.</li>\r\n  <li>Send e-mails with third party offers.</li>\r\n  <li>\r\n    Perform any other function that we believe in good faith is necessary to protect the security or \r\n    proper functioning of our Site or Service.\r\n  </li>\r\n</ul>\r\n\r\n<h4>5.  Accessing, Editing, and Removing Your Information</h4>\r\n<p>\r\n  Users may in some cases be able to review and edit the personal information they have provided to us\r\n  by logging into your account on the Site and editing their account.  Although most changes may occur \r\n  immediately, information may still be stored in a web browser’s cache.  We take no responsibility for \r\n  stored information in your cache, or in other devices that may store information, and disclaim all liability of such.  In addition, we may, from time to time, retain residual information about you in our backup and/or database.\r\n</p>\r\n\r\n<h4>6.  Cookies</h4>\r\n<p>\r\n  We use cookies to remember your preferences, track advertisements, and remember shopping cart items.  For these \r\n  reasons, it is necessary that you enable cookies in your browser, and you hereby acknowledge that we have \r\n  informed you of our use of cookies and that you consent to our use of cookies in relation to your computer system.\r\n</p>\r\n<p>\r\n  Our Service may use cookies that are accessible to third parties.  Additionally, our Service uses Google AdSense, \r\n  which uses the DoubleClick cookie.  For more information about the DoubleClick cookie including how to opt out\r\n  of it, please visit <a href=\"http://www.google.com/policies/technologies/ads/\" target=\"_blank\">http://www.google.com/policies/technologies/ads/</a>\r\n</p>\r\n\r\n<h4>7.  Third Parties</h4>\r\n\r\n<h4>7.1  Third Party Websites</h4>\r\n<p>\r\n  Brew Search or its Users may post links to third party websites on our Site.  These third party websites are not \r\n  screened for privacy or security issues by Brew Search, and you release us from any liability for the conduct \r\n  of these third party websites.\r\n</p>\r\n<p>\r\n  Please be aware that this Privacy Policy, and any other policies in place, in addition to any amendments, \r\n  does not create rights enforceable by third parties or require disclosure of any personal information \r\n  relating to members of the Service or Site.  Brew Search bears no responsibility for the information collected\r\n  or used by any advertiser or third party website.  Please review the privacy policy and terms of service \r\n  for each site you visit through third party links.\r\n</p>\r\n\r\n<h4>7.2  Third Party Social Networks</h4>\r\n<p>\r\n  Brew Search permits Users to link their Facebook, Twitter and Untappd accounts to their Brew Search accounts.  If you \r\n  wish to limit what Facebook, Twitter, and Untappd share with us, you must adjust your privacy settings with \r\n  your accounts at these third parties accordingly.\r\n</p>\r\n<h4>8.  Third Party Access to Your Information</h4>\r\n<p>\r\nAlthough you are entering into an Agreement with Brew Search to disclose your information to us, we do use third \r\nparty individuals and organizations to assist us, including contractors, web hosts, and others.\r\n</p>\r\n<p>\r\nThroughout the course of our provision of our Service to you, we may delegate our authority to collect, access, use, and disseminate your information.  For example, our web host stores the information that you provide us, and we may hire outside contractors to perform maintenance or assist us in securing our website.\r\n</p>\r\n<p>\r\nIt is therefore necessary that you grant the third parties we may use in the course of our business the same rights that you afford us under this Privacy Policy.  For this reason, you hereby agree that for every authorization which you grant to us in this Privacy Policy, you also grant to any third party that we may hire, contract, or otherwise retain the services of for the purpose of operating, maintaining, repairing, or otherwise improving or preserving our website or its underlying files or systems.  You agree not to hold us liable for the actions of any of these third parties, even if we would normally be held vicariously liable for their actions, and that you must take legal action against them directly should they commit any tort or other actionable wrong against you.\r\n</p>\r\n<p>\r\nWithout limiting the generality of the foregoing, you authorize us to collect, share, exchange, store, and otherwise use your information in conjunction with:\r\n</p>\r\n<ul>\r\n  <li>Facebook</li>\r\n  <li>PayPal</li>\r\n  <li>Twitter</li>\r\n  <li>Google</li>\r\n</ul>\r\n<h4>9.  Release of Your Information for Legal Purposes</h4>\r\n<p>\r\n  At times it may become necessary or desirable to Brew Search, for legal purposes, to release your information in \r\n  response to a request from a government agency or a private litigant.  You agree that we may disclose your \r\n  information to a third party where we believe, in good faith, that it is desirable to do so for the purposes\r\n  of a civil action, criminal investigation, or other legal matter.  In the event that we receive a subpoena \r\n  affecting your privacy, we may elect to notify you to give you an opportunity to file a motion to quash \r\n  the subpoena, or we may attempt to quash it ourselves, but we are not obligated to do either.  We may \r\n  also proactively report you, and release your information to, third parties where we believe that it is \r\n  prudent to do so for legal reasons, such as our belief that you have engaged in fraudulent activities.  \r\n  You release us from any damages that may arise from or relate to the release of your information to a\r\n  request from law enforcement agencies or private litigants.\r\n</p>\r\n<h4>10.  Commercial and Non-Commercial Communications</h4>\r\n<p>\r\n  By providing information to the Site that forms the basis of communication with you, such as contact information, \r\n  you waive all rights to file complaints concerning unsolicited e-mails from Brew Search since, by providing such \r\n  information, you agree to receive communications from us or anyone else covered under this Privacy Policy. \r\n  However, you may unsubscribe from certain communications by notifying Brew Search that you no longer wish to receive \r\n  solicitations or information and we will endeavor to remove you from the database.\r\n</p>\r\n<h4>11.  Security Measures</h4>\r\n\r\n<p>\r\n  We take certain measures to enhance the security of our Site and Service, including using SSL certificates\r\n  and vulnerability scanning.   However, we make no representations as to the security or privacy of your \r\n  information.  It is in our interest to keep our website secure, but we recommend that you use anti-virus \r\n  software, firewalls, and other precautions to protect yourself from security threats.\r\n</p>\r\n\r\n<h4>12.  Your California Online Rights</h4>\r\n<p>\r\n  Brew Search permits residents of the State of California to use its services.  Therefore, it is the intent of Brew Search\r\n  to comply with the California Business and Professions Code §§ 22575-22579.  If you are a California resident \r\n  you may request certain information regarding our disclosure of personal information to any third parties for \r\n  their direct marketing purposes.  Various provisions throughout this Privacy Policy address requirements of \r\n  the Californian privacy statutes.  In summary, you must presume that we collect electronic information from \r\n  all visitors.  You may contact us at hello@brewsearchapp.com with any questions.\r\n</p>\r\n\r\n<h4>13.  International Transfer</h4>\r\n\r\n<p>\r\n  Your information may be transferred to—and maintained on—computers located outside of your state, province, \r\n  country or other governmental jurisdiction where the privacy laws may not be as protective as those in your \r\n  jurisdiction.  If you are located outside the United States and choose to provide information to us, Brew Search \r\n  transfers Personal Information to the United States and processes it there.  Your consent to this Privacy \r\n  Policy followed by your submission of such information represents your agreement to that transfer.\r\n</p>\r\n<h4>14.  Amendments</h4>\r\n\r\n<p>\r\n  We may amend this Privacy Policy from time to time.  When we amend this Privacy Policy, we will update \r\n  this page accordingly and require that you accept the amendments as a condition of your continued use of our Service.\r\n</p>\r\n</div>"
+
+/***/ },
+/* 527 */
+/***/ function(module, exports) {
+
+module.exports = "#terms h4 {\r\n    margin-top:3rem;\r\n}\r\n\r\n#terms h2 {\r\n    margin-top:2rem;\r\n}"
+
+/***/ },
+/* 528 */
+/***/ function(module, exports) {
+
+module.exports = "<div id=\"terms\" class=\"container\">\r\n  <div class=\"page-title\"><h2>Terms of Use</h2></div>\r\n\r\n<h4>1. Introduction</h4>\r\n<p>\r\n  Thank you for visiting Brew Search and, if applicable, downloading and/or installing our App.  \r\n  Please read these Terms of Service and our Privacy Policy carefully as you must agree to both \r\n  documents in order to have permission to use our Service.\r\n</p>\r\n\r\n<h4>2. Definitions</h4>\r\n<p>\r\n  Throughout this Agreement, we may use certain words or phrases, and it is important that you understand \r\n  the meaning of them.  The list is not all-encompassing and no definition should be considered binding \r\n  to the point that it renders this Agreement nonsensical:\r\n</p>\r\n<p>\r\n  “Agreement” refers to these Terms of Service;\r\n</p>\r\n<p>\r\n  “App” refers to our mobile software application;\r\n</p>\r\n<p>\r\n  “Brew Search” refers to our company, known as “Brew Search LLC”; our Site; our App; our Service; or a combination \r\n  of all or some of the preceding definitions, depending on the context in which the word is used;\r\n</p>\r\n<p>\r\n  “Service” refers to the services that we provide, including our Site and our App;\r\n</p>\r\n<p>\r\n  “Site” refers to our website, www.brewsearchapp.com, brewsearch.com, or about.brewsearch.com;\r\n</p>\r\n<p>\r\n  “User” refers to anyone who uses our Service, including general visitors to our Site;\r\n</p>\r\n<p>\r\n  “You” refers to you, the person who is entering into this Agreement with Brew Search.\r\n</p>\r\n\r\n<h4>3.  How Brew Search Works</h4>\r\n<p>\r\n  Brew Search is currently targeted at sellers and consumers of craft beer.  Our Service is designed to \r\n  notify Users of when their favorite beers go on tap or are released in store.  Additionally, our \r\n  Service will use an iBeacon to permit consumers to check into restaurants so that owners of those \r\n  restaurants are informed of how long consumers are in those restaurants.  Our Service will also \r\n  permit Users to discover more information about each other via Facebook.  At this time, our Service \r\n  is designed for craft beer and restaurants, but we may expand it to apply to other beverages and venues in the future.\r\n</p>\r\n\r\n<h4>4.  Eligibility</h4>\r\n<p>\r\n  In order to use our Service, you must meet a number of conditions, including but not limited to:\r\n</p>\r\n\r\n<ul>\r\n  <li>\r\n    You must not be in violation of any embargoes, export controls, or other laws of the United States \r\n    or other countries having jurisdiction over this Agreement, Brew Search, and yourself.  For example, if the Office\r\n    of Foreign Assets Control prohibits conducting financial transactions with nationals, residents, or banks \r\n    of your country, you must not use our Service.\r\n  </li>\r\n  <li>\r\n    You must be the minimum age required to enter into a contract and purchase alcohol in the area in which \r\n    you reside and, in any event, must not be less than 18 years of age.\r\n  </li>\r\n  <li>\r\n    You must not sign up on behalf of a natural person other than yourself.\r\n  </li>\r\n  <li>\r\n    You must, if signing up on behalf of a person other than a natural person, be authorized by that person \r\n    to bind it to this Agreement and you hereby warrant that you are binding both that person and yourself \r\n    to this Agreement and that both of you shall be jointly and severally liable to Brew Search for any duties \r\n    imposed under, or breaches of, this Agreement.\r\n  </li>\r\n  <li>\r\n    You must agree that we may create your account using OAuth/OpenID Connect.\r\n  </li>\r\n  <li>\r\n    You must provide us with personal information, payment information, and other information that we\r\n     deem necessary to provide you with our Service.\r\n  </li>\r\n</ul>\r\n\r\n\r\n<h4>5.  Nature of Service</h4>\r\n<p>\r\n  Brew Search is provided to facilitate information sharing and customer service between consumers and members of \r\n  the beverage industry and hospitality business.  However, Brew Search may not be appropriate for your purposes, \r\n  and in any event, Brew Search does not endorse any of its Users unless otherwise stated.  You therefore agree \r\n  to release Brew Search from any liability relating to the actions of any other User who may use our Service \r\n  and you are advised to not enter into relations with any other party any differently than you would if you \r\n  were not a User of Brew Search.\r\n</p>\r\n<h4>6.  Rules of Use</h4>\r\n<p>\r\nYou must not:\r\n</p>\r\n<ul>\r\n  <li>\r\n    Violate the laws of the United States, its states, or any foreign political entity having jurisdiction over\r\n     this Agreement, whether or not the foreign political entity is a country or a subdivision (such as a state or province)\r\n      or municipality (such as a city, town, county, or region) of a foreign country.\r\n  </li>\r\n  <li>\r\n    Post or send anything violent, threatening, pornographic, racist, hateful, or otherwise objectionable \r\n    according to the opinion of Brew Search or its delegates.\r\n  </li>\r\n  <li>\r\n    Infringe on anyone’s intellectual property rights, defame anyone, impersonate anyone, or otherwise violate \r\n    the rights of a third party.\r\n  </li>\r\n  <li>\r\n    Sell alcohol to minors or in violation of any licensing conditions imposed upon you, or promote the consumption \r\n    of such unauthorized sale or consumption.\r\n  </li>\r\n  <li>\r\n    Rate, review, or otherwise assess any business or beer where a reasonable person would believe that there \r\n    could be an appearance of bias on your part, including rating your own business or beer or that of a competitor.\r\n  </li>\r\n  <li>\r\n    Hack, crack, phish, SQL inject, or otherwise compromise the security or integrity of the Brew Search Site,\r\n     Service, or its Users’ computers.\r\n  </li>\r\n  <li>\r\n    Do anything else which could bring Brew Search into disrepute or violate the rights of any person.\r\n  </li>\r\n  <li>\r\n      Brew Search reserves the right to block, edit, delete, or otherwise exercise editorial discretion \r\n      to ensure that the rules contained in this section of this Agreement are followed.\r\n  </li>\r\n</ul>\r\n\r\n<h4>7.  Payment and Refunds</h4>\r\n<p>\r\n  Payment may be made by means of credit card, PayPal or purchase order.  Unless otherwise stated, all \r\n  prices are listed in United States dollars.  Rebilling will be conducted at thirty day intervals.  \r\n  In the event that you are offered a free trial period, you will be billed immediately upon the expiration\r\n   of such a trial period.  Because our Service is intangible, you may cancel your subscription at any \r\n   time but no refunds will be permitted, even on a pro rata basis.  Additional terms surrounding \r\n   payment may be located on our Site or communicated to you directly and are hereby incorporated \r\n   into this Agreement by reference.\r\n</p>\r\n\r\n<h4>8.  Chargebacks, Credit Card Cancellations, and PayPal Disputes</h4>\r\n<p>\r\n  Where a User conducts a chargeback or PayPal dispute against Brew Search, such User shall be liable to\r\n   Brew Search for the full amount reversed as a result of such chargeback or PayPal dispute, as well \r\n   as all reasonable attorneys’ fees, collection agency fees, court costs, disbursements, and other \r\n   expenses incurred by Brew Search in its enforcement of its rights under this section.\r\n</p>\r\n<p>\r\n  Users are responsible for ensuring that their payment methods are able to be charged on time and as required.  \r\n  Should a User’s payment not be charged due to a credit card or PayPal account transaction being declined, \r\n  Brew Search may choose to inform the User of the problem and give the User time to correct the error, \r\n  but is under no obligation to do so and may terminate such a User’s account immediately and delete \r\n  all associated User data without notice.\r\n</p>\r\n\r\n<h4>9.  Authority to Release Information</h4>\r\n<p>\r\n  Brew Search may share data about consumer trends and other information with businesses and other \r\n  interested parties.  You agree that we may share such information for commercial and non-commercial\r\n   purposes without notification or remuneration o you.\r\n</p>\r\n\r\n<h4>10. Third Party Charges</h4>\r\n<p>\r\n  Because our App is a mobile software application, your mobile carrier may assess data, text messaging,\r\n   or other charges against you while using all or some features of our App or our App in general.  You agree \r\n   that Brew Search is not responsible for any such charges and you are advised to contact your mobile carrier \r\n   to ensure that you are fully aware of the cost of using our Service.\r\n</p>\r\n<h4>11.  Limited License</h4>\r\n<p>\r\n  The Brew Search App is offered on a licensed basis.  By downloading and/or installing our App, you \r\n  are agreeing to be granted a revocable license to use our Service for your own personal purposes.  \r\n  You agree not to attempt to reverse engineer, resell, copy, or otherwise tamper with or distribute our Service.\r\n</p>\r\n<p>\r\n  We may revoke this license to you at any time without compensation.  You agree that upon receiving \r\n  notice of such revocation, you will make all reasonable efforts to remove any of our proprietary \r\n  files from your hardware or any hardware under your control.\r\n</p>\r\n<h4>12.  Our Copyright</h4>\r\n\r\n<p>Brew Search values its copyright as it distinguishes us from third party competitors.  You agree not to copy, distribute, \r\n  display, disseminate, or otherwise reproduce any of the information made available through the Service—including \r\n  third party-owned content—without receiving our prior written permission or that of the relevant copyright holder.\r\n</p>\r\n<h4>13.  Your Copyright</h4>\r\n\r\n<p>Brew Search must be assured that it has the right to use the content that is published through its Service by its Users. \r\n   Such content may include, but is not limited to, photographs, videos, text, audio, and other materials.  Whenever \r\n   submitting content to our Service, you agree that you are granting us a non-exclusive, universal, perpetual, \r\n   irrevocable, sublicensable, commercial and non-commercial right to use, distribute, sell, publish, and \r\n   otherwise make use of the content that you submit to us.  You warrant to us that you have the right to\r\n    grant us this right over the content, and that you will indemnify us for any loss resulting from a breach \r\n    of this warranty and defend us against claims regarding the same.\r\n</p>\r\n\r\n<h4>14.  Trademarks</h4>\r\n\r\n<p>\r\n  Brew Search is a mark used by us, Brew Search LLC, to uniquely identify our Site, App, Service, and business.  \r\n  You agree not to use this phrase anywhere without our prior written consent.  Additionally, you agree \r\n  not to use our trade dress, or copy the look and feel of our website or its design, without our prior \r\n  written consent.  You agree that this paragraph goes beyond the governing law on intellectual property \r\n  law, and includes prohibitions on any competition that violates the provisions of this paragraph, \r\n  including starting your own competing website or business.\r\n</p>\r\n\r\n<h4>15.  Revocation of Consent</h4>\r\n<p>\r\n  We may revoke our consent for your use of our intellectual property, or any other permission granted to you \r\n  under this Agreement, at any time.  You agree that if we so request, you must take immediate action to remove\r\n   any usage of our intellectual property that you may have engaged in, even if it would cause a loss to you.\r\n</p>\r\n<h4>16.  Copyright &amp; Trademark Infringement</h4>\r\n<p>\r\n  We take copyright infringement very seriously, and we have registered a Copyright Agent with the United \r\n  States Copyright Office, which limits our liability under the Digital Millennium Copyright Act.  If \r\n  you believe that your copyright has been infringed, please send us a message which contains:\r\n</p>\r\n<ul>\r\n<li>Your name.</li>\r\n<li>The name of the party whose copyright has been infringed, if different from your name.</li>\r\n<li>The name and description of the work that is being infringed.</li>\r\n<li>The location on our website of the infringing copy.</li>\r\n<li>\r\n  A statement that you have a good faith belief that use of the copyrighted work described above is not \r\n  authorized by the copyright owner (or by a third party who is legally entitled to do so on behalf of \r\n  the copyright owner) and is not otherwise permitted by law.\r\n</li>\r\n<li>\r\n  A statement that you swear, under penalty of perjury, that the information contained in this notification \r\n  is accurate and that you are the copyright owner or have an exclusive right in law to bring infringement \r\n  proceedings with respect to its use.</li>\r\n</ul>\r\n<p>\r\n  You must sign this notification electronically and send it to our Copyright Agent at hello@bresearch.com.\r\n</p>\r\n<p>\r\n  Although U.S. law does not provide for a similar procedure for trademark infringement, we recommend that \r\n  you send us similar information to that above in regards to any allegation of trademark infringement, and \r\n  we will address it as soon as practicable.\r\n</p>\r\n\r\n<h4>17.  Communications Decency Act</h4>\r\n<p>\r\n  Similar to the DMCA provisions above, United States law—specifically Section 230 of the Communications \r\n  Decency Act—creates a defense for us for the actions of third parties in regards to any defamatory content\r\n   published through our Service.  Although we are not liable for defamatory words published through our \r\n   Service by our Users even if given notice, we do prohibit defamation under this Agreement and we may, \r\n   if we believe the situation warrants it, take action against the offending User.  Please notify us at \r\n   hello@brewsearch.com if any of our Users have posted anything that you believe is defamatory.\r\n</p>\r\n<h4>18.  Representations &amp; Warranties</h4>\r\n<p>\r\n  WE MAKE NO REPRESENTATIONS OR WARRANTIES AS TO THE MERCHANTABILITY OF OUR SERVICE OR FITNESS FOR ANY PARTICULAR \r\n  PURPOSE.  YOU AGREE THAT YOU ARE RELEASING US FROM ANY LIABILITY THAT WE MAY OTHERWISE HAVE TO YOU IN RELATION \r\n  TO OR ARISING FROM THIS AGREEMENT OR OUR SERVICES, FOR REASONS INCLUDING, BUT NOT LIMITED TO, FAILURE OF OUR \r\n  SERVICE, NEGLIGENCE, OR ANY OTHER TORT.  TO THE EXTENT THAT APPLICABLE LAW RESTRICTS THIS RELEASE OF LIABILITY,\r\n   YOU AGREE THAT WE ARE ONLY LIABLE TO YOU FOR THE MINIMUM AMOUNT OF DAMAGES THAT THE LAW RESTRICTS OUR LIABILITY \r\n   TO, IF SUCH A MINIMUM EXISTS.\r\n</p>\r\n<p>\r\n  YOU AGREE THAT WE ARE NOT RESPONSIBLE IN ANY WAY FOR DAMAGES CAUSED BY THIRD PARTIES WHO MAY USE OUR SERVICES, \r\n  INCLUDING BUT NOT LIMITED TO PEOPLE WHO COMMIT INTELLECTUAL PROPERTY INFRINGEMENT, DEFAMATION, TORTIOUS INTERFERENCE \r\n  WITH ECONOMIC RELATIONS, OR ANY OTHER ACTIONABLE CONDUCT TOWARDS YOU.\r\n</p>\r\n<p>\r\n  YOU AGREE THAT WE ARE NOT RESPONSIBLE FOR ANY INJURY OR LOSS SUFFERED BY YOU AS A RESULT—IN WHOLE OR IN PART—OF \r\n  THE ACTIONS OF ANY OTHER USER.\r\n</p>\r\n<p>\r\n  YOU AGREE THAT WE ARE NOT RESPONSIBLE FOR ANY FAILURE ON THE PART OF A PAYMENT PROCESSOR, INCLUDING PAYPAL OR \r\n  THE CREDIT CARD COMPANY OR BANK THAT YOU USE TO FUND PAYPAL, TO DIRECT PAYMENTS TO THE CORRECT DESTINATION, OR \r\n  ANY ACTIONS ON THEIR PART IN PLACING A HOLD ON YOUR FUNDS.\r\n</p>\r\n<p>\r\n  WE ARE NOT LIABLE FOR ANY FAILURE OF THE GOODS OR SERVICES OF OUR COMPANY OR A THIRD PARTY, INCLUDING ANY \r\n  FAILURES OR DISRUPTIONS, UNTIMELY DELIVERY, SCHEDULED OR UNSCHEDULED, INTENTIONAL OR UNINTENTIONAL, ON OUR \r\n  WEBSITE WHICH PREVENT ACCESS TO OUR WEBSITE TEMPORARILY OR PERMANENTLY.\r\n</p>\r\n<p>\r\n  THE PROVISION OF OUR SERVICE TO YOU IS CONTINGENT ON YOUR AGREEMENT WITH THIS AND ALL OTHER SECTIONS OF \r\n  THIS AGREEMENT.  NOTHING IN THE PROVISIONS OF THIS “REPRESENTATIONS & WARRANTIES” SECTION SHALL BE CONSTRUED \r\n  TO LIMIT THE GENERALITY OF THE FIRST PARAGRAPH OF THIS SECTION.\r\n</p>\r\n<p>\r\n  For Jurisdictions that do not allow us to limit our liability: Notwithstanding any provision of these Terms, \r\n  if your jurisdiction has provisions specific to waiver or liability that conflict with the above then our \r\n  liability is limited to the smallest extent possible by law.  Specifically, in those jurisdictions not allowed, we do not disclaim liability for: (a) death or personal injury caused by its negligence or that of any of its officers, employees or agents; or (b) fraudulent misrepresentation; or (c) any liability which it is not lawful to exclude either now or in the future.\r\n</p>\r\n<p>\r\n  IF YOU ARE A RESIDENT OF A JURISDICTION THAT REQUIRES A SPECIFIC STATEMENT REGARDING RELEASE THEN THE \r\n  FOLLOWING APPLIES.  FOR EXAMPLE, CALIFORNIA RESIDENTS MUST, AS A CONDITION OF THIS AGREEMENT, WAIVE \r\n  THE APPLICABILITY OF CALIFORNIA CIVIL CODE SECTION 1542, WHICH STATES, “A GENERAL RELEASE DOES NOT \r\n  EXTEND TO CLAIMS WHICH THE CREDITOR DOES NOT KNOW OR SUSPECT TO EXIST IN HIS OR HER FAVOR AT THE TIME \r\n  OF EXECUTING THE RELEASE, WHICH IF KNOWN BY HIM OR HER MUST HAVE MATERIALLY AFFECTED HIS OR HER \r\n  SETTLEMENT WITH THE DEBTOR.”  YOU HEREBY WAIVE THIS SECTION OF THE CALIFORNIA CIVIL CODE.  YOU HEREBY\r\n   WAIVE ANY SIMILAR PROVISION IN LAW, REGULATION, OR CODE THAT HAS THE SAME INTENT OR EFFECT AS THE AFOREMENTIONED RELEASE.\r\n</p>\r\n<h4>19.  Indemnity</h4>\r\n<p>\r\n  You agree to indemnify and hold us harmless for any claims by you or any third party which may arise from or \r\n  relate to this Agreement or the provision of our service to you, including any damages caused by your use \r\n  of our Service.  You also agree that you have a duty to defend us against such claims and we may require \r\n  you to pay for an attorney(s) of our choice in such cases.  You agree that this indemnity extends to \r\n  requiring you to pay for our reasonable attorneys’ fees, court costs, and disbursements.  In the event \r\n  of a claim such as one described in this paragraph, we may elect to settle with the party/parties making \r\n  the claim, and you shall be liable for the damages as though we had proceeded with a trial.\r\n</p>\r\n\r\n<h4>20.  Choice of Law</h4>\r\n<p>\r\n  This Agreement shall be governed by the laws in force in the State of Michigan.  The offer and acceptance \r\n  of this contract are deemed to have occurred in the State of Michigan.\r\n</p>\r\n<h4>21.  Forum of Dispute</h4>\r\n<p>\r\n  You agree that any dispute arising from or relating to this Agreement will be heard solely by a court\r\n   of competent jurisdiction in the State of Michigan.  Specifically, where the subject matter of a \r\n   dispute is eligible for it, you agree that any disputes shall be heard solely within the lowest \r\n   civil court of competent jurisdiction in the State of Michigan (“Small Claims Court”) in accordance \r\n   with MCL 600.8401 through MCL 600.8427, MCL 600.8302, MCR 4.301 through MCR 4.306, and all other applicable legislation.\r\n</p>\r\n<p>\r\n  If a dispute claims multiple claims and one or more of those claims would be eligible to be heard by \r\n  the Small Claims Court, you agree not to bring the other claims against us and to instead proceed \r\n  within the Small Claims Court.\r\n</p>\r\n<p>\r\n  If you would be entitled in a dispute to an amount exceeding the monetary jurisdiction of the Small \r\n  Claims Court, you agree to waive your right to collect any damages in excess of the monetary jurisdiction \r\n  and instead still bring your claim within the Small Claims Court.  At the time of drafting this \r\n  Agreement, the monetary jurisdiction of the Small Claims Court is $5,000.\r\n</p>\r\n<p>\r\n  You agree that if a dispute is eligible to be heard in Small Claims Court but you would be entitled to an \r\n  additional or alternative remedy in a higher court, such as injunctive relief, you will waive your right to \r\n  that remedy and still bring the dispute within the Small Claims Court.\r\n</p>\r\n<p>\r\n  If you bring a dispute in a manner other than in accordance with this section, you agree that we may move \r\n  to have it dismissed, and that you will be responsible for our reasonable attorneys’ fees, court costs,\r\n   and disbursements in doing so.\r\n</p>\r\n<p>\r\n  You agree that the unsuccessful party in any dispute arising from or relating to this Agreement will be \r\n  responsible for the reimbursement of the successful party’s reasonable attorneys’ fees, court costs, and disbursements.\r\n</p>\r\n\r\n<h4>22.  Force Majeure</h4>\r\n<p>\r\n  You agree that we are not responsible to you for anything that we may otherwise be responsible for, if it\r\n   is the result of events beyond our control, including, but not limited to, acts of God, war, insurrection, \r\n   riots, terrorism, crime, labor shortages (including lawful and unlawful strikes), embargoes, postal \r\n   disruption, communication disruption, unavailability of payment processors, failure or shortage of \r\n   infrastructure, shortage of materials, or any other event beyond our control.\r\n</p>\r\n<h4>23.  Severability</h4>\r\n<p>\r\n  In the event that a provision of this Agreement is found to be unlawful, conflicting with another \r\n  provision of the Agreement, or otherwise unenforceable, the Agreement will remain in force as though \r\n  it had been entered into without that unenforceable provision being included in it.\r\n</p>\r\n<p>\r\n  If two or more provisions of this Agreement are deemed to conflict with each other’s operation, Brew Search \r\n  shall have the sole right to elect which provision remains in force.\r\n</p>\r\n<h4>24.  Non-Waiver</h4>\r\n<p>\r\n  Brew Search reserves all rights afforded to us under this Agreement as well as under the provisions \r\n  of any applicable law.  Our non-enforcement of any particular provision or provisions of this \r\n  Agreement or any applicable law should not be construed as our waiver of the right to enforce that \r\n  same provision under the same or different circumstances at any time in the future.\r\n</p>\r\n<h4>25.  Termination & Cancellation</h4>\r\n<p>\r\n  We may terminate your access to our Site and Service at our discretion without explanation, though \r\n  we will strive to provide a timely explanation in most cases.  Our liability for refunding you, \r\n  if you have paid anything to us, will be limited to the amount you paid for goods or services \r\n  which have not yet been and will not be delivered, except in cases where the termination or \r\n  cancellation was due to your breach of this Agreement, in which case you agree that we are not \r\n  required to provide any refund or other compensation whatsoever.\r\n</p>\r\n<p>\r\n  Under no circumstances, including termination or cancellation of our Service to you, will we be \r\n  liable for any losses related to actions of other Users.\r\n</p>\r\n<h4>26.  Assignment of Rights</h4>\r\n<p>\r\n  You may not assign your rights and/or obligations under this Agreement to any other party without our \r\n  prior written consent.  We may assign our rights and/or obligations under this Agreement to \r\n  any other party at our discretion.\r\n</p>\r\n<h4>27.  Amendments</h4>\r\n<p>\r\n  We may amend this Agreement from time to time.  When we amend this Agreement, we will update this \r\n  page accordingly and require that you accept the amendments as a condition of your continued use of our Service.\r\n</p>\r\n\r\n<h4>28.  California Users and Residents</h4>\r\n<p>\r\n  Pursuant to California Civil Code Section 1789.3, any questions about pricing, complaints, or inquiries \r\n  about Brew Search must be addressed to our agent for notice and sent via certified mail to that agent.  \r\n  For our agent’s most current contact information, please send a request to hello@brewsearch.com.\r\n</p>\r\n<p>\r\n  Lastly, California users are also entitled to the following specific consumer rights notice: The \r\n  Complaint Assistance Unit of the Division of Consumer Services of the California Department of \r\n  Consumer Affairs may be contacted in writing at 1625 North Market Blvd., Sacramento, CA 95834, \r\n  or by telephone at (916) 445-1254 or (800) 952-5210.\r\n</p>\r\n</div>"
+
+/***/ },
+/* 529 */
+/***/ function(module, exports) {
+
+module.exports = ".table {\r\n  padding-top: 30px;\r\n}\r\n.row {\r\n  display: table-row;\r\n  background: #f6f6f6;\r\n}\r\n\r\n.row:nth-of-type(odd) {\r\n  background: #e9e9e9;\r\n}\r\n\r\n.row.header {\r\n  color: #ffffff;\r\n  font-weight: bold;\r\n  background: #158126;\r\n}\r\n\r\n.cell {\r\n  padding: 20px;\r\n  display: table-cell;\r\n}\r\n"
+
+/***/ },
+/* 530 */
+/***/ function(module, exports) {
+
+module.exports = "<div class=\"todo\">\r\n\r\n  Todo component\r\n    <form #f=\"ngForm\" (ngSubmit)=\"addTodo()\">\r\n    <input name=\"newTodo\" [(ngModel)]=\"newValue\">\r\n    <button>Submit</button>\r\n  </form>\r\n\r\n  <div class=\"table\">\r\n    <div class=\"row header\">\r\n      <div class=\"cell\">Id</div>\r\n      <div class=\"cell\">Created at</div>\r\n      <div class=\"cell\">Value</div>\r\n      <div class=\"cell\">Completed</div>\r\n    </div>\r\n    <div class=\"row\" *ngFor=\"let todo of todos\">\r\n      <div class=\"cell\">{{todo.id}}</div>\r\n      <div class=\"cell\">{{todo.createDate}}</div>\r\n      <div class=\"cell\">{{todo.name}}</div>\r\n      <div class=\"cell\">{{todo.isOrganic}}</div>\r\n    </div>\r\n\r\n</div>\r\n"
+
+/***/ },
+/* 531 */
+/***/ function(module, exports) {
+
+module.exports = "<app-header></app-header>\r\n<router-outlet (deactivate)=\"onDeactivate()\"></router-outlet>\r\n<app-footer></app-footer>\r\n\r\n<!--\r\n<div class=\"hero-universal\">\r\n    <div class=\"inner-hero\">\r\n        <div>\r\n        <span xLarge>Universal JavaScript {{ title }}!</span>\r\n        </div>\r\n\r\n        Two-way binding: <input type=\"text\" [value]=\"title\" (input)=\"title = $event.target.value\">\r\n\r\n        <br>\r\n        <br>\r\n\r\n        <strong>Router-outlet:</strong>\r\n        <main>\r\n        <router-outlet></router-outlet>\r\n        </main>\r\n    </div>\r\n</div>\r\n-->"
+
+/***/ },
+/* 532 */
+/***/ function(module, exports) {
+
+module.exports = "#brewery-beers span {\r\n  margin-right:1.5rem;\r\n}\r\n\r\n#brewery-beers i {\r\n  margin-right:0.5rem;\r\n}\r\n\r\n.beer-row {\r\n    /*border: 1px solid #CCC !important;*/\r\n    margin-top: 1rem;\r\n    margin-bottom: 1rem;\r\n    padding-bottom:1rem;\r\n}"
+
+/***/ },
+/* 533 */
+/***/ function(module, exports) {
+
+module.exports = "  <div id=\"brewery-beers\" class=\"row beer-row alert alert-warning\">\r\n    <div class=\"col-md-2 text-center\">\r\n      <a [routerLink]=\"['/beer',_beer.id]\">\r\n        <img *ngIf=\"_beer.labels\" [src]=\"_beer.labels.icon\" />\r\n      </a>\r\n    </div>\r\n    <div class=\"col-md-10 text-left\">\r\n      <h4 *ngIf=\"_brewery\"><a [routerLink]=\"['/beer',common.paramSEOFriendly(_brewery.name+' '+_beer.name),_beer.id]\">{{_beer.nameDisplay}}</a></h4>\r\n      <h4 *ngIf=\"!_brewery\"><a [routerLink]=\"['/beer',common.paramSEOFriendly(_beer.breweries[0].name+' '+_beer.name),_beer.id]\">{{_beer.nameDisplay}}</a></h4>\r\n      <h5 *ngIf=\"_showBreweryName && _brewery\"><a [routerLink]=\"['/brewery',common.paramSEOFriendly(_brewery.name),_brewery.id]\">{{_brewery.name}}</a></h5>\r\n      <h5 *ngIf=\"_showBreweryName && _beer.breweries\"><a [routerLink]=\"['/brewery',common.paramSEOFriendly(_beer.breweries[0].name),_beer.breweries[0].id]\">{{_beer.breweries[0].name}}</a></h5>\r\n      <h6 *ngIf=\"_beer.style\">{{_beer.style.shortName}}</h6>\r\n      <p *ngIf=\"_beer.description && _showDescription\">\r\n        <read-more [text]=\"_beer.description\" [maxLength]=\"100\"></read-more>\r\n      </p>\r\n      <div>\r\n        <span *ngIf=\"_beer.abv\">\r\n          <i class=\"fa fa-caret-right\"></i>{{_beer.abv}}% ABV\r\n        </span>\r\n        <span *ngIf=\"!_beer.abv\">\r\n          <i class=\"fa fa-caret-right\"></i>N/A ABV\r\n        </span>            \r\n        <span *ngIf=\"_beer.ibu\">\r\n          <i class=\"fa fa-caret-right\"></i>{{_beer.ibu}} IBU\r\n        </span>\r\n        <span *ngIf=\"!_beer.ibu\">\r\n          <i class=\"fa fa-caret-right\"></i>N/A IBU\r\n        </span>            \r\n        <span><i class=\"fa fa-caret-right\"></i>Added {{common.dateFriendly(_beer.createDate)}}</span>\r\n      </div>\r\n    </div>         \r\n  </div>"
+
+/***/ },
+/* 534 */
+/***/ function(module, exports) {
+
+module.exports = ".footer {\r\n    background-color: #333 !important;\r\n    color:#fff;\r\n    min-height:10rem;\r\n}\r\n\r\n.footer a {\r\n    color:#fff;\r\n    font-weight:1rem;\r\n    padding: 0 0.5rem;\r\n\r\n}\r\n\r\n.footer-top {\r\n   padding:2rem;\r\n}\r\n\r\n.footer-links {\r\n    padding-top:1rem;\r\n}\r\n\r\n.footer-links a {\r\n    padding-top:1rem;\r\n    font-size: 15px !important;\r\n    display:inline-block;\r\n}\r\n\r\n.copyright {\r\n    background-color: #222 !important;\r\n    vertical-align: middle !important;\r\n}\r\n\r\n.copyright h5 {\r\n    padding:1rem;\r\n}\r\n\r\n.footer hr {\r\n     border-top: 1px solid #222;\r\n}\r\n\r\n.footer .social {\r\n    padding:2rem;\r\n}\r\n\r\n.footer h5 {\r\n    font-size: 14px !important;\r\n}\r\n\r\n.btn-facebook {\r\n    width: 15rem;\r\n}\r\n\r\n\r\n.btn-facebook {\r\n    color: #fff;\r\n    background-color: #3b5998;\r\n    border-color: #3b5998;\r\n}\r\n\r\n.btn-facebook:hover {\r\n    color: #fff;\r\n    background-color: #2a4887;\r\n    border-color: #2a4887;\r\n}"
+
+/***/ },
+/* 535 */
+/***/ function(module, exports) {
+
+module.exports = "<div>\n  <a class=\"btn btn-facebook\" target=\"_blank\" href=\"#\" role=\"button\" (click)=\"btnClick()\">\n    <i class=\"fa fa-facebook\"></i>\n    Share\n  </a>\n</div>"
+
+/***/ },
+/* 536 */
+/***/ function(module, exports) {
+
+module.exports = ".footer {\r\n    background-color: #333 !important;\r\n    color:#fff;\r\n    min-height:10rem;\r\n}\r\n\r\n.footer a {\r\n    color:#fff;\r\n    font-weight:1rem;\r\n\r\n}\r\n\r\n.footer-top {\r\n   padding:2rem;\r\n}\r\n\r\n.footer-links {\r\n    padding-bottom:1rem;\r\n}\r\n\r\n.footer-links a {\r\n    font-size: 15px !important;\r\n    display:inline-block !important;\r\n    padding:5px;\r\n}\r\n\r\n.copyright {\r\n    background-color: #222 !important;\r\n    vertical-align: middle !important;\r\n}\r\n\r\n.copyright h5 {\r\n    padding:1rem;\r\n}\r\n\r\n.footer hr {\r\n     border-top: 1px solid #222;\r\n}\r\n\r\n.footer .social {\r\n    padding:2rem;\r\n}\r\n\r\n.footer h5 {\r\n    font-size: 14px !important;\r\n}\r\n\r\n#get-app {\r\n    padding-bottom:2rem;\r\n}\r\n\r\n.footer-head {\r\n    color:#000;\r\n    size:1.5rem;\r\n    font-weight: bold;\r\n}"
+
+/***/ },
+/* 537 */
+/***/ function(module, exports) {
+
+module.exports = "<div class=\"footer center-on-small-only\">\n  <div class=\"container\">\n    <div class=\"row footer-top\">\n      <div id=\"get-app\" class=\"col-xs-12 col-sm-12 col-md-6 text-center\">        \n        <!--<h5>Get the App</h5>-->\n        <h5>App Available Aug. 24th</h5>\n        <img src=\"assets/buttons/google-button.png\"/>\n        <img src=\"assets/buttons/apple-button.png\"/>\n      </div>\n      <div class=\"col-xs-12 col-sm-12 col-md-6\">\n        <div class=\"row\">\n          <div class=\"col-xs-6 col-sm-6 col-md-6 footer-links\">\n            <h6 class=\"footer-head\">Tools</h6>\n            <div><a routerLink=\"find-beers\">Search Beers</a></div>\n            <div><a routerLink=\"find-breweries\">Search Breweries</a></div>\n            <div><a routerLink=\"find-bars\">Search Bars</a></div>\n            <div><a routerLink=\"feeds\">Feeds</a></div>\n            <div><a routerLink=\"getapp\">Get App</a></div>\n          </div>\n          <div class=\"col-xs-6 col-sm-6 col-md-6 footer-links\">\n            <h6 class=\"footer-head\">Company</h6>\n            <div><a routerLink=\"faq\">FAQ</a></div>\n            <div><a routerLink=\"about\">About</a></div>\n            <div><a routerLink=\"privacy\">Privacy Policy</a></div>\n            <div><a routerLink=\"terms\">Terms of Use</a></div>\n            <div><a routerLink=\"contact\">Contact Us</a></div>\n          </div>\n        </div>          \n      </div>\n    </div>\n  </div>\n  <hr />\n  <div class=\"container text-left social\">\n    <a class=\"btn btn-facebook btn-circle\" href=\"http://facebook.com\" target=\"_blank\" role=\"button\">\n      <i class=\"fa fa-facebook\"></i>\n    </a>\n  </div>  \n  <div class=\"container-fluid copyright text-center\">\n    <h5>© 2017 Copyright Brew Search</h5>\n  </div>  \n</div>"
+
+/***/ },
+/* 538 */
+/***/ function(module, exports) {
+
+module.exports = ""
+
+/***/ },
+/* 539 */
+/***/ function(module, exports) {
+
+module.exports = "  <div *ngIf=\"!hidePhotos\">\n    <div *ngFor=\"let img of photosToLoad\" class=\"text-center\">\n        <img [src]=\"img\" width=\"100%\">\n    </div>\n    <!--\n    <div *ngIf=\"showPhotoLoader\" class=\"text-center\">\n        <i class=\"fa fa-spinner fa-pulse fa-2x fa-fw\"></i>\n    </div>\n    -->        \n  </div>\n  <div class=\"photo-btn\">\n    <button *ngIf=\"photosToLoad && locationPhotoThumbs.length != 0\"  class=\"photo-btn\" (click)=\"loadSinglePhoto()\" class=\"btn btn-warning btn-block btn-large\" role=\"button\">\n      <i class=\"fa fa-camera-retro\"></i> \n      See Photos - {{locationPhotoThumbs.length}} Left\n    </button>\n    <button *ngIf=\"photosToLoad.length == photoCount\"  class=\"photo-btn\" (click)=\"toggleHidePhotos()\" class=\"btn btn-warning btn-block btn-large\" role=\"button\">\n      <i class=\"fa fa-camera-retro\"></i> \n      <span *ngIf=\"!hidePhotos\">Hide Photos</span>\n      <span *ngIf=\"hidePhotos\">Show Photos</span>\n    </button>            \n  </div>"
+
+/***/ },
+/* 540 */
+/***/ function(module, exports) {
+
+module.exports = "/*\r\n\r\n  .navbar {\r\n    -webkit-box-shadow: 0 8px 6px -6px #999;\r\n    -moz-box-shadow: 0 8px 6px -6px #999;\r\n    box-shadow: 0 3px 5px rgba(0,20,30,0.5);\r\n    border-radius: 0px;\r\n    border-width: 0px;\r\n\r\n  }\r\n\r\n  .navbar-inner {\r\n      background: none repeat scroll 0 0 #C81B02;\r\n      opacity:1;         \r\n  }\r\n\r\n  .navbar-inner li a {\r\n      min-height:50px !important;\r\n      line-height: 50px !important;\r\n      padding: 0 20px;    \r\n  }\r\n\r\n  .navbar-inner li a:hover {\r\n    text-shadow: 0px 1px 1px rgba(0,0,0,0.4);\r\n    opacity:1;\r\n    color:#ffffff;\r\n    \r\n  } \r\n\r\n  .navbar-inner li.active {\r\n    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2) inset;\r\n  }\r\n\r\n  .navbar-inner li.active a {\r\n    background-color: inherit;\r\n    box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.2) inset;\r\n    cursor: default;\r\n    filter: alpha(opacity=100);\r\n    opacity: 1;\r\n    background-position: center bottom;\r\n    background-repeat: no-repeat;\r\n  }  \r\n  \r\n\r\n  .nav>li>a:focus, .nav>li>a:hover {\r\n    text-decoration: none;\r\n    background-color:#A60900;\r\n    opacity:0.8;\r\n  }\r\n\r\n  a.navbar-brand {\r\n      color:#ffffff;\r\n      min-height:50px !important;\r\n      line-height: 50px !important;\r\n      padding: 0 20px;      \r\n  }\r\n\r\n  .navbar-inner li a {\r\n      color:#ffffff;\r\n      font-size: 16px;\r\n      font-family: 'Source Sans Pro',sans-serif !important;\r\n  } \r\n\r\n  */\r\n\r\n  #nav-header {\r\n    -webkit-box-shadow: 0 8px 6px -6px #999;\r\n    -moz-box-shadow: 0 8px 6px -6px #999;\r\n    box-shadow: 0 3px 5px rgba(0,20,30,0.5);\r\n    padding: 0 1rem;  \r\n  }\r\n\r\n  .bg-faded {\r\n      background-color: #C81B02;\r\n      opacity:1;         \r\n  }\r\n\r\n  #nav-header a {\r\n      color:#ffffff;\r\n      font-size: 16px;\r\n      font-family: 'Source Sans Pro',sans-serif !important;\r\n      min-height:50px !important;\r\n      line-height: 50px !important;\r\n      padding: 0 20px;\r\n         \r\n  }\r\n\r\n  .navbar-brand {\r\n      color:#ffffff;\r\n      min-height:50px !important;\r\n      line-height: 50px !important;\r\n      padding: 0;\r\n      font-weight: bold;\r\n  }\r\n\r\n   a.nav-item:hover {\r\n    text-decoration: none;\r\n    background-color:#A60900;\r\n    opacity:0.8;\r\n  }\r\n\r\n  a.active {\r\n    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2) inset;\r\n  }\r\n\r\n  .navbar-toggler {\r\n    color:#fff;\r\n  }\r\n\r\n  #nav-header .fa-bars {\r\n    font-size:2rem;\r\n    padding-top:0.25rem;\r\n    cursor: pointer;\r\n    outline: none;\r\n  }"
+
+/***/ },
+/* 541 */
+/***/ function(module, exports) {
+
+module.exports = "<!-- Fixed navbar -->\n<nav id=\"nav-header\" class=\"navbar navbar-toggleable-md fixed-top bg-faded\">\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <i class=\"fa fa-bars\"></i>  \n  </button>\n  <a class=\"navbar-brand\" routerLink=\"/\">\n    <img src=\"assets/images/brewsearch-logo.png\" />\n  </a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\n    <div class=\"navbar-nav\">\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" routerLink=\"find-beers\">Beers</a>\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" routerLink=\"find-breweries\">Breweries</a>\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" routerLink=\"find-bars\">Bars</a>\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" routerLink=\"getapp\">Get the App</a>\n    </div>\n  </div>\n</nav>"
+
+/***/ },
+/* 542 */
+/***/ function(module, exports) {
+
+module.exports = ".loader {\r\n    padding-top:10rem;\r\n    height:30rem;\r\n}"
+
+/***/ },
+/* 543 */
+/***/ function(module, exports) {
+
+module.exports = "<div class=\"text-center loader\">\r\n  <i class=\"fa fa-spinner fa-pulse fa-3x fa-fw\"></i>\r\n  <span class=\"sr-only\">Loading...</span>\r\n</div>\r\n"
+
+/***/ },
+/* 544 */
+/***/ function(module, exports) {
+
+module.exports = ".pagination{\r\n    margin:0px;\r\n}\r\n\r\n.active>a {\r\n  background-color:#C81B02;\r\n  border-color:#C81B02;\r\n}\r\n\r\n.pagination>li>a {\r\n    color:#666;\r\n    cursor: pointer;\r\n}\r\n\r\n\r\n.pagination>.active>a {\r\n    color:#fff;\r\n}"
+
+/***/ },
+/* 545 */
+/***/ function(module, exports) {
+
+module.exports = "<nav aria-label=\"Page navigation\">\r\n  <ul class=\"pagination justify-content-end\">\r\n    <li class=\"page-item\" (click)=\"onPrev()\" *ngIf=\"page != 1\"><a class=\"page-link\">Previous</a></li>\r\n    <li class=\"page-item\" [class.active]=\"page===pageNum\" *ngFor=\"let pageNum of getPages()\" (click)=\"onPage(pageNum)\">\r\n      <a class=\"page-link\">{{pageNum}}</a>\r\n    </li>\r\n    <li class=\"page-item\" *ngIf=\"!lastPage()\" (click)=\"onNext()\"><a class=\"page-link\">Next</a></li>\r\n  </ul>\r\n</nav>"
+
+/***/ },
+/* 546 */
+/***/ function(module, exports) {
+
+module.exports = "i.filled {\r\n    color:#f0ad4e;\r\n}\r\n\r\ni.empty {\r\n    color:#aaa;\r\n}\r\n\r\ni {\r\n    font-size:1.4rem;\r\n}"
+
+/***/ },
+/* 547 */
+/***/ function(module, exports) {
+
+module.exports = "<div>\r\n    <span *ngFor=\"let star of rateList;  let i = index;\">\r\n        <i *ngIf=\"star=='filled'\" class=\"fa fa-star filled\"></i>\r\n        <i *ngIf=\"star=='half'\" class=\"fa fa-star-half-o filled\"></i>\r\n        <i *ngIf=\"star=='empty'\" class=\"fa fa-star-o filled\"></i>\r\n    </span>\r\n</div>"
+
+/***/ },
+/* 548 */
+/***/ function(module, exports) {
+
+module.exports = "/*\r\n#custom-search-input .search-query {\r\n  height:3.5rem;\r\n  font-size:1.5rem;\r\n}\r\n\r\n#custom-search-input #search-btn {\r\n  height:3.5rem;\r\n  width:4.5rem;\r\n}\r\n\r\n#alert-msg {\r\n    position: absolute;\r\n    top:70px;\r\n    left:0;\r\n    right:0;\r\n    margin: 0 auto;\r\n}\r\n\r\n.fa-ul i {\r\n  padding-top:0.5rem;\r\n}\r\n\r\n#custom-search-input li.active a {\r\n  background-color:#C81B02 !important;\r\n  color:#fff;\r\n}\r\n\r\n#custom-search-input li a {\r\n  background-color:#666;\r\n  color:#fff;\r\n  margin:0 1px;\r\n  text-align:center;\r\n  padding: 5px 30px;\r\n  \r\n}\r\n\r\n#custom-search-input .nav-tabs {\r\n  border-bottom-width: 0px !important;\r\n  margin-left:18px;\r\n}\r\n\r\n.search-options {\r\n  background: rgba(0, 0, 0,0.5);\r\n  color:#fff;\r\n}\r\n\r\n.search-options button {\r\n  color:#fff;\r\n  padding:0.75rem 0.25rem;\r\n}\r\n\r\n.search-options button:hover {\r\n  color:#fff;\r\n  text-decoration: none;\r\n}\r\n\r\n#custom-search-input .dropdown-menu {\r\n  background-color: #C81B02;\r\n  padding: 5px;\r\n}\r\n\r\n.autocomplete-area {\r\n  position:relative;\r\n  background-color:#C81B02;\r\n  padding-left:1rem;\r\n  padding-right:1rem;\r\n  padding-bottom:0.5rem;\r\n  color:#fff;\r\n  z-index: 1;\r\n  top:-30px;\r\n  cursor: pointer;\r\n}\r\n\r\n.autocomplete-area:hover {\r\n  background-color:#A60900;\r\n}\r\n*/\r\n\r\n\r\n.nav-tabs {\r\n    border-bottom: none;\r\n}\r\n\r\n.nav-tabs .nav-item {\r\n    width:100%;\r\n    text-align:center;\r\n    margin-top:0;\r\n    margin-right:5px;\r\n    height:24px;\r\n}\r\n\r\n.nav-tabs li:last-child {\r\n    float: right;\r\n    margin-right: 0;\r\n}\r\n\r\n.tab-pane {\r\n  margin-top:0.25rem;\r\n}\r\n\r\n.nav-tabs li {\r\n\r\n    max-width: 33.3%;\r\n    width:100%;\r\n}\r\n\r\n.selectedTab {\r\n    border: none;\r\n    background: none repeat scroll 0 0 #C81B02;\r\n    color: #FFFFFF;    \r\n}\r\n\r\n.nav-tabs li.active a {\r\n    border: none;\r\n    background: none repeat scroll 0 0 #ec971f;\r\n    color: #FFFFFF;\r\n}\r\n\r\na.active {\r\n    background:transparent !important;\r\n    box-shadow: initial !important;\r\n}\r\n\r\n.nav-tabs li a {\r\n\r\n    background: none repeat scroll 0 0 rgba(200,27,2,1);\r\n    border: none;\r\n    -moz-border-radius: 0;\r\n    -webkit-border-radius: 0;\r\n    border-radius: 0;\r\n    -webkit-box-sizing: border-box;\r\n    -moz-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n    color: #FFFFFF;\r\n    display: inline-block;\r\n    float: left;\r\n    font-size: 1rem;\r\n    margin-bottom: 0;\r\n    padding: 0 0.125rem;\r\n    width: 100%;\r\n    text-decoration: none;\r\n}\r\n\r\n.tabbable {\r\n    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);\r\n}\r\n\r\n.dropdown-item.active, .dropdown-item:active {\r\n  background-color:#C81B02;\r\n  color:#fff;\r\n}\r\n\r\n.dropdown-item.active, .dropdown-item:hover {\r\n  background-color:#C81B02;\r\n  color:#fff !important;\r\n  cursor: pointer;\r\n}\r\n\r\n.nav-tabs li:not(.active):hover a {\r\n    color: #FFFFFF;\r\n    background: none;\r\n    background-color:red;\r\n    filter: alpha(opacity=100);\r\n    opacity: 1;\r\n    text-decoration: none;\r\n    text-shadow: 0px 1px 1px rgba(0,0,0,0.4);\r\n    transition: 0.3s ease;\r\n}\r\n\r\n.choose-search {\r\n    text-align: left;\r\n    height:50px;\r\n    line-height:1;\r\n    margin-right:5px;\r\n    background-color:#C81B02;\r\n    color:#fff;\r\n}\r\n\r\n.choose-search:hover {\r\n    color:#fff;\r\n}\r\n\r\n.choose-search:visited {\r\n    color:#fff;\r\n}\r\n\r\n.input-group {\r\n    padding: 5px;\r\n}\r\n\r\n.dropdown-toggle::after {\r\n    display:none;\r\n}\r\n\r\n#clear-button {\r\n    position: absolute;\r\n    right: 80px;\r\n    top: 0;\r\n    bottom: 0;\r\n    height: 14px;\r\n    margin: auto;\r\n    font-size: 14px;\r\n    cursor: pointer;\r\n    color: #ccc;\r\n    z-index: 10;\r\n    \r\n}\r\n\r\n#clear-button i {\r\n    color:#999;\r\n}\r\n\r\n#search-btn {\r\n    border-radius:0;\r\n    margin-left:5px;\r\n}\r\n\r\n.search-query {\r\n    font-size: 22px;\r\n    font-weight: 300;\r\n}\r\n\r\n.autocomplete-area {\r\n  position: relative;\r\n  background-color:#C81B02;\r\n  padding-left:1rem;\r\n  padding-right:1rem;\r\n  padding-bottom:0.5rem;\r\n  color:#fff;\r\n  cursor: pointer;\r\n  z-index: 1;\r\n}\r\n\r\n\r\n\r\n.autocomplete-area:hover {\r\n  background-color:#A60900;\r\n}"
+
+/***/ },
+/* 549 */
+/***/ function(module, exports) {
+
+module.exports = "\n\n<!--\n      <li active-trigger=\"beer-tab\" [active]=\"setView('beer')\" class=\"nav-item\"><a data-toggle=\"tab\" href=\"#beers\" role=\"tab\" (click)=\"clearStuff('beer')\">Beers</a></li>\n      <li active-trigger=\"brewery-tab\" [active]=\"setView('brewery')\" class=\"nav-item\"><a data-toggle=\"tab\" href=\"#brewery\" role=\"tab\" (click)=\"clearStuff('brewery')\">Brewery</a></li>\n      <li active-trigger=\"bar-tab\" [active]=\"setView('bar')\" class=\"nav-item\"><a data-toggle=\"tab\" href=\"#bars\" role=\"tab\" (click)=\"clearStuff('bar')\">Bars</a></li>\n-->  \n\n<div id=\"custom-search-input\" class=\"container\">\n  <div class=\"tabbable\" [activeListener]=\"page\">\n    <ul *ngIf=\"showTabs\" class=\"nav nav-tabs #page-search-area-tabs\" role=\"tablist\">\n      <li activeTrigger=\"beer\"class=\"nav-item\" [active]=\"isActive('beer')\"><a data-toggle=\"tab\" href=\"#beers\" role=\"tab\">Beers</a></li>\n      <li activeTrigger=\"brewery\" class=\"nav-item\" [active]=\"isActive('brewery')\"><a data-toggle=\"tab\" href=\"#brewery\" role=\"tab\">Brewery</a></li>\n      <li activeTrigger=\"bar\" class=\"nav-item\" [active]=\"isActive('bar')\"><a data-toggle=\"tab\" href=\"#bars\" role=\"tab\">Bars</a></li>\n    </ul>\n    <div class=\"tab-content\">\n      <!-- Beer Tab Area -->\n      <div class=\"tab-pane\" [active]=\"isActive('beer')\" id=\"beers\" role=\"tabpanel\">\n        <div class=\"input-group col-md-12\">            \n            <input type=\"text\" \n                    class=\"search-query form-control\"\n                    [(ngModel)]=\"qBeerSearch\"\n                    (ngModelChange)=\"getBeerSearchInput($event)\"\n                    required\n                    placeholder=\"Enter Beer Name\" />\n            <span id=\"clear-button\" class=\"input-group-btn\" (click)=\"clearStuff('beer')\">\n              <i class=\"fa fa-times-circle fa-2x\"></i>\n            </span>                    \n            <span class=\"input-group-btn\">\n                <button id=\"search-btn\" class=\"btn btn-warning\" [disabled]=\"beerBtnDisabled\" type=\"button\" (click)=\"doBeerSearch()\">\n                  <i class=\"fa fa-search fa-2x\"></i>\n                </button>\n            </span>\n        </div>\n      </div>\n\n      <!-- Brewery Tab Area -->\n      <div class=\"tab-pane\" [active]=\"isActive('brewery')\" id=\"brewery\" role=\"tabpanel\">          \n        <div class=\"input-group col-md-12\">\n            <span>\n                <a class=\"btn choose-search dropdown-toggle hidden-sm-down\" href=\"#\" type=\"button\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                  <strong>Search By:</strong>\n                  <div>\n                    {{setSearhLabel('brewery',breweryOption)}} <i class=\"fa fa-caret-down\"></i>\n                  </div>\n                </a>\n                <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n                  <a class=\"dropdown-item\" (click)=\"setSearchOptions('brewery','name',true)\">Brewery Name</a>\n                  <a class=\"dropdown-item\" (click)=\"setSearchOptions('brewery','city',true)\">Brewery City</a>\n                </div>                  \n            </span>            \n            <input type=\"text\" \n                    class=\"search-query form-control\"\n                    [(ngModel)]=\"qBrewerySearch\"\n                    required\n                    (ngModelChange)=\"getBrewerySearchInput($event)\"\n                    [placeholder]=\"breweryPlaceHolder\" />\n            <span id=\"clear-button\" class=\"input-group-btn\" (click)=\"clearStuff('brewery')\">\n              <i class=\"fa fa-times-circle fa-2x\"></i>\n            </span>\n            <span>\n                <button id=\"search-btn\" class=\"btn btn-warning\" [disabled]=\"breweryBtnDisabled\" type=\"button\" (click)=\"doBrewerySearch()\">\n                  <i class=\"fa fa-search fa-2x\"></i>\n                </button>\n            </span>              \n        </div>\n        <div class=\"autocomplete-area\" *ngFor=\"let city of cityPredictions\" (click)=\"setGeoData(city,'brewery')\">\n          {{city.description}}\n        </div>              \n      </div>\n\n      <!-- Bar Tab Area -->\n      <div class=\"tab-pane\" [active]=\"isActive('bar')\" id=\"bars\" role=\"tabpanel\">\n        <div class=\"input-group col-md-12\">\n            <span>\n                <a class=\"btn choose-search dropdown-toggle hidden-sm-down\" href=\"#\" type=\"button\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                  <strong>Search By:</strong>\n                  <div>\n                   {{setSearhLabel('bar',barOption)}} <i class=\"fa fa-caret-down\"></i>\n                  </div>\n                </a>\n                <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\n                  <a class=\"dropdown-item\" (click)=\"setSearchOptions('bar','name',true)\">Bar Name</a>\n                  <a class=\"dropdown-item\" (click)=\"setSearchOptions('bar','city',true)\">Bar City</a>\n                </div>                  \n            </span>            \n            <input type=\"text\" \n                    class=\"search-query form-control\"\n                    [(ngModel)]=\"qBarSearch\"\n                    required\n                    (ngModelChange)=\"getBarSearchInput($event)\"\n                    [placeholder]=\"barPlaceHolder\" />\n            <span id=\"clear-button\" class=\"input-group-btn\" (click)=\"clearStuff('bar')\">\n              <i class=\"fa fa-times-circle fa-2x\"></i>\n            </span>                    \n            <span class=\"input-group-btn\">\n                <button id=\"search-btn\" class=\"btn btn-warning\" [disabled]=\"barBtnDisabled\" type=\"button\" (click)=\"doBarSearch()\">\n                  <i class=\"fa fa-search fa-2x\"></i>\n                </button>\n            </span>\n        </div>\n        <div class=\"autocomplete-area\" *ngFor=\"let bar of barNamePredictions\" (click)=\"setGeoData(bar,'bar-name')\">\n          {{bar.name}}\n        </div>\n        <div class=\"autocomplete-area\" *ngFor=\"let city of cityPredictions\" (click)=\"setGeoData(city,'bar-city')\">\n          {{city.description}}\n        </div>                      \n      </div>            \n    </div>\n  </div>\n</div>"
+
+/***/ },
+/* 550 */
+/***/ function(module, exports) {
+
+module.exports = "#static-map {width:100%}"
+
+/***/ },
+/* 551 */
+/***/ function(module, exports) {
+
+module.exports = "<a target=\"_blank\" [href]=\"common.getToGoogleMapsUrl(currentLat,currentLng)\">\r\n  <img id=\"static-map\" [src]=\"getStaticMap()\" />\r\n</a>"
+
+/***/ },
+/* 552 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/*! *****************************************************************************
@@ -66850,7 +68173,7 @@ var Reflect;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15)))
 
 /***/ },
-/* 515 */
+/* 553 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66860,7 +68183,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = __webpack_require__(13);
+var Subscriber_1 = __webpack_require__(14);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -66892,7 +68215,7 @@ exports.InnerSubscriber = InnerSubscriber;
 //# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ },
-/* 516 */
+/* 554 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -66906,7 +68229,7 @@ exports.empty = {
 //# sourceMappingURL=Observer.js.map
 
 /***/ },
-/* 517 */
+/* 555 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -66961,7 +68284,7 @@ exports.Scheduler = Scheduler;
 //# sourceMappingURL=Scheduler.js.map
 
 /***/ },
-/* 518 */
+/* 556 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67007,86 +68330,63 @@ exports.SubjectSubscription = SubjectSubscription;
 //# sourceMappingURL=SubjectSubscription.js.map
 
 /***/ },
-/* 519 */
+/* 557 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(3);
-var throw_1 = __webpack_require__(533);
+var throw_1 = __webpack_require__(569);
 Observable_1.Observable.throw = throw_1._throw;
 //# sourceMappingURL=throw.js.map
 
 /***/ },
-/* 520 */
+/* 558 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(3);
-var catch_1 = __webpack_require__(168);
+var catch_1 = __webpack_require__(170);
 Observable_1.Observable.prototype.catch = catch_1._catch;
 Observable_1.Observable.prototype._catch = catch_1._catch;
 //# sourceMappingURL=catch.js.map
 
 /***/ },
-/* 521 */
+/* 559 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(3);
-var delay_1 = __webpack_require__(534);
+var delay_1 = __webpack_require__(570);
 Observable_1.Observable.prototype.delay = delay_1.delay;
 //# sourceMappingURL=delay.js.map
 
 /***/ },
-/* 522 */
+/* 560 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(3);
-var do_1 = __webpack_require__(535);
-Observable_1.Observable.prototype.do = do_1._do;
-Observable_1.Observable.prototype._do = do_1._do;
-//# sourceMappingURL=do.js.map
-
-/***/ },
-/* 523 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(3);
-var retryWhen_1 = __webpack_require__(542);
+var retryWhen_1 = __webpack_require__(578);
 Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
 //# sourceMappingURL=retryWhen.js.map
 
 /***/ },
-/* 524 */
+/* 561 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(3);
-var share_1 = __webpack_require__(543);
-Observable_1.Observable.prototype.share = share_1.share;
-//# sourceMappingURL=share.js.map
-
-/***/ },
-/* 525 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(3);
-var timeout_1 = __webpack_require__(544);
+var timeout_1 = __webpack_require__(580);
 Observable_1.Observable.prototype.timeout = timeout_1.timeout;
 //# sourceMappingURL=timeout.js.map
 
 /***/ },
-/* 526 */
+/* 562 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67097,8 +68397,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(3);
-var ScalarObservable_1 = __webpack_require__(291);
-var EmptyObservable_1 = __webpack_require__(165);
+var ScalarObservable_1 = __webpack_require__(302);
+var EmptyObservable_1 = __webpack_require__(167);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -67162,7 +68462,7 @@ exports.ArrayLikeObservable = ArrayLikeObservable;
 //# sourceMappingURL=ArrayLikeObservable.js.map
 
 /***/ },
-/* 527 */
+/* 563 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67250,7 +68550,7 @@ exports.ErrorObservable = ErrorObservable;
 //# sourceMappingURL=ErrorObservable.js.map
 
 /***/ },
-/* 528 */
+/* 564 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67261,7 +68561,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(3);
-var EmptyObservable_1 = __webpack_require__(165);
+var EmptyObservable_1 = __webpack_require__(167);
 var isArray_1 = __webpack_require__(108);
 var subscribeToResult_1 = __webpack_require__(73);
 var OuterSubscriber_1 = __webpack_require__(69);
@@ -67368,7 +68668,7 @@ var ForkJoinSubscriber = (function (_super) {
 //# sourceMappingURL=ForkJoinObservable.js.map
 
 /***/ },
-/* 529 */
+/* 565 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67379,15 +68679,15 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var isArray_1 = __webpack_require__(108);
-var isPromise_1 = __webpack_require__(299);
-var PromiseObservable_1 = __webpack_require__(290);
-var IteratorObservable_1 = __webpack_require__(530);
-var ArrayObservable_1 = __webpack_require__(288);
-var ArrayLikeObservable_1 = __webpack_require__(526);
-var iterator_1 = __webpack_require__(169);
+var isPromise_1 = __webpack_require__(310);
+var PromiseObservable_1 = __webpack_require__(301);
+var IteratorObservable_1 = __webpack_require__(566);
+var ArrayObservable_1 = __webpack_require__(299);
+var ArrayLikeObservable_1 = __webpack_require__(562);
+var iterator_1 = __webpack_require__(171);
 var Observable_1 = __webpack_require__(3);
-var observeOn_1 = __webpack_require__(540);
-var observable_1 = __webpack_require__(170);
+var observeOn_1 = __webpack_require__(576);
+var observable_1 = __webpack_require__(172);
 var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -67490,7 +68790,7 @@ exports.FromObservable = FromObservable;
 //# sourceMappingURL=FromObservable.js.map
 
 /***/ },
-/* 530 */
+/* 566 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67502,7 +68802,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var root_1 = __webpack_require__(34);
 var Observable_1 = __webpack_require__(3);
-var iterator_1 = __webpack_require__(169);
+var iterator_1 = __webpack_require__(171);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -67653,7 +68953,7 @@ function sign(value) {
 //# sourceMappingURL=IteratorObservable.js.map
 
 /***/ },
-/* 531 */
+/* 567 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67664,7 +68964,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(3);
-var ConnectableObservable_1 = __webpack_require__(289);
+var ConnectableObservable_1 = __webpack_require__(300);
 var MulticastObservable = (function (_super) {
     __extends(MulticastObservable, _super);
     function MulticastObservable(source, subjectFactory, selector) {
@@ -67686,27 +68986,27 @@ exports.MulticastObservable = MulticastObservable;
 //# sourceMappingURL=MulticastObservable.js.map
 
 /***/ },
-/* 532 */
+/* 568 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var ForkJoinObservable_1 = __webpack_require__(528);
+var ForkJoinObservable_1 = __webpack_require__(564);
 exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
 //# sourceMappingURL=forkJoin.js.map
 
 /***/ },
-/* 533 */
+/* 569 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var ErrorObservable_1 = __webpack_require__(527);
+var ErrorObservable_1 = __webpack_require__(563);
 exports._throw = ErrorObservable_1.ErrorObservable.create;
 //# sourceMappingURL=throw.js.map
 
 /***/ },
-/* 534 */
+/* 570 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67716,10 +69016,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var async_1 = __webpack_require__(295);
-var isDate_1 = __webpack_require__(297);
-var Subscriber_1 = __webpack_require__(13);
-var Notification_1 = __webpack_require__(284);
+var async_1 = __webpack_require__(306);
+var isDate_1 = __webpack_require__(308);
+var Subscriber_1 = __webpack_require__(14);
+var Notification_1 = __webpack_require__(294);
 /**
  * Delays the emission of items from the source Observable by a given timeout or
  * until a given Date.
@@ -67847,7 +69147,7 @@ var DelayMessage = (function () {
 //# sourceMappingURL=delay.js.map
 
 /***/ },
-/* 535 */
+/* 571 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67857,7 +69157,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = __webpack_require__(13);
+var Subscriber_1 = __webpack_require__(14);
 /**
  * Perform a side effect for every emission on the source Observable, but return
  * an Observable that is identical to the source.
@@ -67965,7 +69265,7 @@ var DoSubscriber = (function (_super) {
 //# sourceMappingURL=do.js.map
 
 /***/ },
-/* 536 */
+/* 572 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67975,7 +69275,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = __webpack_require__(13);
+var Subscriber_1 = __webpack_require__(14);
 /**
  * Filter items emitted by the source Observable by only emitting those that
  * satisfy a specified predicate.
@@ -68064,7 +69364,7 @@ var FilterSubscriber = (function (_super) {
 //# sourceMappingURL=filter.js.map
 
 /***/ },
-/* 537 */
+/* 573 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68074,8 +69374,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = __webpack_require__(13);
-var EmptyError_1 = __webpack_require__(172);
+var Subscriber_1 = __webpack_require__(14);
+var EmptyError_1 = __webpack_require__(174);
 /**
  * Emits only the first value (or the first value that meets some condition)
  * emitted by the source Observable.
@@ -68218,7 +69518,7 @@ var FirstSubscriber = (function (_super) {
 //# sourceMappingURL=first.js.map
 
 /***/ },
-/* 538 */
+/* 574 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68228,8 +69528,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = __webpack_require__(13);
-var EmptyError_1 = __webpack_require__(172);
+var Subscriber_1 = __webpack_require__(14);
+var EmptyError_1 = __webpack_require__(174);
 /**
  * Returns an Observable that emits only the last item emitted by the source Observable.
  * It optionally takes a predicate function as a parameter, in which case, rather than emitting
@@ -68342,13 +69642,13 @@ var LastSubscriber = (function (_super) {
 //# sourceMappingURL=last.js.map
 
 /***/ },
-/* 539 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var MulticastObservable_1 = __webpack_require__(531);
-var ConnectableObservable_1 = __webpack_require__(289);
+var MulticastObservable_1 = __webpack_require__(567);
+var ConnectableObservable_1 = __webpack_require__(300);
 /**
  * Returns an Observable that emits the results of invoking a specified selector on items
  * emitted by a ConnectableObservable that shares a single subscription to the underlying stream.
@@ -68386,7 +69686,7 @@ exports.multicast = multicast;
 //# sourceMappingURL=multicast.js.map
 
 /***/ },
-/* 540 */
+/* 576 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68396,8 +69696,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = __webpack_require__(13);
-var Notification_1 = __webpack_require__(284);
+var Subscriber_1 = __webpack_require__(14);
+var Notification_1 = __webpack_require__(294);
 /**
  * @see {@link Notification}
  *
@@ -68467,7 +69767,7 @@ exports.ObserveOnMessage = ObserveOnMessage;
 //# sourceMappingURL=observeOn.js.map
 
 /***/ },
-/* 541 */
+/* 577 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68477,7 +69777,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscriber_1 = __webpack_require__(13);
+var Subscriber_1 = __webpack_require__(14);
 /**
  * Applies an accumulator function over the source Observable, and returns the
  * accumulated result when the source completes, given an optional seed value.
@@ -68585,7 +69885,7 @@ exports.ReduceSubscriber = ReduceSubscriber;
 //# sourceMappingURL=reduce.js.map
 
 /***/ },
-/* 542 */
+/* 578 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68596,8 +69896,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subject_1 = __webpack_require__(33);
-var tryCatch_1 = __webpack_require__(300);
-var errorObject_1 = __webpack_require__(173);
+var tryCatch_1 = __webpack_require__(311);
+var errorObject_1 = __webpack_require__(175);
 var OuterSubscriber_1 = __webpack_require__(69);
 var subscribeToResult_1 = __webpack_require__(73);
 /**
@@ -68697,12 +69997,12 @@ var RetryWhenSubscriber = (function (_super) {
 //# sourceMappingURL=retryWhen.js.map
 
 /***/ },
-/* 543 */
+/* 579 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var multicast_1 = __webpack_require__(539);
+var multicast_1 = __webpack_require__(575);
 var Subject_1 = __webpack_require__(33);
 function shareSubjectFactory() {
     return new Subject_1.Subject();
@@ -68727,7 +70027,7 @@ exports.share = share;
 //# sourceMappingURL=share.js.map
 
 /***/ },
-/* 544 */
+/* 580 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68737,9 +70037,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var async_1 = __webpack_require__(295);
-var isDate_1 = __webpack_require__(297);
-var Subscriber_1 = __webpack_require__(13);
+var async_1 = __webpack_require__(306);
+var isDate_1 = __webpack_require__(308);
+var Subscriber_1 = __webpack_require__(14);
 /**
  * @param due
  * @param errorToSend
@@ -68835,7 +70135,7 @@ var TimeoutSubscriber = (function (_super) {
 //# sourceMappingURL=timeout.js.map
 
 /***/ },
-/* 545 */
+/* 581 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68869,7 +70169,7 @@ exports.toPromise = toPromise;
 //# sourceMappingURL=toPromise.js.map
 
 /***/ },
-/* 546 */
+/* 582 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68919,7 +70219,7 @@ exports.Action = Action;
 //# sourceMappingURL=Action.js.map
 
 /***/ },
-/* 547 */
+/* 583 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68930,7 +70230,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var root_1 = __webpack_require__(34);
-var Action_1 = __webpack_require__(546);
+var Action_1 = __webpack_require__(582);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -69067,7 +70367,7 @@ exports.AsyncAction = AsyncAction;
 //# sourceMappingURL=AsyncAction.js.map
 
 /***/ },
-/* 548 */
+/* 584 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -69077,7 +70377,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Scheduler_1 = __webpack_require__(517);
+var Scheduler_1 = __webpack_require__(555);
 var AsyncScheduler = (function (_super) {
     __extends(AsyncScheduler, _super);
     function AsyncScheduler() {
@@ -69124,7 +70424,7 @@ exports.AsyncScheduler = AsyncScheduler;
 //# sourceMappingURL=AsyncScheduler.js.map
 
 /***/ },
-/* 549 */
+/* 585 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -69155,7 +70455,7 @@ exports.UnsubscriptionError = UnsubscriptionError;
 //# sourceMappingURL=UnsubscriptionError.js.map
 
 /***/ },
-/* 550 */
+/* 586 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -69167,7 +70467,7 @@ exports.isObject = isObject;
 //# sourceMappingURL=isObject.js.map
 
 /***/ },
-/* 551 */
+/* 587 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -69179,13 +70479,13 @@ exports.isScheduler = isScheduler;
 //# sourceMappingURL=isScheduler.js.map
 
 /***/ },
-/* 552 */
+/* 588 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var Subscriber_1 = __webpack_require__(13);
-var rxSubscriber_1 = __webpack_require__(171);
+var Subscriber_1 = __webpack_require__(14);
+var rxSubscriber_1 = __webpack_require__(173);
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
         if (nextOrObserver instanceof Subscriber_1.Subscriber) {
@@ -69204,7 +70504,7 @@ exports.toSubscriber = toSubscriber;
 //# sourceMappingURL=toSubscriber.js.map
 
 /***/ },
-/* 553 */
+/* 589 */
 /***/ function(module, exports, __webpack_require__) {
 
 /**
@@ -69367,7 +70667,7 @@ computeIgnoreFrames();
 
 
 /***/ },
-/* 554 */
+/* 590 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {/**
@@ -70800,16 +72100,16 @@ if (_global['navigator'] && _global['navigator'].geolocation) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15), __webpack_require__(106)))
 
 /***/ },
-/* 555 */
+/* 591 */
 /***/ function(module, exports, __webpack_require__) {
 
 var map = {
 	"./lazy.module": [
-		308,
+		319,
 		0
 	],
 	"./lazy.module.ts": [
-		308,
+		319,
 		0
 	]
 };
@@ -70824,31 +72124,31 @@ webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
 module.exports = webpackAsyncContext;
-webpackAsyncContext.id = 555;
+webpackAsyncContext.id = 591;
 
 
 /***/ },
-/* 556 */
+/* 592 */
 /***/ function(module, exports) {
 
 /* (ignored) */
 
 /***/ },
-/* 557 */
+/* 593 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 // the polyfills must be the first thing imported
-__webpack_require__(303);
-__webpack_require__(306);
-__webpack_require__(304); // temporary until 2.1.1 things are patched in Core
-var browser_1 = __webpack_require__(174);
-var bootloader_1 = __webpack_require__(302);
-var webfontloader_1 = __webpack_require__(307);
+__webpack_require__(314);
+__webpack_require__(317);
+__webpack_require__(315); // temporary until 2.1.1 things are patched in Core
+var browser_1 = __webpack_require__(176);
+var bootloader_1 = __webpack_require__(313);
+var webfontloader_1 = __webpack_require__(318);
 // enable prod for faster renders
 // enableProdMode();
-var browser_module_1 = __webpack_require__(305);
+var browser_module_1 = __webpack_require__(316);
 exports.platformRef = browser_1.platformUniversalDynamic();
 // on document ready bootstrap Angular 2
 function main() {
@@ -70865,1310 +72165,6 @@ exports.main = main;
 // support async tag or hmr
 bootloader_1.bootloader(main);
 
-
-/***/ },
-/* 558 */,
-/* 559 */,
-/* 560 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var model_service_1 = __webpack_require__(11);
-var common_service_1 = __webpack_require__(10);
-var angular2_meta_1 = __webpack_require__(14);
-var CheckinComponent = (function () {
-    function CheckinComponent(model, router, route, meta, common) {
-        var _this = this;
-        this.model = model;
-        this.router = router;
-        this.route = route;
-        this.meta = meta;
-        this.common = common;
-        this.showLoader = true;
-        this.route.params.subscribe(function (params) {
-            _this.showLoader = true;
-            _this.getCheckin(params['checkId']);
-            _this.pageURL = _this.common.getAbsoluteUrl(_this.router);
-        });
-    }
-    CheckinComponent.prototype.getCheckin = function (checkId) {
-        var _this = this;
-        this.model
-            .get('/firebase/checkin/' + checkId)
-            .subscribe(function (check) {
-            //console.log('checkin',check);
-            _this.checkin = check;
-            _this.model
-                .get('/firebase/user/' + _this.checkin.uid)
-                .subscribe(function (resp) {
-                _this.user = resp;
-                _this.showLoader = false;
-                //console.log('user',resp);
-                _this.setMeta();
-            });
-        });
-    };
-    CheckinComponent.prototype.setMeta = function () {
-        var metaTags = [];
-        var keywords = [];
-        var pageTitle = "";
-        var pageDescription = null;
-        metaTags.push({ name: 'author', content: this.common.getAuthor() });
-        keywords.push(this.checkin.beerName);
-        if ("name" in this.checkin) {
-            keywords.push(this.checkin.name);
-            keywords.push(this.checkin.name + ' ' + this.checkin.beerName);
-            keywords.push(this.checkin.name + ' ' + this.checkin.city + ' ' + this.checkin.state);
-            pageTitle = "Checked in " + this.checkin.beerName + " at " + this.checkin.name;
-            pageDescription = 'Come out and try ' + this.checkin.beerName + ' brewed by ' + this.checkin.breweryName + '. ' + this.checkin.name + ' currently serves this beer located in ' + this.checkin.city + ', ' + this.checkin.state + '.';
-        }
-        else {
-            pageTitle = "Checked in " + this.checkin.beerName;
-            pageDescription = 'Try this wonderful beer ' + this.checkin.beerName + ' brewed by ' + this.checkin.breweryName;
-        }
-        if ("breweryName" in this.checkin)
-            keywords.push(this.checkin.breweryName);
-        if ("beerStyleName" in this.checkin)
-            keywords.push(this.checkin.beerStyleName);
-        pageTitle += ' | ' + this.common.getAppName();
-        this.meta.setTitle(pageTitle);
-        metaTags.push({
-            name: 'description',
-            content: pageDescription
-        });
-        metaTags.push({
-            name: 'keywords', content: keywords.join(", ")
-        });
-        // Facebook Tags
-        metaTags.push({ name: 'fb:app_id', content: this.common.getFBAppId() });
-        metaTags.push({ name: 'og:site_name', content: this.common.getSiteName() });
-        metaTags.push({ name: 'og:type', content: "website" });
-        metaTags.push({ name: 'og:title', content: pageTitle });
-        metaTags.push({ name: 'og:description', content: pageDescription });
-        metaTags.push({ name: 'og:url', content: this.pageURL });
-        if ("img" in this.checkin) {
-            metaTags.push({ name: 'og:image', content: this.checkin.img });
-        }
-        else if ("beerLabels" in this.checkin) {
-            metaTags.push({ name: 'og:image', content: this.checkin.beerLabels.large });
-        }
-        else if ("photo" in this.checkin) {
-            metaTags.push({ name: 'og:image', content: this.checkin.photo });
-        }
-        else if ("breweryImages" in this.checkin) {
-            metaTags.push({ name: 'og:image', content: this.checkin.breweryImages.squareLarge });
-        }
-        else
-            metaTags.push({ name: 'og:image', content: this.common.getDefaultNoImage() });
-        this.meta.addTags(metaTags);
-    };
-    CheckinComponent = __decorate([
-        core_1.Component({
-            changeDetection: core_1.ChangeDetectionStrategy.Default,
-            encapsulation: core_1.ViewEncapsulation.Emulated,
-            selector: 'checkin',
-            styles: [__webpack_require__(563)],
-            template: __webpack_require__(564)
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _c) || Object, (typeof (_d = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _d) || Object, (typeof (_e = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _e) || Object])
-    ], CheckinComponent);
-    return CheckinComponent;
-    var _a, _b, _c, _d, _e;
-}());
-exports.CheckinComponent = CheckinComponent;
-
-
-/***/ },
-/* 561 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var checkin_component_1 = __webpack_require__(560);
-var CheckinRoutingModule = (function () {
-    function CheckinRoutingModule() {
-    }
-    CheckinRoutingModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                router_1.RouterModule.forChild([
-                    { path: 'checkin/:checkId', component: checkin_component_1.CheckinComponent }
-                ])
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], CheckinRoutingModule);
-    return CheckinRoutingModule;
-}());
-exports.CheckinRoutingModule = CheckinRoutingModule;
-
-
-/***/ },
-/* 562 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var checkin_component_1 = __webpack_require__(560);
-var checkin_routing_module_1 = __webpack_require__(561);
-var CheckinModule = (function () {
-    function CheckinModule() {
-    }
-    CheckinModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                shared_module_1.SharedModule,
-                checkin_routing_module_1.CheckinRoutingModule
-            ],
-            declarations: [
-                checkin_component_1.CheckinComponent
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], CheckinModule);
-    return CheckinModule;
-}());
-exports.CheckinModule = CheckinModule;
-
-
-/***/ },
-/* 563 */
-/***/ function(module, exports) {
-
-module.exports = ".loader {\r\n    height:50rem;\r\n}\r\n\r\n.container {\r\n    min-height:50rem;\r\n}\r\n\r\n#checkin-well {\r\n    margin-top:2rem;\r\n    padding-top:2rem;\r\n}\r\n\r\n.top-panel {\r\n    background-color: #fff;\r\n    border: 1px solid rgba(0,0,0,.25); \r\n}\r\n\r\n#card-header {\r\n    padding-left:1rem;\r\n}\r\n\r\n#check-time {\r\n    width:100%;\r\n    text-align: right;\r\n}\r\n\r\n#check-img {\r\n    width:15rem;\r\n    padding-bottom:2rem;\r\n}\r\n\r\n.beer-info h4 {\r\n    padding-top:1rem;\r\n}\r\n\r\n.beer-info span {\r\n    padding-left:1.5rem;\r\n    display: inline-block;\r\n}\r\n\r\n.beer-info i {\r\n    padding-right:0.5rem;\r\n}\r\n\r\n.info-label h4 {\r\n  margin-top:2rem;\r\n  margin-bottom: 0px;\r\n}\r\n\r\n.info-label hr {\r\n  margin-top: 0px;\r\n}\r\n\r\n#comment-label {\r\n    margin-top:1rem;\r\n}\r\n\r\n.star {\r\n    font-size: 4rem !important;\r\n    color: #b0c4de;\r\n}\r\n.filled {\r\n    color: #1e90ff;\r\n}\r\n\r\n#check-circle {\r\n    position:absolute;\r\n    right:10px;\r\n    top:-20px;\r\n}\r\n\r\n#loc-area img {\r\n    margin-top:2rem;\r\n}\r\n\r\n#beer-info-area {\r\n    margin-left:1rem;\r\n    margin-right:1rem;\r\n}\r\n\r\n#beer-info-area a.norm {\r\n    color:#8a6d3b;\r\n}\r\n\r\n#check-map {\r\n    margin-bottom:2rem;\r\n}\r\n\r\n#get-directions {\r\n  padding:2rem;\r\n}\r\n\r\n.head-label {\r\n  color: #C81B02;\r\n}\r\n"
-
-/***/ },
-/* 564 */
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"text-center loader\" *ngIf=\"showLoader\">\r\n  <app-loader></app-loader>\r\n</div>\r\n\r\n<div id=\"checkin-well\" class=\"container card\" *ngIf=\"!showLoader\">\r\n  <div class=\"row\">\r\n    <div id=\"user-area\" class=\"col-md-12 text-center\">\r\n      <div class=\"alert alert-success\">\r\n        <i id=\"check-circle\" class=\"fa fa-check-circle fa-4x\"></i>\r\n        <span>\r\n            <img *ngIf=\"user.photo !=''\" [src]=\"user.photo\" class=\"rounded-circle avatar\" />\r\n        </span>\r\n        <span id=\"card-header\">\r\n            {{user.name}}\r\n        </span>\r\n        <span>\r\n          checked in {{common.timeDifference(checkin.dateCreated)}}\r\n        </span>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n        <div class=\"info-label\">\r\n            <h4 class=\"head-label\"><i class=\"fa fa-beer\"></i> Beer Info</h4>\r\n            <hr />\r\n        </div>\r\n        <div id=\"beer-info-area\" class=\"alert alert-warning\">\r\n            <div class=\"text-center\">\r\n                <div>\r\n                    <a [routerLink]=\"['/beer',common.paramSEOFriendly(checkin.breweryName+' '+checkin.beerName),checkin.beerId]\">\r\n                        <img id=\"check-img\" *ngIf=\"checkin.beerIMG\" [src]=\"checkin.beerIMG\" />\r\n                    </a>\r\n                </div>\r\n            </div>\r\n            <div class=\"beer-info text-center\">\r\n                <h4>\r\n                    <a class=\"norm\" [routerLink]=\"['/beer',common.paramSEOFriendly(checkin.breweryName+' '+checkin.beerName),checkin.beerId]\">\r\n                        {{checkin.beerDisplayName}}\r\n                    </a>\r\n                </h4>\r\n                <h5>{{checkin.beerStyleName}}</h5>\r\n                <div>\r\n                    <span *ngIf=\"checkin.beerABV\"><i class=\"fa fa-caret-right\"></i>{{checkin.beerABV}}% ABV </span>\r\n                    <span *ngIf=\"checkin.beerIBU\"><i class=\"fa fa-caret-right\"></i>{{checkin.beerIBU}} IBU</span>\r\n                </div>\r\n                <div>          \r\n                    <a class=\"btn btn-warning\" [routerLink]=\"['/beer',common.paramSEOFriendly(checkin.breweryName+' '+checkin.beerName),checkin.beerId]\" role=\"button\">\r\n                        <i class=\"fa fa-beer\"></i> \r\n                        Beer Detail\r\n                    </a>\r\n                </div>                \r\n                <hr />\r\n                <div class=\"text-center\">\r\n                    <h5>\r\n                        <a class=\"norm\" [routerLink]=\"['/brewery',common.paramSEOFriendly(checkin.breweryName),checkin.breweryId]\">\r\n                            Brewed by {{checkin.breweryName}}\r\n                        </a>\r\n                    </h5>\r\n                    <div *ngIf=\"checkin.breweryImages.icon\">\r\n                        <a [routerLink]=\"['/brewery',common.paramSEOFriendly(checkin.breweryName),checkin.breweryId]\">\r\n                            <img [src]=\"checkin.breweryImages.icon\" />\r\n                        </a>\r\n                    </div>\r\n                    <div>\r\n                        <a class=\"btn btn-warning\" [routerLink]=\"['/brewery',common.paramSEOFriendly(checkin.breweryName),checkin.breweryId]\" role=\"button\">\r\n                            View Brewery\r\n                        </a>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"info-label\" *ngIf=\"checkin.img\">\r\n          <h4 class=\"head-label\"><i class=\"fa fa-camera\"></i> Picture Taken</h4>\r\n          <hr />          \r\n          <div class=\"text-center\">\r\n            <img [src]=\"checkin.img\" />\r\n          </div>\r\n        </div>\r\n        <div *ngIf=\"checkin.comments || checkin.beerRating\" class=\"info-label\">\r\n          <h4 class=\"head-label\"><i class=\"fa fa-comments\"></i> Beer Comments &amp; Ratings</h4>\r\n          <hr />\r\n          <div class=\"text-center\">\r\n            <div class=\"alert alert-warning\">\r\n              <div *ngIf=\"checkin.comments\">\r\n                <i class=\"fa fa-quote-left\"></i>\r\n                  {{checkin.comments}}\r\n                <i class=\"fa fa-quote-right\"></i>\r\n              </div>\r\n              <div *ngIf=\"checkin.beerRating\">\r\n                <app-rating [rate]=\"checkin.beerRating\"></app-rating>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-md-6\">\r\n        <div id=\"loc-area\" class=\"info-label\">\r\n          <h4 class=\"head-label\"><i class=\"fa fa-map-pin\"></i> Check-in Location</h4>\r\n          <hr />\r\n          <div class=\"text-center\">\r\n            <h4>{{checkin.name}}</h4>\r\n            <h5 *ngIf=\"checkin.placeType\">{{checkin.placeType}}</h5>\r\n            <div *ngIf=\"checkin.locationRating\">\r\n                <app-rating [rate]=\"checkin.locationRating\"></app-rating>\r\n            </div>            \r\n            <div>\r\n              <img [src]=\"checkin.photo\" />\r\n            </div>\r\n          </div>\r\n          <h4 class=\"head-label\"><i class=\"fa fa-map\"></i> Location Map</h4>\r\n          <hr />\r\n          <div class=\"text-center\">\r\n            {{checkin.address}} - {{checkin.city}}, {{checkin.state}} {{checkin.country}}\r\n          </div>\r\n          <div id=\"check-map\" class=\"text-center\">\r\n            <static-map [lat]=\"checkin.lat\" \r\n                        [lng]=\"checkin.lng\"\r\n                        [width]=\"420\"\r\n                        [height]=\"300\"\r\n                        [zoom]=\"14\">\r\n            </static-map>\r\n            <div id=\"get-directions\">\r\n                <a class=\"btn btn-warning\" target=\"_blank\" [href]=\"common.getToGoogleMapsUrl(checkin.lat,checkin.lng)\" role=\"button\">\r\n                    Get Directions\r\n                </a>\r\n            </div>\r\n          </div>                  \r\n        </div>\r\n    </div>    \r\n  </div>\r\n</div>\r\n\r\n"
-
-/***/ },
-/* 565 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var angular2_meta_1 = __webpack_require__(14);
-var model_service_1 = __webpack_require__(11);
-var common_service_1 = __webpack_require__(10);
-var PlaceResultsComponent = (function () {
-    function PlaceResultsComponent(model, router, common, meta, route) {
-        var _this = this;
-        this.model = model;
-        this.router = router;
-        this.common = common;
-        this.meta = meta;
-        this.route = route;
-        this.showLoader = true;
-        this.getMoreLoader = false;
-        this.locations = [];
-        this.route.params.subscribe(function (params) {
-            _this.locationKey = params['locationKey'];
-            if (_this.locationKey != null) {
-                _this.getPlacesByLocation(params['locationKey']);
-                _this.pageURL = _this.common.getAbsoluteUrl(_this.router);
-            }
-        });
-    }
-    PlaceResultsComponent.prototype.setMeta = function () {
-        var metaTags = [];
-        var metaTagsWithFB = [];
-        var keywords = [];
-        var pageTitle = "Bars in " + this.city + ", " + this.state + " | " + this.common.getAppName();
-        var pageDescription = "Find bars, clubs, pubs, and sports bars in " + this.city + ", " + this.state + ". At Brew Search, you can share beers, breweries, and bars socially. Listed are bars located in '" + this.city + ", " + this.state + "'.";
-        this.meta.setTitle(pageTitle);
-        metaTags.push({ name: 'author', content: this.common.getAuthor() });
-        metaTags.push({
-            name: 'description',
-            content: pageDescription
-        });
-        metaTags.push({
-            name: 'keywords', content: this.city + " bars,bars in " + this.city + ", " + this.city + " sports bars, drinks in " + this.city + ", places to drink in " + this.city + ", " + this.state + " bars"
-        });
-        // Facebook Tags
-        var defaultFB = this.common.defaultOGMetaTags();
-        metaTags.push({ name: 'fb:app_id', content: this.common.getFBAppId() });
-        metaTags.push({ name: 'og:site_name', content: defaultFB.site_name });
-        metaTags.push({ name: 'og:type', content: defaultFB.type });
-        metaTags.push({ name: 'og:title', content: pageTitle });
-        metaTags.push({ name: 'og:description', content: pageDescription });
-        metaTags.push({ name: 'og:url', content: this.pageURL });
-        metaTags.push({ name: 'og:image', content: defaultFB.image });
-        this.meta.addTags(metaTags);
-    };
-    PlaceResultsComponent.prototype.getMoreLocations = function () {
-        var _this = this;
-        this.getMoreLoader = true;
-        this.model.get('/google/search_place_next/' + this.nextToken)
-            .subscribe(function (resp) {
-            console.log('next_resp', resp);
-            if ("next_page_token" in resp)
-                _this.nextToken = resp.next_page_token;
-            else
-                _this.nextToken = null;
-            //console.log('nextToken',this.nextToken);
-            if (resp.results.length) {
-                for (var i = 0; i < resp.results.length; i++) {
-                    if ("photos" in resp.results[i])
-                        resp.results[i]['thumb'] = _this.common.getGoogleImg(resp.results[i].photos[0].photo_reference, 350);
-                    else
-                        resp.results[i]['thumb'] = 'assets/images/no-beer.jpg';
-                    _this.locations.push(resp.results[i]);
-                }
-            }
-            _this.getMoreLoader = false;
-        }, function (error) {
-            console.log(error);
-            _this.getMoreLoader = false;
-        });
-    };
-    PlaceResultsComponent.prototype.getPlacesByLocation = function (location) {
-        var _this = this;
-        var locKey = this.common.revertSEOParam(location);
-        var cityStateArray = locKey.split(",");
-        this.qLocation = locKey;
-        this.showLoader = true;
-        if (cityStateArray.length == 2) {
-            this.city = cityStateArray[0];
-            this.state = cityStateArray[1];
-            var txtSearch = encodeURI('bars in ' + this.city + ' ' + this.state);
-            //console.log('search st',txtSearch);
-            this.model.get('/google/search_place_type/' + txtSearch)
-                .subscribe(function (resp) {
-                console.log('places', resp);
-                if (resp.status == "OK") {
-                    for (var i = 0; i < resp.results.length; i++) {
-                        if ("photos" in resp.results[i])
-                            resp.results[i]['thumb'] = _this.common.getGoogleImg(resp.results[i].photos[0].photo_reference, 350);
-                        else
-                            resp.results[i]['thumb'] = 'assets/images/no-beer.jpg';
-                    }
-                    _this.locations = resp.results;
-                    _this.nextToken = resp.next_page_token;
-                }
-                _this.showLoader = false;
-                _this.setMeta();
-            }, function (error) {
-                console.log(error);
-                _this.showLoader = false;
-            });
-        }
-    };
-    PlaceResultsComponent = __decorate([
-        core_1.Component({
-            changeDetection: core_1.ChangeDetectionStrategy.Default,
-            encapsulation: core_1.ViewEncapsulation.Emulated,
-            selector: 'place-results',
-            styles: [__webpack_require__(568)],
-            template: __webpack_require__(569)
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object, (typeof (_d = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _d) || Object, (typeof (_e = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _e) || Object])
-    ], PlaceResultsComponent);
-    return PlaceResultsComponent;
-    var _a, _b, _c, _d, _e;
-}());
-exports.PlaceResultsComponent = PlaceResultsComponent;
-
-
-/***/ },
-/* 566 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var place_results_component_1 = __webpack_require__(565);
-var PlaceResultsRoutingModule = (function () {
-    function PlaceResultsRoutingModule() {
-    }
-    PlaceResultsRoutingModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                router_1.RouterModule.forChild([
-                    { path: 'bars/:locationKey/:token', component: place_results_component_1.PlaceResultsComponent },
-                    { path: 'bars/:locationKey', component: place_results_component_1.PlaceResultsComponent }
-                ])
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], PlaceResultsRoutingModule);
-    return PlaceResultsRoutingModule;
-}());
-exports.PlaceResultsRoutingModule = PlaceResultsRoutingModule;
-
-
-/***/ },
-/* 567 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var place_results_component_1 = __webpack_require__(565);
-var place_results_routing_module_1 = __webpack_require__(566);
-var PlaceResultsModule = (function () {
-    function PlaceResultsModule() {
-    }
-    PlaceResultsModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                shared_module_1.SharedModule,
-                place_results_routing_module_1.PlaceResultsRoutingModule
-            ],
-            declarations: [
-                place_results_component_1.PlaceResultsComponent
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], PlaceResultsModule);
-    return PlaceResultsModule;
-}());
-exports.PlaceResultsModule = PlaceResultsModule;
-
-
-/***/ },
-/* 568 */
-/***/ function(module, exports) {
-
-module.exports = "#search-box {\r\n  position: relative;\r\n  top:20px;\r\n}\r\n\r\n#brewery-results {\r\n    /* background-color:#fff; */\r\n    margin-top:3rem;\r\n    margin-bottom:3rem;\r\n    /* border: 1px solid rgba(0,0,0,.25); */\r\n}\r\n\r\n#brewery-results h1 {\r\n  font-size:1.25rem;\r\n}\r\n\r\n/*\r\n#brewery-results .row {\r\n  border-bottom: 1px solid rgba(0,0,0,.25);\r\n  padding-bottom: 1rem;\r\n  padding-top: 1rem;\r\n}\r\n*/\r\n\r\n\r\n#get-more-btn{\r\n    margin-top:1rem;\r\n    margin-bottom:2rem;\r\n}\r\n\r\n.card {\r\n    margin-bottom:0.5rem;\r\n    margin-top:0.5rem;\r\n    min-width: 290px !important;\r\n}\r\n\r\n.place-img {\r\n    display: flex;\r\n    justify-content: center;\r\n    height: 220px; /* or other desired height */\r\n    overflow: hidden;    \r\n}\r\n\r\n\r\n.place-img img {\r\n  flex: none;\r\n  max-height: 220px;\r\n}\r\n\r\nh4.card-title {\r\n    font-size:1.25rem;\r\n}"
-
-/***/ },
-/* 569 */
-/***/ function(module, exports) {
-
-module.exports = "<app-search id=\"search-box\"></app-search>\r\n\r\n<div class=\"text-center loader\" *ngIf=\"showLoader\">\r\n  <app-loader></app-loader>\r\n</div>\r\n\r\n\r\n<div id=\"brewery-results\" class=\"card-deck container\" *ngIf=\"!showLoader\">\r\n  <h1>Bars in {{city}}, {{state}}</h1>\r\n  <div class=\"card-deck\">\r\n    <div *ngFor=\"let location of locations\" class=\"card\">\r\n      <div class=\"place-img\">\r\n        <a [routerLink]=\"['/bar',common.paramSEOFriendly(location.name),location.place_id]\">\r\n          <img [src]=\"location.thumb\" />\r\n        </a>\r\n      </div>    \r\n      <div class=\"card-block text-center\">\r\n        <!-- <img [src]=\"location.thumb\" /> -->\r\n        <h4 class=\"card-title\">\r\n          <a [routerLink]=\"['/bar',common.paramSEOFriendly(location.name),location.place_id]\">{{location.name}}</a>\r\n        </h4>\r\n        <p *ngIf=\"location.rating\" class=\"card-text\">\r\n          <app-rating [rate]=\"location.rating\"></app-rating>\r\n        </p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div *ngIf=\"nextToken\" class=\"container\">\r\n  <div id=\"get-more-btn\">\r\n    <div *ngIf=\"!getMoreLoader\" class=\"text-center\">\r\n      <button class=\"btn btn-warning btn-lg btn-block\" (click)=\"getMoreLocations()\">\r\n        <i class=\"fa fa-glass\"></i>\r\n        Get More Bars\r\n      </button>\r\n    </div>\r\n    <div *ngIf=\"getMoreLoader\" class=\"text-center\">\r\n        <i class=\"fa fa-spinner fa-pulse fa-3x fa-fw\"></i>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
-
-/***/ },
-/* 570 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var model_service_1 = __webpack_require__(11);
-var common_service_1 = __webpack_require__(10);
-var angular2_meta_1 = __webpack_require__(14);
-var PlaceComponent = (function () {
-    function PlaceComponent(model, router, common, meta, route) {
-        var _this = this;
-        this.model = model;
-        this.router = router;
-        this.common = common;
-        this.meta = meta;
-        this.route = route;
-        this.data = {};
-        this.showLoader = true;
-        this.placeTypes = [];
-        this.locationPhotosArray = [];
-        this.locationPhotos = [];
-        this.showPhotos = false;
-        this.photoCount = 0;
-        this.locationPrimaryPhoto = null;
-        this.photosToLoad = [];
-        this.showPhotoLoader = false;
-        this.hidePhotos = false;
-        this.route.params.subscribe(function (params) {
-            _this.showLoader = true;
-            _this.getPlaceDetail(params['id']);
-            _this.pageURL = _this.common.getAbsoluteUrl(_this.router);
-        });
-    }
-    PlaceComponent.prototype.getPlaceDetail = function (placeId) {
-        var _this = this;
-        this.model.get('/google/place_by_id/' + placeId).subscribe(function (place) {
-            console.log('place', place);
-            _this.location = place;
-            _this.showLoader = false;
-            if ("photos" in _this.location) {
-                _this.locationPhoto = _this.common.getGoogleImg(_this.location.photos[0].photo_reference, 230);
-                _this.photoCount = _this.location.photos.length;
-            }
-            for (var i = 0; i < _this.location.types.length; i++) {
-                if (_this.location.types[i] != 'establishment' && _this.location.types[i] != 'point_of_interest')
-                    _this.placeTypes.push(_this.location.types[i]);
-            }
-            _this.setMeta();
-        }, function (error) {
-            console.log(error);
-        });
-    };
-    PlaceComponent.prototype.setMeta = function () {
-        var metaTags = [];
-        var keywords = [];
-        var pageTitle = this.location['name'];
-        var pageDescription = "Check out photos, beers list, and details of " + this.location['name'] + ". Brew Search helping people find beers, breweries, and bars around the world.";
-        metaTags.push({ name: 'author', content: this.common.getAuthor() });
-        keywords.push(this.location['name']);
-        keywords.push('bar');
-        keywords.push('bars');
-        keywords.push('reviews');
-        pageTitle += ' | ' + this.common.getAppName();
-        this.meta.setTitle(pageTitle);
-        metaTags.push({
-            name: 'description',
-            content: pageDescription
-        });
-        metaTags.push({
-            name: 'keywords', content: keywords.join(", ")
-        });
-        // Facebook Tags
-        metaTags.push({ name: 'fb:app_id', content: this.common.getFBAppId() });
-        metaTags.push({ name: 'og:site_name', content: this.common.getSiteName() });
-        metaTags.push({ name: 'og:type', content: "website" });
-        metaTags.push({ name: 'og:title', content: pageTitle });
-        metaTags.push({ name: 'og:description', content: pageDescription });
-        metaTags.push({ name: 'og:url', content: this.pageURL });
-        metaTags.push({ name: 'og:image', content: this.common.getDefaultNoImage() });
-        this.meta.addTags(metaTags);
-    };
-    PlaceComponent = __decorate([
-        core_1.Component({
-            changeDetection: core_1.ChangeDetectionStrategy.Default,
-            encapsulation: core_1.ViewEncapsulation.Emulated,
-            selector: 'place-detail',
-            styles: [__webpack_require__(574)],
-            template: __webpack_require__(573)
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object, (typeof (_d = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _d) || Object, (typeof (_e = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _e) || Object])
-    ], PlaceComponent);
-    return PlaceComponent;
-    var _a, _b, _c, _d, _e;
-}());
-exports.PlaceComponent = PlaceComponent;
-
-
-/***/ },
-/* 571 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var place_component_1 = __webpack_require__(570);
-var PlaceRoutingModule = (function () {
-    function PlaceRoutingModule() {
-    }
-    PlaceRoutingModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                router_1.RouterModule.forChild([
-                    { path: 'bar/:SEO/:id', component: place_component_1.PlaceComponent },
-                    { path: 'bar/:id', component: place_component_1.PlaceComponent }
-                ])
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], PlaceRoutingModule);
-    return PlaceRoutingModule;
-}());
-exports.PlaceRoutingModule = PlaceRoutingModule;
-
-
-/***/ },
-/* 572 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var place_component_1 = __webpack_require__(570);
-var place_routing_module_1 = __webpack_require__(571);
-var PlaceModule = (function () {
-    function PlaceModule() {
-    }
-    PlaceModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                shared_module_1.SharedModule,
-                place_routing_module_1.PlaceRoutingModule
-            ],
-            declarations: [
-                place_component_1.PlaceComponent
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], PlaceModule);
-    return PlaceModule;
-}());
-exports.PlaceModule = PlaceModule;
-
-
-/***/ },
-/* 573 */
-/***/ function(module, exports) {
-
-module.exports = "<!-- <app-search id=\"search-box\"></app-search> -->\r\n\r\n<div class=\"text-center loader\" *ngIf=\"showLoader\">\r\n  <app-loader></app-loader>\r\n</div>\r\n\r\n<div id=\"brewery-detail\" class=\"container\" *ngIf=\"!showLoader\">\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-md-3 place-img text-center\">\r\n      <div>\r\n        <img id=\"place-img\" *ngIf=\"locationPhoto\" [src]=\"locationPhoto\" />\r\n      </div>\r\n      <div>\r\n        <app-facebook [url]=\"pageURL\"></app-facebook>\r\n      </div>\r\n      <div class=\"web-btn\">\r\n        <a *ngIf=\"location.website\" class=\"btn btn-warning\" target=\"_blank\" [href]=\"location.website\" role=\"button\">\r\n          <i class=\"fa fa-globe\"></i> \r\n          View Website\r\n        </a> \r\n      </div>    \r\n    </div>\r\n    <div class=\"col-md-9\">\r\n      <div class=\"text-center\">\r\n        <h2>{{location.name}}</h2>\r\n        <div *ngIf=\"location.rating\">\r\n          <app-rating [rate]=\"location.rating\"></app-rating>\r\n        </div>       \r\n      </div>\r\n      <div class=\"alert alert-warning beer-info\">\r\n        <strong>Bar Info</strong>\r\n        <div>\r\n          <span *ngIf=\"location.rating\"><i class=\"fa fa-caret-right\"></i>Rating: {{location.rating}} out of 5</span>\r\n          <span *ngIf=\"location.international_phone_number\">\r\n            <i class=\"fa fa-caret-right\"></i>Phone: {{location.international_phone_number}}\r\n          </span>\r\n          <span *ngFor=\"let type of placeTypes\">\r\n            <i class=\"fa fa-caret-right\"></i>\r\n            {{type}}\r\n          </span>\r\n        </div>\r\n        <div>\r\n          <span><i class=\"fa fa-caret-right\"></i>Address: {{location.vicinity}}</span>\r\n        </div>\r\n      </div>\r\n      <gallery *ngIf=\"this.photoCount > 1\" [photos]=\"location.photos\"></gallery>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div *ngIf=\"location.reviews\" class=\"col-md-6\">\r\n        <h4 class=\"review-head\"><i class=\"fa fa-comments\"></i> {{location.name}} Reviews</h4>\r\n        <hr />      \r\n        <div id=\"review-area\" class=\"row alert alert-warning\" *ngFor=\"let review of location.reviews\">\r\n          <hr />\r\n          <div class=\"col-md-2 text-center\">\r\n            <img [src]=\"review.profile_photo_url\" class=\"rounded-circle review-avatar\" />\r\n          </div>\r\n          <div class=\"col-md-9\">\r\n            <p *ngIf=\"review.rating\">\r\n              <app-rating [rate]=\"review.rating\"></app-rating>\r\n            </p>\r\n            <p *ngIf=\"review.text\">\r\n              <b>{{review.author_name}} said:</b>\r\n              <read-more [text]=\"review.text\" [maxLength]=\"200\"></read-more>\r\n            </p>\r\n            <p class=\"text-right\">\r\n              {{common.timeConverter(review.time)}}\r\n            </p>\r\n          </div>            \r\n        </div>\r\n    </div>\r\n    <div id=\"bar-hours\" class=\"col-md-6\" *ngIf=\"location.opening_hours\">\r\n      <div class=\"alert alert-warning beer-info\">\r\n        <h4>Bar Hours</h4>\r\n        <div *ngFor=\"let hour of location.opening_hours.weekday_text\">\r\n          {{hour}}\r\n        </div>\r\n      </div>\r\n      <div class=\"check-map\" class=\"text-center\">\r\n        <strong>{{location.vicinity}}</strong>\r\n          <static-map [lat]=\"location.geometry.location.lat\" \r\n                      [lng]=\"location.geometry.location.lng\"\r\n                      [width]=\"420\"\r\n                      [height]=\"300\"\r\n                      [zoom]=\"14\">\r\n          </static-map>\r\n      </div>      \r\n    </div>\r\n  </div>\r\n</div>"
-
-/***/ },
-/* 574 */
-/***/ function(module, exports) {
-
-module.exports = "#search-box {\r\n  position: relative;\r\n  top:20px;\r\n}\r\n\r\n#brewery-detail {\r\n    margin-top:3rem;\r\n    margin-bottom:3rem;\r\n    background-color:#fff;\r\n    border: 1px solid rgba(0,0,0,.25);\r\n}\r\n\r\n.beer-info span {\r\n   padding-left:1.5rem;\r\n   display: inline-block;\r\n}\r\n\r\n.beer-info i {\r\n    padding-right:0.5rem;\r\n}\r\n\r\n#place-img{\r\n    margin-top:2rem;\r\n    margin-bottom:1rem;\r\n    max-height:8rem;\r\n}\r\n\r\n.photo-btn {\r\n    margin:1rem;\r\n}\r\n\r\n.web-btn .btn {\r\n    margin-top:0.5rem;\r\n    width:15rem;\r\n}\r\n\r\n.review-avatar {\r\n    width:4rem !important;\r\n}\r\n\r\n.label-value {\r\n    font-size:15px !important;\r\n}\r\n\r\n.rating {\r\n    justify-content: left !important;\r\n}\r\n\r\n.review-head {\r\n    margin-top:2rem;\r\n}\r\n\r\n\r\n#bar-hours {\r\n    margin-top:1rem;\r\n}\r\n\r\n#place-photos img {\r\n  width:40rem;\r\n  vertical-align: top;\r\n}\r\n\r\n.place-thumb {\r\n    padding:5px;\r\n    cursor: pointer;\r\n}\r\n\r\n#review-area {\r\n    margin:1rem;\r\n}\r\n"
-
-/***/ },
-/* 575 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var common_service_1 = __webpack_require__(10);
-var GalleryComponent = (function () {
-    function GalleryComponent(elementRef, com) {
-        this.elementRef = elementRef;
-        this.com = com;
-        this.photos = [];
-        this._photos = [];
-        this.locationPhotoThumbs = [];
-        this.photoCount = 0;
-        this.photosToLoad = [];
-        this.showPhotoLoader = false;
-        this.hidePhotos = false;
-    }
-    GalleryComponent.prototype.ngOnInit = function () {
-        this._photos = this.photos;
-        //console.log('refKes',this._photos); 
-        for (var i = 0; i < this._photos.length; i++) {
-            this.locationPhotoThumbs.push(this._photos[i].photo_reference);
-        }
-        this.photoCount = this._photos.length;
-    };
-    GalleryComponent.prototype.loadSinglePhoto = function () {
-        //this.showPhotoLoader = true;
-        this.photosToLoad.push(this.com.getGoogleImg(this.locationPhotoThumbs.pop()));
-    };
-    GalleryComponent.prototype.toggleHidePhotos = function () {
-        if (!this.hidePhotos)
-            this.hidePhotos = true;
-        else
-            this.hidePhotos = false;
-    };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], GalleryComponent.prototype, "photos", void 0);
-    GalleryComponent = __decorate([
-        core_1.Component({
-            selector: 'gallery',
-            template: __webpack_require__(577),
-            styles: [__webpack_require__(576)]
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object, (typeof (_b = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _b) || Object])
-    ], GalleryComponent);
-    return GalleryComponent;
-    var _a, _b;
-}());
-exports.GalleryComponent = GalleryComponent;
-
-
-/***/ },
-/* 576 */
-/***/ function(module, exports) {
-
-module.exports = ""
-
-/***/ },
-/* 577 */
-/***/ function(module, exports) {
-
-module.exports = "  <div *ngIf=\"!hidePhotos\">\n    <div *ngFor=\"let img of photosToLoad\" class=\"text-center\">\n        <img [src]=\"img\" width=\"100%\">\n    </div>\n    <!--\n    <div *ngIf=\"showPhotoLoader\" class=\"text-center\">\n        <i class=\"fa fa-spinner fa-pulse fa-2x fa-fw\"></i>\n    </div>\n    -->        \n  </div>\n  <div class=\"photo-btn\">\n    <button *ngIf=\"photosToLoad && locationPhotoThumbs.length != 0\"  class=\"photo-btn\" (click)=\"loadSinglePhoto()\" class=\"btn btn-warning btn-block btn-large\" role=\"button\">\n      <i class=\"fa fa-camera-retro\"></i> \n      See Photos - {{locationPhotoThumbs.length}} Left\n    </button>\n    <button *ngIf=\"photosToLoad.length == photoCount\"  class=\"photo-btn\" (click)=\"toggleHidePhotos()\" class=\"btn btn-warning btn-block btn-large\" role=\"button\">\n      <i class=\"fa fa-camera-retro\"></i> \n      <span *ngIf=\"!hidePhotos\">Hide Photos</span>\n      <span *ngIf=\"hidePhotos\">Show Photos</span>\n    </button>            \n  </div>"
-
-/***/ },
-/* 578 */,
-/* 579 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var Observable_1 = __webpack_require__(3);
-__webpack_require__(286);
-__webpack_require__(522);
-__webpack_require__(524);
-var cache_service_1 = __webpack_require__(281);
-// domain/feature service
-var SearchCacheService = (function () {
-    // This is only one example of one Model depending on your domain
-    function SearchCacheService(_cache) {
-        this._cache = _cache;
-    }
-    /**
-     * whatever domain/feature method name
-     */
-    SearchCacheService.prototype.get = function (url) {
-        // you want to return the cache if there is a response in it.
-        // This would cache the first response so if your API isn't idempotent
-        // you probably want to remove the item from the cache after you use it. LRU of 10
-        // you can use also hashCodeString here
-        var key = url;
-        if (this._cache.has(key)) {
-            return Observable_1.Observable.of(this._cache.get(key));
-        }
-        else
-            return null;
-    };
-    SearchCacheService.prototype.setLastSearch = function (name) {
-        var json = {
-            name: name
-        };
-        this._cache.set('__last_search', json);
-    };
-    SearchCacheService.prototype.getLastSearch = function () {
-        if (this._cache.has('__last_search')) {
-            var page = this._cache.get('__last_search');
-            return page.name;
-        }
-        else
-            return null;
-    };
-    SearchCacheService.prototype.setBeer = function (name) {
-        var json = {
-            q: name
-        };
-        this.setLastSearch('beer');
-        this._cache.set('__beer_cache', json);
-    };
-    SearchCacheService.prototype.getBeer = function () {
-        if (this._cache.has('__beer_cache'))
-            return this._cache.get('__beer_cache');
-        else
-            return null;
-    };
-    SearchCacheService.prototype.setBrewery = function (name, options, geo) {
-        var json = {
-            q: name,
-            opt: options,
-            geo: geo
-        };
-        this.setLastSearch('brewery');
-        this._cache.set('__brewery_cache', json);
-    };
-    SearchCacheService.prototype.getBrewery = function () {
-        if (this._cache.has('__brewery_cache'))
-            return this._cache.get('__brewery_cache');
-        else
-            return null;
-    };
-    SearchCacheService.prototype.setBar = function (name, options, geo) {
-        var json = {
-            q: name,
-            opt: options,
-            geo: geo
-        };
-        this.setLastSearch('bar');
-        this._cache.set('__bar_cache', json);
-    };
-    SearchCacheService.prototype.getBar = function () {
-        if (this._cache.has('__bar_cache'))
-            return this._cache.get('__bar_cache');
-        else
-            return null;
-    };
-    SearchCacheService.prototype.clearBar = function () {
-        this._cache.delete('__bar_cache');
-    };
-    SearchCacheService.prototype.clearBeer = function () {
-        this._cache.delete('__beer_cache');
-    };
-    SearchCacheService.prototype.clearBrewery = function () {
-        this._cache.delete('__brewery_cache');
-    };
-    SearchCacheService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof cache_service_1.CacheService !== 'undefined' && cache_service_1.CacheService) === 'function' && _a) || Object])
-    ], SearchCacheService);
-    return SearchCacheService;
-    var _a;
-}());
-exports.SearchCacheService = SearchCacheService;
-
-
-/***/ },
-/* 580 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-// Directive decorator
-var ActiveDirective = (function () {
-    /*
-    @HostListener('click') click() {
-      console.log('hello world');
-      this.renderer.setElementClass(this.el.nativeElement, 'active', true);
-    }
-    */
-    function ActiveDirective(el, renderer) {
-        this.el = el;
-        this.renderer = renderer;
-        // Use renderer to render the element with styles
-    }
-    ActiveDirective.prototype.ngOnInit = function () {
-        //console.log('el',this.el.nativeElement);
-        //console.log('isActive',this.active);
-        if (this.active)
-            this.renderer.setElementClass(this.el.nativeElement, 'active', true);
-    };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], ActiveDirective.prototype, "active", void 0);
-    ActiveDirective = __decorate([
-        core_1.Directive({
-            selector: '[active]',
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _b) || Object])
-    ], ActiveDirective);
-    return ActiveDirective;
-    var _a, _b;
-}());
-exports.ActiveDirective = ActiveDirective;
-
-
-/***/ },
-/* 581 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var active_listener_directive_1 = __webpack_require__(582);
-// Directive decorator
-var ActiveTriggerDirective = (function () {
-    /*
-    @HostBinding ('class.active') get selected() {
-      return this.tabActive;
-    }
-    */
-    function ActiveTriggerDirective(el, renderer, tabContainer) {
-        this.el = el;
-        this.renderer = renderer;
-        this.tabContainer = tabContainer;
-        this.tabActive = false;
-        // Use renderer to render the element with styles
-        this.tabContainer.add(this);
-    }
-    ActiveTriggerDirective.prototype.click = function () {
-        //this.renderer.setElementClass(this.el.nativeElement, 'active', true);
-        this.tabContainer.show(this.id);
-    };
-    __decorate([
-        core_1.Input('activeTrigger'), 
-        __metadata('design:type', String)
-    ], ActiveTriggerDirective.prototype, "id", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], ActiveTriggerDirective.prototype, "tabActive", void 0);
-    __decorate([
-        core_1.HostListener('click'), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', []), 
-        __metadata('design:returntype', void 0)
-    ], ActiveTriggerDirective.prototype, "click", null);
-    ActiveTriggerDirective = __decorate([
-        core_1.Directive({
-            selector: '[activeTrigger]',
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _b) || Object, (typeof (_c = typeof active_listener_directive_1.ActiveListenerDirective !== 'undefined' && active_listener_directive_1.ActiveListenerDirective) === 'function' && _c) || Object])
-    ], ActiveTriggerDirective);
-    return ActiveTriggerDirective;
-    var _a, _b, _c;
-}());
-exports.ActiveTriggerDirective = ActiveTriggerDirective;
-
-
-/***/ },
-/* 582 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-// Directive decorator
-var ActiveListenerDirective = (function () {
-    function ActiveListenerDirective(el, renderer) {
-        this.el = el;
-        this.renderer = renderer;
-        this.triggers = [];
-    }
-    ActiveListenerDirective.prototype.add = function (trigger) {
-        this.triggers.push(trigger);
-    };
-    ActiveListenerDirective.prototype.show = function (id) {
-        for (var i = 0; i < this.triggers.length; i++) {
-            if (this.triggers[i].id == id) {
-                //console.log("YOLO");
-                this.renderer.setElementStyle(this.triggers[i].el.nativeElement, 'background-color', '#ec971f');
-            }
-            else {
-                this.renderer.setElementStyle(this.triggers[i].el.nativeElement, 'background-color', '#C81B02');
-            }
-        }
-    };
-    ActiveListenerDirective.prototype.ngOnInit = function () {
-        if (this.activeListener != 'home')
-            this.renderer.setElementStyle(this.el.nativeElement, 'background', 'none');
-    };
-    __decorate([
-        core_1.ContentChildren('activeTrigger'), 
-        __metadata('design:type', Object)
-    ], ActiveListenerDirective.prototype, "items", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], ActiveListenerDirective.prototype, "activeListener", void 0);
-    ActiveListenerDirective = __decorate([
-        core_1.Directive({
-            selector: '[activeListener]',
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _b) || Object])
-    ], ActiveListenerDirective);
-    return ActiveListenerDirective;
-    var _a, _b;
-}());
-exports.ActiveListenerDirective = ActiveListenerDirective;
-
-
-/***/ },
-/* 583 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var angular2_meta_1 = __webpack_require__(14);
-var model_service_1 = __webpack_require__(11);
-var common_service_1 = __webpack_require__(10);
-var HomeBarComponent = (function () {
-    function HomeBarComponent(model, meta, common) {
-        this.model = model;
-        this.meta = meta;
-        this.common = common;
-        this.data = {};
-        this.setMeta();
-    }
-    HomeBarComponent.prototype.setMeta = function () {
-        var metaTags = [];
-        var metaTagsWithFB = [];
-        var keywords = [];
-        var pageTitle = "Find Local Bars | " + this.common.getAppName();
-        this.meta.setTitle(pageTitle);
-        metaTags.push({ name: 'author', content: this.common.getAuthor() });
-        metaTags.push({
-            name: 'description',
-            content: "Find which pub services your favorite beer, introduce new craft beers, and discover new local breweries with an App that's fun and easy to use."
-        });
-        metaTags.push({
-            name: 'keywords', content: "brews, craft beers, best beers, beer festivals, local beers, import beers, brewery, draft beers, pubs, bars"
-        });
-        // Facebook Tags
-        var defaultFB = this.common.defaultOGMetaTags();
-        metaTags.push({ name: 'fb:app_id', content: this.common.getFBAppId() });
-        metaTags.push({ name: 'og:site_name', content: defaultFB.site_name });
-        metaTags.push({ name: 'og:type', content: defaultFB.type });
-        metaTags.push({ name: 'og:title', content: defaultFB.title });
-        metaTags.push({ name: 'og:description', content: defaultFB.description });
-        metaTags.push({ name: 'og:url', content: defaultFB.url });
-        metaTags.push({ name: 'og:image', content: defaultFB.image });
-        this.meta.addTags(metaTags);
-    };
-    HomeBarComponent = __decorate([
-        core_1.Component({
-            changeDetection: core_1.ChangeDetectionStrategy.Default,
-            encapsulation: core_1.ViewEncapsulation.Emulated,
-            selector: 'home-bar',
-            styles: [__webpack_require__(586)],
-            template: __webpack_require__(587)
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object])
-    ], HomeBarComponent);
-    return HomeBarComponent;
-    var _a, _b, _c;
-}());
-exports.HomeBarComponent = HomeBarComponent;
-
-
-/***/ },
-/* 584 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var home_bar_component_1 = __webpack_require__(583);
-var HomeBarRoutingModule = (function () {
-    function HomeBarRoutingModule() {
-    }
-    HomeBarRoutingModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                router_1.RouterModule.forChild([
-                    { path: 'find-bars', component: home_bar_component_1.HomeBarComponent }
-                ])
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], HomeBarRoutingModule);
-    return HomeBarRoutingModule;
-}());
-exports.HomeBarRoutingModule = HomeBarRoutingModule;
-
-
-/***/ },
-/* 585 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var home_bar_component_1 = __webpack_require__(583);
-var home_bar_routing_module_1 = __webpack_require__(584);
-var HomeBarModule = (function () {
-    function HomeBarModule() {
-    }
-    HomeBarModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                shared_module_1.SharedModule,
-                home_bar_routing_module_1.HomeBarRoutingModule
-            ],
-            declarations: [
-                home_bar_component_1.HomeBarComponent
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], HomeBarModule);
-    return HomeBarModule;
-}());
-exports.HomeBarModule = HomeBarModule;
-
-
-/***/ },
-/* 586 */
-/***/ function(module, exports) {
-
-module.exports = ".app-features ul {\r\n  padding-top: 5rem;\r\n  \r\n}\r\n\r\n.app-features li {\r\n  font-size:1rem;\r\n  padding-bottom:0.5rem;\r\n}\r\n\r\n.fa-green {\r\n  color: green;\r\n}\r\n\r\n.sub-header {\r\n  font-family: \"Raleway\", Helvetica, Arial, sans-serif !important;\r\n  margin-top:20px;\r\n}\r\n\r\n.row-centered {\r\n    text-align: center;\r\n}\r\n\r\n.col-centered {\r\n    display: inline-block;\r\n    float: none;\r\n    /* reset the text-align */\r\n    text-align: left;\r\n    /* inline-block space fix */\r\n    margin-right: -4px;\r\n}\r\n\r\n.apple-btn img{\r\n  padding-bottom:10px !important;\r\n  margin-bottom:10px !important;\r\n}\r\n\r\n.card {\r\n  width: 24rem;\r\n  background-color:#ddd;\r\n}\r\n\r\n\r\n.about-panel {\r\n  margin-top:4rem;\r\n  /*background-color:#fff;*/\r\n}\r\n\r\n.about-panel i {\r\n  padding-left:0.75rem;\r\n}\r\n\r\n#ticket-btn {\r\n  padding-top:1rem;\r\n}\r\n\r\n.paralax-window {\r\n  display: flex;\r\n  align-content: center;\r\n  align-items: center;\r\n  flex-direction: column; \r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  justify-content: space-around;\r\n  position: relative;\r\n  width: 100%;   \r\n}\r\n\r\nsection {\r\n  width: 100%;\r\n  height: 100vh;\r\n  flex: 1;\r\n  display: flex;\r\n  text-align: center;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background-color: #000;\r\n  \r\n}\r\n\r\n\r\n.stuff {\r\n  display: flex;\r\n  flex-direction: column;\r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  width: 100%;\r\n  max-width: 70%;\r\n  justify-content: center;\r\n  text-align: center;\r\n  z-index: 1000;\r\n  color: #fff;\r\n  margin: 0 auto;\r\n  font-weight:bold;\r\n  font-size: 3rem;\r\n  position: relative;\r\n  text-shadow: black 0.1em 0.1em 0.2em;\r\n}\r\n\r\n.stuff .btn {\r\n  width:12rem;\r\n  text-align:center;\r\n  text-shadow:none;\r\n}\r\n\r\n.banner {\r\n  width:inherit;\r\n  background-image: url(\"/assets/barhome.jpg\");\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center center;\r\n  height:480px !important;      \r\n}\r\n\r\n.banner h2 {\r\n  position: absolute;\r\n  top:80px;\r\n  left:0;\r\n  right:0;\r\n  margin: 0 auto;\r\n  color:#ffffff;\r\n  font-family: 'Raleway',sans-serif !important;\r\n  text-shadow: 0 0 10px #000000;\r\n}\r\n\r\n#custom-search-input {\r\n  position: relative;\r\n  top:100px;\r\n}\r\n\r\n.banner h3 {\r\n  position: absolute;\r\n  top:420px;\r\n  right:20px;\r\n  font-size:16px;\r\n  color:#fff;\r\n  text-shadow: 2px 2px 4px #000000;\r\n}\r\n\r\n.fest {\r\n  background-color:#fff;\r\n  border: 1px solid rgba(0,0,0,.25);\r\n  padding:2rem;\r\n}\r\n\r\n.fest h3 {\r\n  padding-bottom:1rem;\r\n}\r\n\r\n.fa-ul {\r\n  padding-left:1.5rem;\r\n}\r\n\r\n.fa-ul i {\r\n  padding-top:0.25rem;\r\n}\r\n\r\n"
-
-/***/ },
-/* 587 */
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"banner\">\r\n  <!--\r\n  <div id=\"alert-msg\" *ngIf=\"msg.length\" class=\"container\">\r\n    <ngb-alert>\r\n      <strong>Sorry!</strong> {{msg}}\r\n    </ngb-alert>\r\n  </div>\r\n   -->\r\n  <app-search id=\"custom-search-input\"></app-search>\r\n  <h2 class=\"text-center\">Find Local Bars in your Hometown.</h2>\r\n</div>"
-
-/***/ },
-/* 588 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var angular2_meta_1 = __webpack_require__(14);
-var model_service_1 = __webpack_require__(11);
-var common_service_1 = __webpack_require__(10);
-var HomeBeerComponent = (function () {
-    function HomeBeerComponent(model, meta, common) {
-        var _this = this;
-        this.model = model;
-        this.meta = meta;
-        this.common = common;
-        this.showLoader = true;
-        // we need the data synchronously for the client to set the server response
-        // we create another method so we have more control for testing
-        this.setMeta();
-        this.model.get('/api/featured').subscribe(function (featured) {
-            //console.log('featured',featured);
-            if ("data" in featured) {
-                _this.featuredBeer = featured['data'].beer;
-            }
-            //console.log('beer',this.featuredBeer);
-            _this.model.get('/api/random_beers').subscribe(function (random) {
-                //console.log('random',random);
-                if ("data" in random) {
-                    _this.randomBeers = random['data'];
-                }
-                //console.log('random',random);
-                _this.showLoader = false;
-            }, function (error) {
-                console.log(error);
-            });
-        }, function (error) {
-            console.log(error);
-        });
-    }
-    HomeBeerComponent.prototype.setMeta = function () {
-        var metaTags = [];
-        var metaTagsWithFB = [];
-        var keywords = [];
-        var pageTitle = "Find Beers | " + this.common.getAppName();
-        this.meta.setTitle(pageTitle);
-        metaTags.push({ name: 'author', content: this.common.getAuthor() });
-        metaTags.push({
-            name: 'description',
-            content: "Find which pub services your favorite beer, introduce new craft beers, and discover new local breweries with an App that's fun and easy to use."
-        });
-        metaTags.push({
-            name: 'keywords', content: "brews, craft beers, best beers, beer festivals, local beers, import beers, brewery, draft beers, pubs, bars"
-        });
-        // Facebook Tags
-        var defaultFB = this.common.defaultOGMetaTags();
-        metaTags.push({ name: 'fb:app_id', content: this.common.getFBAppId() });
-        metaTags.push({ name: 'og:site_name', content: defaultFB.site_name });
-        metaTags.push({ name: 'og:type', content: defaultFB.type });
-        metaTags.push({ name: 'og:title', content: defaultFB.title });
-        metaTags.push({ name: 'og:description', content: defaultFB.description });
-        metaTags.push({ name: 'og:url', content: defaultFB.url });
-        metaTags.push({ name: 'og:image', content: defaultFB.image });
-        this.meta.addTags(metaTags);
-    };
-    HomeBeerComponent = __decorate([
-        core_1.Component({
-            changeDetection: core_1.ChangeDetectionStrategy.Default,
-            encapsulation: core_1.ViewEncapsulation.Emulated,
-            selector: 'home-beer',
-            styles: [__webpack_require__(591)],
-            template: __webpack_require__(592)
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object])
-    ], HomeBeerComponent);
-    return HomeBeerComponent;
-    var _a, _b, _c;
-}());
-exports.HomeBeerComponent = HomeBeerComponent;
-
-
-/***/ },
-/* 589 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var home_beer_component_1 = __webpack_require__(588);
-var HomeBeerRoutingModule = (function () {
-    function HomeBeerRoutingModule() {
-    }
-    HomeBeerRoutingModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                router_1.RouterModule.forChild([
-                    { path: 'find-beers', component: home_beer_component_1.HomeBeerComponent }
-                ])
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], HomeBeerRoutingModule);
-    return HomeBeerRoutingModule;
-}());
-exports.HomeBeerRoutingModule = HomeBeerRoutingModule;
-
-
-/***/ },
-/* 590 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var home_beer_component_1 = __webpack_require__(588);
-var home_beer_routing_module_1 = __webpack_require__(589);
-var HomeBeerModule = (function () {
-    function HomeBeerModule() {
-    }
-    HomeBeerModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                shared_module_1.SharedModule,
-                home_beer_routing_module_1.HomeBeerRoutingModule
-            ],
-            declarations: [
-                home_beer_component_1.HomeBeerComponent
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], HomeBeerModule);
-    return HomeBeerModule;
-}());
-exports.HomeBeerModule = HomeBeerModule;
-
-
-/***/ },
-/* 591 */
-/***/ function(module, exports) {
-
-module.exports = ".app-features ul {\r\n  padding-top: 5rem;\r\n  \r\n}\r\n\r\n.app-features li {\r\n  font-size:1rem;\r\n  padding-bottom:0.5rem;\r\n}\r\n\r\n.fa-green {\r\n  color: green;\r\n}\r\n\r\n.sub-header {\r\n  font-family: \"Raleway\", Helvetica, Arial, sans-serif !important;\r\n  margin-top:20px;\r\n}\r\n\r\n.row-centered {\r\n    text-align: center;\r\n}\r\n\r\n.col-centered {\r\n    display: inline-block;\r\n    float: none;\r\n    /* reset the text-align */\r\n    text-align: left;\r\n    /* inline-block space fix */\r\n    margin-right: -4px;\r\n}\r\n\r\n.apple-btn img{\r\n  padding-bottom:10px !important;\r\n  margin-bottom:10px !important;\r\n}\r\n\r\n.card {\r\n  width: 24rem;\r\n  background-color:#ddd;\r\n}\r\n\r\n\r\n.about-panel {\r\n  margin-top:4rem;\r\n  /*background-color:#fff;*/\r\n}\r\n\r\n.about-panel i {\r\n  padding-left:0.75rem;\r\n}\r\n\r\n#ticket-btn {\r\n  padding-top:1rem;\r\n}\r\n\r\n.paralax-window {\r\n  display: flex;\r\n  align-content: center;\r\n  align-items: center;\r\n  flex-direction: column; \r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  justify-content: space-around;\r\n  position: relative;\r\n  width: 100%;   \r\n}\r\n\r\nsection {\r\n  width: 100%;\r\n  height: 100vh;\r\n  flex: 1;\r\n  display: flex;\r\n  text-align: center;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background-color: #000;\r\n  \r\n}\r\n\r\n.stuff {\r\n  display: flex;\r\n  flex-direction: column;\r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  width: 100%;\r\n  max-width: 70%;\r\n  justify-content: center;\r\n  text-align: center;\r\n  z-index: 1000;\r\n  color: #fff;\r\n  margin: 0 auto;\r\n  font-weight:bold;\r\n  font-size: 3rem;\r\n  position: relative;\r\n  text-shadow: black 0.1em 0.1em 0.2em;\r\n}\r\n\r\n.stuff .btn {\r\n  width:12rem;\r\n  text-align:center;\r\n  text-shadow:none;\r\n}\r\n\r\n.banner {\r\n  width:inherit;\r\n  background-image: url(\"/assets/beerhome.jpg\");\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center center;\r\n  height:350px !important;      \r\n}\r\n\r\n.banner h2 {\r\n  position: absolute;\r\n  top:80px;\r\n  left:0;\r\n  right:0;\r\n  margin: 0 auto;\r\n  color:#ffffff;\r\n  font-family: 'Raleway',sans-serif !important;\r\n  text-shadow: 0 0 10px #000000;\r\n}\r\n\r\n#custom-search-input {\r\n  position: relative;\r\n  top:100px;\r\n}\r\n\r\n.banner h3 {\r\n  position: absolute;\r\n  top:420px;\r\n  right:20px;\r\n  font-size:16px;\r\n  color:#fff;\r\n  text-shadow: 2px 2px 4px #000000;\r\n}\r\n\r\n.fest {\r\n  background-color:#fff;\r\n  border: 1px solid rgba(0,0,0,.25);\r\n  padding:2rem;\r\n}\r\n\r\n.fest h3 {\r\n  padding-bottom:1rem;\r\n}\r\n\r\n.fa-ul {\r\n  padding-left:1.5rem;\r\n}\r\n\r\n.fa-ul i {\r\n  padding-top:0.25rem;\r\n}\r\n\r\n.card {\r\n  background-color: #fff;\r\n}\r\n\r\n#featured-beer {\r\n  margin-top: 1rem;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n#featured-week {\r\n  width:100%;\r\n  margin-bottom:2rem;\r\n}\r\n\r\n#featured-week .card-header {\r\n  color:#fff;\r\n  background-color: #C81B02;\r\n}\r\n\r\n.random-beer h4 {\r\n  font-size: 1.25rem;\r\n}\r\n\r\n.random-beer {\r\n  margin-bottom:1rem;\r\n}\r\n\r\n"
-
-/***/ },
-/* 592 */
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"banner\">\r\n  <!--\r\n  <div id=\"alert-msg\" *ngIf=\"msg.length\" class=\"container\">\r\n    <ngb-alert>\r\n      <strong>Sorry!</strong> {{msg}}\r\n    </ngb-alert>\r\n  </div>\r\n   -->\r\n  <app-search id=\"custom-search-input\"></app-search>\r\n  <h2 class=\"text-center\">Search Our Database of Over 80,000 Beers.</h2>\r\n</div>\r\n\r\n<div id=\"featured-beer\" class=\"container\" *ngIf=\"!showLoader\">\r\n  <div id=\"featured-week\" class=\"card\">\r\n    <div class=\"card-header\">\r\n      Featured Beer of the Week\r\n    </div>    \r\n    <div class=\"card-block\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-5 text-center\">\r\n          <a *ngIf=\"featuredBeer.breweries\" [routerLink]=\"['/beer',common.paramSEOFriendly(featuredBeer.breweries[0].name+' '+featuredBeer.name),featuredBeer.id]\">\r\n            <img *ngIf=\"featuredBeer.labels\" [src]=\"featuredBeer.labels.medium\" />\r\n          </a>\r\n        </div>\r\n        <div class=\"col-md-7\">\r\n          <h4 class=\"card-title\">\r\n            <a [routerLink]=\"['/beer',common.paramSEOFriendly(featuredBeer.breweries[0].name+' '+featuredBeer.name),featuredBeer.id]\">\r\n              {{featuredBeer.nameDisplay}}\r\n            </a>\r\n          </h4>\r\n          <p class=\"card-text\">\r\n            <a [routerLink]=\"['/brewery',common.paramSEOFriendly(featuredBeer.breweries[0].name),featuredBeer.breweries[0].id]\">\r\n              {{featuredBeer.breweries[0].name}}\r\n            </a>\r\n          </p>\r\n          <p class=\"card-text\" *ngIf=\"featuredBeer.style!=null\">\r\n            {{featuredBeer.style.shortName}}    \r\n          </p>          \r\n          <p class=\"card-text\" *ngIf=\"featuredBeer.abv\">{{featuredBeer.abv}}% ABV</p>\r\n          <p class=\"card-text\"*ngIf=\"!featuredBeer.abv\">ABV Not Listed</p>          \r\n          <p class=\"card-text\" *ngIf=\"featuredBeer.description\">\r\n            {{featuredBeer.description}}\r\n          </p>\r\n        </div>\r\n      </div>\r\n    </div>           \r\n  </div>  \r\n  <div class=\"card-group\">\r\n    <!--\r\n    <div class=\"card\">\r\n      <img *ngIf=\"featuredBeer.labels\" [src]=\"featuredBeer.labels.medium\" />\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title\">{{featuredBeer.nameDisplay}}</h4>\r\n        <p class=\"card-text\">\r\n          <read-more [text]=\"featuredBeer.description\" [maxLength]=\"75\"></read-more>\r\n        </p>\r\n      </div>\r\n      <div class=\"card-footer\">\r\n        <small class=\"text-muted\" *ngIf=\"featuredBeer.abv\">{{featuredBeer.abv}}% ABV</small>\r\n        <small class=\"text-muted\" *ngIf=\"!featuredBeer.abv\">ABV Not Listed</small>\r\n      </div>           \r\n    </div>\r\n    -->\r\n    <div class=\"card random-beer\" *ngFor=\"let beer of randomBeers\">\r\n      <a *ngIf=\"beer.breweries\" class=\"beer-header\" [routerLink]=\"['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]\">\r\n        <img *ngIf=\"beer.labels\" [src]=\"beer.labels.medium\" />\r\n      </a>\r\n      <div class=\"card-block\">\r\n        <h4 class=\"card-title text-center\">\r\n          <a *ngIf=\"beer.breweries\" [routerLink]=\"['/beer',common.paramSEOFriendly(beer.breweries[0].name+' '+beer.name),beer.id]\">{{beer.name}}</a>\r\n          <a *ngIf=\"!beer.breweries\" [routerLink]=\"['/beer',common.paramSEOFriendly(beer.name),beer.id]\">\r\n            {{beer.name}}\r\n          </a>\r\n        </h4>\r\n        <p class=\"card-text text-center\">\r\n          <a *ngIf=\"beer.breweries\" [routerLink]=\"['/brewery',common.paramSEOFriendly(beer.breweries[0].name),beer.breweries[0].id]\">{{beer.breweries[0].name}}</a>\r\n        </p>      \r\n        <p class=\"card-text text-center\" *ngIf=\"beer.style!=null\">\r\n          {{beer.style.shortName}}    \r\n        </p>\r\n        <p *ngIf=\"beer.abv!=null\" class=\"card-text text-center\">\r\n          <small class=\"text-muted\">{{beer.abv}}% ABV</small>\r\n        </p>\r\n      </div>\r\n      <div class=\"card-footer text-center\">\r\n        <small class=\"text-muted\">Added {{common.dateFriendly(beer.createDate)}}</small>\r\n      </div>             \r\n    </div>\r\n  </div>\r\n</div>"
-
-/***/ },
-/* 593 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var angular2_meta_1 = __webpack_require__(14);
-var model_service_1 = __webpack_require__(11);
-var common_service_1 = __webpack_require__(10);
-var HomeBreweryComponent = (function () {
-    function HomeBreweryComponent(model, meta, common) {
-        var _this = this;
-        this.model = model;
-        this.meta = meta;
-        this.common = common;
-        this.data = {};
-        this.showLoader = true;
-        // we need the data synchronously for the client to set the server response
-        // we create another method so we have more control for testing
-        this.setMeta();
-        this.model.get('/api/featured').subscribe(function (featured) {
-            //console.log('featured',featured);
-            if ("data" in featured) {
-                _this.featuredBrewery = featured['data'].brewery;
-            }
-            //console.log('beer',this.featuredBrewery);
-            _this.showLoader = false;
-        }, function (error) {
-            console.log(error);
-        });
-    }
-    HomeBreweryComponent.prototype.setMeta = function () {
-        /*
-        this.model.get('/data.json').subscribe(data => {
-          this.data = data;
-        });
-        */
-        var metaTags = [];
-        var metaTagsWithFB = [];
-        var keywords = [];
-        var pageTitle = "Find Local Breweries | " + this.common.getAppName();
-        this.meta.setTitle(pageTitle);
-        metaTags.push({ name: 'author', content: this.common.getAuthor() });
-        metaTags.push({
-            name: 'description',
-            content: "Find which pub services your favorite beer, introduce new craft beers, and discover new local breweries with an App that's fun and easy to use."
-        });
-        metaTags.push({
-            name: 'keywords', content: "brews, craft beers, best beers, beer festivals, local beers, import beers, brewery, draft beers, pubs, bars"
-        });
-        // Facebook Tags
-        var defaultFB = this.common.defaultOGMetaTags();
-        metaTags.push({ name: 'fb:app_id', content: this.common.getFBAppId() });
-        metaTags.push({ name: 'og:site_name', content: defaultFB.site_name });
-        metaTags.push({ name: 'og:type', content: defaultFB.type });
-        metaTags.push({ name: 'og:title', content: defaultFB.title });
-        metaTags.push({ name: 'og:description', content: defaultFB.description });
-        metaTags.push({ name: 'og:url', content: defaultFB.url });
-        metaTags.push({ name: 'og:image', content: defaultFB.image });
-        this.meta.addTags(metaTags);
-    };
-    HomeBreweryComponent = __decorate([
-        core_1.Component({
-            changeDetection: core_1.ChangeDetectionStrategy.Default,
-            encapsulation: core_1.ViewEncapsulation.Emulated,
-            selector: 'home-brewery',
-            styles: [__webpack_require__(596)],
-            template: __webpack_require__(597)
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof model_service_1.ModelService !== 'undefined' && model_service_1.ModelService) === 'function' && _a) || Object, (typeof (_b = typeof angular2_meta_1.Meta !== 'undefined' && angular2_meta_1.Meta) === 'function' && _b) || Object, (typeof (_c = typeof common_service_1.CommonService !== 'undefined' && common_service_1.CommonService) === 'function' && _c) || Object])
-    ], HomeBreweryComponent);
-    return HomeBreweryComponent;
-    var _a, _b, _c;
-}());
-exports.HomeBreweryComponent = HomeBreweryComponent;
-
-
-/***/ },
-/* 594 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(5);
-var home_brewery_component_1 = __webpack_require__(593);
-var HomeBreweryRoutingModule = (function () {
-    function HomeBreweryRoutingModule() {
-    }
-    HomeBreweryRoutingModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                router_1.RouterModule.forChild([
-                    { path: 'find-breweries', component: home_brewery_component_1.HomeBreweryComponent }
-                ])
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], HomeBreweryRoutingModule);
-    return HomeBreweryRoutingModule;
-}());
-exports.HomeBreweryRoutingModule = HomeBreweryRoutingModule;
-
-
-/***/ },
-/* 595 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var core_1 = __webpack_require__(0);
-var shared_module_1 = __webpack_require__(9);
-var home_brewery_component_1 = __webpack_require__(593);
-var home_brewery_routing_module_1 = __webpack_require__(594);
-var HomeBreweryModule = (function () {
-    function HomeBreweryModule() {
-    }
-    HomeBreweryModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                shared_module_1.SharedModule,
-                home_brewery_routing_module_1.HomeBreweryRoutingModule
-            ],
-            declarations: [
-                home_brewery_component_1.HomeBreweryComponent
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], HomeBreweryModule);
-    return HomeBreweryModule;
-}());
-exports.HomeBreweryModule = HomeBreweryModule;
-
-
-/***/ },
-/* 596 */
-/***/ function(module, exports) {
-
-module.exports = ".app-features ul {\r\n  padding-top: 5rem;\r\n  \r\n}\r\n\r\n.app-features li {\r\n  font-size:1rem;\r\n  padding-bottom:0.5rem;\r\n}\r\n\r\n.fa-green {\r\n  color: green;\r\n}\r\n\r\n.sub-header {\r\n  font-family: \"Raleway\", Helvetica, Arial, sans-serif !important;\r\n  margin-top:20px;\r\n}\r\n\r\n.row-centered {\r\n    text-align: center;\r\n}\r\n\r\n.col-centered {\r\n    display: inline-block;\r\n    float: none;\r\n    /* reset the text-align */\r\n    text-align: left;\r\n    /* inline-block space fix */\r\n    margin-right: -4px;\r\n}\r\n\r\n.apple-btn img{\r\n  padding-bottom:10px !important;\r\n  margin-bottom:10px !important;\r\n}\r\n\r\n.card {\r\n  width: 24rem;\r\n  background-color:#ddd;\r\n}\r\n\r\n\r\n.about-panel {\r\n  margin-top:4rem;\r\n  /*background-color:#fff;*/\r\n}\r\n\r\n.about-panel i {\r\n  padding-left:0.75rem;\r\n}\r\n\r\n#ticket-btn {\r\n  padding-top:1rem;\r\n}\r\n\r\n.paralax-window {\r\n  display: flex;\r\n  align-content: center;\r\n  align-items: center;\r\n  flex-direction: column; \r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  justify-content: space-around;\r\n  position: relative;\r\n  width: 100%;   \r\n}\r\n\r\nsection {\r\n  width: 100%;\r\n  height: 100vh;\r\n  flex: 1;\r\n  display: flex;\r\n  text-align: center;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background-color: #000;\r\n  \r\n}\r\n\r\n.stuff {\r\n  display: flex;\r\n  flex-direction: column;\r\n  flex-wrap: nowrap;\r\n  height: 100%;\r\n  width: 100%;\r\n  max-width: 70%;\r\n  justify-content: center;\r\n  text-align: center;\r\n  z-index: 1000;\r\n  color: #fff;\r\n  margin: 0 auto;\r\n  font-weight:bold;\r\n  font-size: 3rem;\r\n  position: relative;\r\n  text-shadow: black 0.1em 0.1em 0.2em;\r\n}\r\n\r\n.stuff .btn {\r\n  width:12rem;\r\n  text-align:center;\r\n  text-shadow:none;\r\n}\r\n\r\n.banner {\r\n  width:inherit;\r\n  background-image: url(\"/assets/breweryhome.jpg\");\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center center;\r\n  height:350px !important;      \r\n}\r\n\r\n.banner h2 {\r\n  position: absolute;\r\n  top:80px;\r\n  left:0;\r\n  right:0;\r\n  margin: 0 auto;\r\n  color:#ffffff;\r\n  font-family: 'Raleway',sans-serif !important;\r\n  text-shadow: 0 0 10px #000000;\r\n}\r\n\r\n#custom-search-input {\r\n  position: relative;\r\n  top:100px;\r\n}\r\n\r\n.banner h3 {\r\n  position: absolute;\r\n  top:420px;\r\n  right:20px;\r\n  font-size:16px;\r\n  color:#fff;\r\n  text-shadow: 2px 2px 4px #000000;\r\n}\r\n\r\n.fest {\r\n  background-color:#fff;\r\n  border: 1px solid rgba(0,0,0,.25);\r\n  padding:2rem;\r\n}\r\n\r\n.fest h3 {\r\n  padding-bottom:1rem;\r\n}\r\n\r\n.fa-ul {\r\n  padding-left:1.5rem;\r\n}\r\n\r\n.fa-ul i {\r\n  padding-top:0.25rem;\r\n}\r\n\r\n.card {\r\n  background-color: #fff;\r\n}\r\n\r\n#featured-brewery {\r\n  margin-top: 1rem;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n#featured-week {\r\n  width:100%;\r\n  margin-bottom:2rem;\r\n}\r\n\r\n#featured-week .card-header {\r\n  color:#fff;\r\n  background-color: #C81B02;\r\n}\r\n\r\n.random-beer h4 {\r\n  font-size: 1.25rem;\r\n}\r\n\r\n.random-beer {\r\n  margin-bottom:1rem;\r\n}\r\n\r\n#state-search {\r\n  width:100%;\r\n  margin-bottom:2rem;  \r\n}\r\n\r\n#state-search .card-header {\r\n  color:#fff;\r\n  background-color: #C81B02;  \r\n}\r\n\r\n"
-
-/***/ },
-/* 597 */
-/***/ function(module, exports) {
-
-module.exports = "<div class=\"banner\">\r\n  <!--\r\n  <div id=\"alert-msg\" *ngIf=\"msg.length\" class=\"container\">\r\n    <ngb-alert>\r\n      <strong>Sorry!</strong> {{msg}}\r\n    </ngb-alert>\r\n  </div>\r\n   -->\r\n  <app-search id=\"custom-search-input\"></app-search>\r\n  <h2 class=\"text-center\">Search Our Database of Over 20,000 Breweries.</h2>\r\n</div>\r\n\r\n<div id=\"featured-brewery\" class=\"container\" *ngIf=\"!showLoader\">\r\n  <div id=\"featured-week\" class=\"card\">\r\n    <div class=\"card-header\">\r\n      Featured Brewery of the Week\r\n    </div>    \r\n    <div class=\"card-block\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-5 text-center\">\r\n            <img *ngIf=\"featuredBrewery.images\" [src]=\"featuredBrewery.images.squareMedium\" />\r\n        </div>\r\n        <div class=\"col-md-7\">\r\n          <h4 class=\"card-title\">\r\n              <a [routerLink]=\"['/brewery',common.paramSEOFriendly(featuredBrewery.name),featuredBrewery.id]\">\r\n                {{featuredBrewery.name}}\r\n              </a>\r\n          </h4>\r\n          <p *ngIf=\"featuredBrewery.locations\" class=\"card-text\"><b>{{featuredBrewery.locations[0].locality}}, {{featuredBrewery.locations[0].region}} {{featuredBrewery.locations[0].countryIsoCode}}</b></p>\r\n          <p class=\"card-text\" *ngIf=\"featuredBrewery.description\">\r\n            {{featuredBrewery.description}}\r\n          </p>\r\n        </div>\r\n      </div>\r\n    </div>           \r\n  </div>\r\n  <div id=\"state-search\" class=\"card\">\r\n    <div class=\"card-header\">\r\n      Search Breweries in the USA\r\n    </div>    \r\n    <div class=\"card-block\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/alabama\">Alabama</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/alaska\">Alaska</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/arizona\">Arizona</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/arkansas\">Arkansas</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/california\">California</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/colorado\">Colorado</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/connecticut\">Connecticut</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/delaware\">Delaware</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/florida\">Florida</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/georgia\">Georgia</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/hawaii\">Hawaii</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/idaho\">Idaho</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/illinois\">Illinois</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/indiana\">Indiana</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/iowa\">Iowa</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/kansas\">Kansas</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/kentucky\">Kentucky</a></div>\r\n        </div>\r\n        <div class=\"col-md-4\">\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/louisiana\">Louisiana</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/maine\">Maine</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/maryland\">Maryland</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/massachusetts\">Massachusetts</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/michigan\">Michigan</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/minnesota\">Minnesota</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/mississippi\">Mississippi</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/missouri\">Missouri</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/montana\">Montana</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/nebraska\">Nebraska</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/nevada\">Nevada</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/new-hampshire\">New Hampshire</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/new-jersey\">New Jersey</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/new-mexico\">New Mexico</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/new-york\">New York</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/north-carolina\">North Carolina</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/north-dakota\">North Dakota</a></div>\r\n        </div>\r\n        <div class=\"col-md-4\">\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/ohio\">Ohio</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/oklahoma\">Oklahoma</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/oregon\">Oregon</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/pennsylvania\">Pennsylvania</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/rhode-island\">Rhode Island</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/south-carolina\">South Carolina</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/south-dakota\">South Dakota</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/tennessee\">Tennessee</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/texas\">Texas</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/utah\">Utah</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/vermont\">Vermont</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/virginia\">Virginia</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/washington\">Washington</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/west-virginia\">West Virginia</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/wisconsin\">Wisconsin</a></div>\r\n          <div class=\"state\"><a routerLink=\"/state-breweries/wyoming\">Wyoming</a></div>\r\n        </div>\r\n      </div>\r\n    </div>           \r\n  </div>  \r\n</div>"
 
 /***/ }
 /******/ ]);
