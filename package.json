@@ -7,7 +7,6 @@
     "url": "https://github.com/angular/universal-starter.git"
   },
   "scripts": {
-    "heroku-prebuild": "npm install -g reflect-metadata",
     "start": "node dist/server/index.js"
   },
   "engines": {
@@ -45,6 +44,7 @@
     "body-parser": "^1.15.2",
     "bootstrap": "^4.0.0-alpha.6",
     "compression": "^1.6.2",
+    "reflect-metadata": "0.1.8",
     "express": "^4.14.0",
     "js.clone": "0.0.3",
     "methods": "~1.1.2",
@@ -76,7 +76,6 @@
     "json-loader": "^0.5.4",
     "nodemon": "^1.10.0",
     "raw-loader": "^0.5.1",
-    "reflect-metadata": "0.1.8",
     "rimraf": "^2.5.4",
     "string-replace-loader": "^1.0.5",
     "ts-helpers": "^1.1.2",
