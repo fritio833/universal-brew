@@ -7,6 +7,7 @@
     "url": "https://github.com/angular/universal-starter.git"
   },
   "scripts": {
+    "heroku-prebuild": "npm install -g reflect-metadata",
     "start": "node dist/server/index.js"
   },
   "engines": {
